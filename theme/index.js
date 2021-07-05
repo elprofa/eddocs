@@ -8,6 +8,7 @@ export const theme = {
       transparent: "transparent",
       white: "#fff",
       black: "#000",
+      blackG:"rgb(90 93 99)",
       alto: "#ddd",
       KingBleu:"#0d77b6",
     },

@@ -100,14 +100,12 @@ const Footer = (props) => {
     <FooterStc>
         <Container  >
             
-                <div className="row rowLogo">
-                    <div className="col-lg-12">
-                        <Trait letGo={TraitStc}/>
-                        <Image letGo={{src:"/img/lo.png"}}/>
-                    </div>
+                <div className="rowLogo">
+                <Trait letGo={TraitStc}/>
+                <Image letGo={{src:"/img/lo.png"}}/>
                 </div>
                <div className="row rowLastFooter">
-                   <div className="col-sm-4">
+                   <div className="col-md-4">
                     <Texte letGo={letGo}></Texte>
                     <div className="row">
                         <div className="col-lg-12">
@@ -120,7 +118,7 @@ const Footer = (props) => {
                         </div>
                     </div>
                    </div>
-                   <div className="col-sm-4">
+                   <div className="col-md-4">
                         <ul className="ulMenuFooter">
 
                             {
@@ -129,7 +127,7 @@ const Footer = (props) => {
                                     
                         </ul>
                    </div>
-                   <div className="col-sm-4">
+                   <div className="col-md-4">
                         <Title letGo={{
                              texte:<span>Abonnez vous à <b>notre newsletter </b></span>,
                              style:{
@@ -158,6 +156,16 @@ const Footer = (props) => {
                    </div>
                    <div className="col-lg-12">
                    <Trait letGo={TraitStc}/>
+                   </div>
+                   <div className="col-lg-12">
+                       <Texte letGo={{
+                           texte:"Air metrologie 2021,Copyright designed & developped by dubani agency !",
+                           style: {
+                               textAlign:"center",
+                               color: "#fff",
+                               marginTop: "18px",
+                           }
+                       }} />
                    </div>
                </div>
            

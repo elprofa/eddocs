@@ -16,44 +16,52 @@ import {
   NavbarText
 } from 'reactstrap';
 
+import Image from '../../shared/Image'
+
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
+
+  const MenuHeader=[
+    {
+        texte:"Qui sommes-nous?",
+        altT:"Qui som...",
+        chemin:"/",
+    },
+    {
+        texte:"Nos laboratoires",
+        altT:"Nos lab...",
+        chemin:"/",
+    },
+    {
+        texte:"Nos Accreditations",
+        altT:"Nos Accr...",
+        chemin:"/",
+    },
+    {
+        texte:"Contactez-nous",
+        altT:"Contact...",
+        chemin:"/",
+    }
+]
+
+
   return (
     <HeaderStc>
-      <Navbar color="light" light expand="md">
+      <Navbar  light expand="md">
         <Container>
-        <NavbarBrand href="/" className="siteLogo">reactstrap</NavbarBrand>
+        <NavbarBrand href="/" className="siteLogo"><Image letGo={{src:"/img/lo.png"}} /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+          <Nav className="mr-auto ml-auto" navbar>
+              {
+                  MenuHeader.map((menu,index)=><NavItem key={1+index+"menuHeader"}><NavLink href={menu.chemin}><span className="texte">{menu.texte} </span><span className="altT">{menu.altT}</span></NavLink></NavItem>)
+              }
+           
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText><Image letGo={{src:"/img/go.png"}} /></NavbarText>
         </Collapse>
         </Container>
       </Navbar>

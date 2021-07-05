@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Slider from '../components/molecule/Slider'
 
 export default function Home() {
   return (
@@ -8,13 +9,8 @@ export default function Home() {
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
 
-      <main className="main">
-        <div className="row">
-          <div className="col-lg-12">
-           
-          </div>
-        </div>
-        
+      <main className="main" style={{minHeight:"100vh"}}>
+       <Slider />
       </main>
 
     </div>
