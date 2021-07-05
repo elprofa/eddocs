@@ -25,7 +25,7 @@ const items = [
     bouton:"SIMULER VOTRE TRANSFERT ICI"
   },
   {
-    src: "/img/slide1.jpg",
+    src: "/img/slide2.jpg",
     altText: "Slide 2",
     titre:"Nous aidons et accompagnons les étudiants",
     caption: "XPATSA, aide et accompagne les étudiants dans les démarches administratives pour les études a l’etranger "+
@@ -33,15 +33,7 @@ const items = [
     "dans ce qu’elle fait, étudier à l’etranger n’est plus un casse-tête.",
     lien:"contact",
     bouton:"Contactez-nous"
-  },
-  {
-    src: "/img/slide1.jpg",
-    altText: "Slide 3",
-    titre:"Vous pouvez nous faire confiance",
-    caption: "Notre service est toujours disponible, n'hésitez pas à nous contacter, une équipe dynamique est en place pour répondre à toutes vos préoccupations.",
-    lien:"contact",
-    bouton:"Contactez-nous"
-  },
+  }
 ];
 
 const Slider = (props) => {
