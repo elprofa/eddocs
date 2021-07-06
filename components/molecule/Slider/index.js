@@ -4,6 +4,8 @@ import Title from "../../shared/Title";
 // import Bouton from "../Bouton/Bouton";
 import Image from "../../shared/Image";
 import Link from '../../shared/Link';
+import SliderStc from './slider.stc.js'
+
 
 import {
   Carousel,
@@ -12,6 +14,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from "reactstrap";
+import Noschiffre from "../Noschiffre";
 
 const items = [
   {
@@ -59,6 +62,7 @@ const Slider = (props) => {
 
   const slides = items.map((item) => {
     return (
+      
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
@@ -67,43 +71,39 @@ const Slider = (props) => {
         <Image letGo={{src:item.src,style:{
           width:"100%",
         }}} alt="" />
-
-        <Container className="containerHome d-none d-lg-block ">
-          <Row>
-            <Col sm={6} className="colAccueilLeft">
-              {/* <Titre texte={item.titre} underline="2" color="#fff" /> */}
-              <p>
-               wedo profan
-              </p>
-                <a>
-                    ok
-                </a>
-            </Col>
-          </Row>
-        </Container>
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
+    <SliderStc>
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+        
+         
+      </Carousel>
+         <Noschiffre clickIconSliderRight={next} clickIconSliderLeft={previous} letGo={{
+           style:{
+             marginTop:"-100px"
+           }
+         }}/>
+    </SliderStc>
   );
 };
 

@@ -11,6 +11,7 @@ export const theme = {
       blackG:"rgb(90 93 99)",
       alto: "#ddd",
       KingBleu:"#0d77b6",
+      kingGreen:"#ecf6fb"
     },
     margins:{
         KingSection:"60px;",
@@ -66,15 +67,16 @@ export const theme = {
       amazon: "#E47911",
       slack: "#63C1A0",
       snapchat: "#FFFC00",
+      
     },
     font: {
       bodyFont: "'source-sans-pro',sans-serif",
       headingFont: "'source-sans-pro',sans-serif",
       bodyFontSize: "14px",
       headingFontSizes: {
-        h1: "42px",
-        h2: "30px",
-        h3: "26px",
+        h1: "60px",
+        h2: "48px",
+        h3: "35px",
         h4: "22px",
         h5: "18px",
         h6: "14px",
