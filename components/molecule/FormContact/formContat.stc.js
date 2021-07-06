@@ -4,7 +4,7 @@ import { Form } from "reactstrap";
 
 const FormContactStc = styled(Form)`
   background-color: ${(props) => props.bg || "#c5c8c7"};
-  width:${(props)=>props.largeur || props.largeur} 50%!important;
+  width:${(props)=>props.largeur || props.largeur} 100%!important;
   border: 1px solid ${(props) => props.couleur_bordure || "transparent"};
   border-radius: 3px;
   color: ${(props) => props.couleur || "#000"};

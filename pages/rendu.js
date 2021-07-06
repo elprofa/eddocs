@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Slider from '../components/molecule/Slider'
-import Example from '../components/molecule/FormContact'
+import Head from 'next/head';
+import { Row, Col, Container } from 'reactstrap';
+import Slider from '../components/molecule/Slider';
+import SectionContact from '../components/molecule/SectionContact';
 
 export default function Rendu() {
   return (
@@ -9,11 +10,7 @@ export default function Rendu() {
         <title>Teste components</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
-
-      <main className="main" style={{minHeight:"100vh"}}>
-       
-      </main>
-      <Example />
+      <SectionContact />
     </div>
   )
 }

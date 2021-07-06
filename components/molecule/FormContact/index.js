@@ -1,14 +1,14 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText, Container } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import FormContactStc from './formContat.stc';
 //import Button from '../../shared/Button';
 
 const Example = (props) => {
-    const { bg, largeur } = props;
+    //const { bg, largeur } = props;
   return (
-    <Container>
     <FormContactStc bg={'#b7cac8'}>
-    <Form>
+    <Container fluid>
+    <Form className='lg-6'>
       <FormGroup>
         <Input type="text" name="nom" id="exampleNom" placeholder="Nom:" />
         <label></label>
@@ -27,8 +27,8 @@ const Example = (props) => {
         <Button>Soumettre</Button>
       </div>
     </Form>
-    </FormContactStc>
     </Container>
+    </FormContactStc>
   );
 }
 export default Example;
