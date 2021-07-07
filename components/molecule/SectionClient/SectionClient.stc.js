@@ -3,14 +3,18 @@ import { theme } from "../../../theme";
 const defaultStyle={
     
 }
-export const CardMinSectionStc=Styled.section`
+export const SectionClientStc=Styled.div`
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
 
-    h1 span 
+    .leftPart
     {
-        border-bottom:2px solid #c43a4b;
+        @media screen and (min-width: 767px)
+        {
+            padding: 40px;
+        }
     }
+
 `;
 
-export default CardMinSectionStc
+export default SectionClientStc

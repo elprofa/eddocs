@@ -28,12 +28,12 @@ const Header = (props) => {
     {
         texte:"Qui sommes-nous?",
         altT:"Qui som...",
-        chemin:"/",
+        chemin:"/qui-sommes-nous",
     },
     {
         texte:"Nos laboratoires",
         altT:"Nos lab...",
-        chemin:"/",
+        chemin:"nos-laboratoire",
     },
     {
         texte:"Nos Accreditations",

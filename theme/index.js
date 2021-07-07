@@ -1,4 +1,8 @@
 export const theme = {
+    
+    heights:{
+      TopPageSection: "350px",
+    },
     colors: {
       primary: "#868686",
       secondary: "#1392c0",

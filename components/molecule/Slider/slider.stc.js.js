@@ -18,6 +18,11 @@ const SliderStc=Styled.section`
         }
         
     }
+
+    .carousel-caption
+    {
+        top:20%;
+    }
     
 `;
 export default SliderStc;

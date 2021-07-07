@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
 import Title from "../../shared/Title";
-// import Bouton from "../Bouton/Bouton";
+import Trait from "../../shared/Trait";
 import Image from "../../shared/Image";
-import Link from '../../shared/Link';
 import SliderStc from './slider.stc.js'
 
 
@@ -15,27 +13,50 @@ import {
   CarouselCaption,
 } from "reactstrap";
 import Noschiffre from "../Noschiffre";
+import { theme } from "../../../theme";
 
 const items = [
   {
     src: "/img/slide1.jpg",
-    titre:"La solution pour envoyer l'argent à l'etranger",
-    altText: "Slide 10",
-    caption: "Et si l’argent n’avait plus de frontière? Avec XPATSA Transférez de l'argent à l'international avec "+
-    " une rapidité,sécurité et efficacité impressionnante.Jamais il n'a été aussi simple "+"d'envoyer de l'argent. "+
-    "Alors Pensez à votre famille, vos amis et vos proches en leur faisant un geste avec nos services de transfert.",
-    lien:"transfert",
-    bouton:"SIMULER VOTRE TRANSFERT ICI"
+    caption: <Title letGo={{
+      texte:<>
+        <span>CALIBREZ VOS INSTRUMENTS POUR AMELIORER VOS PERFORMANCES</span>
+        <Trait letGo={{
+            style:{
+              width: "20%",
+              margin: "auto",
+              marginTop:theme.margins.KingParagraphe
+          }
+        }} />
+        </>,
+        style:{
+          fontWeight:"400",
+          fontSize:theme.font.headingFontSizes.h2,
+          fontWeight:600,
+          color:theme.colors.white
+       }
+    }} />
   },
   {
     src: "/img/slide2.jpg",
-    altText: "Slide 2",
-    titre:"Nous aidons et accompagnons les étudiants",
-    caption: "XPATSA, aide et accompagne les étudiants dans les démarches administratives pour les études a l’etranger "+
-    "(Maroc).Confiez-nous votre dossier et vous aurez les résultats ahurissants. Avec une équipe experte professionnelle "+
-    "dans ce qu’elle fait, étudier à l’etranger n’est plus un casse-tête.",
-    lien:"contact",
-    bouton:"Contactez-nous"
+    caption:<Title letGo={{
+      texte:<>
+        <span>DES LABORATOIRES PERFORMANTS ET DES EQUIPEMENTS DE QUALITE</span>
+        <Trait letGo={{
+            style:{
+              width: "20%",
+              margin: "auto",
+              marginTop:theme.margins.KingParagraphe
+          }
+        }} />
+        </>,
+        style:{
+          fontWeight:"400",
+          fontSize:theme.font.headingFontSizes.h2,
+          fontWeight:600,
+          color:theme.colors.white,
+       }
+    }} />
   }
 ];
 
@@ -71,6 +92,7 @@ const Slider = (props) => {
         <Image letGo={{src:item.src,style:{
           width:"100%",
         }}} alt="" />
+         <CarouselCaption captionText={""} captionHeader={item.caption} />
       </CarouselItem>
     );
   });

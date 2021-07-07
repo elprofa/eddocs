@@ -48,6 +48,188 @@ const CardMinSection = ({letGo}) => {
                 borderRadius: "15px"
             }
         },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
+        {
+            src:"/img/anemometrie.png",
+            texte:"Anemometrie",
+            style:{
+                width: "170px",
+                padding: "10px 20px",
+                textAlign: "center",
+                boxShadow: "6px 0 30px #ccc",
+                margin: "20px",
+                display: "inline-block",
+                borderRadius: "15px"
+            }
+        },
     ]
 
     return (
@@ -60,11 +242,13 @@ const CardMinSection = ({letGo}) => {
                                 width:"50%",
                                 display: "block",
                                 margin:"auto",
-                                textAlign:"center"
+                                textAlign:"center",
+                                marginBottom:"40px"
                             }
                         }>
+
                         <Title letGo={{
-                            texte:<span><b>A propos d'</b> Air métrologie</span>,
+                            texte:<span><b>Nos </b> laboratoires</span>,
                             style:{
                                 fontWeight:"400",
                                 fontSize:theme.font.headingFontSizes.h3,
@@ -72,17 +256,11 @@ const CardMinSection = ({letGo}) => {
                                 display: "block",
                                 margin:"auto",
                                 textAlign:"center",
-                                marginBottom:theme.margins.KingParagraphe
+                                marginBottom:theme.margins.KingParagraphe,
+                                paddingTop:'20px 0px'
                             }
                         }} />
-                         <Trait letGo={{
-                                style:{
-                                    marginBottom:theme.margins.KingParagraphe,
-                                    display: "block",
-                                    margin:"auto",
-                                    
-                                }
-                            }} />
+                        
                         </div>
                         {
                             laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} />)
