@@ -44,7 +44,7 @@ export default function QuiSommesNous() {
            <SectionClient />
          </div>
        </section>
-      </main>
+      </main><br /><br />
 
     </div>
   )
