@@ -1,8 +1,88 @@
 import Head from 'next/head'
+import ContentLaboratoire from '../components/molecule/ContentLaboratoire'
+import SideBarLabo from '../components/molecule/SideBarLabo'
 import TopPageSection from '../components/molecule/TopPageSection'
 import { theme } from '../theme'
 
 export default function NosLaboratoires() {
+
+  const menuAsides=[
+    {
+        texte:"Dimensionnel",
+        lien:"/",
+        active:"active"
+    },
+    {
+      texte:"Dimensionnel",
+      lien:"/"
+    },
+    {
+      texte:"Dimensionnel",
+      lien:"/"
+    },
+    {
+      texte:"Dimensionnel",
+      lien:"/"
+    },
+    {
+      texte:"Dimensionnel",
+      lien:"/"
+    },
+    {
+      texte:"Dimensionnel",
+      lien:"/"
+    },
+    {
+      texte:"Dimensionnel",
+      lien:"/",
+  },
+  {
+    texte:"Dimensionnel",
+    lien:"/"
+  },
+  {
+    texte:"Dimensionnel",
+    lien:"/"
+  },
+  {
+    texte:"Dimensionnel",
+    lien:"/"
+  },
+  {
+    texte:"Dimensionnel",
+    lien:"/"
+  },
+  {
+    texte:"Dimensionnel",
+    lien:"/"
+  },
+  {
+    texte:"Dimensionnel",
+    lien:"/",
+},
+{
+  texte:"Dimensionnel",
+  lien:"/"
+},
+{
+  texte:"Dimensionnel",
+  lien:"/"
+},
+{
+  texte:"Dimensionnel",
+  lien:"/"
+},
+{
+  texte:"Dimensionnel",
+  lien:"/"
+},
+{
+  texte:"Dimensionnel",
+  lien:"/"
+},
+    
+  ]
+
   return (
     <div className="App">
       <Head>
@@ -19,16 +99,21 @@ export default function NosLaboratoires() {
              title:"Nos laboratoires ?"
          }} />
        </section>
-       <section style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
+       <section style={{
        }}>
-         <div className="container">
-           
-         </div>
+          <SideBarLabo letGo={{
+            menus:menuAsides,
+            style:{
+              backgroundColor:theme.colors.kingGreen,
+              width:"30%",
+              padding: "0px !important",
+              top:"-178px",
+              position:"relative"
+            }
+          }} />
+          <ContentLaboratoire letGo={{
+            style:{width:"70%"}
+          }} />
        </section>
        
       </main>
