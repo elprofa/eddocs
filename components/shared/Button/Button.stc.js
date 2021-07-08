@@ -16,5 +16,6 @@ const defaultStyle={
 const ButtonStc=Styled.button`
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
+    margin-right: ${(props) => props.margin_right || ".8rem"};
 `;
 export default ButtonStc;

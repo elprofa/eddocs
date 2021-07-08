@@ -5,6 +5,8 @@ import CardCtzn from '../CardContactezNous';
 import Title from '../../shared/Title';
 import SectContactStc from './SectContact.stc';
 import Trait from '../../shared/Trait';
+import Texte from '../../shared/Texte';
+import { MdCheck } from 'react-icons/md';
  
 
 const SectionContact = (props) => {
@@ -25,6 +27,13 @@ const SectionContact = (props) => {
                              }
                         }} />
               <Trait letGo={TraitStc}/><br></br>
+              <Texte letGo={{texte:<p><span>Remplissez le formulaire ou contacter nous directement</span><br></br> <span>par Mail  ou sur notre</span><span className="txt__blue">  numéro client <MdCheck size={15} className="icnTxt__ctnt" color={"#f8f8f8"} /></span> </p>,
+              style:{
+                color: "000",
+                fontSize: "16px",
+                fontWeight: 100,
+              }
+            }} />
               
               <CardCtzn />
             </div>

@@ -13,6 +13,16 @@ const SectContactStc = styled(Container)`
       width: 70%!important;
   }
 
+  .txt__blue{
+    background: #007bff;
+    color: aliceblue;
+    margin-left: .3rem;
+  }
+
+  .icnTxt__ctnt{
+    color: #f8f8f8!important; 
+  }
+
 
 `;
 export default SectContactStc;
