@@ -38,7 +38,7 @@ const Header = (props) => {
     {
         texte:"Nos Accreditations",
         altT:"Nos Accr...",
-        chemin:"/",
+        chemin:"/nos-accreditations",
     },
     {
         texte:"Contactez-nous",
