@@ -10,7 +10,13 @@ const SectContactStc = styled(Container)`
   border-radius: ${(props) => props.border__raduis|| "4px"};
 
   .content__one{
-      width: 70%!important;
+      width: 80%;
+  }
+
+  .content__two{
+    width: 80%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .txt__blue{
@@ -23,6 +29,11 @@ const SectContactStc = styled(Container)`
     color: #f8f8f8!important; 
   }
 
+.section__ctn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
 `;
 export default SectContactStc;

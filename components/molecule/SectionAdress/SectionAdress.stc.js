@@ -1,8 +1,7 @@
 import Styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "reactstrap";
 
-const SectionNwsLtrtStc = Styled.section`
+const SectionAdressStc = Styled.section`
   
   background-color: ${(props) => props.bg || "#0d77b6"};
   width: ${(props) => props.largeur || "100vw"};
@@ -33,5 +32,5 @@ const SectionNwsLtrtStc = Styled.section`
 }
 
 `;
-export default SectionNwsLtrtStc;
+export default SectionAdressStc;
 

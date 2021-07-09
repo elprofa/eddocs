@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { Row, Col, Container } from 'reactstrap';
-import Slider from '../components/molecule/Slider';
 import SectionNwsLtrt from '../components/molecule/SectionNewsLetter';
 import SectionContact from '../components/molecule/SectionContact';
+import SectionAdress from '../components/molecule/SectionAdress';
 
 export default function Rendu() {
   return (
@@ -13,6 +13,7 @@ export default function Rendu() {
       </Head>
       <SectionContact />
       <SectionNwsLtrt />
+      <SectionAdress />
     </div>
   )
 }
