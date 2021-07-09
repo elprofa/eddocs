@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'reactstrap';
 import Title from '../../shared/Title';
 import Trait from '../../shared/Trait';
 import Texte from '../../shared/Texte';
-import SectContactStc from '../SectionContact/SectContact.stc';
+import CardAdressStc  from './CardAdress.stc';
  
 
 const CardAdress = (props) => {
@@ -12,7 +12,7 @@ const CardAdress = (props) => {
        
 }
   return (
-      <SectContactStc>
+      <CardAdressStc>
       <Row className=''>
           <Col lg={6} >
             <div className=''>
@@ -47,7 +47,7 @@ const CardAdress = (props) => {
           <Col lg={6} className='content__two'>
           </Col>       
       </Row>
-      </SectContactStc>
+      </CardAdressStc>
   )
 }
 

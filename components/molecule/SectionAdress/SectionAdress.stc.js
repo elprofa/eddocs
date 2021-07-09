@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const SectionAdressStc = Styled.section`
   
-  background-color: ${(props) => props.bg || "#0d77b6"};
+  background-color: ${(props) => props.bg || "#fff"};
   width: ${(props) => props.largeur || "100vw"};
   height: ${(props) => props.hauteur || "80%"};
   margin-left: 0!important;
