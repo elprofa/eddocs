@@ -9,5 +9,10 @@ const defaultStyle={
  const TitleStc=Styled.h1`
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
+
+    @media (max-width: 471px)
+    {
+        font-size:28px !important
+    }
 `;
 export default TitleStc;

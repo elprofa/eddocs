@@ -14,5 +14,22 @@ export const GlobalCSS = createGlobalStyle`
         width:100%;
         overflow-x:hidden
     }
+    .kingSection{
+        @media (max-width: 471px)
+        {
+            margin: 30px 0px !important;
+            padding: 30px 0px !important;
+        }
+    }
+
+    .row
+    {
+        @media (max-width: 471px)
+        {
+            margin: 0px !important;
+        }
+    }
+
+    
     
 `;

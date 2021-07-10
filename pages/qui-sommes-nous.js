@@ -21,7 +21,7 @@ export default function QuiSommesNous() {
              title:"Qui sommes-nous ?"
          }} />
        </section>
-       <section style={{margin:theme.margins.KingSection,
+       <section className="kingSection" style={{margin:theme.margins.KingSection,
        marginLeft:0,
        marginRight:0,
        padding:theme.margins.KingSection,
@@ -32,7 +32,7 @@ export default function QuiSommesNous() {
            <GrilleApropos letGo={{}} />
          </div>
        </section>
-       <section style={{margin:theme.margins.KingSection,
+       <section className="kingSection" style={{margin:theme.margins.KingSection,
        marginLeft:0,
        marginRight:0,
        padding:theme.margins.KingSection,

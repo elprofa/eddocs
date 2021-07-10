@@ -20,12 +20,14 @@ export default function NosAccreditation() {
              title:"Nos accréditations"
          }} />
        </section>
-       <section style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
+       <section style={{
+        marginTop:theme.margins.KingSection,
+        marginBottom:theme.margins.KingSection,
+        marginLeft:0,
+        marginRight:0,
+        padding:theme.margins.KingSection,
+        paddingLeft:0,
+        paddingRight:0,
        }}>
          <div className="container">
            <AccreditationSection letGo={{}} />

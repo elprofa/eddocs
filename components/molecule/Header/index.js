@@ -43,7 +43,7 @@ const Header = (props) => {
     {
         texte:"Contactez-nous",
         altT:"Contact...",
-        chemin:"/",
+        chemin:"/contact",
     }
 ]
 

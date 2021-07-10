@@ -139,7 +139,7 @@ const Footer = (props) => {
                         <Input letGo={{
                             style:{
                                 
-                                marginTop:theme.margins.KingParagraphe
+                                margin:"0px",
                             },
                             placeholder:"email@email.com",
 
