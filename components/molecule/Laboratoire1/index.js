@@ -11,7 +11,7 @@ import Button from '../../shared/Button';
 const Laboratoire1 = (props) => {
   
   return (
-    <LaboratoireStc1 className="container">
+    <LaboratoireStc1 >
         <div className="row">
             <div className="col-lg-12">
                 <Image letGo={{

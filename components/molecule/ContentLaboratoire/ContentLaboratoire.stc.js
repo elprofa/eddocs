@@ -8,5 +8,8 @@ const defaultStyle={
     
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
+    @media screen and (max-width: 767px){
+        width:100% !important;
+    }
 `;
 export default CardMinStc;

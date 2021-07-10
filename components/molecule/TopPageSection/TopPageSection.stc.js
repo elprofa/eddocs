@@ -12,13 +12,13 @@ const defaultStyle={
     {
         @media screen and (min-width: 341px) and (max-width: 571px)
         {
-            top: 20%;
-            font-size: ${theme.font.headingFontSizes.h3};
+            top: -150px;
+            position: relative;
         }
         @media screen and (max-width: 341px)
         {
-            top: 15%;
-            font-size: ${theme.font.headingFontSizes.h3};
+            top: -100px;
+            position: relative;
         }
     }
 `;

@@ -3,7 +3,7 @@ import { theme } from "../../../theme";
 const defaultStyle={
     
 }
-const LaboratoireStc1=Styled.section`
+const LaboratoireStc1=Styled.div`
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
 `;
