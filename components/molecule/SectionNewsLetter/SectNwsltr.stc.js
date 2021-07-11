@@ -1,12 +1,11 @@
 import Styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "reactstrap";
 
 const SectionNwsLtrtStc = Styled.section`
   
   background-color: ${(props) => props.bg || "#0d77b6"};
   width: ${(props) => props.largeur || "100vw"};
-  height: ${(props) => props.hauteur || "80%"};
+  height: ${(props) => props.hauteur || "300px"};
   margin-left: 0!important;
   margin-right: 0!important;
   padding-left:0px!important;
@@ -20,6 +19,7 @@ const SectionNwsLtrtStc = Styled.section`
 
 .content__btnnewsletter{
   display: inline-flex;
+  //width: 4rem;
 }
 
 .col-md-10{

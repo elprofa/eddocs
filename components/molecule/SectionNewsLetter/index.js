@@ -36,10 +36,10 @@ const SectionNwsLtr = (props) => {
           </Col>
           <Col lg={6} className="lettre">
             <div className='content__newsletter'>
-              <Title letGo={{texte:<span><strong>Abonnez Vous a </strong> Notre Newsletter</span>,
+              <Title letGo={{texte:<p>Abonnez Vous a  <strong>Notre Newsletter</strong></p>,
                              style:{
                                 color: "#fff",
-                                fontSize: "36px",
+                                fontSize: "26px",
                                 fontWeight: 100,
                              }
                         }} />
