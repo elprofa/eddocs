@@ -99,15 +99,14 @@ export default function NosLaboratoires() {
              title:"Nos laboratoires ?"
          }} />
        </section>
-       <section style={{
-       }}>
+       <section className="sectionLab">
           <SideBarLabo letGo={{
             menus:menuAsides,
             style:{
               backgroundColor:theme.colors.kingGreen,
               width:"30%",
               padding: "0px !important",
-              top:"-178px",
+              top:"-250px",
               position:"relative"
             }
           }} />

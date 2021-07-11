@@ -3,7 +3,7 @@ const defaultStyle={
     
     
 }
- const SectionContactStc=Styled.section`
+ const SectionContactStc=Styled.div`
     ${defaultStyle};
     
     ${(props) => props.MonStyle || ""};  

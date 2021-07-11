@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "../../theme";
 
 export const GlobalCSS = createGlobalStyle`
      * {
@@ -30,6 +31,20 @@ export const GlobalCSS = createGlobalStyle`
         }
     }
 
-    
+    .sectionHeader
+    {
+        margin-top:${theme.margins.KingSection};
+        margin-bottom:0;
+        margin-left:0;
+        margin-right:0;
+        padding:${theme.margins.KingSection};
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .sectionLab{
+        margin-top:${theme.margins.KingSection};
+       
+    }
     
 `;

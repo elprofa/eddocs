@@ -22,15 +22,7 @@ export default function Contact() {
              title:"Contactez-nous"
          }} />
        </section>
-        <section className="kingSection" style={{
-        marginTop:theme.margins.KingSection,
-        marginBottom:0,
-        marginLeft:0,
-        marginRight:0,
-        padding:theme.margins.KingSection,
-        paddingLeft:0,
-        paddingRight:0,
-       }}>
+        <section className="kingSection sectionHeader">
         <SectionContact letGo={{}} />
        </section>
        <section className="kingSection" style={{

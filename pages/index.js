@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className="main" style={{minHeight:"100vh"}}>
        <Slider />
-       <section style={{margin:theme.margins.KingSection,
+       <section className="kingSection sectionHeader"  style={{margin:theme.margins.KingSection,
        marginLeft:0,
        marginRight:0,
        padding:theme.margins.KingSection,
@@ -27,7 +27,7 @@ export default function Home() {
            <GrilleBlog letGo={{}} />
          </div>
        </section>
-       <section style={{margin:theme.margins.KingSection,
+       <section  style={{margin:theme.margins.KingSection,
        marginLeft:0,
        marginRight:0,
        padding:theme.margins.KingSection,

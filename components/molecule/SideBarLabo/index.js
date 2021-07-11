@@ -55,7 +55,7 @@ const SideBarLabo = (props) => {
                     {
                         menus.map((menu,index)=>
                         <a href={menu.lien} key={index+"badge1"}>
-                            <span class="badge bg-secondary"> {menu.texte}</span>
+                            <span className="badge bg-secondary"> {menu.texte}</span>
                         </a>
                     )
                 }
