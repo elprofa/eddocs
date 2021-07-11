@@ -42,10 +42,7 @@ const CardAdress = (props) => {
               }
             }} />
             </div>
-          </Col>
-
-          <Col lg={6} className='content__two'>
-          </Col>       
+          </Col>      
       </Row>
       </CardAdressStc>
   )

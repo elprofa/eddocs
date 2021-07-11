@@ -9,31 +9,22 @@ const SectContactStc = styled(Container)`
   height: ${(props) => props.hauteur || "80%"};
   border-radius: ${(props) => props.border__raduis|| "4px"};
 
-  .content__one{
-      width: 80%;
-  }
+  .section__ctn {
+        @media screen and (max-width: 767px){
+            display: block;
+            display: inline;
+            flex-wrap: wrap;
+            margin-right:15px;
+            .col-lg-6{
+              margin-bottom: 2.5rem;
+            }
 
-  .content__two{
-    width: 80%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .txt__blue{
-    background: #007bff;
-    color: aliceblue;
-    margin-left: .3rem;
-  }
-
-  .icnTxt__ctnt{
-    color: #f8f8f8!important; 
-  }
-
-.section__ctn{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+          .ranger__Deux{
+            margin-bottom: 2.5rem;
+          }
+            
+        }
+     }
 
 `;
 export default SectContactStc;

@@ -11,6 +11,12 @@ const CardAdressStc = Styled.section`
   padding-left:0px!important;
   padding-right:0px!important;
 
+  @media screen and (max-width: 767px){
+    .col-lg-6{
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+     }
+  }
  
 
 `;
