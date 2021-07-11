@@ -11,25 +11,13 @@ const SectionAdressStc = Styled.section`
   padding-left:0px!important;
   padding-right:0px!important;
 
-  .lettre{
-    text-align: center;
-    align-content:center; 
-
+  .content__adress{
+    display: -webkit-inline-box;
+    margin-left: 5rem;
+    margin-top: 5rem;
   }
 
-.content__btnnewsletter{
-  display: inline-flex;
-}
 
-.col-md-10{
-    display: inline-flex;
-    align-items: center;
-}
-
-.inpt{
-    margin-right: .8rem;
-    margin-left: .8rem;
-}
 
 `;
 export default SectionAdressStc;
