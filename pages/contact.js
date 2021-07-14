@@ -10,7 +10,7 @@ export default function Rendu() {
   return (
     <div className="App">
       <Head>
-        <title>Teste components</title>
+        <title>Contacts-us</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <BannerContact/>

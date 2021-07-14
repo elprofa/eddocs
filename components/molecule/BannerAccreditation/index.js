@@ -1,11 +1,10 @@
-import Head from 'next/head';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Title from '../../shared/Title';
 import Trait from '../../shared/Trait';
-import BannerStc  from './Banner.stc';
+import BannerAccStc  from './BannerAcc.stc';
  
 
-const BannerContact = (props) => {
+const BannerAcc = (props) => {
 
   const TraitStc={
        
@@ -13,17 +12,16 @@ const BannerContact = (props) => {
 
 
   return (
-      <BannerStc>
+      <BannerAccStc>
       <Row className=''>
           <Col lg={12} className='banner' >
-            <div className='conten col-md-3 mt-5'>
-              <Title letGo={{texte:<p><strong>CONTACTEZ-NOUS</strong></p>,
+            <div className='conten col-md-3 mt-5 ml-0 mr-0 '>
+              <Title letGo={{texte:<span><strong>Nos Accréditations</strong></span>,
                              style:{
                                 color: "#fff",
                                 fontSize: "32px",
                                 fontWeight: 700,
-                                textAlign: "justify-center",
-                                with: "100%",
+                                textAlign: "center",
                                 //with: ,
                              }
                         }} />
@@ -31,8 +29,8 @@ const BannerContact = (props) => {
               </div>
             </Col>
         </Row>
-      </BannerStc>
+      </BannerAccStc>
   )
 }
 
-export default BannerContact;
+export default BannerAcc;
