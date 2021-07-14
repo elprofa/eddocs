@@ -35,6 +35,11 @@ const NavbarStc=Styled.div`
             height:40px !important;
         }
     }
+
+    .navbar-nav ul li a
+    {
+        cursor:pointer;
+    }
     
 `;
 

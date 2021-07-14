@@ -1,3 +1,4 @@
+
 import { Row, Col, Container } from 'reactstrap';
 import Title from '../../shared/Title';
 import SectionNwsLtrtStc from './SectNwsltr.stc';
@@ -74,6 +75,7 @@ const SectionNwsLtr = (props) => {
                             placeholder:"email@email.com",
 
 
+
                         }} />{' '}
                         <Button letGo={{
                             texte:"Soumettre",
@@ -95,3 +97,4 @@ const SectionNwsLtr = (props) => {
 }
 
 export default SectionNwsLtr;
+

@@ -15,7 +15,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-
+import Link from 'next/link'
 import Image from '../../shared/Image'
 
 const Header = (props) => {
@@ -28,22 +28,22 @@ const Header = (props) => {
     {
         texte:"Qui sommes-nous?",
         altT:"Qui som...",
-        chemin:"/",
+        chemin:"/qui-sommes-nous",
     },
     {
         texte:"Nos laboratoires",
         altT:"Nos lab...",
-        chemin:"/",
+        chemin:"nos-laboratoire",
     },
     {
         texte:"Nos Accreditations",
         altT:"Nos Accr...",
-        chemin:"/",
+        chemin:"/nos-accreditations",
     },
     {
         texte:"Contactez-nous",
         altT:"Contact...",
-        chemin:"/",
+        chemin:"/contact",
     }
 ]
 
@@ -57,7 +57,14 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto ml-auto" navbar>
               {
-                  MenuHeader.map((menu,index)=><NavItem key={1+index+"menuHeader"}><NavLink href={menu.chemin}><span className="texte">{menu.texte} </span><span className="altT">{menu.altT}</span></NavLink></NavItem>)
+                  MenuHeader.map((menu,index)=><NavItem key={1+index+"menuHeader"}>
+                    <Link href={menu.chemin}>
+                      <a className="nav-link" >
+                        <span className="texte">{menu.texte} </span>
+                        <span className="altT">{menu.altT}</span>
+                      </a>
+                    </Link>
+                    </NavItem>)
               }
            
           </Nav>

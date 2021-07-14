@@ -1,3 +1,4 @@
+
 import Head from 'next/head';
 import { Row, Col, Container } from 'reactstrap';
 import SectionNwsLtrt from '../components/molecule/SectionNewsLetter';
@@ -21,3 +22,5 @@ export default function Rendu() {
     </div>
   )
 }
+
+

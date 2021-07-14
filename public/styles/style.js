@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "../../theme";
 
 export const GlobalCSS = createGlobalStyle`
      * {
@@ -13,6 +14,37 @@ export const GlobalCSS = createGlobalStyle`
         font-style: normal;
         width:100%;
         overflow-x:hidden
+    }
+    .kingSection{
+        @media (max-width: 471px)
+        {
+            margin: 30px 0px !important;
+            padding: 30px 0px !important;
+        }
+    }
+
+    .row
+    {
+        @media (max-width: 471px)
+        {
+            margin: 0px !important;
+        }
+    }
+
+    .sectionHeader
+    {
+        margin-top:${theme.margins.KingSection};
+        margin-bottom:0;
+        margin-left:0;
+        margin-right:0;
+        padding:${theme.margins.KingSection};
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .sectionLab{
+        margin-top:${theme.margins.KingSection};
+       
     }
     
 `;
