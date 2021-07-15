@@ -15,21 +15,9 @@ const BannerContact = (props) => {
   return (
       <BannerStc>
       <Row className=''>
-          <Col lg={12} className='banner' >
-            <div className='conten col-md-3 mt-5'>
-              <Title letGo={{texte:<p><strong>CONTACTEZ-NOUS</strong></p>,
-                             style:{
-                                color: "#fff",
-                                fontSize: "32px",
-                                fontWeight: 700,
-                                textAlign: "justify-center",
-                                with: "100%",
-                                //with: ,
-                             }
-                        }} />
-              <Trait letGo={{TraitStc,
-                        style:{
-                            width: "15rem",}}}/><br></br>
+          <Col md={12} className='text-center' >
+            <div className='h-100 py-5'>
+              <Title text="contactez Nous" />
               </div>
             </Col>
         </Row>

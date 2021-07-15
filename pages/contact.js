@@ -15,10 +15,10 @@ export default function Rendu() {
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <BannerContact/>
-      <SectionCmtNsContactez />
+      {/* <SectionCmtNsContactez />
       <SectionContact />
       <SectionNwsLtrt />
-      <SectionAdress />
+      <SectionAdress /> */}
     </div>
   )
 }
