@@ -27,7 +27,9 @@ const BannerContact = (props) => {
                                 //with: ,
                              }
                         }} />
-              <Trait letGo={TraitStc}/><br></br>
+              <Trait letGo={{TraitStc,
+                        style:{
+                            width: "15rem",}}}/><br></br>
               </div>
             </Col>
         </Row>

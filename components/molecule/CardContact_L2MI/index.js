@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import CardConractLMStc from './ContactL2mi.stc';
-import Title from '../../shared/Title';
 import Image from '../../shared/Image';
 import Texte from '../../shared/Texte';
 

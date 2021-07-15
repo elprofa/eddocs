@@ -25,7 +25,9 @@ const BannerAcc = (props) => {
                                 //with: ,
                              }
                         }} />
-              <Trait letGo={TraitStc}/><br></br>
+              <Trait letGo={{TraitStc,
+                        style:{
+                            width: "17rem",}}}/><br></br>
               </div>
             </Col>
         </Row>
