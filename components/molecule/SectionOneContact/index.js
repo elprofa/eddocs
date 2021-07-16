@@ -14,14 +14,8 @@ const SectOneContact = (props) => {
             <div className='h-100 py-5'>
               <Title coulor="#000" 
               text__transform="text-capitalize"
-              weight="300px" text={"Comment"} /> 
-              
-              <Title text={"Nous contactez ?"} 
-              coulor="#000" 
-              text__transform="text-capitalize"
-              weight="100px" />
-
-              
+              weight="300px" text={<span><strong>Comment</strong> Nous contactez ?</span>}/> 
+                           
               </div>
             </Col>
         </Row>
