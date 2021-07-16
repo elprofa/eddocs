@@ -3,7 +3,6 @@ import Title from '../../shared/Title';
 import SectionAccUnStc from './sectionAccUn.stc';
 import Trait from '../../shared/Trait';
 import Texte from '../../shared/Texte';
-import { MdCheck } from 'react-icons/md';
 import CardConractLM from '../CardContact_L2MI';CardConractLM
  
 

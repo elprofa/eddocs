@@ -1,15 +1,11 @@
-import Head from 'next/head';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Title from '../../shared/Title';
-import Trait from '../../shared/Trait';
 import BannerStc  from './Banner.stc';
  
 
 const BannerContact = (props) => {
-
-  const TraitStc={
        
-}
+
 
 
   return (

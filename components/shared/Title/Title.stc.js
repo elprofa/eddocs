@@ -1,7 +1,9 @@
 import Styled from "styled-components";
 
  const TitleStc=Styled.h1`
-    font-weight: bolder;
+    font-weight: ${(props) => props.weight || "bolder"};
+    text-transform: ${(props) => props.text__transform || "uppercase"};
+    color: ${(props) => props.coulor || "lightyellow"}!important;
 
     span {
         padding-bottom: 3px;

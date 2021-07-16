@@ -6,6 +6,7 @@ import SectionContact from '../components/molecule/SectionContact';
 import SectionAdress from '../components/molecule/SectionAdress';
 import SectionCmtNsContactez from '../components/molecule/CmtNsContactez';
 import BannerContact from '../components/molecule/BannerContact';
+import SectOneContact from '../components/molecule/SectionOneContact';
 
 export default function Rendu() {
   return (
@@ -15,6 +16,7 @@ export default function Rendu() {
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <BannerContact/>
+      <SectOneContact/>
       {/* <SectionCmtNsContactez />
       <SectionContact />
       <SectionNwsLtrt />
