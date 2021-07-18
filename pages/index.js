@@ -12,40 +12,21 @@ export default function Home() {
         <title>Métrologie</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
-
-      <main className="main" style={{minHeight:"100vh"}}>
+      <main className="main" >
        <Slider />
-       <section className="kingSection sectionHeader"  style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
+        <section className="kingSection sectionHeader ml-0 mr-0 mt-60 mb-60 pt-60 pb-60"  style={{
        background: theme.colors.kingGreen
        }}>
          <div className="container">
            <GrilleBlog letGo={{}} />
          </div>
        </section>
-       <section  style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
-       }}>
+       <section>
          <div className="container">
            <GrilleBlogLeft letGo={{}} />
          </div>
        </section>
-       <section style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
-       background: theme.colors.kingGreen
-       }}>
+       <section>
          <div className="container">
            <CardMinSection letGo={{}} />
          </div>
