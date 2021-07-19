@@ -5,6 +5,7 @@ import { Col } from "reactstrap";
 const CardCtznStc = styled(Col)`
   .background-card {
     background-color: #eef2f4;
+    border-radius: 1rem;
   }
 `;
 

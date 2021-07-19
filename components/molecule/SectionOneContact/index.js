@@ -13,7 +13,7 @@ const SectOneContact = (props) => {
             <Title
               coulor="#000"
               text__transform="text-capitalize"
-              weight="300px"
+              weight="100px"
               text={
                 <span>
                   <strong>Comment</strong> Nous contactez ?
