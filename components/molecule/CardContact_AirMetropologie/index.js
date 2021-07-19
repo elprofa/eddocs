@@ -40,6 +40,9 @@ const CardCtzn = (props) => {
                             fontSize: "18px",
                         }
                  }} />
+                 <Row>
+                    <label> </label>
+                </Row>
                  <Texte letGo={{
                            texte: "Aîn Sebâa – Casablanca",
                            style: {

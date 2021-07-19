@@ -9,6 +9,10 @@ const CardConractLMStc = styled(Container)`
   height: ${(props) => props.hauteur || "540px"};
   border-radius: ${(props) => props.border__raduis|| "4px"};
 
+  @media screen and (max-width: 1033px){
+    overflow: hidden;
+  }
+
   @media screen and (max-width: 986px){
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
