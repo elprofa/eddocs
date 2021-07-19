@@ -9,6 +9,7 @@ import BannerContact from '../components/molecule/BannerContact';
 import SectOneContact from '../components/molecule/SectionOneContact';
 import SectionContactTwo from '../components/molecule/SectionContactTwo';
 import AbonnezVs from '../components/molecule/AbonnezVs';
+import LastSectContact from '../components/molecule/LastSectionContact';
 
 export default function Rendu() {
   return (
@@ -21,6 +22,7 @@ export default function Rendu() {
       <SectOneContact/>
       <SectionContactTwo/>
       <AbonnezVs/>
+      <LastSectContact/>
       {/* <SectionCmtNsContactez />
       <SectionContact />
       <SectionNwsLtrt />
