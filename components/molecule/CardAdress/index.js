@@ -1,50 +1,41 @@
-import { Row, Col } from 'reactstrap';
-import Title from '../../shared/Title';
-import Trait from '../../shared/Trait';
-import Texte from '../../shared/Texte';
-import CardAdressStc  from './CardAdress.stc';
- 
+import React from "react";
+import CardAdressStc from "./CardAdress.stc";
+import Paragraphe from "../../shared/Paragraphe";
+import Title from "../../shared/Title";
 
 const CardAdress = (props) => {
-
-  const TraitStc={
-       
-}
   return (
-      <CardAdressStc>
-      <Row className=''>
-          <Col lg={6} >
-            <div className=''>
-              <Title letGo={{texte:<span> Notre <strong>adresses ? </strong></span>,
-                             style:{
-                                color: "#000",
-                                fontSize: "23px",
-                                fontWeight: 100,
-                             }
-                        }} />
-              <Trait letGo={TraitStc}/><br></br>
-              <Texte letGo={{texte:
-                        <p><span>Adresse Siège: </span></p>,
-              style:{
-                color: "000",
-                fontSize: "20px",
-                fontWeight: 100,
+    <CardAdressStc>
+      <div className="background-card p-4 w-75 h-100 mx-auto">
+        <div className="text-center">
+          <Title
+              coulor="#000"
+              text__transform="text-capitalize"
+              weight="lighter"
+              font__size="xlarger"
+              text={
+                <span>
+                  Notre <strong>Adresses ?</strong>
+                </span>
               }
-            }} />
-            <Texte letGo={{texte:
-                        <p><span>Bd Chefchaouni KM 8.5 Porte B, 1 er Etage Appt3</span>
-                           <span>Ain Sebâa - Casablanca</span></p>,
-              style:{
-                color: "000",
-                fontSize: "16px",
-                fontWeight: 100,
-              }
-            }} />
-            </div>
-          </Col>      
-      </Row>
-      </CardAdressStc>
-  )
-}
+            />
+        </div>
 
+        <div className="text-center">
+          <Paragraphe
+              coulor="#000"
+              weight="100px"
+              text={
+                <span>
+                  Adresse siège.<br></br>
+                  Bd Chefchaouni KM 8.5 Porte B, 1 er Etage Appt 3<br></br>
+                  Aîn sebaâ - Casablanca
+                </span>
+              }
+            />
+        </div>       
+      </div>
+    </CardAdressStc>
+  );
+};
 export default CardAdress;
