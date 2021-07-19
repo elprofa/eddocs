@@ -128,14 +128,7 @@ const Footer = (props) => {
                         </ul>
                    </div>
                    <div className="col-md-4">
-                        <Title letGo={{
-                             texte:<span>Abonnez vous à <b>notre newsletter </b></span>,
-                             style:{
-                                color: "#fff",
-                                fontSize: "23px",
-                                fontWeight: 100,
-                             }
-                        }} />
+                        <Title partOne="Abonnez vous à " PartTwo="notre newsletter" number={1} />
                         <Input letGo={{
                             style:{
                                 
@@ -145,27 +138,14 @@ const Footer = (props) => {
 
 
                         }} />
-                        <Button letGo={{
-                            texte:"Soumettre",
-                            style:{
-                                backgroundImage: "linear-gradient(to right, rgb(101 143 222) , rgb(195 65 95))",
-                                fontSize:theme.font.p,
-                                border:0
-                            }
-                        }} />
+                        <Button  texte="Soumettre" />
                    </div>
                    <div className="col-lg-12">
                    <Trait letGo={TraitStc}/>
                    </div>
                    <div className="col-lg-12">
-                       <Texte letGo={{
-                           texte:"Air metrologie 2021,Copyright designed & developped by dubani agency !",
-                           style: {
-                               textAlign:"center",
-                               color: "#fff",
-                               marginTop: "18px",
-                           }
-                       }} />
+                       <Texte texte="Air metrologie 2021,Copyright designed & 
+                       developped by dubani agency !" />
                    </div>
                </div>
            

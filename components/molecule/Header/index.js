@@ -16,7 +16,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import Link from 'next/link'
-import Image from '../../shared/Image'
+import Image from 'next/image'
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +52,7 @@ const Header = (props) => {
     <HeaderStc>
       <Navbar  light expand="md">
         <Container>
-        <NavbarBrand href="/" className="siteLogo"><Image letGo={{src:"/img/lo.png"}} /></NavbarBrand>
+        <NavbarBrand href="/" className="siteLogo"><Image src="/img/lo.png" width="150" height="50" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto ml-auto" navbar>
@@ -68,7 +68,7 @@ const Header = (props) => {
               }
            
           </Nav>
-          <NavbarText><Image letGo={{src:"/img/go.png"}} /></NavbarText>
+          <NavbarText><Image src="/img/go.png" width="150" height="50" /></NavbarText>
         </Collapse>
         </Container>
       </Navbar>

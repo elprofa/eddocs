@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Image = ({letGo}) => {
+const Image = (props) => {
 
     return (
         <>
-          <img src={letGo.src} style={letGo.style} />
+          <img src={props.src}/>
         </>
        
     )

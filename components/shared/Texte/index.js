@@ -1,11 +1,11 @@
 import React from 'react'
 import TexteStc from './Texte.stc'
 
-const Texte = ({letGo}) => {
+const Texte = (props) => {
 
     return (
-        <TexteStc MonStyle={letGo.style}>
-          {letGo.texte}
+        <TexteStc className={props.MyclassName}>
+          {props.texte}
         </TexteStc>
        
     )

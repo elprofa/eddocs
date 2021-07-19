@@ -9,7 +9,7 @@ const Noschiffre = (props) => {
     const letGo=props.letGo;
 
     return (
-        <NosChiffreStc MonStyle={letGo.style}>
+        <NosChiffreStc >
          <div className="row">
              <div className="col-sm-2">
              <a className="ownIconAction left" onClick={props.clickIconSliderLeft} >

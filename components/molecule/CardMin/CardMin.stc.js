@@ -1,16 +1,14 @@
 import { Card } from "reactstrap";
 import Styled from "styled-components";
-const defaultStyle={
-    
-}
- const CardMinStc=Styled(Card)`
-    ${defaultStyle};
-    ${(props) => props.MonStyle || ""};
 
-    @media screen and (max-width: 476px)
-    {
-        margin: 15px auto !important;
-        display: block;
-    }
+ const CardMinStc=Styled(Card)`
+    width: 170px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 6px 0 30px #ccc;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    
 `;
 export default CardMinStc;
