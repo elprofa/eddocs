@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import { Container } from 'reactstrap'
-import GrilleBlogLeft from '../components/molecule/GrilleBlogLeft'
-import GrilleBlog from '../components/molecule/SectionApropos'
-import CardMinSection from '../components/molecule/SectionCardMin'
 
-import Slider from '../components/molecule/Slider'
-import { theme } from '../theme'
-
+import Head from "next/head";
+import GrilleBlog from "../components/molecule/GrilleBlog";
+import GrilleBlogLeft from "../components/molecule/GrilleBlogLeft";
+import CardMinSection from "../components/molecule/SectionCardMin";
+import Slider from "../components/molecule/Slider";
+import { theme } from "../theme";
+import SectionApropos from "../components/SectionApropos";
 export default function Home() {
   return (
     <div className="App">
@@ -20,7 +19,6 @@ export default function Home() {
         <GrilleBlogLeft />
         <CardMinSection />
       </main>
-
     </div>
-  )
+  );
 }
