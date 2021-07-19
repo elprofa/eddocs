@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SectOneContactStc from "./SectOneContact.stc";
 import Paragraphe from "../../shared/Paragraphe";
 
-const SectOneContact = (props) => {
+const SectOneContact = () => {
   return (
     <SectOneContactStc>
       <Row className="">
@@ -13,7 +13,8 @@ const SectOneContact = (props) => {
             <Title
               coulor="#000"
               text__transform="text-capitalize"
-              weight="100px"
+              weight="lighter"
+              font__size="larger"
               text={
                 <span>
                   <strong>Comment</strong> Nous contactez ?
