@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Title from "../../shared/Title";
 import Trait from "../../shared/Trait";
-import Image from "../../shared/Image";
+import Image from "next/image";
 import SliderStc from './slider.stc.js'
 
 
@@ -14,49 +14,18 @@ import {
 } from "reactstrap";
 import Noschiffre from "../Noschiffre";
 import { theme } from "../../../theme";
+import image from "next/image";
 
 const items = [
   {
     src: "/img/slide1.jpg",
-    caption: <Title letGo={{
-      texte:<>
-        <span>CALIBREZ VOS INSTRUMENTS POUR AMELIORER VOS PERFORMANCES</span>
-        <Trait letGo={{
-            style:{
-              width: "20%",
-              margin: "auto",
-              marginTop:theme.margins.KingParagraphe
-          }
-        }} />
-        </>,
-        style:{
-          fontWeight:"400",
-          fontSize:theme.font.headingFontSizes.h2,
-          fontWeight:600,
-          color:theme.colors.white
-       }
-    }} />
+    caption: <Title partOne={
+      "CALIBREZ VOS INSTRUMENTS POUR AMELIORER VOS PERFORMANCES"} PartTwo="" number={1} />
   },
   {
     src: "/img/slide2.jpg",
-    caption:<Title letGo={{
-      texte:<>
-        <span>DES LABORATOIRES PERFORMANTS ET DES EQUIPEMENTS DE QUALITE</span>
-        <Trait letGo={{
-            style:{
-              width: "20%",
-              margin: "auto",
-              marginTop:theme.margins.KingParagraphe
-          }
-        }} />
-        </>,
-        style:{
-          fontWeight:"400",
-          fontSize:theme.font.headingFontSizes.h2,
-          fontWeight:600,
-          color:theme.colors.white,
-       }
-    }} />
+    caption:<Title partOne={
+      "DES LABORATOIRES PERFORMANTS ET DES EQUIPEMENTS DE QUALITE"} PartTwo="" number={1}/>
   }
 ];
 
@@ -89,9 +58,7 @@ const Slider = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <Image letGo={{src:item.src,style:{
-          width:"100%",
-        }}} alt="" />
+        <Image src={item.src} alt="" width="2000" height="900" />
          <CarouselCaption captionText={""} captionHeader={item.caption} />
       </CarouselItem>
     );
@@ -120,11 +87,7 @@ const Slider = (props) => {
         
          
       </Carousel>
-         <Noschiffre clickIconSliderRight={next} clickIconSliderLeft={previous} letGo={{
-           style:{
-             marginTop:"-100px"
-           }
-         }}/>
+         <Noschiffre clickIconSliderRight={next} clickIconSliderLeft={previous} />
     </SliderStc>
   );
 };

@@ -11,10 +11,11 @@ const defaultStyle={
     textAlign: "center;",
     verticalAlign: "middle;",
     transition:" 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);"
-    
+   
 }
 const ButtonStc=Styled.button`
     ${defaultStyle};
-    ${(props) => props.MonStyle || ""};
+    background-image: linear-gradient(to right, rgb(101 143 222) , rgb(195 65 95)) ;
+    border:0px;
 `;
 export default ButtonStc;

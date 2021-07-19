@@ -1,11 +1,11 @@
 import React from 'react'
 import ButtonStc from './Button.stc'
 
-const Button = ({letGo}) => {
+const Button = (props) => {
 
     return (
-        <ButtonStc className="btn" MonStyle={letGo.style}>
-            {letGo.texte}
+        <ButtonStc className="btn" >
+            {props.texte}
         </ButtonStc>
        
     )

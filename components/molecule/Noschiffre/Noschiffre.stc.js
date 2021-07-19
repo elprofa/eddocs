@@ -1,17 +1,7 @@
 import Styled from "styled-components";
-const defaultStyle={
-    textDecoration:"none !important",
-    color:"#000",
-    fontSize:"14px",
-    
-}
+
  const NosChiffreStc=Styled.section`
-    ${defaultStyle};
-    ${(props) => props.MonStyle || ""};
-    @media screen and (max-width: 767px)
-    {
-        margin-top: 0px !important;
-    }
+    margin-top: -200px;
     a.ownIconAction {
         background: transparent;
         position: relative;

@@ -12,74 +12,20 @@ const NoschiffreContent = (props) => {
 
     return (
         <NoschiffreContentStc MonStyle={letGo.style}>
-            <Title letGo={{
-                texte:<span>Nos <b> chiffres</b></span>,
-                style:{
-                   fontWeight:"400",
-                   fontSize:theme.font.headingFontSizes.h1
-                }
-            }} />
-            <Trait letGo={{
-                style:{
-                    width: "20%",
-                    margin: "auto"
-                }
-            }} />
-
+            <Title partOne="Nos" PartTwo="chiffres" number={1} />
+           
             <div className="row" style={{marginTop:theme.margins.KingParagraphe}}>
                 <div className="col-md-4">
-                    <Texte letGo={{
-                        texte:"Nos Clients",
-                        style:{
-                            fontWeight: 600,
-                            margin: 0,
-                            color:theme.colors.KingBleu
-                        }
-                    }} />
-                     <Title letGo={{
-                        texte:1990,
-                        style:{
-                        fontWeight:"400",
-                        color:theme.colors.blackG,
-                        fontSize:theme.font.headingFontSizes.h1
-                        }
-                    }} />
+                    <Texte texte="Nos clients" />
+                    <Title partOne="1990" PartTwo="" number={1} />
                 </div>
                 <div className="col-md-4">
-                    <Texte letGo={{
-                        texte:"Nos Clients",
-                        style:{
-                            fontWeight: 600,
-                            margin: 0,
-                            color:theme.colors.KingBleu
-                        }
-                    }} />
-                     <Title letGo={{
-                        texte:1990,
-                        style:{
-                        fontWeight:"400",
-                        color:theme.colors.blackG,
-                        fontSize:theme.font.headingFontSizes.h1
-                        }
-                    }} />
+                    <Texte texte="Nos Clients" />
+                     <Title partOne="1990" PartTwo="" number={1} />
                 </div>
                 <div className="col-md-4">
-                    <Texte letGo={{
-                        texte:"Nos Clients",
-                        style:{
-                            fontWeight: 600,
-                            margin: 0,
-                            color:theme.colors.KingBleu
-                        }
-                    }} />
-                     <Title letGo={{
-                        texte:1990,
-                        style:{
-                        fontWeight:"400",
-                        color:theme.colors.blackG,
-                        fontSize:theme.font.headingFontSizes.h1
-                        }
-                    }} />
+                    <Texte texte="Nos clients" />
+                    <Title partOne="1990" PartTwo="" number={1} />
                 </div>
             </div>
         </NoschiffreContentStc>

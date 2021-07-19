@@ -1,8 +1,6 @@
 import React from 'react'
 import { BsLock } from 'react-icons/bs'
-import { theme } from '../../../theme'
 import Title from '../../shared/Title'
-import Trait from '../../shared/Trait'
 import CardMin from '../CardMin'
 import CardMinSectionStc from './SectionCardMin.stc'
 
@@ -12,232 +10,15 @@ const CardMinSection = ({letGo}) => {
         {
             src:"/img/anemometrie.png",
             texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        }, 
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
-        },
-        {
-            src:"/img/anemometrie.png",
-            texte:"Anemometrie",
-            style:{
-                width: "170px",
-                padding: "10px 20px",
-                textAlign: "center",
-                boxShadow: "6px 0 30px #ccc",
-                margin: "20px",
-                display: "inline-block",
-                borderRadius: "15px"
-            }
         },
     ]
 
     return (
         <CardMinSectionStc >
             <div className="container">
-                <div className="row">
+                <div className="row py-2 py-md-5">
                     <div className="col-lg-12">
-                        <div style={
+                        <div class="" style={
                             {
                                 width:"50%",
                                 display: "block",
@@ -247,19 +28,7 @@ const CardMinSection = ({letGo}) => {
                             }
                         }>
 
-                        <Title letGo={{
-                            texte:<span><b>Nos </b> laboratoires</span>,
-                            style:{
-                                fontWeight:"400",
-                                fontSize:theme.font.headingFontSizes.h3,
-                                marginBottom:theme.margins.KingParagraphe,
-                                display: "block",
-                                margin:"auto",
-                                textAlign:"center",
-                                marginBottom:theme.margins.KingParagraphe,
-                                paddingTop:'20px 0px'
-                            }
-                        }} />
+                        <Title partOne="Nos" PartTwo="laboratoires" number={1}/>
                         
                         </div>
                         {

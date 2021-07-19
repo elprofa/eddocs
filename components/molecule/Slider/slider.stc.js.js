@@ -15,6 +15,11 @@ const SliderStc=Styled.section`
         @media screen and (min-width: 768px)
         {
             bottom: 170px;
+           
+        }
+        @media screen and (max-width: 768px)
+        {
+            display: none;
         }
         
     }
@@ -22,6 +27,23 @@ const SliderStc=Styled.section`
     .carousel-caption
     {
         top:20%;
+    }
+    .carousel.slide
+    {
+        height:100vh;
+        @media screen and (max-width: 767px)
+        {
+            height:50vh;
+        }
+
+        .carousel-item
+        {
+            height: 100vh;
+            @media screen and (max-width: 767px)
+            {
+                height:50vh;
+            }
+        }
     }
     
 `;
