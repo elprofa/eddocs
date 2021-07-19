@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./newttitle.stc";
-const NewTitle = ({ partOne, partTwo, number }) => {
+const NewTitle = (props) => {
+  const { partOne, partTwo, number } = props;
   return (
     <Title>
       <h2>
@@ -14,6 +15,7 @@ const NewTitle = ({ partOne, partTwo, number }) => {
           </>
         )}
       </h2>
+      {console.log(props.theme)}
     </Title>
   );
 };
