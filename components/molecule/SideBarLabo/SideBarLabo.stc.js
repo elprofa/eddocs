@@ -6,6 +6,7 @@ import { theme } from "../../../theme";
     display: inline-flex !important;
     background: ${theme.colors.kingGreen};
     width: 25%;
+    
     .nav-link.active
     {
         text-decoration:underline;
@@ -24,6 +25,7 @@ import { theme } from "../../../theme";
     {
         padding: 20px;
         border-radius: 0px;
+        color:#000;
     }
     ${(props) => props.MonStyle || ""};
 

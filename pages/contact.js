@@ -13,42 +13,14 @@ export default function Contact() {
       </Head>
 
       <main className="main" style={{minHeight:"100vh"}}>
-       <section style={{
-       maxHeight:theme.heights.TopPageSection,
-       overflow: "hidden"
-       }}>
-         <TopPageSection letGo={{
-             image:"/img/slide1.jpg",
-             title:"Contactez-nous"
+        <TopPageSection letGo={{
+            image:"/img/slide1.jpg",
+            title:"Contactez-nous"
          }} />
-       </section>
-        <section className="kingSection sectionHeader">
         <SectionContact letGo={{}} />
-       </section>
-       <section className="kingSection" style={{
-        marginTop:theme.margins.KingSection,
-        marginBottom:theme.margins.KingSection,
-        marginLeft:0,
-        marginRight:0,
-        padding:theme.margins.KingSection,
-        paddingLeft:0,
-        paddingRight:0,
-        background: theme.colors.KingBleu
-       }}>
         <SectionNewsLetter letGo={{}} />
-       </section>
-       <section className="kingSection" style={{
-        marginTop:theme.margins.KingSection,
-        marginBottom:theme.margins.KingSection,
-        marginLeft:0,
-        marginRight:0,
-        padding:theme.margins.KingSection,
-        paddingLeft:0,
-        paddingRight:0,
-       }}>
         <SectionContactMap letGo={{}} />
-       </section>
-      </main><br /><br />
+      </main>
 
     </div>
   )

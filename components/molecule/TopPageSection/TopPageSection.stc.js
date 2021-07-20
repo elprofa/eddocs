@@ -8,7 +8,7 @@ const defaultStyle={
     max-height: 350px;
     .div_image
     {
-        height: 350px;
+        max-height: 350px;
         overflow:hidden;
     }
     .title 

@@ -10,67 +10,34 @@ import Input from '../../shared/Input';
 const SectionNewsLetter=()=>{
     return(
         <SectionNewsLetterStc>
-            <Title letGo={{
-                texte:<>
-                    <span><b>Abonnez-vous  </b>à notre newsletter</span>
-                    <Trait letGo={{
-                        style:{
-                            marginTop:theme.margins.KingParagraphe,
-                            marginBottom:theme.margins.KingParagraphe,
-                        }
-                    }} />
-                </>,
-                style:{
-                    fontWeight:"400",
-                    maxWidth:"500px",
-                    display:"block",
-                    textAlign:"center",
-                    margin:"auto",
-                    fontSize:theme.font.headingFontSizes.h3,
-                    color:theme.colors.white
-                }
-            }} />
+          <div className="container">
+              <div className="row py-2 py-md-5">
+                  <div className="col-lg-12">
+                    <div className="div_news">
+                    <Title partOne="Abonnez-vous" PartTwo="à notre newsletter" number={1} MyclassName="py-2 py-md-3" />
 
-            <Texte letGo={{
-                texte:<span>
-                Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                signification utilisée à titre provisoire pour calibrer une.
-                </span>,
-                style:{
-                    marginTop:theme.margins.KingParagraphe,
-                    marginBottom:theme.margins.KingParagraphe,
-                    maxWidth:"400px",
-                    display:"block",
-                    textAlign:"center",
-                    margin:"auto",
-                    color:theme.colors.white
-                }
-            }} />
-            <div className="row">
-                <div className="col-md-8">
-                <Input letGo={{
-                            style:{
-                                
-                                marginTop:theme.margins.KingParagraphe
-                            },
-                            placeholder:"email@email.com",
+                    <Texte texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
+                        signification utilisée à titre provisoire pour calibrer une." MyclassName="py-2 py-md-3" />
+                    <div className="row">
+                        <div className="col-md-8">
+                        <Input letGo={{
+                                    style:{
+                                        
+                                        marginTop:theme.margins.KingParagraphe
+                                    },
+                                    placeholder:"email@email.com",
 
 
-                        }} />
-                </div>
-                <div className="col-md-4">
-                    <Button letGo={{
-                        texte:"Soumettre",
-                        style:{
-                            backgroundImage: "linear-gradient(to right, rgb(101 143 222) , rgb(195 65 95))",
-                            fontSize:theme.font.p,
-                            border:0,
-                            height:"50px",
-                            margin:'18px 0px'
-                        }
-                    }} />
-                </div>
-            </div>
+                                }} />
+                        </div>
+                        <div className="col-md-4">
+                            <Button texte="Soumettre" MyclassName="my-2 my-md-3" />
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
         </SectionNewsLetterStc>
     )
 }

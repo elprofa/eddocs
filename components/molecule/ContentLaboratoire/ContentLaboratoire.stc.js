@@ -3,7 +3,10 @@ import Styled from "styled-components";
 
  const CardMinStc=Styled.div`
     display: inline-flew;
-    
-  width: 75%;
+    @media (max-width: 767px) {
+        width: 100%;
+        
+    }
+    width: 75%;
 `;
 export default CardMinStc;
