@@ -39,6 +39,7 @@ const NavbarStc=Styled.div`
     .navbar-nav ul li a
     {
         cursor:pointer;
+        
     }
     
 `;
