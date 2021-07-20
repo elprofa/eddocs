@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 const SliderStc=Styled.section`
-a.carousel-control-prev,a.carousel-control-prev
+a.carousel-control-prev,a.carousel-control-next
 {
     display: none !important;
 }

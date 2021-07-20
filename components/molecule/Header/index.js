@@ -27,7 +27,7 @@ const Header = (props) => {
   const MenuHeader=[
     {
         texte:"Qui sommes-nous?",
-        altT:"Qui som...",
+        altT:"Qui somm...",
         chemin:"/qui-sommes-nous",
     },
     {
