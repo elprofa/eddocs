@@ -48,5 +48,6 @@ const SliderClientStc=Styled.div`
             float:right;
         }
     }
+    
 `;
 export default SliderClientStc;

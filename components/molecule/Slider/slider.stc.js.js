@@ -1,6 +1,11 @@
 import Styled from 'styled-components';
 
 const SliderStc=Styled.section`
+.title h2
+    {
+        border:0px !important;
+        font-weight:600;
+    }
 a.carousel-control-prev,a.carousel-control-next
 {
     display: none !important;

@@ -25,6 +25,16 @@ const defaultStyle={
         {
             height: 720px;
         }
+
+        img 
+        {
+            @media (max-width: 991px)
+            {
+                width: 200px;
+                margin: auto;
+                display: block;
+            }
+        }
     }
     .title {
         @media (min-width: 991px) {

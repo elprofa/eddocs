@@ -17,18 +17,18 @@ const SectionContact = (props) => {
 
     return (
         <SectionContactStc className="container" MonStyle={letGo.style}>
-           <div className="row py-2 py-md-5">
+           <div className="row py-2 py-md-3">
                <div className="col-lg-12">
                <Title partOne="Comment" PartTwo="nous contacter" number={1}  MyclassName="py-2 py-md-3 text-center" />
             
             <Texte texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                signification utilisée à titre provisoire pour calibrer une." MyclassName="text-center py-2 py-md-3 paragraphe"  />
+                signification utilisée à titre provisoire pour calibrer une." MyclassName="text-center py-2 py-md-3 my-md-0 paragraphe"  />
                </div>
            </div>
            <div className="row py-2 py-md-3">
                <div className="col-lg-6">
                    <div className="metrologie py-2 py-md-5 px-0 px-md-5" >
-                   <img src="/img/lo.png" width="120" />
+                   <img src="/img/lo.png" width="200" />
                    <Title partOne="Contactez" PartTwo="nous" number={1}  MyclassName="py-2 py-md-3 title"/>
                      <Texte texte="Par mail" MyclassName="paragraphe py-2 py-md-3" />
                      <Texte texte={<><BsEnvelopeFill/> airmetrologie@gmail.com</>} MyclassName="py-2 py-md-3 paragraphe" />
@@ -42,7 +42,7 @@ const SectionContact = (props) => {
                <div className="col-lg-6">
 
                    <div className="metrologie py-2 py-md-5 px-0 px-md-5" >
-                   <img src="/img/go.png" width="120" />
+                   <img src="/img/go.png" width="200" />
                    <Title partOne="Adresse siège" PartTwo="" number={1}  MyclassName="py-2 py-md-3 title"/>
 
                    <Texte texte="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée" MyclassName="paragraphe py-2 py-md-3" />

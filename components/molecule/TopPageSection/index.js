@@ -12,7 +12,7 @@ const TopPageSection = (props) => {
             <div className="div_image">
                 <img src={letGo.image} width="100%" height="auto" />
             </div>
-            <Title partOne={letGo.title} PartTwo="" MyclassName="title" number={1} />
+            <Title partOne={letGo.title} PartTwo="" MyclassName="title" number={1} type={1} />
             
         </TopPageSectionStc>
        
