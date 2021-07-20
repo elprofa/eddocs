@@ -3,8 +3,6 @@ import Title from "../../shared/Title";
 import Trait from "../../shared/Trait";
 import Image from "next/image";
 import SliderStc from './slider.stc.js'
-
-
 import {
   Carousel,
   CarouselItem,
