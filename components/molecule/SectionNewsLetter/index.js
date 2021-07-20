@@ -1,54 +1,73 @@
-import React from 'react';
-import SectionNewsLetterStc from './SectionNewsLetter.stc';
-import Texte from '../../shared/Texte';
-import Trait from '../../shared/Trait';
+
+import { Row, Col, Container } from 'reactstrap';
 import Title from '../../shared/Title';
-import { theme } from '../../../theme';
-import Button from '../../shared/Button';
+import SectionNwsLtrtStc from './SectNwsltr.stc';
+import Texte from '../../shared/Texte';
 import Input from '../../shared/Input';
+import {theme} from '../../../theme';
+import Button from '../../shared/Button';
+import Trait from '../../shared/Trait';
+ 
 
-const SectionNewsLetter=()=>{
-    return(
-        <SectionNewsLetterStc>
-            <Title letGo={{
-                texte:<>
-                    <span><b>Abonnez-vous  </b>à notre newsletter</span>
-                    <Trait letGo={{
-                        style:{
-                            marginTop:theme.margins.KingParagraphe,
-                            marginBottom:theme.margins.KingParagraphe,
-                        }
-                    }} />
-                </>,
-                style:{
-                    fontWeight:"400",
-                    maxWidth:"500px",
-                    display:"block",
-                    textAlign:"center",
-                    margin:"auto",
-                    fontSize:theme.font.headingFontSizes.h3,
-                    color:theme.colors.white
-                }
-            }} />
+const SectionNwsLtr = (props) => {
 
-            <Texte letGo={{
-                texte:<span>
-                Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                signification utilisée à titre provisoire pour calibrer une.
-                </span>,
-                style:{
-                    marginTop:theme.margins.KingParagraphe,
-                    marginBottom:theme.margins.KingParagraphe,
-                    maxWidth:"400px",
-                    display:"block",
-                    textAlign:"center",
-                    margin:"auto",
-                    color:theme.colors.white
-                }
+    const letGo={
+        style:{
+            letterSpacing:'0px !important',
+            
+            color:theme.colors.white,
+            fontWeight:theme.Poid.paragraphe,
+            fontFamily:theme.font.headingFont,
+        }
+    }
+
+    const TraitStc={
+       
+        style:{
+            marginTop:theme.margins.KingParagraphe,
+            marginBottom:theme.margins.KingParagraphe,
+        }
+    }    
+  return (
+      <SectionNwsLtrtStc>
+          <Container fluid>
+      <Row>
+          <Col lg={3}>
+          
+          </Col>
+          <Col lg={6} className="lettre">
+            <div className='content__newsletter'>
+              <Title letGo={{texte:<p>Abonnez Vous a  <strong>Notre Newsletter</strong></p>,
+                             style:{
+                                color: "#fff",
+                                fontSize: "26px",
+                                fontWeight: 100,
+                             }
+                        }} />
+              <Trait letGo={TraitStc}/>
+              <br></br>
+              <Texte letGo={{texte:<p><span>Recevez tous les jours des informations sur nos nouvelles </span><br></br> <span>offres et opportunités </span> </p>,
+              style:{
+                color: "#fff",
+                fontSize: "16px",
+                fontWeight: 400,
+                textAlign: "center",
+              }
             }} />
-            <div className="row">
-                <div className="col-md-8">
-                <Input letGo={{
+            </div>
+          </Col> 
+          <Col lg={3}>
+              
+          </Col>     
+      </Row>
+
+      <Row>
+          <Col lg={3}>
+
+          </Col>
+          <Col lg={6} className="lettre">
+            <div className='col-md-10 content__btnnewsletter'>
+            <Input className='inpt mr-4' letGo={{
                             style:{
                                 
                                 marginTop:theme.margins.KingParagraphe
@@ -56,22 +75,26 @@ const SectionNewsLetter=()=>{
                             placeholder:"email@email.com",
 
 
+
+                        }} />{' '}
+                        <Button letGo={{
+                            texte:"Soumettre",
+                            style:{
+                                backgroundImage: "linear-gradient(to right, rgb(101 143 222) , rgb(195 65 95))",
+                                fontSize:theme.font.p,
+                                border:0
+                            }
                         }} />
-                </div>
-                <div className="col-md-4">
-                    <Button letGo={{
-                        texte:"Soumettre",
-                        style:{
-                            backgroundImage: "linear-gradient(to right, rgb(101 143 222) , rgb(195 65 95))",
-                            fontSize:theme.font.p,
-                            border:0,
-                            height:"50px",
-                            margin:'18px 0px'
-                        }
-                    }} />
-                </div>
             </div>
-        </SectionNewsLetterStc>
-    )
+          </Col> 
+          <Col lg={3}>
+              
+          </Col>     
+      </Row>
+      </Container>
+      </SectionNwsLtrtStc>
+  )
 }
-export default SectionNewsLetter;
+
+export default SectionNwsLtr;
+
