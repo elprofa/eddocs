@@ -24,6 +24,17 @@ const NavbarStc=Styled.div`
         }
     }
 
+    .ulMenu
+    {
+        display: inline-flex;
+    }
+    .collapse.navbar-collapse
+    {
+        width: 100% !important;
+        margin: auto;
+        display: block !important;
+        text-align: center;
+    }
     .navbar-light .navbar-nav .nav-link
     {
         color: ${theme.colors.blackG};
