@@ -5,6 +5,9 @@ const defaultStyle={
  const NoschiffreContentStc=Styled.div`
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
+    position: relative;
+    background: #fff;
+    z-index:9999;
     @media screen and (max-width: 767px)
     {
         margin-top: 0px !important;

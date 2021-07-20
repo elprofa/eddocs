@@ -1,6 +1,15 @@
 import Styled from 'styled-components';
 
 const SliderStc=Styled.section`
+.title h2
+    {
+        border:0px !important;
+        font-weight:600;
+    }
+a.carousel-control-prev,a.carousel-control-next
+{
+    display: none !important;
+}
     .carousel-control-next-icon, .carousel-control-prev-icon {
         display: inline-block;
         width: 20px;
@@ -14,7 +23,7 @@ const SliderStc=Styled.section`
     {
         @media screen and (min-width: 768px)
         {
-            bottom: 170px;
+            bottom: 250px;
            
         }
         @media screen and (max-width: 768px)

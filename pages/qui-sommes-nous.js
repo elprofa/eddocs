@@ -12,39 +12,13 @@ export default function QuiSommesNous() {
       </Head>
 
       <main className="main" style={{minHeight:"100vh"}}>
-       <section style={{
-       maxHeight:theme.heights.TopPageSection,
-       overflow: "hidden"
-       }}>
-         <TopPageSection letGo={{
+        <TopPageSection letGo={{
              image:"/img/slide1.jpg",
              title:"Qui sommes-nous ?"
          }} />
-       </section>
-       <section className="kingSection" style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
-       }}>
-         <div className="container">
-           <GrilleApropos letGo={{}} />
-         </div>
-       </section>
-       <section className="kingSection" style={{margin:theme.margins.KingSection,
-       marginLeft:0,
-       marginRight:0,
-       padding:theme.margins.KingSection,
-       paddingLeft:0,
-       paddingRight:0,
-       background: theme.colors.kingGreen
-       }}>
-         <div className="container">
-           <SectionClient />
-         </div>
-       </section>
-      </main><br /><br />
+       <GrilleApropos />
+       <SectionClient />
+      </main>   
 
     </div>
   )

@@ -11,22 +11,15 @@ export default function NosAccreditation() {
       </Head>
 
       <main className="main" style={{minHeight:"100vh"}}>
-       <section style={{
-       maxHeight:theme.heights.TopPageSection,
-       overflow: "hidden"
-       }}>
-         <TopPageSection letGo={{
+
+        <TopPageSection letGo={{
              image:"/img/slide1.jpg",
              title:"Nos accréditations"
          }} />
-       </section>
-       <section className="kingSection sectionHeader">
-         <div className="container">
-           <AccreditationSection letGo={{}} />
-         </div>
-       </section>
+
+        <AccreditationSection />
       
-      </main><br /><br />
+      </main>
 
     </div>
   )

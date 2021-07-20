@@ -24,6 +24,14 @@ const NavbarStc=Styled.div`
         }
     }
 
+    .navbar-expand-md .navbar-collapse {
+        @media screen and (min-width: 768px){
+            display: -moz-box!important;
+            display: contents !important;
+            flex-basis: auto;
+        }
+    }
+
     .navbar-light .navbar-nav .nav-link
     {
         color: ${theme.colors.blackG};
@@ -39,6 +47,7 @@ const NavbarStc=Styled.div`
     .navbar-nav ul li a
     {
         cursor:pointer;
+        
     }
     
 `;

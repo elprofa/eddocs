@@ -3,8 +3,6 @@ import Title from "../../shared/Title";
 import Trait from "../../shared/Trait";
 import Image from "next/image";
 import SliderStc from './slider.stc.js'
-
-
 import {
   Carousel,
   CarouselItem,
@@ -19,13 +17,13 @@ import image from "next/image";
 const items = [
   {
     src: "/img/slide1.jpg",
-    caption: <Title partOne={
-      "CALIBREZ VOS INSTRUMENTS POUR AMELIORER VOS PERFORMANCES"} PartTwo="" number={1} />
+    caption: <Title MyclassName="title" partOne={
+      "CALIBREZ VOS INSTRUMENTS POUR AMELIORER VOS PERFORMANCES"} PartTwo="" number={1} type={1} />
   },
   {
     src: "/img/slide2.jpg",
-    caption:<Title partOne={
-      "DES LABORATOIRES PERFORMANTS ET DES EQUIPEMENTS DE QUALITE"} PartTwo="" number={1}/>
+    caption:<Title MyclassName="title" partOne={
+      "DES LABORATOIRES PERFORMANTS ET DES EQUIPEMENTS DE QUALITE"} PartTwo="" number={1} type={1} />
   }
 ];
 

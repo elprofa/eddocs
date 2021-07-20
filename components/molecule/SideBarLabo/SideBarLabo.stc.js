@@ -4,6 +4,15 @@ import { theme } from "../../../theme";
 
  const SideBarLaboStc=Styled.div`
     display: inline-flex !important;
+    background: ${theme.colors.kingGreen};
+    width: 25%;
+    
+    .nav-link.active
+    {
+        text-decoration:underline;
+        text-decoration-color:red;
+        line-height:1em;
+    }
     .nav-pills .nav-link.active, .nav-pills .nav-link:hover
     {
         transition:.6s;
@@ -16,6 +25,7 @@ import { theme } from "../../../theme";
     {
         padding: 20px;
         border-radius: 0px;
+        color:#000;
     }
     ${(props) => props.MonStyle || ""};
 
@@ -51,6 +61,23 @@ import { theme } from "../../../theme";
         display: block !important;
         top:0px;
         padding: 15px !important;
+    }
+
+    .title {
+        
+            color: #000;
+            @media (min-width: 991px) {
+                margin-left:0px !important
+                
+            }
+        
+        
+    } 
+    .paragraphe
+    {
+        @media (max-width: 991px) {
+            text-align:center !important
+        }
     }
     
 `;

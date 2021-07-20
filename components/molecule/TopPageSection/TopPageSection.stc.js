@@ -5,11 +5,18 @@ const defaultStyle={
     
 }
  const TopPageSectionStc=Styled.section`
-    ${defaultStyle};
-    ${(props) => props.MonStyle || ""};
-    
-    h1 
+    max-height: 350px;
+    .div_image
     {
+        max-height: 350px;
+        overflow:hidden;
+    }
+    .title 
+    {
+        top: -190px;
+        position: relative;
+        color:#fff;
+        
         @media screen and (min-width: 341px) and (max-width: 571px)
         {
             top: -150px;

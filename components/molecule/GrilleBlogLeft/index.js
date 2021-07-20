@@ -10,7 +10,7 @@ import { theme } from '../../../theme';
 const GrilleBlogLeft = (props) => {
 
     return (
-        <GrilleBlogLeftStc className="container">
+        <GrilleBlogLeftStc >
          <div className="container">
              <div className="row py-2 py-md-5">
                 <div className="col-lg-6 d-sm-none d-none d-md-block d-md-none d-lg-block">
@@ -30,13 +30,13 @@ const GrilleBlogLeft = (props) => {
                     
                 </div>
             <div className="col-lg-5">
-                <Title partOne="A propos d'" PartTwo="Air métrologie" MyclassName="py-2 py-md-3" number={1} />
+                <Title partOne="Nos " PartTwo="Accréditation" MyclassName="py-2 py-md-3 title" number={1} />
                 <Texte texte=" Le lorem ipsum est, en imprimerie, une suite de mots sans 
                         signification utilisée à titre provisoire pour calibrer une
                         mise en page, le texte définitif venant remplacer le faux-texte 
                         dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
-                        on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." MyclassName="py-2 py-md-3" />
-                <Button texte="Voir plus >" className="py-2 py-md-3" />
+                        on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." MyclassName="py-2 py-md-3 paragraphe" />
+                <Button texte="Voir plus >" MyclassName="py-2 py-md-3" />
             </div>
              </div>
          </div>

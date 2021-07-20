@@ -25,44 +25,29 @@ const AccreditationSection = (props) => {
         }
     ];
     return (
-        <AccreditationSectionStc className="row" MonStyle={props.letGo.style}>
-            <div className="col-lg-12">
-            <Title letGo={{
-                  texte:<span><b>Nos</b> Accréditations</span>,
-                  style:{
-                      fontWeight:"400",
-                      fontSize:theme.font.headingFontSizes.h3
-                  }
-              }} />
-              <Trait letGo={{
-                  style:{
-                      marginBottom:theme.margins.KingParagraphe,
-                  }
-              }} />
-              <Texte letGo={{
-                  texte:<span>
-                    Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                    signification utilisée à titre provisoire pour calibrer une
-                    mise en page, le texte définitif venant remplacer le faux-texte 
-                    dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
-                    on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.
-                  </span>,
-                  style:{
-                      marginTop:theme.margins.KingParagraphe,
-                      marginBottom:theme.margins.KingParagraphe,
-                      color:theme.colors.blackG
-                  }
-              }} />
-              
-            </div>
-            <div className="col-lg-12">
-                {
-                    elements.map((element,index)=><AccreditationElement key={index+"accredit"} letGo={{
-                        texte:element.texte,
-                        src:element.src,
-                        lien:element.lien,
-                    }} />)
-                }
+        <AccreditationSectionStc >
+            <div className="container">
+                <div className="row py-2 py-md-5">
+                    <div className="col-lg-12">
+                        <Title partOne="Nos" PartTwo="Accréditations" number={1}  MyclassName="title py-2 py-md-3" />
+                    
+                        <Texte texte=" Le lorem ipsum est, en imprimerie, une suite de mots sans 
+                            signification utilisée à titre provisoire pour calibrer une
+                            mise en page, le texte définitif venant remplacer le faux-texte 
+                            dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
+                            on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." className="paragraphe py-2 py-md-3" />
+                    
+                    </div>
+                    <div className="col-lg-12">
+                        {
+                            elements.map((element,index)=><AccreditationElement key={index+"accredit"} letGo={{
+                                texte:element.texte,
+                                src:element.src,
+                                lien:element.lien,
+                            }} />)
+                        }
+                    </div>
+                </div>
             </div>
         </AccreditationSectionStc>
        

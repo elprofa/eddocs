@@ -15,44 +15,18 @@ const AccreditationElement = (props) => {
      const texte=letGo.texte;
 
     return (
-        <AccreditationElementStc className="row" MonStyle={letGo.style}>
+        <AccreditationElementStc className="row">
             <div className="col-md-2">
-              <Title letGo={{
-                  texte:texte,
-                  style:{
-                    fontSize:theme.font.headingFontSizes.h4,
-                    marginTop:theme.margins.KingSection,
-                  }
-              }} />
+                <Title partOne={texte} PartTwo="" number={1}  MyclassName="py-2 py-md-3 title" />
             </div>
             <div className="col-md-2">
-                <Image letGo={{
-                    src:src,
-                    style:{
-                        width:"100%",
-                        display:"block",
-                        margin:"auto"
-                    }
-                }} />
+                <img src={src} width="100%" className="my-2 my-md-3" />
             </div>
             <div className="col-md-6">
-            
-                <Link letGo={
-                    {
-                        chemin:lien,
-                        texte:<Texte letGo={{
-                            texte:lien,
-                              style:{
-                                  fontWeight:"600",
-                                  color:theme.colors.black,
-                                  marginTop:theme.margins.KingSection,
-                              }
-                          }} />
-                    }
-                } />
+                <a href={lien}>
+                    <Texte texte={texte} MyclassName="paragraphe py-2 py-md-3" />
+                </a>
             </div>
-          
-          
         </AccreditationElementStc>
        
     )
