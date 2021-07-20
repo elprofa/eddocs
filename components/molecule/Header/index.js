@@ -55,7 +55,7 @@ const Header = (props) => {
         <NavbarBrand href="/" className="siteLogo"><Image src="/img/lo.png" width="150" height="50" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto ml-auto ulMenu" navbar>
+          <Nav className="mr-auto ml-auto" navbar>
               {
                   MenuHeader.map((menu,index)=><NavItem key={1+index+"menuHeader"}>
                     <Link href={menu.chemin}>
@@ -68,9 +68,8 @@ const Header = (props) => {
               }
            
           </Nav>
-         
+          <NavbarText><Image src="/img/go.png" width="150" height="50" /></NavbarText>
         </Collapse>
-        <NavbarText><Image src="/img/go.png" width="150" height="50" /></NavbarText>
         </Container>
       </Navbar>
     </HeaderStc>

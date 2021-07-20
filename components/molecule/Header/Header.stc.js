@@ -23,7 +23,7 @@ const NavbarStc=Styled.div`
             display: none;
         }
     }
-   
+
     .navbar-light .navbar-nav .nav-link
     {
         color: ${theme.colors.blackG};
@@ -39,6 +39,7 @@ const NavbarStc=Styled.div`
     .navbar-nav ul li a
     {
         cursor:pointer;
+        
     }
     
 `;
