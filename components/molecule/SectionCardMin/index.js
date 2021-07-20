@@ -18,7 +18,7 @@ const CardMinSection = ({letGo}) => {
             <div className="container">
                 <div className="row py-2 py-md-5">
                     <div className="col-lg-12">
-                        <div class="" style={
+                        <div className="" style={
                             {
                                 width:"50%",
                                 display: "block",

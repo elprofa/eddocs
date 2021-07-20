@@ -1,6 +1,10 @@
 import Styled from 'styled-components';
 
 const SliderStc=Styled.section`
+a.carousel-control-prev,a.carousel-control-prev
+{
+    display: none !important;
+}
     .carousel-control-next-icon, .carousel-control-prev-icon {
         display: inline-block;
         width: 20px;
