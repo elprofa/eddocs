@@ -1,24 +1,24 @@
 import { Row } from "reactstrap";
 import Styled from "styled-components";
 import { theme } from "../../../theme";
-const defaultStyle={
-    
-}
 
- const GrilleAproposStc=Styled.div`
-    .leftPart
-    {
-        @media screen and (min-width: 767px)
-        {
-            padding: 40px;
+ const GrilleAproposStc=Styled.section`
+    button{
+        @media (max-width: 991px) {
+           margin-left:auto !important;
+           margin-right:auto !important;
+           display: block !important;
         }
-    }
-
-    .textApropos
+    } 
+    .title {
+        @media (min-width: 991px) {
+            margin-left:0px !important
+        }
+    } 
+    .paragraphe
     {
-        @media screen and (min-width: 767px)
-        {
-            padding-top:15%
+        @media (max-width: 991px) {
+            text-align:center !important
         }
     }
 `;

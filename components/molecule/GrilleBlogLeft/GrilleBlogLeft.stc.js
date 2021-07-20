@@ -4,12 +4,16 @@ const defaultStyle={
     
 }
 
- const GrilleBlogLeftStc=Styled.div`
-    .leftPart
+ const GrilleBlogLeftStc=Styled.section`
+    .title {
+        @media (min-width: 991px) {
+            margin-left:0px !important
+        }
+    } 
+    .paragraphe
     {
-        @media screen and (min-width: 767px)
-        {
-            padding: 40px;
+        @media (max-width: 991px) {
+            text-align:center !important
         }
     }
 `;

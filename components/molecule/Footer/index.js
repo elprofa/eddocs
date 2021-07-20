@@ -13,25 +13,8 @@ import {AiFillFacebook,AiFillLinkedin,AiFillTwitterSquare} from "react-icons/ai"
 
 const Footer = (props) => {
 
-    const texteCol1=<span>
-    Le lorem ipsum est, en imprimerie, 
-    une suite de mots sans signification 
-    utilisée à titre provisoire pour calibrer une mise en page, 
-    le texte définitif venant remplacer le faux-texte dès qu'il est prêt 
-    ou que la mise en page est achevée. Généralement, on utilise un texte en 
-    faux latin, le Lorem ipsum ou Lipsum.
-    </span>;
-
-    const letGo={
-        texte:texteCol1,
-        style:{
-            letterSpacing:'0px !important',
-            
-            color:theme.colors.white,
-            fontWeight:theme.Poid.paragraphe,
-            fontFamily:theme.font.headingFont,
-        }
-    }
+   
+ 
 
     const MenuFooter=[
         {
@@ -97,17 +80,22 @@ const Footer = (props) => {
         }
     }
   return (
-    <FooterStc>
+    <FooterStc className="py-2 py-md-5">
         <Container  >
             
-                <div className="rowLogo">
+                <div className="rowLogo py-2 py-md-3">
                 <Trait letGo={TraitStc}/>
-                <Image letGo={{src:"/img/lo.png"}}/>
+                <Image src="/img/lo.png" width="150" height="50" />
                 </div>
-               <div className="row rowLastFooter">
+               <div className="row rowLastFooter py-2 py-md-3">
                    <div className="col-md-4">
-                    <Texte letGo={letGo}></Texte>
-                    <div className="row">
+                    <Texte texte="Le lorem ipsum est, en imprimerie, 
+                    une suite de mots sans signification 
+                    utilisée à titre provisoire pour calibrer une mise en page, 
+                    le texte définitif venant remplacer le faux-texte dès qu'il est prêt 
+                    ou que la mise en page est achevée. Généralement, on utilise un texte en 
+                    faux latin, le Lorem ipsum ou Lipsum." MyclassName="py-2 py-md-3" />
+                    <div className="row py-2 py-md-3">
                         <div className="col-lg-12">
                             <ul className="ulSocialNet">
                                 {
@@ -119,7 +107,7 @@ const Footer = (props) => {
                     </div>
                    </div>
                    <div className="col-md-4">
-                        <ul className="ulMenuFooter">
+                        <ul className="ulMenuFooter py-2 py-md-3">
 
                             {
                                 MenuFooter.map((menu,index)=><li key={1+index+"menuFooter"}><Link letGo={menu} /></li>)
@@ -128,24 +116,22 @@ const Footer = (props) => {
                         </ul>
                    </div>
                    <div className="col-md-4">
-                        <Title partOne="Abonnez vous à " PartTwo="notre newsletter" number={1} />
+                        <Title partOne="Abonnez vous à " MyclassName="py-2 py-md-3 title" PartTwo="notre newsletter" number={2} />
                         <Input letGo={{
                             style:{
                                 
                                 margin:"0px",
                             },
                             placeholder:"email@email.com",
-
-
                         }} />
-                        <Button  texte="Soumettre" />
+                        <Button  texte="Soumettre" MyclassName="py-2 py-md-3" />
                    </div>
                    <div className="col-lg-12">
                    <Trait letGo={TraitStc}/>
                    </div>
                    <div className="col-lg-12">
                        <Texte texte="Air metrologie 2021,Copyright designed & 
-                       developped by dubani agency !" />
+                       developped by dubani agency !" MyclassName="py-2 py-md-3"/>
                    </div>
                </div>
            

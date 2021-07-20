@@ -15,11 +15,11 @@ const GrilleBlog = ({letGo}) => {
         <GrilleBlogStc>
             <Container>
                 <Row className="py-2 py-md-5">
-                    <Col md={6} >
-                        <div className="text-center py-2 py-md-3"> 
-                            <Title partOne="A propos d'" PartTwo="Air metrologie"  number={1} />
+                    <Col lg={6} >
+                        <div className="text-center py-2 py-md-3 px-0 px-md-3"> 
+                            <Title partOne="A propos d'" PartTwo="Air metrologie" MyclassName="title"  number={1} />
                         </div>
-                        <Texte MyclassName="py-2 py-md-3" texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
+                        <Texte MyclassName="py-2 py-md-3 paragraphe"  texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
                         signification utilisée à titre provisoire pour calibrer une mise en page, 
                         le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que 
                         la mise en page est achevée. Généralement, on utilise un texte en faux latin, 
@@ -30,7 +30,7 @@ const GrilleBlog = ({letGo}) => {
                         le Lorem ipsum ou Lipsum." />
 
                     </Col>
-                    <Col md={6} className="text-center">
+                    <Col lg={6} className="text-center">
                         <Image src="/img/blog1.png" width="1200" height="800" />
                     </Col>
                 </Row>

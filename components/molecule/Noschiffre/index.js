@@ -22,7 +22,6 @@ const Noschiffre = (props) => {
                          marginTop:"-"+theme.margins.KingSection,
                          backgroundColor:"#fff",
                          borderRadius:"25px 25px 0px 0px",
-                         padding: theme.margins.KingSection,
                          textAlign: "center",
                      }
                  }} />

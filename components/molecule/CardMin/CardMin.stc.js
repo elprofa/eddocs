@@ -6,7 +6,6 @@ import Styled from "styled-components";
     padding: 10px 20px;
     text-align: center;
     box-shadow: 6px 0 30px #ccc;
-    margin: 20px;
     display: inline-block;
     border-radius: 15px;
     

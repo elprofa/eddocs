@@ -1,9 +1,15 @@
 import Styled from 'styled-components';
 import {theme} from '../../../theme';
 const FooterStc=Styled.footer`
-    padding:${theme.margins.KingSection};
-    padding-left:0px;
-    padding-right:0px ;
+    
+    *
+    {
+        color:#fff !important;
+    }
+    .title h2
+    {
+        border:0px !important;
+    }
 
     background:${theme.colors.KingBleu};
 

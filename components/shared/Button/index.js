@@ -4,7 +4,7 @@ import ButtonStc from './Button.stc'
 const Button = (props) => {
 
     return (
-        <ButtonStc className="btn" >
+        <ButtonStc className={"btn "+props.MyclassName} >
             {props.texte}
         </ButtonStc>
        

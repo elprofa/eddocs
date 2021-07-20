@@ -3,18 +3,19 @@ import { theme } from "../../../theme";
 const defaultStyle={
     
 }
-export const SectionClientStc=Styled.div`
-    ${defaultStyle};
-    ${(props) => props.MonStyle || ""};
-
-    .leftPart
+export const SectionClientStc=Styled.section`
+    background: ${theme.colors.kingGreen};
+    .title {
+        @media (min-width: 991px) {
+            margin-left:0px !important
+        }
+    } 
+    .paragraphe
     {
-        @media screen and (min-width: 767px)
-        {
-            padding: 40px;
+        @media (max-width: 991px) {
+            text-align:center !important
         }
     }
-
 `;
 
 export default SectionClientStc

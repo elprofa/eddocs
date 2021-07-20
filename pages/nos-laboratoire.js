@@ -90,29 +90,15 @@ export default function NosLaboratoires() {
       </Head>
 
       <main className="main" style={{minHeight:"100vh"}}>
-       <section style={{
-       maxHeight:theme.heights.TopPageSection,
-       overflow: "hidden"
-       }}>
-         <TopPageSection letGo={{
-             image:"/img/slide1.jpg",
-             title:"Nos laboratoires ?"
-         }} />
-       </section>
-       <section className="sectionLab">
+          <TopPageSection letGo={{
+              image:"/img/slide1.jpg",
+              title:"Nos laboratoires ?"
+          }} />
+
+       <section >
           <SideBarLabo letGo={{
-            menus:menuAsides,
-            style:{
-              backgroundColor:theme.colors.kingGreen,
-              width:"30%",
-              padding: "0px !important",
-              top:"-250px",
-              position:"relative"
-            }
-          }} />
-          <ContentLaboratoire letGo={{
-            style:{width:"70%"}
-          }} />
+            menus:menuAsides }} />
+          <ContentLaboratoire />
        </section>
        
       </main>

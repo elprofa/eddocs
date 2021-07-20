@@ -11,10 +11,10 @@ const NoschiffreContent = (props) => {
     const letGo=props.letGo;
 
     return (
-        <NoschiffreContentStc MonStyle={letGo.style}>
-            <Title partOne="Nos" PartTwo="chiffres" number={1} />
+        <NoschiffreContentStc MonStyle={letGo.style} className="py-2 py-md-5">
+            <Title partOne="Nos" PartTwo="chiffres" MyclassName="py-2 py-md-3" number={1} />
            
-            <div className="row" style={{marginTop:theme.margins.KingParagraphe}}>
+            <div className="row py-2 py-md-3">
                 <div className="col-md-4">
                     <Texte texte="Nos clients" />
                     <Title partOne="1990" PartTwo="" number={1} />

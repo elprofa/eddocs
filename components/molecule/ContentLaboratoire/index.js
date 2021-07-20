@@ -6,7 +6,7 @@ import Laboratoire1 from '../Laboratoire1';
 const ContentLaboratoire = ({letGo}) => {
 
     return (
-        <ContentLaboratoireStc MonStyle={letGo.style}>
+        <ContentLaboratoireStc >
              <div className="container">
                 <Laboratoire1 letGo={{
                     

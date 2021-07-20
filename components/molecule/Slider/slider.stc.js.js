@@ -14,7 +14,7 @@ const SliderStc=Styled.section`
     {
         @media screen and (min-width: 768px)
         {
-            bottom: 170px;
+            bottom: 250px;
            
         }
         @media screen and (max-width: 768px)
