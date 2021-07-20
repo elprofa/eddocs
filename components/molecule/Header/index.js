@@ -68,8 +68,9 @@ const Header = (props) => {
               }
            
           </Nav>
-          <NavbarText><Image src="/img/go.png" width="150" height="50" /></NavbarText>
+         
         </Collapse>
+        <NavbarText><Image src="/img/go.png" width="150" height="50" /></NavbarText>
         </Container>
       </Navbar>
     </HeaderStc>
