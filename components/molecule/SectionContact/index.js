@@ -1,10 +1,14 @@
+import React from 'react'
+import SectionContactStc from './SectionContact.stc';
+import Trait from '../../shared/Trait';
+import Title from '../../shared/Title';
+import Texte from '../../shared/Texte';
+import Image from '../../shared/Image';
+import { theme } from '../../../theme';
 
-import Head from 'next/head';
-import { Row, Col, Container } from 'reactstrap';
-import SectContactStc from './SectContact.stc';
-import CardConractLM from '../CardContact_L2MI';CardConractLM
-import CardCtzn from '../CardContact_AirMetropologie' 
- 
+import { BsEnvelopeFill} from "react-icons/bs";
+import { AiFillPhone,AiFillFacebook,AiFillTwitterSquare,AiFillLinkedin } from "react-icons/ai";
+
 
 const SectionContact = (props) => {
     const letGo=props.letGo;
@@ -22,9 +26,9 @@ const SectionContact = (props) => {
            </div>
            <div className="row py-2 py-md-3">
                <div className="col-lg-6">
-                   <div className="metrologie py-2 py-md-5 px-0 px-md-5" >
+                   <div className="mx-0 mx-md-3  metrologie mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
                    <img src="/img/lo.png" width="200" />
-                   <Title partOne="Contactez" PartTwo="nous" number={1}  MyclassName="py-2 py-md-3 title"/>
+                   <Title partOne="Contactez" PartTwo="nous" number={1}  MyclassName="my-2 py-2 py-md-3 title"/>
                      <Texte texte="Par mail" MyclassName="paragraphe py-2 py-md-3" />
                      <Texte texte={<><BsEnvelopeFill/> airmetrologie@gmail.com</>} MyclassName="py-2 py-md-3 paragraphe" />
                      <Texte texte="Appel direct" MyclassName="paragraphe py-2 py-md-3" />
@@ -36,9 +40,9 @@ const SectionContact = (props) => {
                </div>
                <div className="col-lg-6">
 
-                   <div className="metrologie py-2 py-md-5 px-0 px-md-5" >
+                   <div className="metrologie mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
                    <img src="/img/go.png" width="200" />
-                   <Title partOne="Adresse siège" PartTwo="" number={1}  MyclassName="py-2 py-md-3 title"/>
+                   <Title partOne="Adresse siège" PartTwo="" number={1}  MyclassName="my-2 py-2 py-md-3 title"/>
 
                    <Texte texte="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée" MyclassName="paragraphe py-2 py-md-3" />
                    <Title partOne="Contacts" PartTwo="" number={1}  MyclassName="py-2 py-md-3 title"/>
@@ -56,22 +60,8 @@ const SectionContact = (props) => {
            </div>
         </SectionContactStc>
        
-}
-  return (
-      <SectContactStc>
-      <Row className='section__ctn'>
-          <Col lg={6} >
-            <div className='ranger__Un'>
-              <CardCtzn />
-            </div>
-          </Col>
-
-          <Col lg={6} className='ranger__Deux'>
-            <CardConractLM /> 
-          </Col>    
-      </Row>
-      </SectContactStc>
-  )
+    )
 }
 
-export default SectionContact;
+
+export default SectionContact

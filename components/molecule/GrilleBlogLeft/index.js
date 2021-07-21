@@ -29,14 +29,14 @@ const GrilleBlogLeft = (props) => {
                     </div>
                     
                 </div>
-            <div className="col-lg-5">
-                <Title partOne="Nos " PartTwo="Accréditation" MyclassName="py-2 py-md-3 title" number={1} />
+            <div className="col-lg-6">
+                <Title partOne="Nos " PartTwo="Accréditation" MyclassName="px-0 px-md-5 py-2 py-md-3 title" number={1} />
                 <Texte texte=" Le lorem ipsum est, en imprimerie, une suite de mots sans 
                         signification utilisée à titre provisoire pour calibrer une
                         mise en page, le texte définitif venant remplacer le faux-texte 
                         dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
-                        on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." MyclassName="py-2 py-md-3 paragraphe" />
-                <Button texte="Voir plus >" MyclassName="py-2 py-md-3" />
+                        on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." MyclassName="px-0 px-md-5 py-2 py-md-3 paragraphe" />
+                <Button texte="Voir plus >" MyclassName="mx-0 mx-md-5 py-2 py-md-3" />
             </div>
              </div>
          </div>

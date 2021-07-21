@@ -6,6 +6,7 @@ import Input from "../../shared/Input";
 import { theme } from "../../../theme";
 import Button from "../../shared/Button";
 import Trait from "../../shared/Trait";
+import SectionNewsLetterStc from "./SectionNewsLetter.stc"
 
 const SectionNewsLetter = () => {
   return (
@@ -49,4 +50,4 @@ const SectionNewsLetter = () => {
   );
 };
 
-export default SectionNwsLtr;
+export default SectionNewsLetter;

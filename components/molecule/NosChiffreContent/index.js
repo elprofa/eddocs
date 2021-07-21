@@ -16,16 +16,16 @@ const NoschiffreContent = (props) => {
            
             <div className="row py-2 py-md-3">
                 <div className="col-md-4">
-                    <Texte texte="Nos clients" />
-                    <Title partOne="1990" PartTwo="" number={1} />
+                    <Texte MyclassName="label" texte="Nos clients" />
+                    <Texte MyclassName="h2" texte="1990" />
                 </div>
                 <div className="col-md-4">
-                    <Texte texte="Nos Clients" />
-                     <Title partOne="1990" PartTwo="" number={1} />
+                    <Texte MyclassName="label" texte="Nos Clients" />
+                    <Texte MyclassName="h2" texte="1990" />
                 </div>
                 <div className="col-md-4">
-                    <Texte texte="Nos clients" />
-                    <Title partOne="1990" PartTwo="" number={1} />
+                    <Texte MyclassName="label" texte="Nos clients" />
+                    <Texte MyclassName="h2" texte="1990" />
                 </div>
             </div>
         </NoschiffreContentStc>
