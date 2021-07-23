@@ -12,7 +12,6 @@ const defaultStyle={
     @media (max-width: 471px)
     {
         font-size:16px !important;
-        margin:15px 0px !important;
     }
     &.label
     {
@@ -25,9 +24,24 @@ const defaultStyle={
         color:#333;
         @media (max-width: 471px)
         {
-            font-size:3rem !important;
-            margin:15px 0px !important;
+            font-size:2rem !important;
         }
+    }
+
+    .plus
+    {
+        color: #ff0000;
+        font-size: 25px;
+        position: relative;
+        top: -20px;
+    }
+    .ans
+    {
+        font-size: 25px;
+    }
+    ul.ulchiffres li {
+        display: inline-block;
+        margin: 0px 20px;
     }
 `;
 export default TexteStc;

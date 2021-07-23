@@ -17,11 +17,9 @@ const SectionContactMap = ({letGo}) => {
                 </div>
                 <div className="col-md-6">
                     <div >
-                    <Title partOne="Nos" PartTwo="adresses" number={1} MyclassName="py-2 py-md-3" />
-                   
-                    <Texte texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                            signification utilisée à titre provisoire pour calibrer une." MyclassName="py-2 py-md-3" /></div> 
-                    </div>
+                      <Title partOne="Nos" PartTwo="adresses" number={1} MyclassName="title py-2 py-md-3" />
+                   </div> 
+              </div>
             </div>
           </div>
         </SectionContactMapStc>

@@ -20,6 +20,17 @@ const TitleStc = Styled.div`
         margin: auto;
         margin-top: 10px;
     }
+    &.chiffre h1:after {
+        border-bottom: 3px solid red;
+        height: 50px;
+        width: 10% !important;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 10px;
+    }
    span 
    {
        font-weight:bold;

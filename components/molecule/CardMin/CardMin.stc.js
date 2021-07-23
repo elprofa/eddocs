@@ -6,8 +6,14 @@ import Styled from "styled-components";
     padding: 10px 20px;
     text-align: center;
     box-shadow: 6px 0 30px #ccc;
-    display: inline-block;
     border-radius: 15px;
-    
+    font-weight: 600;
+    height:170px;
+    img 
+    {
+        display: block;
+        margin:auto;
+        margin-bottom:10px;
+    }
 `;
 export default CardMinStc;

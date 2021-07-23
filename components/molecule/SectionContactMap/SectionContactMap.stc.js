@@ -3,7 +3,10 @@ const defaultStyle={
     
 }
  const SectionContactMapStc=Styled.div`
-    ${defaultStyle};
-    ${(props) => props.MonStyle || ""};
+    .title {
+        @media (min-width: 991px) {
+            margin-left:0px !important
+        }
+    } 
 `;
 export default SectionContactMapStc;

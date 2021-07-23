@@ -37,5 +37,9 @@ const defaultStyle={
         color:#fff;
     }
    
+    ul.ulchiffres li {
+        display: inline-block;
+        margin: 0px 20px;
+    }
 `;
 export default NoschiffreContentStc;

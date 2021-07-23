@@ -19,13 +19,13 @@ const SectionNewsLetter = () => {
                 partOne="Abonnez-vous"
                 PartTwo="à notre newsletter"
                 number={1}
-                MyclassName="py-2 py-md-3"
+                MyclassName="py-2 py-md-3 pb-md-0"
               />
 
               <Texte
                 texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
                         signification utilisée à titre provisoire pour calibrer une."
-                MyclassName="py-2 py-md-3"
+                MyclassName="py-2 py-md-3 pt-md-0 "
               />
               <div className="row">
                 <div className="col-md-8">

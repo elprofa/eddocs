@@ -19,15 +19,13 @@ const GrilleBlog = ({letGo}) => {
                         <div className="text-center py-2 py-md-3 px-0 px-md-5"> 
                             <Title partOne="A propos d'" PartTwo="Air metrologie" MyclassName="title "  number={1} />
                         </div>
-                        <Texte MyclassName="py-2 py-md-3 px-0 px-md-5 paragraphe"  texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                        signification utilisée à titre provisoire pour calibrer une mise en page, 
-                        le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que 
-                        la mise en page est achevée. Généralement, on utilise un texte en faux latin, 
-                        le Lorem ipsum ou Lipsum.Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                        signification utilisée à titre provisoire pour calibrer une mise en page, 
-                        le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que 
-                        la mise en page est achevée. Généralement, on utilise un texte en faux latin, 
-                        le Lorem ipsum ou Lipsum." />
+                        <Texte MyclassName="py-2 py-md-3 px-0 px-md-5 paragraphe"  texte={
+                            <>
+                                Entant que spécialiste des services de la métrologie, notre raison d'être est 
+                                de contribuer à l'optimisation de la performance industrielle de nos différents clients
+                                par le biais de l'amelioration de leurs processus de mesures.
+                            </>
+                        } />
 
                     </Col>
                     <Col lg={6} className="text-center">

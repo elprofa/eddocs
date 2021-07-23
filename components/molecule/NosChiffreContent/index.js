@@ -12,21 +12,49 @@ const NoschiffreContent = (props) => {
 
     return (
         <NoschiffreContentStc MonStyle={letGo.style} className="py-2 py-md-5">
-            <Title partOne="Nos" PartTwo="chiffres" MyclassName="py-2 py-md-3" number={1} />
+            <Title partOne="Nos" PartTwo=" chiffres" MyclassName="py-2 py-md-3 chiffre" number={2} type={1} />
            
             <div className="row py-2 py-md-3">
-                <div className="col-md-4">
-                    <Texte MyclassName="label" texte="Nos clients" />
-                    <Texte MyclassName="h2" texte="1990" />
+                <div className="col-md-12">
+                    <ul className="ulchiffres px-0 px-md-0 py-3 my-0 px-md-0">
+                        <li>
+                            <Texte MyclassName="label mb-0 mb-md-3" texte="Experiences" />
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 20<span className="plus">+</span>
+                            <span className="ans">ans</span>
+                            </>} />
+                        </li>
+                        <li>
+                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos laboratoires" />
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 16
+                                <span className="plus">+</span>
+                                
+                            </>} />
+                        </li>
+                        <li>
+                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos accreditations" />
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 19
+                                <span className="plus">+</span>
+                                
+                            </>} />
+                        </li>
+                        <li>
+                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos collaborations" />
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 60
+                                <span className="plus">+</span>
+                                
+                            </>} />
+                        </li>
+                        <li>
+                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos clients" />
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 500
+                                <span className="plus">+</span>
+                                
+                            </>} />
+                        </li>
+                        
+                    </ul>
                 </div>
-                <div className="col-md-4">
-                    <Texte MyclassName="label" texte="Nos Clients" />
-                    <Texte MyclassName="h2" texte="1990" />
-                </div>
-                <div className="col-md-4">
-                    <Texte MyclassName="label" texte="Nos clients" />
-                    <Texte MyclassName="h2" texte="1990" />
-                </div>
+                
             </div>
         </NoschiffreContentStc>
        

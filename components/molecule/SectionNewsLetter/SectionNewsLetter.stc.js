@@ -17,6 +17,12 @@ export const SectionNewsLetterStc=Styled.div`
     display: block;
     margin: auto;
    }
+   button 
+   {
+    height: 3rem;
+    border-radius: 0px;
+    margin-top: 1.2rem !important;
+   }
     
 `;
 

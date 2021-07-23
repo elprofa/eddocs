@@ -2,10 +2,15 @@ import Styled from 'styled-components';
 
 const SliderStc=Styled.section`
 .title h2
-    {
-        border:0px !important;
-        font-weight:600;
-    }
+{
+    border:0px !important;
+    font-weight:600;
+    
+}
+.title
+{
+    max-width:660px;
+}
 a.carousel-control-prev,a.carousel-control-next
 {
     display: none !important;
