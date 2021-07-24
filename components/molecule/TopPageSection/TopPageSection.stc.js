@@ -28,5 +28,18 @@ const defaultStyle={
             position: relative;
         }
     }
+
+    .iconGrille 
+    {
+        position: relative;
+        top: -140px;
+    }
+    .iconGrille.right 
+    {
+        position: absolute;
+        top: 45vh;
+        float:right;
+        right: 0;
+    }
 `;
 export default TopPageSectionStc;

@@ -14,7 +14,8 @@ export default function QuiSommesNous() {
       <main className="main" style={{minHeight:"100vh"}}>
         <TopPageSection letGo={{
              image:"/img/slide1.jpg",
-             title:"Qui sommes-nous ?"
+             title:"Qui sommes-nous ?",
+             iconGrille:1,
          }} />
        <GrilleApropos />
        <SectionClient />

@@ -14,7 +14,8 @@ export default function NosAccreditation() {
 
         <TopPageSection letGo={{
              image:"/img/slide1.jpg",
-             title:"Nos accréditations"
+             title:"Nos accréditations",
+             iconGrille:1
          }} />
 
         <AccreditationSection />

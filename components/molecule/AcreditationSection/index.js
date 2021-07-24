@@ -26,16 +26,16 @@ const AccreditationSection = (props) => {
     ];
     return (
         <AccreditationSectionStc >
-            <div className="container">
-                <div className="row py-2 py-md-5">
+            <div className="container px-0 px-md-5">
+                <div className="row py-2 py-md-5 px-0 px-md-5 mx-0 mx-md-5">
                     <div className="col-lg-12">
                         <Title partOne="Nos" PartTwo="Accréditations" number={1}  MyclassName="title py-2 py-md-3" />
                     
-                        <Texte texte=" Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                            signification utilisée à titre provisoire pour calibrer une
-                            mise en page, le texte définitif venant remplacer le faux-texte 
-                            dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
-                            on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." className="paragraphe py-2 py-md-3" />
+                        <Texte texte=" Afin d'apporter à nos clients le meilleur niveau de service dans le domaine
+                        de la métrologie dans l'optique de contribuer à l'amélioration de son processus de mesure,
+                        le groupe AIR METROLOGIE - L2MI s'est engagé depuis 2005 dans une demarche qualité et de 
+                        conformité des prestations attendus par le client, de renforcer la fiabilité et la et la 
+                        rigueur de son fonctionnement et de s'ameliorerde façon continue. Nos prestations sont accréditées par les organismes suivants:" className="paragraphe py-2 py-md-3" />
                     
                     </div>
                     <div className="col-lg-12">

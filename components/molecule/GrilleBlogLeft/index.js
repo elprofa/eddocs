@@ -8,14 +8,16 @@ import Image from 'next/image';
 import { theme } from '../../../theme';
 
 import { AiOutlineRight } from "react-icons/ai";
+import IconGrille from '../IconGrille';
 
 const GrilleBlogLeft = (props) => {
 
     return (
-        <GrilleBlogLeftStc >
+        <GrilleBlogLeftStc className="py-0 py-md-5">
          <div className="container">
-             <div className="row py-2 py-md-5">
-                <div className="col-lg-6 d-sm-none d-none d-md-block d-md-none d-lg-block">
+             <div className="row py-2 py-md-5 my-0 my-5">
+                
+                <div className="col-lg-6 d-sm-none d-none d-md-block d-md-none d-lg-block text-center">
                     <div className="row">
                         <div className="col-sm-12">
                             <Image src="/img/ilac_logo.png" className="py-2 py-md-3" width="120" height="150" />
@@ -31,7 +33,7 @@ const GrilleBlogLeft = (props) => {
                     </div>
                     
                 </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 align-self-center">
                 <Title partOne="Nos " PartTwo="Accréditations ISO/CEI 17 025" MyclassName="px-0 px-md-5 py-2 py-md-3 title" number={2} />
                 <Texte texte={
                     <>

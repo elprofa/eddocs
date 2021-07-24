@@ -15,7 +15,8 @@ export default function Contact() {
       <main className="main" style={{minHeight:"100vh"}}>
         <TopPageSection letGo={{
             image:"/img/slide1.jpg",
-            title:"Contactez-nous"
+            title:"Contactez-nous",
+            iconGrille:"",
          }} />
         <SectionContact letGo={{}} />
         <SectionNewsLetter letGo={{}} />

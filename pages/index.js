@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <main className="main" >
-       <Slider />
+        <Slider />
         <GrilleBlog />
         <GrilleBlogLeft />
         <CardMinSection />

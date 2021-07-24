@@ -1,21 +1,18 @@
 import React from 'react'
 import GrilleBlogStc from './GrilleBlog.stc';
-import Button from '../../shared/Button';
-import Trait from '../../shared/Trait';
+import IconGrille from '../IconGrille';
 import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
-// import Image from '../../shared/Image';
-import { theme } from '../../../theme';
 import { Col, Container, Row } from 'reactstrap';
 import Image from 'next/image';
 
-const GrilleBlog = ({letGo}) => {
+const GrilleBlog = () => {
 
     return (
-        <GrilleBlogStc>
+        <GrilleBlogStc className="py-0 py-md-5">
             <Container>
-                <Row className="py-2 py-md-5">
-                    <Col lg={6} >
+                <Row className="py-2 py-md-5 my-0">
+                    <Col lg={6} className="align-self-center">
                         <div className="text-center py-2 py-md-3 px-0 px-md-5"> 
                             <Title partOne="A propos d'" PartTwo="Air metrologie" MyclassName="title "  number={1} />
                         </div>
@@ -32,6 +29,7 @@ const GrilleBlog = ({letGo}) => {
                         <Image src="/img/blog1.png" width="1200" height="800" />
                     </Col>
                 </Row>
+                <IconGrille position={1}/>
             </Container>
         </GrilleBlogStc>
        
