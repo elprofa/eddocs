@@ -26,6 +26,7 @@ import { theme } from "../../../theme";
         padding: 20px;
         border-radius: 0px;
         color:#000;
+        font-weight: 600;
     }
     ${(props) => props.MonStyle || ""};
 

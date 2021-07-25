@@ -2,6 +2,7 @@ import Head from 'next/head'
 import TopPageSection from '../components/molecule/TopPageSection'
 import { theme } from '../theme'
 import AccreditationSection from '../components/molecule/AcreditationSection'
+import SectionAutreDomaine from '../components/molecule/sectionAutreDomaine'
 
 export default function NosAccreditation() {
   return (
@@ -18,8 +19,8 @@ export default function NosAccreditation() {
              iconGrille:1
          }} />
 
-        <AccreditationSection />
-      
+          <AccreditationSection />
+          <SectionAutreDomaine />
       </main>
 
     </div>

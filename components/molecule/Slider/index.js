@@ -56,7 +56,7 @@ const Slider = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <Image src={item.src} alt="" width="2000" height="900" />
+        <img src={item.src} alt="" width="100%"  />
          <CarouselCaption captionText={""} captionHeader={item.caption} />
       </CarouselItem>
     );

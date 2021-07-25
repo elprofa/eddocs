@@ -13,73 +13,69 @@ export default function NosLaboratoires() {
         active:"active"
     },
     {
-      texte:"Dimensionnel",
+      texte:"Electricité & Magnetisme",
       lien:"/"
     },
     {
-      texte:"Dimensionnel",
+      texte:"Temperature",
       lien:"/"
     },
     {
-      texte:"Dimensionnel",
+      texte:"Hydrogène",
       lien:"/"
     },
     {
-      texte:"Dimensionnel",
+      texte:"Force & couple",
       lien:"/"
     },
     {
-      texte:"Dimensionnel",
+      texte:"Masse",
       lien:"/"
     },
     {
-      texte:"Dimensionnel",
+      texte:"Pression",
       lien:"/",
   },
   {
-    texte:"Dimensionnel",
+    texte:"Pesage",
     lien:"/"
   },
   {
-    texte:"Dimensionnel",
+    texte:"Temps & Frequence",
     lien:"/"
   },
   {
-    texte:"Dimensionnel",
+    texte:"Chimie",
     lien:"/"
   },
   {
-    texte:"Dimensionnel",
+    texte:"Volume et Masse Volumique",
     lien:"/"
   },
   {
-    texte:"Dimensionnel",
+    texte:"Anemometrie",
     lien:"/"
   },
   {
-    texte:"Dimensionnel",
+    texte:"Machines de Forces",
     lien:"/",
-},
-{
-  texte:"Dimensionnel",
-  lien:"/"
-},
-{
-  texte:"Dimensionnel",
-  lien:"/"
-},
-{
-  texte:"Dimensionnel",
-  lien:"/"
-},
-{
-  texte:"Dimensionnel",
-  lien:"/"
-},
-{
-  texte:"Dimensionnel",
-  lien:"/"
-},
+  },
+  {
+    texte:"Qualification des Environnements propres",
+    lien:"/"
+  },
+  {
+    texte:"Qualification des Autoclaves",
+    lien:"/"
+  },
+  {
+    texte:"Qualification de l'air comprime",
+    lien:"/"
+  },
+  {
+    texte:"Caracterisation des Enceintes Climiques",
+    lien:"/"
+  }
     
   ]
 
@@ -93,7 +89,7 @@ export default function NosLaboratoires() {
           <TopPageSection letGo={{
               image:"/img/slide1.jpg",
               title:"Nos laboratoires ?",
-              iconGrille:1
+              iconGrille:2
           }} />
 
        <section >

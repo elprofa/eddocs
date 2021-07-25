@@ -68,7 +68,7 @@ const defaultStyle={
         }
         @media (min-width: 991px)
         {
-            height: 720px;
+            min-height: 830px;
         }
 
         img 

@@ -44,21 +44,16 @@ a.carousel-control-prev,a.carousel-control-next
     }
     .carousel.slide
     {
-        height:100vh;
-        @media screen and (max-width: 767px)
-        {
-            height:50vh;
-        }
 
         .carousel-item
         {
-            height: 100vh;
-            @media screen and (max-width: 767px)
-            {
-                height:50vh;
-            }
+            
         }
     }
     
+    .carousel-inner
+    {
+        height: fit-content;
+    }
 `;
 export default SliderStc;

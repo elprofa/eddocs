@@ -1,7 +1,7 @@
 import Styled from "styled-components";
 
  const NosChiffreStc=Styled.section`
-    margin-top: -200px;
+     margin-top: -12% !important;
     a.ownIconAction {
         background: transparent;
         position: relative;

@@ -19,7 +19,7 @@ const Noschiffre = (props) => {
              <div className="col-sm-12 col-md-8">
                  <NoschiffreContent letGo={{
                      style:{
-                         marginTop:"-"+theme.margins.KingSection,
+
                          backgroundColor:"#fff",
                          borderRadius:"25px 25px 0px 0px",
                          textAlign: "center",

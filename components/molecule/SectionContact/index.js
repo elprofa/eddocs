@@ -15,8 +15,8 @@ const SectionContact = (props) => {
     const menus=props.letGo.menus;
 
     return (
-        <SectionContactStc className="container" MonStyle={letGo.style}>
-           <div className="row py-2 py-md-3">
+        <SectionContactStc className="container py-0 py-md-5" MonStyle={letGo.style}>
+           <div className="row py-2 py-md-5">
                <div className="col-lg-12">
                <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="py-2 py-md-3 text-center" />
             
@@ -25,7 +25,7 @@ const SectionContact = (props) => {
             </>} MyclassName="paragraphe one text-center py-2 py-md-0 my-md-0 "  />
                </div>
            </div>
-           <div className="row py-2 py-md-3">
+           <div className="row py-2 py-md-5">
                <div className="col-lg-6">
                    <div className="mx-0 mx-md-3  metrologie mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
                         <img src="/img/lo.png" width="150"/>
@@ -42,7 +42,10 @@ const SectionContact = (props) => {
                          <span className="email">Am.contact@groupe-airmetrologie-l2mi.com</span><br/>
                          <span className="reseaux"><AiFillFacebook/> <AiFillTwitterSquare/> <AiFillLinkedin/></span>
                         </>} MyclassName="py-2 pb-mt-0 paragraphe" />
-                        <img src="/img/logm.png" className="logo_messenger" />
+                        
+                        <div className="py-2 pt-md-5" style={{    width: "100%",minHeight: "60px"}}>
+                            <img src="/img/logm.png" className="logo_messenger" style={{height:"100%"}} />
+                        </div>
                     </div>
 
                </div>
@@ -62,7 +65,9 @@ const SectionContact = (props) => {
                          <span className="email">L2mi.contact@groupe-airmetrologie-l2mi.com</span><br/>
                          <span className="reseaux"><AiFillFacebook/> <AiFillTwitterSquare/> <AiFillLinkedin/></span>
                         </>} MyclassName="py-2 pb-mt-0 paragraphe" />
-                        <img src="/img/logm1.png" className="logo_messenger" />
+                        <div className="py-2 pt-md-5" style={{    width: "100%",minHeight: "60px"}}>
+                            <img src="/img/logm1.png" className="logo_messenger" style={{height:"100%"}} />
+                        </div>
                     </div>
 
                </div>
