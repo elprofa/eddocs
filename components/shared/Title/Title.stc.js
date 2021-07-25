@@ -12,7 +12,14 @@ const TitleStc = Styled.div`
     h1:after {
         border-bottom: 3px solid red;
         height: 50px;
+        
         width: 250px;
+        @media (max-width: 768px)
+        {
+            height: 30px;
+        
+            width: 150px;
+        }
         content: "";
         position: absolute;
         left: 0;
