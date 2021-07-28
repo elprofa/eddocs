@@ -23,7 +23,6 @@ const Header = (props) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
-
   const MenuHeader=[
     {
         texte:"Qui sommes-nous?",

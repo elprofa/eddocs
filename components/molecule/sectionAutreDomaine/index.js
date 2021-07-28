@@ -7,10 +7,10 @@ const SectionAutreDomaine = () => {
 
     return (
         <SectionAutreDomaineStc className="py-0 py-md-5 ">
-            <Container>
-                <Row className="py-2 py-md-5 my-0">
-                    <Col lg={12}>
-                        <div className="caption py-2 py-md-3 px-2 px-md-3">
+            <div className="container px-0 px-md-5">
+                <div className="row py-2 py-md-5 px-0 px-md-5 mx-0 mx-md-5">
+                    <div className="col-lg-12">
+                        <div className="caption py-2 py-md-3">
                             <Texte texte={
                                 <>
                                     En dehors de ces accréditations ISO/CEI 17 .25, le groupe intervient 
@@ -18,10 +18,13 @@ const SectionAutreDomaine = () => {
                                     ...) par raccordement au Système international à travers des laboratoires accredités par le COFRAC.
                                 </>
                             } />
+                            
                         </div>
-                    </Col>
-                </Row>
-            </Container>
+                        <img src="/img/organigramme.svg" className="my-2 my-md-5" width="100%" />
+                    </div>
+                </div>
+                
+            </div>
         </SectionAutreDomaineStc>
        
     )

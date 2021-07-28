@@ -9,6 +9,7 @@ import {Container} from 'reactstrap';
 import Footer from "../../components/molecule/Footer";
 
 const Layout = ({ children, ...props }) => {
+  console.log(props)
   return (
     <ThemeProvider theme={theme}>
       <Head>
