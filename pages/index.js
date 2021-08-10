@@ -11,8 +11,7 @@ export default function Home() {
   return (
     <div className="App">
       <Head>
-        <title>Métrologie</title>
-        <link rel="icon" href="/img/favicon.ico" />
+        <title>Air Métrologie</title>
       </Head>
       <main className="main" >
         <Slider />

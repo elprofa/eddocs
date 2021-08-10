@@ -89,12 +89,10 @@ const Footer = (props) => {
                 </div>
                <div className="row rowLastFooter py-2 py-md-3">
                    <div className="col-md-4">
-                    <Texte texte="Le lorem ipsum est, en imprimerie, 
-                    une suite de mots sans signification 
-                    utilisée à titre provisoire pour calibrer une mise en page, 
-                    le texte définitif venant remplacer le faux-texte dès qu'il est prêt 
-                    ou que la mise en page est achevée. Généralement, on utilise un texte en 
-                    faux latin, le Lorem ipsum ou Lipsum." MyclassName="py-1 py-md-3" />
+                    <Texte texte="Entant que spécialiste des services de la métrologie, 
+                    notre raison d'être est de contribuer à l'optimisation de la performance 
+                    industrielle de nos différents clients par le biais de l'amelioration de 
+                    leurs processus de mesures." MyclassName="py-1 py-md-3" />
                     <div className="row py-1 py-md-3">
                         <div className="col-lg-12">
                             <ul className="ulSocialNet">
@@ -130,8 +128,10 @@ const Footer = (props) => {
                    <Trait letGo={TraitStc}/>
                    </div>
                    <div className="col-lg-12">
-                       <Texte texte="Air metrologie 2021,Copyright designed & 
-                       developped by dubani agency !" MyclassName="py-1 py-md-3"/>
+                       <Texte texte={<>
+                            Air Metrologie 2021,Copyright designed & 
+                       developped by <a href="https://dubaniagency.com/" target="_blank">dubani agency </a>!
+                       </>} MyclassName="py-1 py-md-3"/>
                    </div>
                </div>
            

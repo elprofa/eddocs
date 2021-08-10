@@ -13,10 +13,10 @@ const Layout = ({ children, ...props }) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>My page title</title>
+        <title>AIR METROLOGIE</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://use.typekit.net/pgv8psy.css" />
-        <link rel="shortcut icon" href="/img/favicon.ico" />
+        <link rel="shortcut icon" href="/img/lo.png" />
       </Head>
       <GlobalCSS />
       <Header />
