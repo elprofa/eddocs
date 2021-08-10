@@ -23,14 +23,14 @@ const Laboratoire1 = (props) => {
                         dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
                         on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."  MyclassName="paragraphe" />
 
-                <Button texte="Contacter nous >" className="my-2 my-md-3"/>
+                <Button texte="Contactez nous >" className="my-2 my-md-3"/>
                 </div>
             </div>
         </div>
 
         <div className="row">
             <div className="col-lg-4">
-                <Title partOne="Nos" PartTwo="Installation" number={1}  MyclassName="py-2 py-md-3 title" />
+                <Title partOne="Nos" PartTwo="Installations" number={1}  MyclassName="py-2 py-md-3 title" />
             </div>
         </div>
         

@@ -24,7 +24,7 @@ const AccreditationElement = (props) => {
             </div>
             <div className="col-md-6 align-self-center">
                 <a href={lien}>
-                    <Texte texte={texte} MyclassName="paragraphe py-2 py-md-3" />
+                    <Texte texte={lien} MyclassName="paragraphe py-2 py-md-3" />
                 </a>
             </div>
         </AccreditationElementStc>

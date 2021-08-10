@@ -11,17 +11,17 @@ const AccreditationSection = (props) => {
         {
             texte:"COFRAC",
             src:"/img/Groupe116.png",
-            lien:"https://www.cofrac.com"
+            lien:<>https://www.cofrac.fr </>
         },
         {
-            texte:"COFRAC",
-            src:"/img/Groupe116.png",
-            lien:"https://www.cofrac.com"
+            texte:"Tunac",
+            src:"/img/tunac.png",
+            lien:"https://www.tunac.tn/"
         },
         {
-            texte:"COFRAC",
-            src:"/img/Groupe116.png",
-            lien:"https://www.cofrac.com"
+            texte:"SEMAC",
+            src:"/img/semac.png",
+            lien:"https://www.mcinet.gov.ma/fr/content/accreditation"
         }
     ];
     return (
