@@ -8,7 +8,7 @@ export default function QuiSommesNous() {
   return (
     <div className="App">
       <Head>
-        <title>Métrologie | Qui sommes-nous ?</title>
+        <title>Air Métrologie | Qui sommes-nous ?</title>
       </Head>
 
       <main className="main" style={{minHeight:"100vh"}}>

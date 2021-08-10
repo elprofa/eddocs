@@ -35,7 +35,7 @@ const Footer = (props) => {
             style:{
                 color:theme.colors.white,
             },
-            texte:"Nos Accreditations",
+            texte:"Nos Accréditations",
             chemin:"/nos-accreditations",
         },
         {

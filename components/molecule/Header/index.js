@@ -35,7 +35,7 @@ const Header = (props) => {
         chemin:"nos-laboratoire",
     },
     {
-        texte:"Nos Accreditations",
+        texte:"Nos Accréditations",
         altT:"Nos Accr...",
         chemin:"/nos-accreditations",
     },
