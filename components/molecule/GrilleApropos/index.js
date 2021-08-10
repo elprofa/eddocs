@@ -47,7 +47,7 @@ const GrilleApropos = ({letGo}) => {
                          technique dans le domaine de la métrologie.Anée après année, nous sommes fiers d'être devenu 
                          le partenaire de confiance des leaders dans le secteurs de l'aeronautique, l'automobile,Pharmaceutique,
                          Agroalimentaire, Industrie lourden Pétrolier,... </>} MyclassName="py-2 py-md-3 paragraphe" />
-                        <Button texte={<>Contactez-nous <AiOutlineRight /></>} MyclassName="my-0 my-md-5" />
+                        <Button texte={<>Contactez-nous <AiOutlineRight /></>} MyclassName="my-0 my-md-1" />
                     </div>
             
                  </div>
