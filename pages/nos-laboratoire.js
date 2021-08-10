@@ -82,7 +82,7 @@ export default function NosLaboratoires() {
   return (
     <div className="App">
       <Head>
-        <title>Métrologie | Nos Laboratoire</title>
+        <title>Air Métrologie | Nos Laboratoires</title>
       </Head>
 
       <main className="main" style={{minHeight:"100vh"}}>
@@ -93,9 +93,16 @@ export default function NosLaboratoires() {
           }} />
 
        <section >
-          <SideBarLabo letGo={{
-            menus:menuAsides }} />
-          <ContentLaboratoire />
+        <div className="row">
+          <div className="col-lg-3 col-md-3">
+              <SideBarLabo letGo={{
+              menus:menuAsides }} />
+          </div>
+          <div className="col-lg-9 col-md-9">
+              <ContentLaboratoire />
+          </div>
+        </div>
+          
        </section>
        
       </main>

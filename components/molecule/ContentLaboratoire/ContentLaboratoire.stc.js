@@ -7,6 +7,5 @@ import Styled from "styled-components";
         width: 100%;
         
     }
-    width: 75%;
 `;
 export default CardMinStc;

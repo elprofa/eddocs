@@ -4,9 +4,8 @@ import { theme } from "../../../theme";
 
  const SideBarLaboStc=Styled.div`
     display: inline-flex !important;
-    background: ${theme.colors.kingGreen};
-    width: 25%;
-    
+    background: ${theme.colors.kingGreen};  
+    height:100%;  
     .nav-link.active
     {
         text-decoration:underline;
