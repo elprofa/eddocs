@@ -21,29 +21,29 @@ const Footer = (props) => {
             style:{
                 color:theme.colors.white,
             },
-            texte:"A propos de Air metrologie",
-            chemin:"/",
+            texte:"Qui sommes-nous ?",
+            chemin:"/qui-sommes-nous",
         },
         {
             style:{
                 color:theme.colors.white,
             },
             texte:"Nos laboratoires",
-            chemin:"/",
+            chemin:"/nos-laboratoire",
         },
         {
             style:{
                 color:theme.colors.white,
             },
             texte:"Nos Accreditations",
-            chemin:"/",
+            chemin:"/nos-accreditations",
         },
         {
             style:{
                 color:theme.colors.white,
             },
             texte:"Contact",
-            chemin:"/",
+            chemin:"/contact",
         }
     ]
 
@@ -130,7 +130,7 @@ const Footer = (props) => {
                    <div className="col-lg-12">
                        <Texte texte={<>
                             Air Metrologie 2021,Copyright designed & 
-                       developped by <a href="https://dubaniagency.com/" target="_blank">dubani agency </a>!
+                       developped by <a href="https://dubaniagency.com/" target="_blank">Dubani Agency </a>!
                        </>} MyclassName="py-1 py-md-3"/>
                    </div>
                </div>
