@@ -4,10 +4,86 @@ import Button from '../../shared/Button';
 import Trait from '../../shared/Trait';
 import Title from '../../shared/Title';
 import { theme } from '../../../theme';
+import Link from 'next/link'
 
 const SideBarLabo = (props) => {
-    const menus=props.letGo.menus;
-
+    const menus=[
+        {
+            texte:"Dimensionnel",
+            lien:"/laboratoires/1",
+            active:"1"
+        },
+        {
+          texte:"Electricité & Magnetisme",
+          lien:"/laboratoires/2",
+          active:"2"
+        },
+        {
+          texte:"Temperature",
+          lien:"/laboratoires/3",
+          active:"3"
+        },
+        {
+          texte:"Hydrogène",
+          lien:"/laboratoires/4",
+          active:"4"
+        },
+        {
+          texte:"Force & couple",
+          lien:"/laboratoires/5"
+        },
+        {
+          texte:"Masse",
+          lien:"/"
+        },
+        {
+          texte:"Pression",
+          lien:"/",
+      },
+      {
+        texte:"Pesage",
+        lien:"/"
+      },
+      {
+        texte:"Temps & Frequence",
+        lien:"/"
+      },
+      {
+        texte:"Chimie",
+        lien:"/"
+      },
+      {
+        texte:"Volume et Masse Volumique",
+        lien:"/"
+      },
+      {
+        texte:"Anemometrie",
+        lien:"/"
+      },
+      {
+        texte:"Machines de Forces",
+        lien:"/",
+      },
+      {
+        texte:"Qualification des Environnements propres",
+        lien:"/"
+      },
+      {
+        texte:"Qualification des Autoclaves",
+        lien:"/"
+      },
+      {
+        texte:"Qualification de l'air comprime",
+        lien:"/"
+      },
+      {
+        texte:"Caracterisation des Enceintes Climiques",
+        lien:"/"
+      }
+        
+      ];
+    const id_page=props.id_page;
+    
     return (
         <SideBarLaboStc className="d-flex flex-column flex-shrink-0 p-3 py-0 py-md-5">
            <div className="desktop">
@@ -21,9 +97,11 @@ const SideBarLabo = (props) => {
                 {
                     menus.map((menu,index)=>
                         <li className="nav-item" key={index+"menu_laboratoire"}>
-                            <a href={menu.lien} className={menu.active+" nav-link"} aria-current="page">
-                                {menu.texte}
-                            </a>
+                            <Link href={menu.lien}>
+                                <a className={menu.active==id_page?"active nav-link":'nav-link'} aria-current="page">
+                                    {menu.texte}
+                                </a>
+                            </Link>
                         </li>
                     )
                 }
