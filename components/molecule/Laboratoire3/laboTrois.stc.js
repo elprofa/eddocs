@@ -7,8 +7,9 @@ const LaboratoireStc3 = Styled.div`
 
     .lab3 {
         display: flex;
-        margin-left: 2rem;
-        margin-bottom: 4rem;
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 3rem;
     }
 
     .title {

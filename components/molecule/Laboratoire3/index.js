@@ -24,30 +24,25 @@ const Laboratoire3 = (props) => {
                 </div>
 
                 </div>
-            <div className="col-lg-12">
-                <div className="rectangle lab3">
-                    <div>
+            <div className="container">
+                <div className="row lab3 mb-3 rectangle pb-3 pl-2">
+                    <div className="col-lg-3">
                         <img src="/img/7.png" />
-                    </div>
-                    <div>
                         <img src="/img/8.png" />
                     </div>
-                    <div>
+
+                    <div className="col-lg-3 d-block">
                         <img src="/img/Groupe -9.png" />
-                    </div>
-                    <div>
                         <img src="/img/8.png" />
                     </div>
-                    <div>
+
+                    <div className="col-lg-3">
                         <img src="/img/ilac-ment-1.png" />
+                        <img src="/img/8.png" />                        
                     </div>
-                    <div>
-                        <img src="/img/8.png" />
-                    </div>
-                    <div>
+
+                    <div className="col-lg-3">
                         <img src="/img/Groupe -8.png" />
-                    </div>
-                    <div>
                         <img src="/img/8.png" />
                     </div>
                 </div>
