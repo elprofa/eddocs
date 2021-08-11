@@ -1,53 +1,102 @@
 import React, { useState } from 'react';
-import LaboratoireStc1 from './Laboratoire.stc'
+import LaboratoireStc3 from './Laboratoire.stc';
 import { theme } from '../../../theme';
 import Title from '../../shared/Title';
-import Trait from '../../shared/Trait';
 import Texte from '../../shared/Texte';
 import Button from '../../shared/Button';
 
-const Laboratoire1 = (props) => {
+const Laboratoire3 = (props) => {
   
   return (
-    <LaboratoireStc1 >
+    <LaboratoireStc3 >
         <div className="row py-2 py-md-5">
             <div className="col-lg-12"></div> 
             <div className="col-md-12">
-            <img src="/img/rectangle-d.png" width="100%" className="my-2 my-md-3" />
+            <img src="/img/Rectangle69.png" width="100%" className="my-2 my-md-3" />
                 <div className="col-lg-6">
-                    <Title partOne="Laboratoire" PartTwo="Electricité & magnetisme" number={1}  MyclassName="py-2 py-md-3 title" />
+                    <Title partOne="Dimensionnel" number={1}  MyclassName="py-2 py-md-3 title" />
                 
-                    <Texte texte="Le lorem ipsum est, en imprimerie, une suite de mots sans 
-                        signification utilisée à titre provisoire pour calibrer une
-                        mise en page, le texte définitif venant remplacer le faux-texte 
-                        dès qu'il est prêt ou que la mise en page est achevée. Généralement, 
-                        on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."  MyclassName="paragraphe" />
+                    <Texte texte="Pour vos besoins en métrologie dimensionnelle, AIR METROLOGIE dispose
+                                    d'un laboratoire de haute performance qui assure l'étalonnage de vos
+                                    instruments de mesure en dimensionnel sous accréditation:"  
+                                    MyclassName="paragraphe" />
+                </div>
 
-                <Button texte="Contactez nous >" className="my-2 my-md-3"/>
+                </div>
+            <div className="col-lg-12">
+                <div className="rectangle1">
+                    <div>
+                        <img src="/img/7.png" />
+                    </div>
+                    <div>
+                        <img src="/img/8.png" />
+                    </div>
+                    <div>
+                        <img src="/img/Groupe -9.png" />
+                    </div>
+                    <div>
+                        <img src="/img/8.png" />
+                    </div>
+                    <div>
+                        <img src="/img/ilac-ment-1.png" />
+                    </div>
+                    <div>
+                        <img src="/img/8.png" />
+                    </div>
+                    <div>
+                        <img src="/img/Groupe -8.png" />
+                    </div>
+                    <div>
+                        <img src="/img/8.png" />
+                    </div>
+                </div>
+
+                <div className="col-lg-6">                
+                <Texte texte="ou sous étalonnage raccordé au système international d'unité SI, ceci au
+                                    moyen d'étalons et machines de mesures de références étalonnés par des
+                                    laboratoires accrédités par le COFRAC."  
+                                    MyclassName="paragraphe" />
+                </div>
+
+                <Button texte="Demander un devis >" className="my-2 my-md-3"/>
                 </div>
             </div>
-        </div>
 
         <div className="row">
             <div className="col-lg-4">
-                <Title partOne="Nos" PartTwo="Installations" number={1}  MyclassName="py-2 py-md-3 title" />
+                <Title partOne="Nos" PartTwo="Presentations" number={1}  MyclassName="py-2 py-md-3 title" />
             </div>
         </div>
         
         <div className="row py-2 py-md-0">
            
-            <div className="col-lg-6">
-                <img src="/img/Rectangle69.png" width="100%" />
-                <Texte texte="Le lorem ipsum est" MyclassName="paragraphe" />
-            </div> 
-            <div className="col-lg-6">
-                <img src="/img/Rectangle69.png" width="100%" />
-
-                <Texte texte="Le lorem ipsum est"  MyclassName="paragraphe" />
+            <div className="col-lg-12">
+            <div className="rectangle">
+                    <div>
+                        <img src="/img/Groupe 210.png" />
+                        <span>Présentation Mécanique</span>
+                    </div>
+                    <div>
+                        <img src="/img/rect-e4.png" />
+                        <span>Presentation Interferometrique</span>
+                    </div>
+                    <div>
+                        <img src="/img/Rectangle 119.png" />
+                        <span>Presentation Angulaire</span>
+                    </div>
+                    <div>
+                        <img src="/img/Rectangle 120.png" />
+                        <span>Presentation 2D</span>
+                    </div>
+                    <div>
+                        <img src="/img/Groupe 211.png" />
+                        <span>Presentation 3D</span>
+                    </div>
+                </div>
             </div> 
         </div>
-    </LaboratoireStc1>
+    </LaboratoireStc3>
   );
 }
 
-export default Laboratoire1;
+export default Laboratoire3;
