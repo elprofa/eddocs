@@ -22,6 +22,64 @@ const LaboratoireStc1=Styled.div`
            display: block !important;
         }
     } 
+
+    .rectangle
+    {
+        margin-bottom:40px;
+    }
+
+    .rectangle div
+    {
+        width:170px;
+        display:inline-block;
+        text-align:center;
+        margin:10px;
+        @media (max-width: 471px) {
+           margin:15px auto;
+           display:block;
+        }
+
+        img 
+        {
+            width:100%;
+        }
+        span
+        {
+            display:block;
+            font-weight:600;
+        }
+    }
+
+    .rectangle1 div
+    {
+        width:80px;
+        display:inline-block;
+        text-align:center;
+        margin:10px;
+        @media (max-width: 471px) {
+           margin:15px auto;
+           display:block;
+        }
+
+        img 
+        {
+            width:100%;
+        }
+        span
+        {
+            display:block;
+            font-weight:600;
+        }
+    }
+
+    .iconRight img 
+    {
+        display:inline-block;
+        margin:10px;
+        @media (max-width: 471px) {
+           display:none;
+        }
+    }
 `;
 
 export default LaboratoireStc1
