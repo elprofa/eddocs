@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LaboratoireStc3 from './laboTrois.stc';
+import LaboratoireStc4 from './laboratoire.stc';
 import { theme } from '../../../theme';
 import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
@@ -9,89 +9,60 @@ import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 const Laboratoire4 = (props) => {
   
   return (
-    <LaboratoireStc3 >
-        <div className="row py-2 py-md-5">
-            <div className="col-lg-12"></div> 
-            <div className="col-md-12">
-            <img src="/img/Rectangle -39.png" width="100%" className="my-2 my-md-3" />
+    <LaboratoireStc4 >
+        <div className="container"> 
+            <div className="row py-2 py-md-5">
+                <div className="col-lg-12 pb-2">
+                    <img src="/img/Rectangle -16.png" width="100%" className="my-2 my-md-3" />
+                </div>
+            </div>
+
+            <div className="row pb-3 mb-5">
                 <div className="col-lg-6">
-                    <Title partOne="Dimensionnel" number={1}  MyclassName="py-2 py-md-3 title" />
+                    <Title partOne="Hygrometrie" number={1}  MyclassName="py-2 py-md-3 title" />
                 
-                    <Texte texte="Pour vos besoins en métrologie dimensionnelle, AIR METROLOGIE dispose
-                                    d'un laboratoire de haute performance qui assure l'étalonnage de vos
-                                    instruments de mesure en dimensionnel sous accréditation:"  
+                    <Texte texte="Le laboratoire dispose des meilleurs incertitudes à échelle nationale avec
+                                    une équipe de 4 métrologues pour ce domaine.
+                                    De plus notre laboratoire est accrédité COFRAC pour l'étalonnage des:"  
                                     MyclassName="paragraphe" />
                 </div>
 
-                </div>
-            <div className="container">
-                <div className="row lab3 mb-3 rectangle pb-3 pl-2">
-                    <div className="col-lg-3">
-                        <img src="/img/7.png" />
-                        <img src="/img/8.png" />
-                    </div>
-
-                    <div className="col-lg-3 d-block">
-                        <img src="/img/Groupe -9.png" />
-                        <img src="/img/8.png" />
-                    </div>
-
-                    <div className="col-lg-3">
-                        <img src="/img/ilac-ment-1.png" />
-                        <img src="/img/8.png" />                        
-                    </div>
-
-                    <div className="col-lg-3">
-                        <img src="/img/Groupe -8.png" />
-                        <img src="/img/8.png" />
-                    </div>
+                <div className="col">
+                    <img src="/img/8.png" />
                 </div>
 
-                <div className="col-lg-6">                
-                <Texte texte="ou sous étalonnage raccordé au système international d'unité SI, ceci au
-                                    moyen d'étalons et machines de mesures de références étalonnés par des
-                                    laboratoires accrédités par le COFRAC."  
-                                    MyclassName="paragraphe" />
+             </div>
+                <div className="row ranger2 rectangle pb-3 pl-2 d-inline-flex">
+                    <div className="col">
+                        <img src="/img/Groupe 206.png" />
+                        <h3>Thermolygromètre</h3>
+                    </div>
+
+                    <div className="col">
+                        <img src="/img/Groupe 205.png" />
+                        <h3>Hygromètre à condensation</h3>
+                    </div>
+
+                    <div className="col">
+                        <img src="/img/Groupe 207.png" />
+                        <h3>Afficheur et enregistreur</h3>                      
+                    </div>
+
+                    <div className="col">
+                        <img src="/img/Groupe 208.png" />
+                        <h3>Hygromètre à variation d'impédance</h3> 
+                    </div>
+
+                    <div className="col">
+                        <img src="/img/Groupe 209.png" />
+                        <h3>Thermo hygrographe</h3> 
+                    </div>
                 </div>
 
                 <Button texte="Demander un devis >" className="my-2 my-md-3"/>
-                </div>
             </div>
-
-        <div className="row">
-            <div className="col-lg-4">
-                <Title partOne="Nos" PartTwo="Presentations" number={1}  MyclassName="py-2 py-md-3 title" />
-            </div>
-        </div>
         
-        <div className="row w-100 py-2 py-md-0 mx-auto">
-           
-            <div className="col-lg-12">
-            <div className="rectangle">
-                    <div>
-                        <img src="/img/Groupe 210.png" />
-                        <span>Présentation Mécanique</span>
-                    </div>
-                    <div>
-                        <img src="/img/rect-e4.png" />
-                        <span>Presentation Interferometrique</span>
-                    </div>
-                    <div>
-                        <img src="/img/Rectangle 119.png" />
-                        <span>Presentation Angulaire</span>
-                    </div>
-                    <div>
-                        <img src="/img/Rectangle 120.png" />
-                        <span>Presentation 2D</span>
-                    </div>
-                    <div>
-                        <img src="/img/Groupe 211.png" />
-                        <span>Presentation 3D</span>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </LaboratoireStc3>
+</LaboratoireStc4>
   );
 }
 

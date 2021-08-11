@@ -5,9 +5,8 @@ const defaultStyle={
 }
 const LaboratoireStc4 = Styled.div`
 
-    .lab3 {
-        display: flex;
-        flex-direction: row;
+    .ranger2 {
+        flex-wrap: inherit;
         justify-content: start;
         margin-bottom: 3rem;
     }
