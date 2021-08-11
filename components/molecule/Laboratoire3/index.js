@@ -64,34 +64,36 @@ const Laboratoire3 = (props) => {
             </div>
         </div>
         
-        <div className="row w-100 py-2 py-md-0 mx-auto">
+        <div className="container py-2 px-lg-0 mx-auto">
            
-            <div className="col-lg-12">
-            <div className="rectangle">
-                    <div>
+            <div className="row">
+                    <div className="col text-center">
                         <img src="/img/Groupe 210.png" />
-                        <span>Présentation Mécanique</span>
+                        <h3>Présentation Mécanique</h3>
                     </div>
-                    <div>
+
+                    <div className="col text-center">
                         <img src="/img/rect-e4.png" />
-                        <span>Presentation Interferometrique</span>
+                        <h3>Presentation Interferometrique</h3>
                     </div>
-                    <div>
+
+                    <div className="col text-center">
                         <img src="/img/Rectangle 119.png" />
-                        <span>Presentation Angulaire</span>
+                        <h3>Presentation Angulaire</h3>
                     </div>
-                    <div>
+
+                    <div className="col text-center">
                         <img src="/img/Rectangle 120.png" />
-                        <span>Presentation 2D</span>
+                        <h3>Presentation 2D</h3>
                     </div>
-                    <div>
+
+                    <div className="col text-center">
                         <img src="/img/Groupe 211.png" />
-                        <span>Presentation 3D</span>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </LaboratoireStc3>
+                        <h3>Presentation 3D</h3>
+                    </div> 
+    </div>
+    </div>
+</LaboratoireStc3>
   );
 }
 
