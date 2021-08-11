@@ -12,7 +12,7 @@ const Laboratoire3 = (props) => {
         <div className="row py-2 py-md-5">
             <div className="col-lg-12"></div> 
             <div className="col-md-12">
-            <img src="/img/Rectangle69.png" width="100%" className="my-2 my-md-3" />
+            <img src="/img/Rectangle -39.png" width="100%" className="my-2 my-md-3" />
                 <div className="col-lg-6">
                     <Title partOne="Dimensionnel" number={1}  MyclassName="py-2 py-md-3 title" />
                 
