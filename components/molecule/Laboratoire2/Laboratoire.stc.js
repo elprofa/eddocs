@@ -50,6 +50,11 @@ const LaboratoireStc1=Styled.div`
         }
     }
 
+    .laboImg img
+    {
+        max-width:100%;
+    }
+
     .iconRight img 
     {
         display:inline-block;

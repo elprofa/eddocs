@@ -13,7 +13,7 @@ const Laboratoire2 = (props) => {
         <div className="row py-2 py-md-5">
             <div className="col-lg-12"></div> 
             <div className="col-md-12">
-            <img src="/img/rectangle-e.png" width="100%" className="my-2 my-md-3" />
+                <img src="/img/rectangle-e.png" width="100%" className="my-2 my-md-3" />
                 <div className="col-lg-6">
                     <Title partOne="Laboratoire" PartTwo="Electricité & magnetisme" number={1}  MyclassName="py-2 py-md-3 title" />
                 
@@ -23,42 +23,44 @@ const Laboratoire2 = (props) => {
                 
                 </div>
             </div>
+        </div>
+        <div className="row laboImg my-3 my-md-3">
+            <div className="col-lg-2">
+                <img src="/img/g-e6.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Multimètre</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/g-e3.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Générateur de courant</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/g-e7.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Générateur de tension</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/g-e8.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Boite de resistance</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/g-e5.png" className="d-block m-auto" />
+                <h6 className="text-center fw-bold">Mesureur de résistance </h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/rect-e1.png " className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Calibreur multifonctions</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/rect-e5.png" className="d-block m-auto" />
+                <h6 className="text-center fw-bold">Générateur de Tension/Courant</h6>
+            </div>
+            
+        </div>
+        <div className="row my-5 my-md-3">
             <div className="col-lg-12">
-                <div className="rectangle">
-                    <div>
-                        <img src="/img/g-e6.png" />
-                        <span>Multimètre</span>
-                    </div>
-                    <div>
-                        <img src="/img/g-e3.png" />
-                        <span>Générateur de courant</span>
-                    </div>
-                    <div>
-                        <img src="/img/g-e7.png" />
-                        <span>Générateur de tension</span>
-                    </div>
-                    <div>
-                        <img src="/img/g-e8.png" />
-                        <span>Boite de resistance</span>
-                    </div>
-                    <div>
-                        <img src="/img/g-e5.png" />
-                        <span>Mesureur de résistance </span>
-                    </div>
-                    <div>
-                        <img src="/img/rect-e1.png" />
-                        <span>Calibreur multifonctions</span>
-                    </div>
-                    <div>
-                        <img src="/img/rect-e5.png" />
-                        <span>Générateur de Tension/Courant</span>
-                    </div>
-                </div>
-                <Button texte="Demandez un devis >" className="demande_devis my-2 mt-md-3"/>
+                <Button texte="Demandez un devis >" className="demande_devis "/>
             </div>
         </div>
-
-        <div className="row">
+        <div className="row ">
             <div className="col-lg-8">
                 <Title partOne="Expertise " PartTwo="internationale" number={1}  MyclassName="py-2 py-md-3 title" />
                 <Texte texte="Notre laboratoire est Raccordé à la chaine internationale à
@@ -71,36 +73,31 @@ const Laboratoire2 = (props) => {
             </div>
         </div>
         
-        <div className="row py-2 py-md-0">
-           
-            <div className="col-lg-12">
-            <div className="rectangle">
-                    <div>
-                        <img src="/img/g-e2.png" />
-                        <span>Ponts RLC</span>
-                    </div>
-                    <div>
-                        <img src="/img/rect-e4.png" />
-                        <span>Power meter</span>
-                    </div>
-                    <div>
-                        <img src="/img/rect-e3.png" />
-                        <span>Analyseur de Réseau</span>
-                    </div>
-                    <div>
-                        <img src="/img/rect-e2.png" />
-                        <span>Wattmèttres</span>
-                    </div>
-                    <div>
-                        <img src="/img/g-e4.png" />
-                        <span>Générateur de Fonctions </span>
-                    </div>
-                    <div>
-                        <img src="/img/g-e1.png" />
-                        <span>Testeur ESD</span>
-                    </div>
-                </div>
-            </div> 
+        <div className="row laboImg py-2 py-md-0 mb-0 mb-md-5">
+            <div className="col-lg-2">
+                <img src="/img/g-e2.png " className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Ponts RLC</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/rect-e4.png " className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Power meter</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/rect-e3.png " className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Analyseur de Réseau</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/rect-e2.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Wattmèttres</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/g-e4.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Générateur de Fonctions</h6>
+            </div>
+            <div className="col-lg-2">
+                <img src="/img/g-e1.png" className="d-block m-auto"/>
+                <h6 className="text-center fw-bold">Testeur ESD</h6>
+            </div>
             
         </div>
     </LaboratoireStc1>
