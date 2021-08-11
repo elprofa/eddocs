@@ -32,7 +32,7 @@ const Header = (props) => {
     {
         texte:"Nos laboratoires",
         altT:"Nos lab...",
-        chemin:"nos-laboratoire",
+        chemin:"/nos-laboratoire",
     },
     {
         texte:"Nos Accréditations",
