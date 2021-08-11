@@ -5,16 +5,29 @@ import Layout from "../containers/Layout";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../theme";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps,apollo}) {
   const apolloClient = useApollo(pageProps.initialApolloState);
-
+  //console.log(apollo);
   return (
     <ApolloProvider client={apolloClient}>
-      <ThemeProvider theme={theme}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </ThemeProvider>
     </ApolloProvider>
   );
 }
+
+
+App.getInitialProps=async function ({Component,ctx}){
+ 
+  let pageProps={};
+  if(Component.getInitialProps){
+    pageProps=await Component.getInitialProps(ctx);
+  }
+
+  pageProps.query=ctx.query;
+
+  return {pageProps};
+
+}
+export default App;
