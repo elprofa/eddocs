@@ -11,17 +11,15 @@ const Laboratoire2 = (props) => {
   return (
     <LaboratoireStc1 >
         <div className="row py-2 py-md-5">
-            <div className="col-lg-12"></div> 
             <div className="col-md-12">
                 <img src="/img/rectangle-e.png" width="100%" className="my-2 my-md-3" />
-                <div className="col-lg-6">
-                    <Title partOne="Laboratoire" PartTwo="Electricité & magnetisme" number={1}  MyclassName="py-2 py-md-3 title" />
-                
-                    <Texte texte="Doté des étalons les plus performants et accrédité par le COFRAC,  
-                    AIR METROLOGIE dispose d'un laboratoire en Électricité et Magnétisme  
-                    couvrant l'étalonnage en laboratoire de plusieurs instruments de mesure à savoir"  MyclassName="paragraphe" />
-                
-                </div>
+            </div>
+            <div className="col-lg-6">
+                <Title partOne="Laboratoire" PartTwo="Electricité & magnetisme" number={1}  MyclassName="py-2 py-md-3 title" />
+            
+                <Texte texte="Doté des étalons les plus performants et accrédité par le COFRAC,  
+                AIR METROLOGIE dispose d'un laboratoire en Électricité et Magnétisme  
+                couvrant l'étalonnage en laboratoire de plusieurs instruments de mesure à savoir"  MyclassName="paragraphe" />
             </div>
         </div>
         <div className="row laboImg my-3 my-md-3">
@@ -55,7 +53,7 @@ const Laboratoire2 = (props) => {
             </div>
             
         </div>
-        <div className="row my-5 my-md-3">
+        <div className="row py-2 py-md-3">
             <div className="col-lg-12">
                 <Button texte="Demandez un devis >" className="demande_devis "/>
             </div>

@@ -5,6 +5,7 @@ import Trait from '../../shared/Trait';
 import Title from '../../shared/Title';
 import { theme } from '../../../theme';
 import Link from 'next/link'
+import { AiOutlineClose } from "react-icons/ai";
 
 const SideBarLabo = (props) => {
     const menus=[
@@ -122,14 +123,25 @@ const SideBarLabo = (props) => {
             </ul>
            </div>
            <div className="phone">
-                    {
-                        menus.map((menu,index)=>
-                        <a href={menu.lien} key={index+"badge1"}>
-                            <span className="badge bg-secondary"> {menu.texte}</span>
-                        </a>
-                    )
-                }
-           
+             <div className="menu">
+               <div className="header">
+               
+                 <h3> <AiOutlineClose/> Nos laboratoires</h3>
+               </div>
+               <ul>
+                 <li>
+                  <a>Papa et maman</a>
+                 </li>
+                 <li>
+                  <a>Papa et maman</a>
+                 </li>
+                 <li>
+                  <a>Papa et maman</a>
+                 </li>
+               </ul>
+             
+             </div>
+             <button className="btn btn-primary">Labo</button>
            </div>
 
         </SideBarLaboStc>

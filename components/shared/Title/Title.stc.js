@@ -1,6 +1,10 @@
 import Styled from "styled-components";
 
 const TitleStc = Styled.div`
+    @media (max-width: 471px)
+    {
+        text-align:center;
+    }
     
     margin-left:auto;
     margin-right:auto;

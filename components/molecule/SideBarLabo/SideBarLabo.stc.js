@@ -40,19 +40,34 @@ import { theme } from "../../../theme";
     {
         text-align:center;
         display: none;
+        position: fixed;
+        background: rgb(0,0,0,.4);
+        left: 0px;
+        right:0px;
+        width: 100%;
+        height: 100%;
+        top: 0px;
         @media screen and (max-width: 767px){
             width: 100%;
             display: block !important;
         }
 
-        span
+        .header
         {
-            background-color: #0d77b6!important;
-            padding: 10px 20px;
+            background: #0d77b6;
+            padding: 15px;
             color: #fff;
-            font-weight: 400;
-            font-size: 16px;
-            margin: 5px;
+        }
+
+        svg
+        {
+            float:left;
+        }
+
+        li
+        {
+            list-style: none;
+            text-align: left;
         }
     }
 
@@ -78,6 +93,15 @@ import { theme } from "../../../theme";
         @media (max-width: 991px) {
             text-align:center !important
         }
+    }
+
+    .menu
+    {
+        background: #fff;
+        opacity: 1;
+        z-index: 9999999;
+        width: 75%;
+        height: 100%
     }
     
 `;
