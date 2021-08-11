@@ -1,14 +1,14 @@
 import React from 'react'
 import ContentLaboratoireStc from './ContentLaboratoire.stc';
 
-import Laboratoire1 from '../Laboratoire1';
+import Laboratoire2 from '../Laboratoire2';
 
 const ContentLaboratoire = ({letGo}) => {
 
     return (
         <ContentLaboratoireStc >
              <div className="container">
-                <Laboratoire1 letGo={{
+                <Laboratoire2 letGo={{
                     
                     }} />
              </div>
