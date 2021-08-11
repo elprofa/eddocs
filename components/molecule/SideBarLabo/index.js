@@ -30,55 +30,68 @@ const SideBarLabo = (props) => {
         },
         {
           texte:"Force & couple",
-          lien:"/laboratoires/5"
+          lien:"/laboratoires/5",
+          active:"5"
         },
         {
           texte:"Masse",
-          lien:"/"
+          lien:"/",
+          active:"6"
         },
         {
           texte:"Pression",
           lien:"/",
+          active:"7"
       },
       {
         texte:"Pesage",
-        lien:"/"
+        lien:"/",
+        active:"8"
       },
       {
         texte:"Temps & Frequence",
-        lien:"/"
+        lien:"/",
+        active:"9"
       },
       {
         texte:"Chimie",
-        lien:"/"
+        lien:"/",
+        active:"10"
       },
       {
         texte:"Volume et Masse Volumique",
-        lien:"/"
+        lien:"/",
+        active:"11"
       },
       {
         texte:"Anemometrie",
-        lien:"/"
+        lien:"/",
+        active:"12"
       },
       {
         texte:"Machines de Forces",
         lien:"/",
+        active:"13"
       },
       {
         texte:"Qualification des Environnements propres",
-        lien:"/"
+        lien:"/",
+        active:"14"
       },
       {
         texte:"Qualification des Autoclaves",
-        lien:"/"
+        lien:"/",
+        active:"15"
       },
       {
         texte:"Qualification de l'air comprime",
-        lien:"/"
+        lien:"/",
+        active:"16"
       },
       {
         texte:"Caracterisation des Enceintes Climiques",
-        lien:"/"
+        lien:"/",
+        active:"17"
       }
         
       ];
