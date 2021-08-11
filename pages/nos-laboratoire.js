@@ -88,7 +88,7 @@ export default function NosLaboratoires() {
       <main className="main" style={{minHeight:"100vh"}}>
           <TopPageSection letGo={{
               image:"/img/slide1.jpg",
-              title:"Nos laboratoires ?",
+              title:"Nos laboratoires",
               iconGrille:2
           }} />
 
