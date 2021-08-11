@@ -4,6 +4,7 @@ import { theme } from '../../../theme';
 import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
 import Button from '../../shared/Button';
+import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 
 const Laboratoire3 = (props) => {
   
@@ -24,7 +25,7 @@ const Laboratoire3 = (props) => {
 
                 </div>
             <div className="col-lg-12">
-                <div className="rectangle">
+                <div className="rectangle lab3">
                     <div>
                         <img src="/img/7.png" />
                     </div>
@@ -68,7 +69,7 @@ const Laboratoire3 = (props) => {
             </div>
         </div>
         
-        <div className="row py-2 py-md-0">
+        <div className="row w-100 py-2 py-md-0 mx-auto">
            
             <div className="col-lg-12">
             <div className="rectangle">
