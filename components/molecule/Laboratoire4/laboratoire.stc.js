@@ -3,7 +3,7 @@ import { theme } from "../../../theme";
 const defaultStyle={
     
 }
-const LaboratoireStc3 = Styled.div`
+const LaboratoireStc4 = Styled.div`
 
     .lab3 {
         display: flex;
@@ -31,4 +31,4 @@ const LaboratoireStc3 = Styled.div`
         }
     } 
 `;
-export default LaboratoireStc3;
+export default LaboratoireStc4;

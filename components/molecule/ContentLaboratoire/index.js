@@ -8,10 +8,10 @@ import Laboratoire3 from '../Laboratoire3';
 const ContentLaboratoire = (props) => {
 
     const id=props.id_page;
-    let laboratoire=<Laboratoire1 />
+    let laboratoire=<Laboratoire3 />
     if(id==1)
     {
-        laboratoire=<Laboratoire1 />
+        laboratoire=<Laboratoire3 />
     }
     if(id==2)
     {

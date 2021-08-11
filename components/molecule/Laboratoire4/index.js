@@ -6,7 +6,7 @@ import Texte from '../../shared/Texte';
 import Button from '../../shared/Button';
 import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 
-const Laboratoire3 = (props) => {
+const Laboratoire4 = (props) => {
   
   return (
     <LaboratoireStc3 >
@@ -64,37 +64,35 @@ const Laboratoire3 = (props) => {
             </div>
         </div>
         
-        <div className="container py-2 px-lg-0 mx-auto">
+        <div className="row w-100 py-2 py-md-0 mx-auto">
            
-            <div className="row">
-                    <div className="col text-center">
+            <div className="col-lg-12">
+            <div className="rectangle">
+                    <div>
                         <img src="/img/Groupe 210.png" />
-                        <h3>Présentation Mécanique</h3>
+                        <span>Présentation Mécanique</span>
                     </div>
-
-                    <div className="col text-center">
+                    <div>
                         <img src="/img/rect-e4.png" />
-                        <h3>Presentation Interferometrique</h3>
+                        <span>Presentation Interferometrique</span>
                     </div>
-
-                    <div className="col text-center">
+                    <div>
                         <img src="/img/Rectangle 119.png" />
-                        <h3>Presentation Angulaire</h3>
+                        <span>Presentation Angulaire</span>
                     </div>
-
-                    <div className="col text-center">
+                    <div>
                         <img src="/img/Rectangle 120.png" />
-                        <h3>Presentation 2D</h3>
+                        <span>Presentation 2D</span>
                     </div>
-
-                    <div className="col text-center">
+                    <div>
                         <img src="/img/Groupe 211.png" />
-                        <h3>Presentation 3D</h3>
-                    </div> 
-    </div>
-    </div>
-</LaboratoireStc3>
+                        <span>Presentation 3D</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </LaboratoireStc3>
   );
 }
 
-export default Laboratoire3;
+export default Laboratoire4;
