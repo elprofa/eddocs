@@ -2,6 +2,7 @@ import React from 'react'
 import ContentLaboratoireStc from './ContentLaboratoire.stc';
 import Laboratoire1 from '../Laboratoire1';
 import Laboratoire2 from '../Laboratoire2';
+import Laboratoire3 from '../Laboratoire3';
 
 
 const ContentLaboratoire = (props) => {
@@ -19,6 +20,7 @@ const ContentLaboratoire = (props) => {
     return (
         <ContentLaboratoireStc >
              <div className="container">
+
                 {
                     laboratoire
                 }

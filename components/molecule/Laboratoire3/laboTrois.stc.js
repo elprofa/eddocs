@@ -4,6 +4,13 @@ const defaultStyle={
     
 }
 const LaboratoireStc3 = Styled.div`
+
+    .lab3 {
+        display: flex;
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+    }
+
     .title {
         @media (min-width: 991px) {
             margin-left:0px !important
@@ -23,3 +30,4 @@ const LaboratoireStc3 = Styled.div`
         }
     } 
 `;
+export default LaboratoireStc3;
