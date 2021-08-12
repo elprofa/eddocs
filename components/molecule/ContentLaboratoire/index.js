@@ -9,6 +9,7 @@ import Laboratoire6 from '../Laboratoire6';
 import Laboratoire7 from '../Laboratoire7';
 import Laboratoire8 from '../Laboratoire8';
 import Laboratoire9 from '../Laboratoire9';
+import Laboratoire10 from '../Laboratoire10';
 
 
 const ContentLaboratoire = (props) => {
@@ -35,10 +36,10 @@ const ContentLaboratoire = (props) => {
     {
         laboratoire=<Laboratoire5 />
     }
-    // if(id==6)
-    // {
-    //     laboratoire=<Laboratoire6 />
-    // }
+    if(id==6)
+    {
+        laboratoire=<Laboratoire6 />
+    }
     if(id==7)
     {
         laboratoire=<Laboratoire7 />
@@ -51,14 +52,13 @@ const ContentLaboratoire = (props) => {
     {
         laboratoire=<Laboratoire9 />
     }
-    // if(id==10)
-    // {
-    //     laboratoire=<Laboratoire10 />
-    // }
+    if(id==10)
+    {
+        laboratoire=<Laboratoire10 />
+    }
     return (
         <ContentLaboratoireStc >
              <div className="container">
-
                 {
                     laboratoire
                 }
