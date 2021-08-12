@@ -5,10 +5,20 @@ const defaultStyle={
 }
 const LaboratoireStc5 = Styled.div`
 
+    h4{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
     .ranger2 {
         flex-wrap: inherit;
         justify-content: start;
         margin-bottom: 3rem;
+    }
+
+    .spank{
+        display: flex;
+        width: 100%;
     }
 
     .title {

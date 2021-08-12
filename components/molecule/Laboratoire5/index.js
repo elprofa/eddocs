@@ -51,7 +51,7 @@ const Laboratoire5 = (props) => {
                             <h4>Instruments de mesure de Force</h4>
                         </div>
                     </div>
-                    <div className="row w-75 pb-5">
+                    <div className="row pb-5 spank">
                         <div className="col-lg-3 text-lg-center">     
                             <img src="/img/Groupe 306.png" />
                             <h4>Dynamomètres</h4>
@@ -68,7 +68,7 @@ const Laboratoire5 = (props) => {
                     </div>
                 </div>
 
-                <div className="row w-50 pt-5">
+                <div className="row w-100 pt-5">
                         <div className="col">
                             <h4>Instruments de mesure de Masse transportable</h4>
                         </div>
