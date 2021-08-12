@@ -3,7 +3,7 @@ import { theme } from "../../../theme";
 const defaultStyle={
     
 }
-const LaboratoireStc4 = Styled.div`
+const LaboratoireStc5 = Styled.div`
 
     .ranger2 {
         flex-wrap: inherit;
@@ -30,4 +30,4 @@ const LaboratoireStc4 = Styled.div`
         }
     } 
 `;
-export default LaboratoireStc4;
+export default LaboratoireStc5;

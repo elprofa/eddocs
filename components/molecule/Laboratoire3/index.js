@@ -67,7 +67,7 @@ const Laboratoire3 = (props) => {
         <div className="container py-2 px-lg-0 mx-auto">
            
             <div className="row">
-                    <div className="col text-center">
+                    <div className="col text-left">
                         <img src="/img/Groupe 210.png" />
                         <h3>Présentation Mécanique</h3>
                     </div>
