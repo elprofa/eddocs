@@ -5,6 +5,11 @@ const defaultStyle={
 }
 const LaboratoireStc6 = Styled.div`
 
+
+.mass{
+    display: contents;
+    padding-right: 2rem;
+}
     ul{
         display: unset;
     }
@@ -14,6 +19,11 @@ const LaboratoireStc6 = Styled.div`
         font-weight: 700;
         display: contents;
     }
+
+    .last__range{
+        display: -webkit-box;
+    }
+
     .title {
         @media (min-width: 991px) {
             margin-left:0px !important

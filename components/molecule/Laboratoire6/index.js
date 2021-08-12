@@ -52,10 +52,10 @@ const Laboratoire6 = (props) => {
 
 
                     <div className="row h-60 rectangle pb-3 pl-1 d-flex">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mass">
                             <img src="/img/Groupe 228.png" />
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 ml-5">
                             <h2>Masse</h2>
                             <div className="list">
                                 <ul> 
@@ -87,8 +87,9 @@ const Laboratoire6 = (props) => {
                             </div>
                         </div>
                         <div className="row mb-5">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 last__range">
                             <img src="/img/7.png" />
+                            <div className="ml-4"></div>
                             <img src="/img/8.png" />
                         </div>
                             <div className="list">
