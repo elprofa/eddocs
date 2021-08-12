@@ -93,9 +93,10 @@ const Laboratoire6 = (props) => {
                         </div>
                             <div className="list">
                                 <ul> 
-                                    <li> 2 Boîtes des masses classes E1</li>
-                                    <li> 2 Boîtes des masses classes E2</li>
-                                    <li> 2 Boîtes des masses classes F1</li>
+                                    <li> Classe E2 de 1g à 10 Kg</li>
+                                    <li> Classe F1 de 1mg à 20 Kg</li>
+                                    <li> Classe F2 de 1mg à 20 Kg</li>
+                                    <li> Classe M de 1mg à 20 Kg</li>
                                 </ul>
                             </div>
                         </div>
