@@ -22,7 +22,7 @@ export default function NosLaboratoires() {
        <section >
         <div className="row">
           <div className="col-lg-3 col-md-3">
-              <SideBarLabo />
+              <SideBarLabo id_page={1} />
           </div>
           <div className="col-lg-9 col-md-9">
               <ContentLaboratoire id_page={1} />
