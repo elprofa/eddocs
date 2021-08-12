@@ -11,6 +11,8 @@ import { theme } from "../../../theme";
         text-decoration:underline;
         text-decoration-color:red;
         line-height:1em;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 2px !important;
     }
     .nav-pills .nav-link.active, .nav-pills .nav-link:hover
     {

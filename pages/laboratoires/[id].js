@@ -20,7 +20,7 @@ export default function IdLabo({query}) {
         <TopPageSection letGo={{
              image:"/img/slide1.jpg",
              title:"Nos laboratoires ",
-             iconGrille:1,
+             iconGrille:2,
          }} />
        
        <section >

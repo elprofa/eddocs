@@ -12,7 +12,7 @@ const NoschiffreContent = (props) => {
 
     return (
         <NoschiffreContentStc MonStyle={letGo.style} className="py-2 py-md-5">
-            <Title partOne="Nos" PartTwo=" chiffres" MyclassName="py-2 py-md-3 chiffre" number={2} type={1} />
+            <Title partOne="Nos" PartTwo=" chiffres" MyclassName="py-2 py-md-3 chiffre title" number={2} type={1} />
            
             <div className="row py-2 py-md-3">
                 <div className="col-md-12">
