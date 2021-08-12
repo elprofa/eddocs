@@ -55,7 +55,7 @@ const SideBarLabo = (props) => {
         active:"9"
       },
       {
-        texte:"Chimie",
+        texte:"Anemometrie",
         lien:"/laboratoires/10",
         active:"10"
       },
@@ -64,9 +64,10 @@ const SideBarLabo = (props) => {
         lien:"/laboratoires/11",
         active:"11"
       },
+      
       {
-        texte:"Anemometrie",
-        lien:"/laboratoires/12",
+        texte:"Chimie",
+        lien:"/laboratoires/112",
         active:"12"
       },
       {
