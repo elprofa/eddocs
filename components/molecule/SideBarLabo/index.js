@@ -36,62 +36,62 @@ const SideBarLabo = (props) => {
         },
         {
           texte:"Masse",
-          lien:"/",
+          lien:"/laboratoires/6",
           active:"6"
         },
         {
           texte:"Pression",
-          lien:"/",
+          lien:"/laboratoires/7",
           active:"7"
       },
       {
         texte:"Pesage",
-        lien:"/",
+        lien:"/laboratoires/8",
         active:"8"
       },
       {
         texte:"Temps & Frequence",
-        lien:"/",
+        lien:"/laboratoires/9",
         active:"9"
       },
       {
         texte:"Chimie",
-        lien:"/",
+        lien:"/laboratoires/10",
         active:"10"
       },
       {
         texte:"Volume et Masse Volumique",
-        lien:"/",
+        lien:"/laboratoires/11",
         active:"11"
       },
       {
         texte:"Anemometrie",
-        lien:"/",
+        lien:"/laboratoires/12",
         active:"12"
       },
       {
         texte:"Machines de Forces",
-        lien:"/",
+        lien:"/laboratoires/13",
         active:"13"
       },
       {
         texte:"Qualification des Environnements propres",
-        lien:"/",
+        lien:"/laboratoires/14",
         active:"14"
       },
       {
         texte:"Qualification des Autoclaves",
-        lien:"/",
+        lien:"/laboratoires/15",
         active:"15"
       },
       {
         texte:"Qualification de l'air comprime",
-        lien:"/",
+        lien:"/laboratoires/16",
         active:"16"
       },
       {
         texte:"Caracterisation des Enceintes Climiques",
-        lien:"/",
+        lien:"/laboratoires/17",
         active:"17"
       }
         
