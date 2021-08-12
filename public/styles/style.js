@@ -23,12 +23,7 @@ export const GlobalCSS = createGlobalStyle`
         }
     }
 
-    .row
-    {
-        @media (max-width: 471px)
-        {
-            margin: 0px !important;
-        }
+    
     }
 
     .sectionHeader

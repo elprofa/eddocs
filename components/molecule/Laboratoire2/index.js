@@ -61,7 +61,7 @@ const Laboratoire2 = (props) => {
                 <Button texte="Demandez un devis >" className="demande_devis " />
             </Col>
         </Row>
-        <Row className="my2 my-md-5">
+        <Row className="my-2 my-md-5">
             <Col lg={6} md={6}>
                 <TitreParagrapheLabo 
                     title={

@@ -8,6 +8,7 @@ import Laboratoire5 from '../Laboratoire5';
 import Laboratoire6 from '../Laboratoire6';
 import Laboratoire7 from '../Laboratoire7';
 import Laboratoire8 from '../Laboratoire8';
+import Laboratoire9 from '../Laboratoire9';
 
 
 const ContentLaboratoire = (props) => {
@@ -46,10 +47,10 @@ const ContentLaboratoire = (props) => {
     {
         laboratoire=<Laboratoire8 />
     }
-    // if(id==9)
-    // {
-    //     laboratoire=<Laboratoire9 />
-    // }
+    if(id==9)
+    {
+        laboratoire=<Laboratoire9 />
+    }
     // if(id==10)
     // {
     //     laboratoire=<Laboratoire10 />

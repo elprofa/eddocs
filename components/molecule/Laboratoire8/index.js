@@ -17,7 +17,7 @@ const Details1 = [
   
 ];
 
-const Laboratoire7 = (props) => {
+const Laboratoire9 = (props) => {
   return (
     <LaboratoireStc1>
       <div className="row py-2 py-md-5">
@@ -84,4 +84,4 @@ const Laboratoire7 = (props) => {
   );
 };
 
-export default Laboratoire7;
+export default Laboratoire9;
