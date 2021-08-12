@@ -5,15 +5,16 @@ import Laboratoire2 from '../Laboratoire2';
 import Laboratoire3 from '../Laboratoire3';
 import Laboratoire4 from '../Laboratoire4';
 import Laboratoire5 from '../Laboratoire5';
+import Laboratoire6 from '../Laboratoire6';
 
 
 const ContentLaboratoire = (props) => {
 
     const id=props.id_page;
-    let laboratoire=<Laboratoire5 />
+    let laboratoire=<Laboratoire6 />
     if(id==1)
     {
-        laboratoire=<Laboratoire5 />
+        laboratoire=<Laboratoire6 />
     }
     if(id==2)
     {
