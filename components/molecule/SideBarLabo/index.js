@@ -122,7 +122,7 @@ const SideBarLabo = (props) => {
                 
             </ul>
            </div>
-           <div className="phone">
+           {/* <div className="phone">
              <div className="menu">
                <div className="header">
                
@@ -142,7 +142,7 @@ const SideBarLabo = (props) => {
              
              </div>
              <button className="btn btn-primary">Labo</button>
-           </div>
+           </div> */}
 
         </SideBarLaboStc>
        
