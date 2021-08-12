@@ -6,6 +6,8 @@ import Title from '../../shared/Title';
 import { theme } from '../../../theme';
 import Link from 'next/link'
 import { AiOutlineClose } from "react-icons/ai";
+import gsap from 'gsap'
+import { getElementById } from 'domutils';
 
 const SideBarLabo = (props) => {
     const menus=[
@@ -98,12 +100,22 @@ const SideBarLabo = (props) => {
         
       ];
     const id_page=props.id_page;
+
+    const openLabo=()=>{
+      document.getElementById('phone').style.display="block";
+      gsap.from(".phone", { x: 0, duration: 1});
+    }
+    const closeLabo=()=>{
+      
+      gsap.to(".phone", { x: 0, duration: 1});
+      document.getElementById('phone').style.display="none";
+    }
     
     return (
         <SideBarLaboStc className="d-flex flex-column flex-shrink-0 p-3 py-0 py-md-5">
            <div className="desktop">
            <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <Title partOne="Nos" PartTwo=" Laboratoire" number={1} MyclassName="py-2 py-md-3 title" />
+                <Title partOne="Nos" PartTwo=" Laboratoires" number={1} MyclassName="py-2 py-md-3 title" />
             </a>
            
 
@@ -123,11 +135,11 @@ const SideBarLabo = (props) => {
                 
             </ul>
            </div>
-           {/* <div className="phone">
+           <div className="phone" id="phone">
              <div className="menu">
                <div className="header">
                
-                 <h3> <AiOutlineClose/> Nos laboratoires</h3>
+                 <h3 onClick={closeLabo}> <AiOutlineClose/> Nos laboratoires</h3>
                </div>
                <ul>
                  <li>
@@ -142,9 +154,9 @@ const SideBarLabo = (props) => {
                </ul>
              
              </div>
-             <button className="btn btn-primary">Labo</button>
-           </div> */}
-
+             
+           </div>
+           {/* <button className="btn btn-primary openLabo" onClick={openLabo}>Labo</button> */}
         </SideBarLaboStc>
        
     )

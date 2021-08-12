@@ -10,6 +10,7 @@ import Laboratoire7 from '../Laboratoire7';
 import Laboratoire8 from '../Laboratoire8';
 import Laboratoire9 from '../Laboratoire9';
 import Laboratoire10 from '../Laboratoire10';
+import Laboratoire13 from '../Laboratoire13';
 
 
 const ContentLaboratoire = (props) => {
@@ -55,6 +56,10 @@ const ContentLaboratoire = (props) => {
     if(id==10)
     {
         laboratoire=<Laboratoire10 />
+    }
+    if(id==13)
+    {
+        laboratoire=<Laboratoire13 />
     }
     return (
         <ContentLaboratoireStc >

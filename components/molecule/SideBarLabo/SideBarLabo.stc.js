@@ -49,10 +49,6 @@ import { theme } from "../../../theme";
         width: 100%;
         height: 100%;
         top: 0px;
-        @media screen and (max-width: 767px){
-            width: 100%;
-            display: block !important;
-        }
 
         .header
         {
@@ -104,6 +100,16 @@ import { theme } from "../../../theme";
         z-index: 9999999;
         width: 75%;
         height: 100%
+    }
+
+    .openLabo
+    {
+        background:red;
+        width:100vw;
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0px;
     }
     
 `;
