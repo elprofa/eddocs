@@ -8,15 +8,10 @@ import PCard from "../PresentationCard";
 import TitreParagrapheLabo from "../TitreParagrapheLabo";
 
 const Details = [
-  { url: "/img/pression/2.png", title: "Chaine de mésure témperature à résistance de platine" },
-  { url: "/img/pression/3.png", title: "Chaîne de mesure de pression à couple thermoélectrique" },
-  { url: "/img/pression/4.png", title: "Thermomètre en verre à dilatation liquide" },
-  { url: "/img/pression/5.png", title: "Thermohygromètre" },
-  { url: "/img/pression/9.png", title: "Therme hydrographe " },
-  { url: "/img/pression/11.png ", title: "Afficheur de température" },
-  { url: "/img/pression/10.png", title: "Thermo-bouton" },
-  { url: "/img/pression/12.png", title: "Enregistreur de pression" },
-
+  { url: "/img/pression/2.png", title: "Nanomètre " },
+  { url: "/img/pression/3.png", title: "Capteur de pression" },
+  { url: "/img/pression/4.png", title: "Mano-vacuomèttre" },
+  
 ];
 
 
