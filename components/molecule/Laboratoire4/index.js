@@ -33,29 +33,29 @@ const Laboratoire4 = (props) => {
 
              </div>
                 <div className="row ranger2 rectangle pb-3 pl-2 d-inline-flex">
-                    <div className="col">
+                    <div className="col text-center">
                         <img src="/img/Groupe 206.png" />
-                        <h3>Thermolygromètre</h3>
+                        <h4>Thermolygromètre</h4>
                     </div>
 
-                    <div className="col">
+                    <div className="col text-center">
                         <img src="/img/Groupe 205.png" />
-                        <h3>Hygromètre à condensation</h3>
+                        <h4>Hygromètre à condensation</h4>
                     </div>
 
-                    <div className="col">
+                    <div className="col text-center">
                         <img src="/img/Groupe 207.png" />
-                        <h3>Afficheur et enregistreur</h3>                      
+                        <h4>Afficheur et enregistreur</h4>                      
                     </div>
 
-                    <div className="col">
+                    <div className="col text-center">
                         <img src="/img/Groupe 208.png" />
-                        <h3>Hygromètre à variation d'impédance</h3> 
+                        <h4>Hygromètre à variation d'impédance</h4> 
                     </div>
 
-                    <div className="col">
+                    <div className="col text-center">
                         <img src="/img/Groupe 209.png" />
-                        <h3>Thermo hygrographe</h3> 
+                        <h4>Thermo hygrographe</h4> 
                     </div>
                 </div>
 

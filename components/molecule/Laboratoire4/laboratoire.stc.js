@@ -5,7 +5,12 @@ const defaultStyle={
 }
 const LaboratoireStc4 = Styled.div`
 
-    .ranger2 {
+h4{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+.ranger2 {
         flex-wrap: inherit;
         justify-content: start;
         margin-bottom: 3rem;
