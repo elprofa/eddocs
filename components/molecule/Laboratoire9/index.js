@@ -31,7 +31,7 @@ const Laboratoire9 = (props) => {
           />
         </div>
       </div>
-        <Row>
+        <Row className="py-2 py-md-3">
             <Col lg={6} md={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -44,22 +44,20 @@ const Laboratoire9 = (props) => {
                         & Fréquence, à savoir:</>}
                 } />
             </Col>
-            <Col lg={6} md={6} className="text-center">
-                <img src="/img/temps/7.png" height="80" className="mx-2" />
-                <img src="/img/temps/8.png" className="mx-2"  />
-            </Col>
+            <PCard url1="/img/temps/7.png" url2="/img/temps/8.png" type={1}  />
+            
         </Row>
         <RowAccreditationSociete texte="Chronomètre (Sur labo)" url2="" url1="" type="1" />
         
         <Row className="my-2 my-md-2">
             {
-                Details.map((detail,index)=>(<PCard url={detail.url} title={detail.title} key={index}  />))
+                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
             }
         </Row>
-        <RowAccreditationSociete texte="Centrifugeuse (Sur site)" url1="" url2="" type="1" />
+        <RowAccreditationSociete texte="Centrifugeuse (Sur site)" type="0" />
         <Row className="my-2 my-md-2">
             {
-                Details1.map((detail1,index)=>(<PCard url={detail1.url} title={detail1.title} key={index}  />))
+                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index}  />))
             }
         </Row>
         <Row className="my-2 my-md-3">

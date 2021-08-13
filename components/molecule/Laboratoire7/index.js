@@ -40,26 +40,35 @@ const Laboratoire7 = (props) => {
                           de pression suivants: </>}
                 } />
             </Col>
-            <Col lg={3} md={3} className="text-center">
-                <img src="/img/pression/7.png" className="mx-2" />
-                <img src="/img/pression/8.png" className="mx-2"  />
-            </Col>
-            <Col lg={3} md={3} className="text-center">
-                <img src="/img/pression/9.png" className="mx-2" height="120"/>
-                <img src="/img/pression/10.png" className="mx-2"  />
-            </Col>
+            <PCard url1="/img/pression/7.png" url2="/img/pression/8.png" type={1} className="text-center"  />
+            <PCard url1="/img/pression/9.png" url2="/img/pression/10.png" type={1} className="text-center" />
+           
         </Row>
+       
+        <Row className="my-2 my-md-5">
+            {
+                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
+            }
+        </Row>
+        <Row>
+            <Col lg={6} md={6}>
+                <TitreParagrapheLabo 
+                    title={
+                        {}
+                    }
+                    paragraphe={
+                        {
+                        texte:<>Le laboratoire dispose des meilleurs incertitudes à l'echelle nationale avec une equipe de 6 métrologues pour ce domaine: </>}
+                } />
+            </Col>
+            
+        </Row>
+
         <Row className="my-2 my-md-3">
             <Col>
                 <Button texte="Demandez un devis >" className="demande_devis " />
             </Col>
         </Row>
-        <Row className="my-2 my-md-5">
-            {
-                Details.map((detail,index)=>(<PCard url={detail.url} title={detail.title} key={index}  />))
-            }
-        </Row>
-       
         
     </LaboratoireStc1>
   );

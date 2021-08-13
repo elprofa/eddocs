@@ -46,9 +46,10 @@ import { theme } from "../../../theme";
         background: rgb(0,0,0,.4);
         left: 0px;
         right:0px;
-        width: 100%;
+        width: 0;
         height: 100%;
         top: 0px;
+        z-index:99;
 
         .header
         {
@@ -99,17 +100,29 @@ import { theme } from "../../../theme";
         opacity: 1;
         z-index: 9999999;
         width: 75%;
-        height: 100%
+        height: 100%;
+        overflow-y:0px;
     }
 
     .openLabo
     {
-        background:red;
-        width:100vw;
-        position:fixed;
-        left:0;
-        right:0;
-        bottom:0px;
+        @media (min-width: 471px) {
+            display:none;
+        }
+        background: #eb1b2a;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        border: 0;
+        border-radius: 0px;
+        height: 50px;
+        z-index: 0;
+    }
+    
+    @media (max-width: 471px) {
+        padding:0px !important;
     }
     
 `;

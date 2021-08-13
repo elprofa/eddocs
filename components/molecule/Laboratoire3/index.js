@@ -32,7 +32,7 @@ const Laboratoire3 = (props) => {
           />
         </div>
       </div>
-        <Row>
+        <Row className="py-2 py-md-3">
             <Col lg={6} md={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -46,14 +46,12 @@ const Laboratoire3 = (props) => {
                         </>}
                 } />
             </Col>
-            <Col lg={6} md={6} className="text-center">
-                <img src="/img/e-d3.png" className="mx-2" />
-                <img src="/img/e-d2.png" className="mx-2"  />
-            </Col>
+            <PCard url1="/img/e-d3.png" url2="/img/e-d2.png" type={1}  />
+            
         </Row>
         <Row className="my-2 my-md-5">
             {
-                Details.map((detail,index)=>(<PCard url={detail.url} title={detail.title} key={index}  />))
+                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
             }
         </Row>
         <Row className="my-2 my-md-3">

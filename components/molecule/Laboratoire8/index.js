@@ -6,6 +6,8 @@ import { theme } from "../../../theme";
 import Button from "../../shared/Button";
 import PCard from "../PresentationCard";
 import TitreParagrapheLabo from "../TitreParagrapheLabo";
+import RowAccreditationSociete from "../RowAccreditationSociete";
+
 
 const Details = [
   { url: "/img/pesage/2.png", title: "Etalonnage instrument de pesage à fonctionnement non automatique jusqu'à 6 tonnes " },
@@ -29,7 +31,7 @@ const Laboratoire9 = (props) => {
           />
         </div>
       </div>
-        <Row>
+        <Row className="py-2 py-md-3">
             <Col lg={6} md={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -43,36 +45,21 @@ const Laboratoire9 = (props) => {
                 } />
             </Col>
             <Col lg={6} md={6} className="text-center">
-                <img src="/img/pesage/7.png" className="mx-2" />
-                <img src="/img/pesage/8.png" className="mx-2"  />
+                <PCard url1="/img/pesage/7.png" url2="/img/pesage/8.png" type={1}  />
             </Col>
         </Row>
-        <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} className="align-self-center">
-                <h6 className="fw-bold">Dans le cadre de l'accréditation SEMAC</h6>
-            </Col>
-            <Col lg={6} md={6} className="">
-                <img src="/img/pesage/10.png" height="100" className="mx-2" />
-                <img src="/img/pesage/11.png" className="mx-2"  />
-            </Col>
-        </Row>
+        <RowAccreditationSociete texte="Dans le cadre de l'accréditation SEMAC" url2="/img/pesage/11.png" url1="/img/pesage/10.png" type="1" />
+        
         <Row className="my-2 my-md-2">
             {
-                Details.map((detail,index)=>(<PCard url={detail.url} title={detail.title} key={index}  />))
+                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
             }
         </Row>
-        <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} className="align-self-center">
-                <h6 className="fw-bold">Dans le cadre de l'accréditation TUNAC-ILAC</h6>
-            </Col>
-            <Col lg={6} md={6} className="">
-                <img src="/img/pesage/9.png" height="100" className="mx-2" />
-                <img src="/img/pesage/11.png" className="mx-2"  />
-            </Col>
-        </Row>
+        <RowAccreditationSociete texte="Dans le cadre de l'accréditation TUNAC-ILAC" url2="/img/pesage/11.png" url1="/img/pesage/9.png" type="1" />
+
         <Row className="my-2 my-md-2">
             {
-                Details1.map((detail1,index)=>(<PCard url={detail1.url} title={detail1.title} key={index}  />))
+                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index}  />))
             }
         </Row>
         <Row className="my-2 my-md-3">

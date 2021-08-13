@@ -37,7 +37,7 @@ const Laboratoire2 = (props) => {
           />
         </div>
       </div>
-        <Row>
+        <Row className="py-2 py-md-3">
             <Col lg={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -51,9 +51,9 @@ const Laboratoire2 = (props) => {
                 } />
             </Col>
         </Row>
-        <Row>
+        <Row className="py-2 py-md-3">
             {
-                Details.map((detail,index)=>(<PCard url={detail.url} title={detail.title} key={index}  />))
+                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
             }
         </Row>
         <Row className="my-2 my-md-3">
@@ -61,7 +61,7 @@ const Laboratoire2 = (props) => {
                 <Button texte="Demandez un devis >" className="demande_devis " />
             </Col>
         </Row>
-        <Row className="my-2 my-md-5">
+        <Row className="my2 my-md-5">
             <Col lg={6} md={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -73,15 +73,11 @@ const Laboratoire2 = (props) => {
                         travers un laboratoire accredité par le COFRAC pour l'etalonnage des instruments suivants:</>}
                 } />
             </Col>
-            <Col className="text-center">
-                <img src="/img/e-d3.png" className="mx-2" />
-                <img src="/img/e-d2.png" className="mx-2"  />
-                
-            </Col>
+            <PCard url1="/img/e-d3.png" url2="/img/e-d2.png" type={1}  />
         </Row>
-        <Row className="my-2">
+        <Row className="py-2 py-md-3">
             {
-                Details1.map((detail1,index)=>(<PCard url={detail1.url} title={detail1.title} key={index+detail1.url}  />))
+                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
             }
         </Row>
     </LaboratoireStc1>

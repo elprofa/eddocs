@@ -102,13 +102,15 @@ const SideBarLabo = (props) => {
     const id_page=props.id_page;
 
     const openLabo=()=>{
-      document.getElementById('phone').style.display="block";
-      gsap.from(".phone", { x: 0, duration: 1});
+      gsap.to(".phone", { display: 'block'});
+      gsap.to(".phone", { width: '100%', duration: 0.6});
+      gsap.to(".menu", { display: "block",delay: 0.5});
     }
     const closeLabo=()=>{
+      gsap.to(".menu", { display: "none"});
+      gsap.to(".phone", { width: 0, duration: 0.6});
+      gsap.to(".menu", { display: "none",duration: 0});
       
-      gsap.to(".phone", { x: 0, duration: 1});
-      document.getElementById('phone').style.display="none";
     }
     
     return (
@@ -141,22 +143,25 @@ const SideBarLabo = (props) => {
                
                  <h3 onClick={closeLabo}> <AiOutlineClose/> Nos laboratoires</h3>
                </div>
-               <ul>
-                 <li>
-                  <a>Papa et maman</a>
-                 </li>
-                 <li>
-                  <a>Papa et maman</a>
-                 </li>
-                 <li>
-                  <a>Papa et maman</a>
-                 </li>
+               <ul className="px-0">
+               {
+                    menus.map((menu,index)=>
+                        <li className="nav-item" key={index+"menu_laboratoire_mobile"} onClick={closeLabo}>
+                            <Link href={menu.lien}>
+                                <a className={menu.active==id_page?"active nav-link fw-bold":'fw-bold nav-link'} aria-current="page" style={{color:"#000"}}>
+                                    {menu.texte}
+                                </a>
+                            </Link>
+                        </li>
+                    )
+                }
+                
                </ul>
              
              </div>
              
            </div>
-           {/* <button className="btn btn-primary openLabo" onClick={openLabo}>Labo</button> */}
+           <button className="btn btn-primary openLabo" onClick={openLabo}>Nos laboratoire</button>
         </SideBarLaboStc>
        
     )

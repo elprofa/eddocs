@@ -26,7 +26,7 @@ const Laboratoire10 = (props) => {
           />
         </div>
       </div>
-        <Row>
+        <Row className="py-2 py-md-3">
             <Col lg={6} md={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -48,7 +48,7 @@ const Laboratoire10 = (props) => {
         
         <Row className="my-2 my-md-2">
             {
-                Details.map((detail,index)=>(<PCard url={detail.url} title={detail.title} key={index}  />))
+                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
             }
         </Row>
        

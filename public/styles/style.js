@@ -42,4 +42,8 @@ export const GlobalCSS = createGlobalStyle`
        
     }
     
+    img
+    {
+        max-width:100%;
+    }
 `;
