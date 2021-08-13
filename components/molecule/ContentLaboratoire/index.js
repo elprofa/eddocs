@@ -13,15 +13,16 @@ import Laboratoire10 from '../Laboratoire10';
 import Laboratoire13 from '../Laboratoire13';
 import Laboratoire14 from '../Laboratoire14';
 import Laboratoire15 from '../Laboratoire15';
+import Laboratoire16 from '../Laboratoire16';
 
 
 const ContentLaboratoire = (props) => {
 
     const id=props.id_page;
-    let laboratoire=<Laboratoire15 />
+    let laboratoire=<Laboratoire16 />
     if(id==1)
     {
-        laboratoire=<Laboratoire15 />
+        laboratoire=<Laboratoire16 />
     }
     if(id==2)
     {
