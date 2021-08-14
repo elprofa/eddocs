@@ -10,6 +10,7 @@ import Laboratoire7 from '../Laboratoire7';
 import Laboratoire8 from '../Laboratoire8';
 import Laboratoire9 from '../Laboratoire9';
 import Laboratoire10 from '../Laboratoire10';
+import Laboratoire11 from '../Laboratoire11';
 import Laboratoire13 from '../Laboratoire13';
 import Laboratoire14 from '../Laboratoire14';
 import Laboratoire15 from '../Laboratoire15';
@@ -20,14 +21,14 @@ import Laboratoire17 from '../Laboratoire17';
 const ContentLaboratoire = (props) => {
 
     const id=props.id_page;
-    let laboratoire=<Laboratoire17 />
+    let laboratoire=<Laboratoire1 />
     if(id==1)
     {
-        laboratoire=<Laboratoire17 />
+        laboratoire=<Laboratoire1 />
     }
     if(id==2)
     {
-        laboratoire=<Laboratoire7 />
+        laboratoire=<Laboratoire2 />
     }
     if(id==3)
     {
@@ -61,9 +62,29 @@ const ContentLaboratoire = (props) => {
     {
         laboratoire=<Laboratoire10 />
     }
+    if(id==11)
+    {
+        laboratoire=<Laboratoire11 />
+    }
     if(id==13)
     {
         laboratoire=<Laboratoire13 />
+    }
+    if(id==14)
+    {
+        laboratoire=<Laboratoire14 />
+    }
+    if(id==15)
+    {
+        laboratoire=<Laboratoire15 />
+    }
+    if(id==16)
+    {
+        laboratoire=<Laboratoire16 />
+    }
+    if(id==17)
+    {
+        laboratoire=<Laboratoire17 />
     }
     return (
         <ContentLaboratoireStc >

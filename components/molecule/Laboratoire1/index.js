@@ -11,9 +11,9 @@ import PCard from "../PresentationCard";
 const Laboratoire1 = (props) => {
     const Details = [
         { url1: "/img/7.png", url2: "/img/8.png" },
-        { url1: "/img/Groupe -9.png",url2: "/img/8.png",},
+        { url1: "/img/tunac.png",url2: "/img/8.png",},
         { url1: "/img/ilac-ment-1.png", url2: "/img/8.png"},
-        { url1: "/img/Groupe -8.png ",url2: "/img/8.png"},
+        { url1: "/img/semac1.png ",url2: "/img/8.png"},
       ];
 
       const Details1 = [

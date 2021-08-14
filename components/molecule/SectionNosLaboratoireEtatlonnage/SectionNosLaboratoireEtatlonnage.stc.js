@@ -11,10 +11,17 @@ const SectionNosLaboratoireEtatlonnageStc=Styled.div`
         }
     }
 
-    .divCard
+    .divcard
     {
-        @media (max-width: 991px) {
+        @media (max-width: 471px) {
             overflow-x:scroll
+        }
+
+        .row
+        {
+            @media (max-width: 471px) {
+                min-width:3000px;
+            }
         }
     }
     .divCard::-webkit-scrollbar {

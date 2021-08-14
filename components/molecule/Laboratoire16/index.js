@@ -13,14 +13,14 @@ const Laboratoire16 = (props) => {
   return (
     <LaboratoireStc1 >
         <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/Rectangle 99.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
+            <div className="col-md-12">
+            <img
+                src="/img/Rectangle 99.png"
+                width="100%"
+                className="my-2 my-md-3"
+            />
+            </div>
         </div>
-      </div>
 
         <Row className="py-2 py-md-3">
             <Col lg={8} md={10}>
@@ -39,27 +39,28 @@ const Laboratoire16 = (props) => {
         </Row>
         
         <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} className="align-self-center">
+            <Col lg={4} md={4} className="align-self-center">
                 <div className="px-4">
                     <ul> 
-                        <li> Comptage de particule</li>
-                        <li> Température de rosée;</li>
-                        <li> Le débit</li>
-                        <li> La pression</li>
-                        <li> La teneur en huile</li>
-                        <li> Teneur d'humidité</li>
-                        <li> Contrôle CO, CO2, NO, ...</li>
+                        <li className="fw-bold"> Comptage de particule</li>
+                        <li className="fw-bold"> Température de rosée;</li>
+                        <li className="fw-bold"> Le débit</li>
+                        <li className="fw-bold"> La pression</li>
+                        <li className="fw-bold"> La teneur en huile</li>
+                        <li className="fw-bold">  Teneur d'humidité</li>
+                        <li className="fw-bold"> Contrôle CO, CO2, NO, ...</li>
                     </ul>
                 </div>
-                <Col>
-                    <Button texte="Demandez un devis >" className="demande_devis " />
-                </Col>
             </Col>
-            <Col lg={6} md={6} >
+            <Col lg={8} md={8} >
                 <img src="/img/Groupe 232.png" />
             </Col>
         </Row>
-    
+        <Row className="my-2 my-md-3">
+            <Col>
+                <Button texte="Demandez un devis >" className="demande_devis " />
+            </Col>
+        </Row>
                    
         
 </LaboratoireStc1>

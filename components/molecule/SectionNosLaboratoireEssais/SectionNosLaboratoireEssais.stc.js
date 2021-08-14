@@ -2,8 +2,6 @@ import Styled from "styled-components";
 
 const SectionNosLaboratoireEssaisStc=Styled.div`
 
-    
-
     .card
     {
         display: inline-table;
@@ -28,13 +26,18 @@ const SectionNosLaboratoireEssaisStc=Styled.div`
     .divCard::-webkit-scrollbar-thumb {
         /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
     }
-    .divCard
+    .divcard
     {
         
-        @media (max-width: 991px) {
+        @media (max-width: 471px) {
             overflow-x:scroll
             
-            
+        }
+        .row
+        {
+            @media (max-width: 471px) {    
+                min-width:900px;            
+            }
         }
     }
     .divCard .card

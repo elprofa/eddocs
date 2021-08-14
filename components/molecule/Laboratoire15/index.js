@@ -53,29 +53,28 @@ const Laboratoire15 = (props) => {
                         </>}
                 } />
             </Col> 
-            <Col lg={4} md={4}>
-                <img src="/img/7.png" />
-                <img src="/img/8.png" />
-            </Col>           
+            <PCard url1="/img/7.png" url2="/img/8.png" type={1}  />
+                    
         </Row>
         <Row className="my-2 my-md-3">
             <Col lg={6} md={6} className="align-self-center">
-                <div className="px-4">
+                <div className="px-0 px-md-4">
                     <ul> 
                         <li> Distribution de chaleur;</li>
                         <li> Pénétration de chaleur;</li>
                         <li> Calcul de la valeur stérilisatrice FO</li>
                     </ul>
                 </div>
-                <Col>
-                    <Button texte="Demandez un devis >" className="demande_devis " />
-                </Col>
             </Col>
             <Col lg={6} md={6} >
                 <img src="/img/Groupe 1527.png" />
             </Col>
         </Row>
-    
+        <Row className="my-2 my-md-3">
+            <Col>
+                <Button texte="Demandez un devis >" className="demande_devis " />
+            </Col>
+        </Row>
                    
         
 </LaboratoireStc1>

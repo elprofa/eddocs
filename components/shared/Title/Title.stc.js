@@ -3,6 +3,12 @@ import Styled from "styled-components";
 const TitleStc = Styled.div`
     @media (max-width: 471px)
     {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    @media (max-width: 471px)
+    {
         text-align:center;
     }
 

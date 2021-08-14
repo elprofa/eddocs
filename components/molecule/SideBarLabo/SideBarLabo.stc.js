@@ -13,6 +13,7 @@ import { theme } from "../../../theme";
         line-height:1em;
         text-underline-offset: 8px;
         text-decoration-thickness: 2px !important;
+        line-height:2em;
     }
     .nav-pills .nav-link.active, .nav-pills .nav-link:hover
     {
@@ -50,6 +51,7 @@ import { theme } from "../../../theme";
         height: 100%;
         top: 0px;
         z-index:99;
+        
 
         .header
         {
@@ -101,7 +103,7 @@ import { theme } from "../../../theme";
         z-index: 9999999;
         width: 75%;
         height: 100%;
-        overflow-y:0px;
+        overflow-y:scroll;
     }
 
     .openLabo

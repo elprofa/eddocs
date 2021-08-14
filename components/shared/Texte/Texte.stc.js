@@ -12,6 +12,7 @@ const defaultStyle={
     @media (max-width: 471px)
     {
         font-size:16px !important;
+        text-align:center;
     }
     &.label
     {

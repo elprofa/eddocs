@@ -44,9 +44,7 @@ const Laboratoire9 = (props) => {
                         des meilleurs incertitudes dans ce domaine à l'échelle nationale</>}
                 } />
             </Col>
-            <Col lg={6} md={6} className="text-center">
-                <PCard url1="/img/pesage/7.png" url2="/img/pesage/8.png" type={1}  />
-            </Col>
+            <PCard url1="/img/pesage/7.png" url2="/img/pesage/8.png" type={1}  />
         </Row>
         <RowAccreditationSociete texte="Dans le cadre de l'accréditation SEMAC" url2="/img/pesage/11.png" url1="/img/pesage/10.png" type="1" />
         

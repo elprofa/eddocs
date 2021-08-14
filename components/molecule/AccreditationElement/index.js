@@ -13,6 +13,7 @@ const AccreditationElement = (props) => {
      const src=letGo.src;
      const lien=letGo.lien;
      const texte=letGo.texte;
+     const link_name=letGo.link_name
 
     return (
         <AccreditationElementStc className="row">
@@ -24,7 +25,7 @@ const AccreditationElement = (props) => {
             </div>
             <div className="col-md-6 align-self-center">
                 <a href={lien}>
-                    <Texte texte={lien} MyclassName="paragraphe py-2 py-md-3" />
+                    <Texte texte={link_name} MyclassName="paragraphe py-2 py-md-3" />
                 </a>
             </div>
         </AccreditationElementStc>

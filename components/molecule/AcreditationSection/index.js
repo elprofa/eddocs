@@ -11,17 +11,20 @@ const AccreditationSection = (props) => {
         {
             texte:"COFRAC",
             src:"/img/Groupe116.png",
-            lien:<>https://www.cofrac.fr </>
+            lien:<>https://www.cofrac.fr </>,
+            link_name:"https://www.cofrac.fr"
         },
         {
             texte:"Tunac",
-            src:"/img/tunac.png",
-            lien:"https://www.tunac.tn/"
+            src:"/img/groupe117.png",
+            lien:"https://www.tunac.tn/",
+            link_name:"https://www.tunac.tn/",
         },
         {
             texte:"SEMAC",
             src:"/img/semac.png",
-            lien:"https://www.mcinet.gov.ma/fr/content/accreditation"
+            lien:" https://www.mcinet.gov.ma/fr/content/accreditation",
+            link_name:'https://www.mcinet.gov...'
         }
     ];
     return (
@@ -44,6 +47,7 @@ const AccreditationSection = (props) => {
                                 texte:element.texte,
                                 src:element.src,
                                 lien:element.lien,
+                                link_name:element.link_name
                             }} />)
                         }
                     </div>

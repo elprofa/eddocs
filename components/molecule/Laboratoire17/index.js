@@ -68,7 +68,7 @@ const Laboratoire17 = (props) => {
             </Col>
             {
                     Details.map((detail,index)=>(<PCard url1={detail.url1} url2={detail.url2} key={index} type={1}  />))
-                }
+            }
             
         </Row>
 
