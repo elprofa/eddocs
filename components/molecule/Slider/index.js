@@ -25,11 +25,6 @@ const items = [
     caption:<Title MyclassName="title" partOne={
       <>ETALONNAGE & VERIFICATION / ESSAIE/FORMATION / FORMATION & CONSEIL</>} PartTwo="" number={1} type={1} />
   },
-  {
-    src: "/img/slide1.jpg",
-    caption: <Title MyclassName="title" partOne={
-      <>LE GROUPE AIR METROLOGIE - L2MI: POUR UNE MEILLEURE MAITRISE DES PROCESSUS DE MESURE</> } PartTwo="" number={1} type={1} />
-  }
 ];
 
 const Slider = (props) => {

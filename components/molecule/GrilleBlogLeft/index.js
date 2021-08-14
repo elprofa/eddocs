@@ -19,16 +19,23 @@ const GrilleBlogLeft = (props) => {
                 
                 <div className="col-lg-6 d-sm-none d-none d-md-block d-md-none d-lg-block text-center">
                     <div className="row">
-                        <div className="col-sm-12">
-                            <Image src="/img/ilac_logo.png" className="py-2 py-md-3" width="120" height="150" />
+                        <div className="col-sm-4">
+                        </div>
+                        <div className="col-sm-4 text-center">
+                            <img src="/img/iso.png" className="py-2 py-md-3"  />
+                        </div>
+                        <div className="col-sm-4">
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-6">
-                            <Image src="/img/groupe117.png" className="py-2 py-md-3" width="120" height="150" />
+                        <div className="col-sm-4 text-center">
+                            <img src="/img/Groupe -8.png" className="py-2 py-md-3" />
                         </div>
-                        <div className="col-sm-6">
-                            <Image src="/img/cofrac.png" className="py-2 py-md-3" width="120" height="150" />
+                        <div className="col-sm-4 text-center">
+                            <img src="/img/cofrac.png" className="py-2 py-md-3" />
+                        </div>
+                        <div className="col-sm-4 text-center">
+                            <img src="/img/tunac.png" className="py-2 py-md-3" />
                         </div>
                     </div>
                     

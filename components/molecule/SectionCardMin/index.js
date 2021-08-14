@@ -13,7 +13,7 @@ const CardMinSection = ({letGo}) => {
             <div className="container">
                 <div className="row py-2 py-md-5">
                     <IconGrille position={1} position={2} />
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 title">
                         <Title partOne="Nos" PartTwo="laboratoires" number={1}/>
                     </div>
                 </div>

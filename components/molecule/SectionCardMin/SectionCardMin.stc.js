@@ -8,6 +8,10 @@ const CardMinSectionStc=Styled.section`
     {
         border-bottom:2px solid #c43a4b;
     }
+    .title div
+    {
+        margin:auto;
+    }
 `;
 
 export default CardMinSectionStc

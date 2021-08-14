@@ -38,11 +38,11 @@ const SectionNosLaboratoireEtatlonnage = () => {
             src:"/img/icon/7.png",
             texte:"pression",
         }
-        ,
-        {
-            src:"/img/icon/8.png",
-            texte:"Pesage",
-        }
+        // ,
+        // {
+        //     src:"/img/icon/8.png",
+        //     texte:"Pesage",
+        // }
         ,
         {
             src:"/img/icon/9.png",
@@ -51,7 +51,7 @@ const SectionNosLaboratoireEtatlonnage = () => {
         ,
         {
             src:"/img/icon/10.png",
-            texte:"Chimie",
+            texte:"Physico-chimie",
         }
         ,
         {
@@ -62,6 +62,15 @@ const SectionNosLaboratoireEtatlonnage = () => {
         {
             src:"/img/icon/12.png",
             texte:"anemometrie",
+        }
+        ,
+        {
+            src:"/img/icon/18.png",
+            texte:"Optique et photométrie",
+        },
+        {
+            src:"/img/icon/19.png",
+            texte:"Radiométrie",
         }
         ,
         {

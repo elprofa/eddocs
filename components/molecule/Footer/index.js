@@ -81,12 +81,20 @@ const Footer = (props) => {
     }
   return (
     <FooterStc className="py-2 py-md-5">
-        <Container  >
+        <Container>
             
                 <div className="rowLogo py-1 py-md-3">
                 <Trait letGo={TraitStc}/>
-                <Image src="/img/lo.png" width="150" height="50" />
                 </div>
+                <div className="row">
+                   <div className="col-lg-6 text-left">
+                        <img src="/img/lo.png" height="60" />
+                   </div>
+                   <div className="col-lg-6 text-right" style={{textAlign:"right"}}>
+                        <img src="/img/go.png" height="60" />
+                   </div>
+                </div>
+                
                <div className="row rowLastFooter py-2 py-md-3">
                    <div className="col-md-4">
                     <Texte texte="Entant que spécialiste des services de la métrologie, 

@@ -12,9 +12,7 @@ const Noschiffre = (props) => {
         <NosChiffreStc >
          <div className="row">
              <div className="col-sm-2">
-             <a className="ownIconAction left" onClick={props.clickIconSliderLeft} >
-                    <BsChevronLeft/>
-                </a>
+            
              </div>
              <div className="col-sm-12 col-md-8">
                  <NoschiffreContent letGo={{
@@ -27,9 +25,7 @@ const Noschiffre = (props) => {
                  }} />
              </div>
              <div className="col-sm-2">
-                <a className="ownIconAction right" onClick={props.clickIconSliderRight}>
-                    <BsChevronRight/>
-                </a>
+               
              </div>
          </div>
         </NosChiffreStc>

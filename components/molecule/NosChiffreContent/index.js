@@ -18,37 +18,38 @@ const NoschiffreContent = (props) => {
                 <div className="col-md-12">
                     <ul className="ulchiffres px-0 px-md-0 py-3 my-0 px-md-0">
                         <li>
-                            <Texte MyclassName="label mb-0 mb-md-3" texte="Experiences" />
-                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 20<span className="plus">+</span>
+                            
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<><span className="plus">+</span> 20
                             <span className="ans">ans</span>
+                            <Texte MyclassName="label mb-0 mb-md-3" texte="Experiences" />
                             </>} />
                         </li>
                         <li>
-                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos laboratoires" />
-                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 16
-                                <span className="plus">+</span>
+                           
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<><span className="plus">+</span> 16
                                 
+                                <Texte MyclassName="label mb-0 mb-md-3" texte="Nos laboratoires" />
                             </>} />
                         </li>
                         <li>
-                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos accreditations" />
-                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 19
-                                <span className="plus">+</span>
+                            
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> <span className="plus">+</span> 19
                                 
+                                <Texte MyclassName="label mb-0 mb-md-3" texte="Nos accreditations" />
                             </>} />
                         </li>
                         <li>
-                            <Texte MyclassName="label mb-0 mb-md-3" texte="Nos collaborations" />
-                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 60
-                                <span className="plus">+</span>
+                            
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<><span className="plus">+</span> 60
                                 
+                                <Texte MyclassName="label mb-0 mb-md-3" texte="Nos collaborations" />
                             </>} />
                         </li>
                         <li>
+                           
+                            <Texte MyclassName="h2 py-2 py-md-0" texte={<><span className="plus">+</span> 500
+                                
                             <Texte MyclassName="label mb-0 mb-md-3" texte="Nos clients" />
-                            <Texte MyclassName="h2 py-2 py-md-0" texte={<> 500
-                                <span className="plus">+</span>
-                                
                             </>} />
                         </li>
                         

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LaboratoireStc3 from './Laboratoire.stc';
+import LaboratoireStc3 from './laboratoire.stc';
 import { theme } from '../../../theme';
 import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
