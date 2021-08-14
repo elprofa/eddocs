@@ -10,6 +10,7 @@ const SliderStc=Styled.section`
 .title
 {
     max-width:660px;
+    background:rgb(0,0,0.7)
 }
 a.carousel-control-prev,a.carousel-control-next
 {
@@ -54,6 +55,10 @@ a.carousel-control-prev,a.carousel-control-next
     .carousel-inner
     {
         height: fit-content;
+    }
+    .title_new
+    {
+        
     }
 `;
 export default SliderStc;
