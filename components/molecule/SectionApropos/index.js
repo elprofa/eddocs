@@ -15,7 +15,7 @@ const GrilleBlog = () => {
             scrollTrigger:{
                trigger: ".ch_experience",
                markers:false,
-               start:"center bottom",
+               start:"top bottom",
                toggleActions:'restart none none none'
             },
             x:-400,
