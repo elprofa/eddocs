@@ -15,7 +15,7 @@ const GrilleBlog = () => {
             scrollTrigger:{
                trigger: ".ch_experience",
                markers:false,
-               start:"top bottom",
+               start:"center bottom",
                toggleActions:'restart none none none'
             },
             x:-400,
@@ -62,7 +62,7 @@ const GrilleBlog = () => {
                         } />
 
                     </Col>
-                    <Col lg={6} className="text-center right">
+                    <Col lg={6} className="text-center align-self-center right">
                         <Image src="/img/blog1.png" width="1200" height="800" />
                     </Col>
                 </Row>
