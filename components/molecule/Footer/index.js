@@ -87,11 +87,11 @@ const Footer = (props) => {
                 <Trait letGo={TraitStc}/>
                 </div>
                 <div className="row">
-                   <div className="col-lg-6 text-left">
-                        <img src="/img/lo.png" height="60" />
+                   <div className="col-lg-6 py-2 text-md-left">
+                        <img src="/img/lo.png" height="60" className="logo1" />
                    </div>
-                   <div className="col-lg-6 text-right" style={{textAlign:"right"}}>
-                        <img src="/img/go.png" height="60" />
+                   <div className="col-lg-6 text-right py-2" style={{textAlign:"right"}}>
+                        <img src="/img/go.png" height="60" className="logo2" />
                    </div>
                 </div>
                 

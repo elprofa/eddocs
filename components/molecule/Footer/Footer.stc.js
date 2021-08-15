@@ -28,6 +28,9 @@ const FooterStc=Styled.footer`
         @media screen and (max-width: 767px){
             display: block;
         }
+        @media screen and (max-width: 471px){
+            text-align:center;
+        }
         font-weight: 600;
         svg {
            
@@ -44,12 +47,27 @@ const FooterStc=Styled.footer`
         @media screen and (max-width: 767px){
             padding-left: 0px;
         }
-    
+        
+        li
+        {
+            @media screen and (max-width: 471px){
+                text-align:center;
+            }
+        }
     }
 
     .rowLogo,.rowLastFooter
     {
         /* margin:${theme.margins.KingParagraphe} 0px; */
     }
+    .logo1,.logo2
+    {
+        @media screen and (max-width: 476px){
+           display:block;
+           margin:auto
+        }
+    }
+
+    
 `;
 export default FooterStc;
