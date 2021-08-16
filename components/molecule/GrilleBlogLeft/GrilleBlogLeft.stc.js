@@ -24,5 +24,6 @@ const defaultStyle={
            display: block !important;
         }
     }
+    
 `;
 export default GrilleBlogLeftStc;

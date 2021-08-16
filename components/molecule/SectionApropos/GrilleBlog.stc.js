@@ -16,6 +16,5 @@ import { theme } from "../../../theme";
             text-align:center !important
         }
     }
-    
 `;
 export default GrilleBlogStc;

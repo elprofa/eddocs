@@ -7,6 +7,8 @@ const defaultStyle={
 }
 
  const TexteStc=Styled.p`
+    
+    
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
     @media (max-width: 471px)
@@ -44,5 +46,8 @@ const defaultStyle={
         display: inline-block;
         margin: 0px 20px;
     }
+
+
+    
 `;
 export default TexteStc;

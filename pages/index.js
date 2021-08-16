@@ -15,6 +15,7 @@ export default function Home() {
         <title>Air Métrologie</title>
       </Head>
       <main className="main" >
+     
         <Slider />
         <Noschiffre clickIconSliderRight="" clickIconSliderLeft="" />
         <GrilleBlog />

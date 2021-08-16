@@ -46,4 +46,23 @@ export const GlobalCSS = createGlobalStyle`
     {
         max-width:100%;
     }
+    
+
+    // animate paragraphe with css
+    .char{
+        animation: an 0.5s ease-out 1 both;
+        display: inline-block;
+    }
+
+    @keyframes an{
+        from{
+            opacity: 0;
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+        }
+        to{
+            opacity: 1;
+            transform: perspective(500px) translate3d(0, 0, 0);
+        }
+    }
+    
 `;

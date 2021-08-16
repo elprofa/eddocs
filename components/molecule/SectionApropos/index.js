@@ -10,41 +10,51 @@ import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 
 const GrilleBlog = () => {
 
-    useEffect(() => {
-        gsap.from(".left",{
-            scrollTrigger:{
-               trigger: ".ch_experience",
-               markers:false,
-               start:"top bottom",
-               toggleActions:'restart none none none'
-            },
-            x:-400,
-            duration:2
+    const animate=(e)=>{
+        var text = document.getElementsByClassName('ws');
+        var newDom = '';
+        var animationDelay = 6;
+         const w=text[0]?.innerText.length;
+        console.log(text[0].innerText.length)
+        for(let i = 0; i < w; i++)
+        {
+            newDom += '<span class="char">' + (text[0].innerText[i] == ' ' ? '&nbsp;' : text[0].innerText[i])+ '</span>';
         }
-    );
-    gsap.from(".right",{
+      
+        text[0].innerHTML = newDom;
+        var length = text[0].children.length;
+      
+        for(let i = 0; i < length; i++)
+        {
+            text[0].children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        }
+      }
+
+    useEffect(() => {
+    
+    gsap.from(".ws",{
         scrollTrigger:{
-           trigger: ".ch_experience",
-           markers:false,
-           start:"top bottom",
-           toggleActions:'restart none none none'
+        trigger: ".ws",
+        markers:false,
+        start:"top bottom",
+        toggleActions:'restart none none none',
+        onEnter:animate
         },
-        x:400,
-        duration:2
     }
-);
+    );
     }, []);
 
 
     return (
         <GrilleBlogStc className="py-0 py-md-5">
+            
             <Container>
                 <Row className="py-2 py-md-5 my-0">
                     <Col lg={6} className="align-self-center left">
                         <div className="text-center py-2 py-md-3 px-0 px-md-5 "> 
                             <Title partOne="A propos d'" PartTwo="Air metrologie" MyclassName="title "  number={1} />
                         </div>
-                        <Texte MyclassName="py-2 py-md-3 px-0 px-md-5 paragraphe"  texte={
+                        <Texte MyclassName="py-2 py-md-3 px-0 px-md-5 paragraphe ws"  texte={
                             <>
                                 Entant que spécialiste des services de métrologie, notre raison d'être est de contribuer
                                  à l'optimisation de la performance industrielle de nos differents clients par le biais 
