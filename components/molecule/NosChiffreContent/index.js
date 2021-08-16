@@ -62,7 +62,7 @@ const NoschiffreContent = (props) => {
             trigger: ".ch_collab",
             markers:false,
             start:"top bottom",
-            toggleActions:'restart none restart none'
+            toggleActions:'restart none none none'
             },
             innerText:60,
             snap: {

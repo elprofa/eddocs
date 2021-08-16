@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'reactstrap';
 import Image from 'next/image';
 import {gsap} from 'gsap'
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
 
 const GrilleBlog = () => {
 
@@ -42,6 +43,32 @@ const GrilleBlog = () => {
         },
     }
     );
+    gsap.from(".iconGrille",{
+        scrollTrigger:{
+        trigger: ".iconGrille",
+        markers:false,
+        start:"top bottom",
+        toggleActions:'restart none none none',
+        onEnter:animate
+        },
+        x:500,
+        duration:3,
+        opacity:0
+    }
+    );
+
+    gsap.from(".img-container img",{
+        scrollTrigger:{
+        trigger: ".img-container img",
+        markers:false,
+        start:"top bottom",
+        toggleActions:'restart none none none',
+        },
+        duration: 2,
+        scale: 1.4,
+        opacity:0
+    }
+    );
     }, []);
 
 
@@ -73,7 +100,10 @@ const GrilleBlog = () => {
 
                     </Col>
                     <Col lg={6} className="text-center align-self-center right">
+                        
+                        <figure className="img-container">
                         <Image src="/img/blog1.png" width="1200" height="800" />
+                        </figure>
                     </Col>
                 </Row>
                 <IconGrille position={1}/>

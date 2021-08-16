@@ -16,5 +16,18 @@ import { theme } from "../../../theme";
             text-align:center !important
         }
     }
+
+    .img-container {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          // position: absolute;
+          opacity: 1;
+        }
+        
+      
+      }
+
 `;
 export default GrilleBlogStc;

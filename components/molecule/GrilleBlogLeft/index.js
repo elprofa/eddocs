@@ -46,6 +46,36 @@ const GrilleBlogLeft = (props) => {
         },
     }
     );
+
+   
+
+    gsap.from(".anim1",{
+        scrollTrigger:{
+        trigger: ".anim1",
+        markers:false,
+        start:"top bottom",
+        toggleActions:'restart none none none',
+        onEnter:animate
+        },
+    }
+    );
+
+    let tl=gsap.timeline({
+        scrollTrigger:{
+        trigger: ".img1",
+        markers:false,
+        start:"top bottom",
+        toggleActions:'restart none none none',
+        },
+    });
+    tl.from(".img1",{
+        y:100,
+        duration:1
+    })
+    .from(".img2", { duration: 1, y: 100, ease: "Power2.ease",delay:.1,opacity:0 })
+    .from(".img3", { duration: 1, y: 100, ease: "Power2.ease",delay:.1,opacity:0})
+    .from(".img4", { duration: 1, y: 100, ease: "Power2.ease",delay:.1,opacity:0 })
+        
     }, []);
     return (
         <GrilleBlogLeftStc className="py-0 py-md-5">
@@ -56,21 +86,21 @@ const GrilleBlogLeft = (props) => {
                     <div className="row">
                         <div className="col-sm-4">
                         </div>
-                        <div className="col-sm-4 text-center">
-                            <img src="/img/iso.png" className="py-2 py-md-3"  />
+                        <div className="col-sm-4 text-center ">
+                            <img src="/img/iso.png" className="img1 py-2 py-md-3"  />
                         </div>
                         <div className="col-sm-4">
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-4 text-center">
-                            <img src="/img/Groupe -8.png" className="py-2 py-md-3" />
+                        <div className="col-sm-4 text-center ">
+                            <img src="/img/Groupe -8.png" className="img2 py-2 py-md-3" />
                         </div>
-                        <div className="col-sm-4 text-center">
-                            <img src="/img/cofrac.png" className="py-2 py-md-3" />
+                        <div className="col-sm-4 text-center ">
+                            <img src="/img/cofrac.png" className="img3 py-2 py-md-3" />
                         </div>
-                        <div className="col-sm-4 text-center">
-                            <img src="/img/tunac.png" className="py-2 py-md-3" />
+                        <div className="col-sm-4 text-center ">
+                            <img src="/img/tunac.png" className="img4 py-2 py-md-3" />
                         </div>
                     </div>
                     
