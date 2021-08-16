@@ -57,11 +57,7 @@ const Laboratoire5 = (props) => {
                 } />
             </Col>
         </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+        
         <Row className="py-2 py-md-3">
             <Col lg={6} className="align-self-center">
                 <TitreParagrapheLabo 
@@ -99,7 +95,12 @@ const Laboratoire5 = (props) => {
             {
                 Details3.map((detail3,index)=>(<PCard url1={detail3.url} title={detail3.title} key={index+"commande"}  />))
             }
-        </Row>        
+        </Row>  
+        <Row className="my-2 my-md-3">
+            <Col>
+                <Button texte="Demandez un devis >" className="demande_devis " />
+            </Col>
+        </Row>      
 </LaboratoireStc5>
   );
 }

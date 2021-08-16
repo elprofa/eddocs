@@ -37,11 +37,7 @@ const Laboratoire6 = (props) => {
                 } />
             </Col>            
         </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+        
         <Row className="my-2 my-md-3">
             <Col lg={6} md={6} className="align-self-center">
                 <h4 className="fw-bold">Balance</h4>
@@ -104,6 +100,11 @@ const Laboratoire6 = (props) => {
             </Col>
         </Row>
     
+        <Row className="my-2 my-md-3">
+            <Col>
+                <Button texte="Demandez un devis >" className="demande_devis " />
+            </Col>
+        </Row>
                    
         
 </LaboratoireStc6>

@@ -40,11 +40,7 @@ const Laboratoire11 = (props) => {
             </Col>
             <PCard url1="/img/pression/9.png" url2="/img/volume/8.png" type={1}  />
         </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+        
         <Row className="my-2 my-md-3">
             <Col lg={6} md={6} className="align-self-center">
                 <h4 className="fw-bold">Balance</h4>
@@ -84,6 +80,11 @@ const Laboratoire11 = (props) => {
             {
                 Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
             }
+        </Row>
+        <Row className="my-2 my-md-3">
+            <Col>
+                <Button texte="Demandez un devis >" className="demande_devis " />
+            </Col>
         </Row>
        
     </LaboratoireStc1>
