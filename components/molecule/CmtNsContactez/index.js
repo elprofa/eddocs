@@ -1,11 +1,11 @@
-
 import { Row, Col } from 'reactstrap';
 import Title from '../../shared/Title';
 import SectionCmtNsContactezSt from './CmtNsCntctr.stc';
 import Trait from '../../shared/Trait';
 import Texte from '../../shared/Texte';
 import { MdCheck } from 'react-icons/md';
-import CardConractLM from '../CardContact_L2MI';CardConractLM
+//import CardConractLM from '../CardContact_L2MI';
+import "bootstrap/dist/css/bootstrap.min.css";
  
 
 const SectionCmtNsContactez = (props) => {
@@ -15,9 +15,9 @@ const SectionCmtNsContactez = (props) => {
 }
   return (
       <SectionCmtNsContactezSt>
-      <Row className='section__ctn'>
-          <Col lg={12} className="ranger" >
-            <div className='content__one col-md-4 text-center'>
+      <Row className="section__ctn">
+          <Col lg={12} className="ranger col-md-12 text-center">
+            <div className="text-center content__one col-md-3">
               <Title letGo={{texte:<span><strong>Comment </strong> Nous Contacter ?</span>,
                              style:{
                                 color: "#000",
