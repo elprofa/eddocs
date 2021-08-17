@@ -16,9 +16,9 @@ const SectionContact = (props) => {
 
     return (
         <SectionContactStc className="container py-0 py-md-5" MonStyle={letGo.style}>
-           <div className="row py-2 py-md-5">
+           <div className="row py-2 py-md-5 text-center">
                <div className="col-lg-12">
-               <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="py-2 py-md-3 text-center" />
+               <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="py-2 py-md-3 text-center mx-auto" />
             
             <Texte texte={<>
                 Remplissez le formulaire ou contacter nous directement par Mail ou sur notre <span>numéro client <AiTwotoneDownCircle /></span>
@@ -51,7 +51,7 @@ const SectionContact = (props) => {
                </div>
                <div className="col-lg-6">
 
-                    <div className="metrologie mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
+                    <div className="ldeumi mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
                         <img src="/img/go.png" width="150" />
                         <Texte texte="Adresse du siège" MyclassName="paragraphe title py-2 pb-md-0 mb-md-0" />
                         <Texte texte={<>Lot Asta Immeuble A 4eme Etage N° 15 & 16 <br/>Bd Chefchaouni,<br/>Aîn Sebâa -Casablanca</>} MyclassName="py-2 pt-md-0 paragraphe" />

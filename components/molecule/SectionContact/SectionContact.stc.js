@@ -5,6 +5,8 @@ const defaultStyle={
     
 }
  const SectionContactStc=Styled.div`
+
+ 
       .paragraphe.one {
             width: 22rem;
             margin: auto;
@@ -56,7 +58,7 @@ const defaultStyle={
     .metrologie
     {
 
-        background: #ecf6fb;
+        background: #efdede;
         padding: 60px 100px;
         
         border-radius: 20px;
@@ -70,6 +72,23 @@ const defaultStyle={
         {
             min-height: 830px;
         }
+    }
+
+        .ldeumi {
+            background: #ecf6fb;
+            padding: 60px 100px;
+            border-radius: 20px;
+       
+        @media (max-width: 471px)
+        {
+            padding: 20px;
+            margin:20px 0px;
+        }
+        @media (min-width: 991px)
+        {
+            min-height: 830px;
+        }
+    }
 
         img 
         {

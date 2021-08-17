@@ -11,11 +11,11 @@ const SectionCmtNsContactezStc = styled(Container)`
 
   .ranger{
     display: inline-block;
-    text-align: -webkit-center;
+    text-align: -webkit-center!important;
   }
   .content__one{
       width: auto;
-      text-align: center;
+      text-align: -webkit-center!important;
   }
 
 
