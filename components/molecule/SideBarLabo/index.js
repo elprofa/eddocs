@@ -157,7 +157,7 @@ const SideBarLabo = (props) => {
              </div>
              
            </div>
-           <button className="btn btn-primary openLabo" onClick={openLabo}>Nos laboratoire</button>
+           <button className="btn btn-primary openLabo" onClick={openLabo}>Nos laboratoires</button>
         </SideBarLaboStc>
        
     )

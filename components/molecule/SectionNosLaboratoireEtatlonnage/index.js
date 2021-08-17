@@ -5,10 +5,12 @@ import SectionNosLaboratoireEtatlonnageStc from "./SectionNosLaboratoireEtatlonn
 import {Row} from 'reactstrap'
 
 const SectionNosLaboratoireEtatlonnage = () => {
+
     const laboratoires=[
         {
             src:"/img/icon/1.png",
             texte:<>Dimensionnel <br/></>,
+            
         },
         {
             src:"/img/icon/2.png",
@@ -82,10 +84,10 @@ const SectionNosLaboratoireEtatlonnage = () => {
     <SectionNosLaboratoireEtatlonnageStc className="py-2 py-md-3">
         <div className="col-lg-12">
             <Texte texte="Nos domaines de competence en Etalonnage & verification" MyclassName="paragraphe px-2 px-md-3" />
-            <div className="divcard">
+            <div className="divcard divcardAnimate">
                 <Row>
                     {
-                        laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} />)
+                        laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} className={labo.cls            } />)
                     }
                 </Row>
             </div>

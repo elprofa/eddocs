@@ -5,83 +5,59 @@ import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
 import { Col, Container, Row } from 'reactstrap';
 import Image from 'next/image';
-import {gsap} from 'gsap'
+import {gsap,Power3} from 'gsap'
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+import { useRef } from 'react';
 
 const GrilleBlog = () => {
-
-    const animate=(e)=>{
-        var text = document.getElementsByClassName('ws');
-        var newDom = '';
-        var animationDelay = 6;
-         const w=text[0]?.innerText.length;
-        console.log(text[0].innerText.length)
-        for(let i = 0; i < w; i++)
-        {
-            newDom += '<span class="char">' + (text[0].innerText[i] == ' ' ? '&nbsp;' : text[0].innerText[i])+ '</span>';
-        }
-      
-        text[0].innerHTML = newDom;
-        var length = text[0].children.length;
-      
-        for(let i = 0; i < length; i++)
-        {
-            text[0].children[i].style['animation-delay'] = animationDelay * i + 'ms';
-        }
-      }
-
+   
     useEffect(() => {
-    
-    gsap.from(".ws",{
-        scrollTrigger:{
-        trigger: ".ws",
-        markers:false,
-        start:"top bottom",
-        toggleActions:'restart none none none',
-        onEnter:animate
-        },
-    }
-    );
-    gsap.from(".iconGrille",{
-        scrollTrigger:{
-        trigger: ".iconGrille",
-        markers:false,
-        start:"top bottom",
-        toggleActions:'restart none none none',
-        onEnter:animate
-        },
-        x:500,
-        duration:3,
-        opacity:0
-    }
-    );
 
-    gsap.from(".img-container img",{
-        scrollTrigger:{
-        trigger: ".img-container img",
-        markers:false,
-        start:"top bottom",
-        toggleActions:'restart none none none',
-        },
-        duration: 2,
-        scale: 1.4,
-        opacity:0
-    }
-    );
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".section",
+            markers:false,
+            start:"top bottom",
+            toggleActions:'restart none none none',
+            },
+            delay:.4});
+        
+            lt.from(
+                
+                '.sAproposTitle',{
+                    y:500,
+                    duration:.8,
+                    opacity:0,
+                }
+            )
+            .from('.imgPropps',{
+                duration:.8,
+                opacity:0,
+                ease: "back.out(1.7)", 
+                y: 500 
+            
+            })
+            .from ('.sAproposP',{
+                duration:.8,
+                opacity:0,
+                ease: "slow(0.7, 0.7, false)", 
+                y: 500 
+            })
+
     }, []);
 
 
     return (
-        <GrilleBlogStc className="py-0 py-md-5">
+        <GrilleBlogStc className="py-0 py-md-5 section">
             
             <Container>
-                <Row className="py-2 py-md-5 my-0">
+                <Row className="py-2 py-md-5 my-0 ">
                     <Col lg={6} className="align-self-center left">
-                        <div className="text-center py-2 py-md-3 px-0 px-md-5 "> 
+                        <div className="text-center py-2 py-md-3 px-0 px-md-5 sAproposTitle"> 
                             <Title partOne="A propos d'" PartTwo="Air metrologie" MyclassName="title "  number={1} />
                         </div>
-                        <Texte MyclassName="py-2 py-md-3 px-0 px-md-5 paragraphe ws"  texte={
+                        <Texte MyclassName="py-2 py-md-3 px-0 px-md-5 paragraphe sAproposP"  texte={
                             <>
                                 Entant que spécialiste des services de métrologie, notre raison d'être est de contribuer
                                  à l'optimisation de la performance industrielle de nos differents clients par le biais 
@@ -100,10 +76,7 @@ const GrilleBlog = () => {
 
                     </Col>
                     <Col lg={6} className="text-center align-self-center right">
-                        
-                        <figure className="img-container">
-                        <Image src="/img/blog1.png" width="1200" height="800" />
-                        </figure>
+                        <img src="/img/blog1.png" className="imgPropps"  />
                     </Col>
                 </Row>
                 <IconGrille position={1}/>

@@ -9,76 +9,78 @@ import { theme } from '../../../theme';
 
 import { AiOutlineRight } from "react-icons/ai";
 import IconGrille from '../IconGrille';
-import gsap from 'gsap';
-import animate_Texte from '../../../functions/animations';
+import {gsap,Power3} from 'gsap'
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
+import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
+import { useRef } from 'react';
 
 const GrilleBlogLeft = (props) => {
-    const animate=(e)=>{
-        var text = document.getElementsByClassName('anim1');
-        var newDom = '';
-        var animationDelay = 6;
-         const w=text[0]?.innerText.length;
-        console.log(text[0].innerText.length)
-        for(let i = 0; i < w; i++)
-        {
-            newDom += '<span class="char">' + (text[0].innerText[i] == ' ' ? '&nbsp;' : text[0].innerText[i])+ '</span>';
-        }
-      
-        text[0].innerHTML = newDom;
-        var length = text[0].children.length;
-      
-        for(let i = 0; i < length; i++)
-        {
-            text[0].children[i].style['animation-delay'] = animationDelay * i + 'ms';
-        }
-      }
-
-    useEffect(() => {
     
-    gsap.from(".anim1",{
-        scrollTrigger:{
-        trigger: ".anim1",
-        markers:false,
-        start:"top bottom",
-        toggleActions:'restart none none none',
-        onEnter:animate
-        },
-    }
-    );
+      useEffect(() => {
 
-   
-
-    gsap.from(".anim1",{
-        scrollTrigger:{
-        trigger: ".anim1",
-        markers:false,
-        start:"top bottom",
-        toggleActions:'restart none none none',
-        onEnter:animate
-        },
-    }
-    );
-
-    let tl=gsap.timeline({
-        scrollTrigger:{
-        trigger: ".img1",
-        markers:false,
-        start:"top bottom",
-        toggleActions:'restart none none none',
-        },
-    });
-    tl.from(".img1",{
-        y:100,
-        duration:1
-    })
-    .from(".img2", { duration: 1, y: 100, ease: "Power2.ease",delay:.1,opacity:0 })
-    .from(".img3", { duration: 1, y: 100, ease: "Power2.ease",delay:.1,opacity:0})
-    .from(".img4", { duration: 1, y: 100, ease: "Power2.ease",delay:.1,opacity:0 })
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".sectionGridLeft",
+            markers:false,
+            start:"top bottom",
+            toggleActions:'restart none none none',
+            },
+            delay:.4});
         
+            lt.from(
+                
+                '.gBolgLTitle',{
+                    y:500,
+                    duration:.8,
+                    opacity:0,
+                }
+            )
+            .from ('.p1',{
+                duration:.8,
+                opacity:0,
+                ease: "slow(0.7, 0.7, false)", 
+                y: 500 
+            })
+            .from ('.bGlButton',{
+                duration:.8,
+                opacity:0,
+                ease: "slow(0.7, 0.7, false)", 
+                y: 500 
+            })
+            .from('.imgGl1',{
+                duration:.8,
+                opacity:0,
+                ease: "back.out(1.7)", 
+                y: 100 
+            
+            })
+            .from('.imgGl2',{
+                duration:.8,
+                opacity:0,
+                ease: "back.out(1.7)", 
+                y: 100 
+            
+            })
+            .from('.imgGl3',{
+                duration:.8,
+                opacity:0,
+                ease: "back.out(1.7)", 
+                y: 100 
+            
+            })
+            .from('.imgGl4',{
+                duration:.8,
+                opacity:0,
+                ease: "back.out(1.7)", 
+                y: 100 
+            
+            })
+           
+
     }, []);
+
     return (
-        <GrilleBlogLeftStc className="py-0 py-md-5">
+        <GrilleBlogLeftStc className="py-0 py-md-5 sectionGridLeft">
          <div className="container">
              <div className="row py-2 py-md-5 my-0 my-5">
                 
@@ -87,26 +89,26 @@ const GrilleBlogLeft = (props) => {
                         <div className="col-sm-4">
                         </div>
                         <div className="col-sm-4 text-center ">
-                            <img src="/img/iso.png" className="img1 py-2 py-md-3"  />
+                            <img src="/img/iso.png" className="imgGl1 py-2 py-md-3"  />
                         </div>
                         <div className="col-sm-4">
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-sm-4 text-center ">
-                            <img src="/img/Groupe -8.png" className="img2 py-2 py-md-3" />
+                            <img src="/img/Groupe -8.png" className="imgGl2 py-2 py-md-3" />
                         </div>
                         <div className="col-sm-4 text-center ">
-                            <img src="/img/cofrac.png" className="img3 py-2 py-md-3" />
+                            <img src="/img/cofrac.png" className="imgGl3 py-2 py-md-3" />
                         </div>
                         <div className="col-sm-4 text-center ">
-                            <img src="/img/tunac.png" className="img4 py-2 py-md-3" />
+                            <img src="/img/tunac.png" className="imgGl4 py-2 py-md-3" />
                         </div>
                     </div>
                     
                 </div>
             <div className="col-lg-6 align-self-center">
-                <Title partOne="Nos " PartTwo="Accréditations ISO/CEI 17 025" MyclassName=" px-0 px-md-5 py-2 py-md-3 title" number={2} />
+                <Title partOne="Nos " PartTwo="Accréditations ISO/CEI 17 025" MyclassName="gBolgLTitle px-0 px-md-5 py-2 py-md-3 title" number={2} />
                 <Texte texte={
                     <>
                     Afin d'apporter à nos clients le meilleur niveau de service dans le domaine de la metrologie 
@@ -117,8 +119,8 @@ const GrilleBlogLeft = (props) => {
                          continue.
                     
                     </>
-                } MyclassName="anim1 px-0 px-md-5 py-2 py-md-3 paragraphe" />
-                <Button texte={<>En savoir plus <AiOutlineRight /></>} MyclassName="mx-0 mx-md-5 py-2 py-md-3" />
+                } MyclassName="anim1 px-0 px-md-5 py-2 py-md-3 paragraphe p1" />
+                <Button texte={<>En savoir plus <AiOutlineRight /></>} MyclassName="mx-0 mx-md-5 py-2 py-md-3 bGlButton" />
             </div>
              </div>
          </div>
