@@ -18,31 +18,31 @@ const GrilleBlog = () => {
             scrollTrigger:{
             trigger: ".section",
             markers:false,
-            start:"top bottom",
+            start:"top center",
             toggleActions:'play none none none',
             },
-            delay:.4});
+            delay:.3});
         
             lt.from(
                 
                 '.sAproposTitle',{
-                    y:500,
-                    duration:.8,
+                    y:100,
+                    duration:.9,
                     opacity:0,
                 }
             )
             .from('.imgPropps',{
-                duration:.8,
+                duration:.9,
                 opacity:0,
                 ease: "back.out(1.7)", 
-                y: 500 
+                y: 100 
             
             })
             .from ('.sAproposP',{
-                duration:.8,
+                duration:.9,
                 opacity:0,
                 ease: "slow(0.7, 0.7, false)", 
-                y: 500 
+                y: 100 
             })
 
     }, []);

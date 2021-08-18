@@ -22,54 +22,54 @@ const GrilleBlogLeft = (props) => {
             scrollTrigger:{
             trigger: ".sectionGridLeft",
             markers:false,
-            start:"top bottom",
+            start:"top center",
             toggleActions:'play none none none',
             },
-            delay:.4});
+            delay:.1});
         
             lt.from(
                 
                 '.gBolgLTitle',{
-                    y:500,
-                    duration:.8,
+                    y:100,
+                    duration:.5,
                     opacity:0,
                 }
             )
             .from ('.p1',{
-                duration:.8,
+                duration:.5,
                 opacity:0,
                 ease: "slow(0.7, 0.7, false)", 
-                y: 500 
+                y: 100 
             })
             .from ('.bGlButton',{
-                duration:.8,
+                duration:.5,
                 opacity:0,
                 ease: "slow(0.7, 0.7, false)", 
-                y: 500 
+                y: 100 
             })
             .from('.imgGl1',{
-                duration:.8,
+                duration:.5,
                 opacity:0,
                 ease: "back.out(1.7)", 
                 y: 100 
             
             })
             .from('.imgGl2',{
-                duration:.8,
+                duration:.5,
                 opacity:0,
                 ease: "back.out(1.7)", 
                 y: 100 
             
             })
             .from('.imgGl3',{
-                duration:.8,
+                duration:.5,
                 opacity:0,
                 ease: "back.out(1.7)", 
                 y: 100 
             
             })
             .from('.imgGl4',{
-                duration:.8,
+                duration:.5,
                 opacity:0,
                 ease: "back.out(1.7)", 
                 y: 100 
