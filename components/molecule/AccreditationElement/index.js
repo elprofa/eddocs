@@ -16,7 +16,7 @@ const AccreditationElement = (props) => {
      const link_name=letGo.link_name
 
     return (
-        <AccreditationElementStc className="row">
+        <AccreditationElementStc className={props.cls+" row"}>
             <div className="col-md-2 align-self-center">
                 <Title partOne={texte} PartTwo="" number={1}  MyclassName="py-2 py-md-3 title" />
             </div>
