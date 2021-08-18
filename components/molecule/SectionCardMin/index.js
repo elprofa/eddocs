@@ -9,33 +9,7 @@ import SectionNosLaboratoireEtatlonnage from '../SectionNosLaboratoireEtatlonnag
 import CardMinSectionStc from './SectionCardMin.stc'
 
 const CardMinSection = ({letGo}) => {
-    useEffect(() => {
-
-        let lt=gsap.timeline({
-            scrollTrigger:{
-            trigger: ".sCardMinLabo",
-            markers:false,
-            start:"top bottom",
-            toggleActions:'restart none none none',
-            },
-            delay:.4});
-        
-            lt.from(
-                
-                '.sCardMTitle',{
-                    y:500,
-                    duration:.8,
-                    opacity:0,
-                }
-            )
-            .from ('.divcardAnimate .row div',{
-                duration:.8,
-                opacity:0,
-                ease: "slow(0.7, 0.7, false)", 
-                y: 500 
-            })
-
-    }, []);
+   
     return (
         <CardMinSectionStc className="py-2 py-md-5 sCardMinLabo">
             <div className="container">

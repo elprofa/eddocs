@@ -23,7 +23,7 @@ const GrilleBlogLeft = (props) => {
             trigger: ".sectionGridLeft",
             markers:false,
             start:"top bottom",
-            toggleActions:'restart none none none',
+            toggleActions:'play none none none',
             },
             delay:.4});
         

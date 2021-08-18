@@ -8,19 +8,23 @@ const SectionNosLaboratoireEssais = () => {
         {
             src:"/img/icon/14.png",
             texte:<>Enceinte climatique <br/></>,
+            anim:"aLabo17"
         },
         {
             src:"/img/icon/15.png",
             texte:"Autoclaves",
+            anim:"aLabo18"
         },
         {
             src:"/img/icon/16.png",
             texte:"Qualification air compagnie",
+            anim:"aLabo19"
         }
         ,
         {
             src:"/img/icon/17.png",
             texte:"Evironnement",
+            anim:"aLabo20"
         }
     ]
   return (
@@ -29,7 +33,7 @@ const SectionNosLaboratoireEssais = () => {
         <div className="divcard">
              <Row>
                 {
-                    laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} />)
+                    laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} anim={labo.anim} />)
                 }
             </Row>
         </div>

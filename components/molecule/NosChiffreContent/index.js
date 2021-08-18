@@ -19,7 +19,7 @@ const NoschiffreContent = (props) => {
                    trigger: ".ch_experience",
                    markers:false,
                    start:"top bottom",
-                   toggleActions:'restart none none none'
+                   toggleActions:'play none none none'
                 },
                 innerText:20,
                 snap: {
@@ -33,7 +33,7 @@ const NoschiffreContent = (props) => {
                trigger: ".ch_laboratoire",
                markers:false,
                start:"top bottom",
-               toggleActions:'restart none none none'
+               toggleActions:'play none none none'
             },
             innerText:16,
             snap: {
@@ -47,7 +47,7 @@ const NoschiffreContent = (props) => {
             trigger: ".ch_accredi",
             markers:false,
             start:"top bottom",
-            toggleActions:'restart none none none'
+            toggleActions:'play none none none'
             },
             innerText:19,
             snap: {
@@ -62,7 +62,7 @@ const NoschiffreContent = (props) => {
             trigger: ".ch_collab",
             markers:false,
             start:"top bottom",
-            toggleActions:'restart none none none'
+            toggleActions:'play none none none'
             },
             innerText:60,
             snap: {
@@ -76,7 +76,7 @@ const NoschiffreContent = (props) => {
             trigger: ".ch_client",
             markers:false,
             start:"top bottom",
-            toggleActions:'restart none none none'
+            toggleActions:'play none none none'
             },
             innerText:500,
             snap: {
