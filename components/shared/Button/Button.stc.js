@@ -1,4 +1,5 @@
 import Styled from "styled-components";
+import { theme } from "../../../theme";
 const defaultStyle = {
   minWidth: "124px;",
   height: "45px;",
@@ -6,7 +7,6 @@ const defaultStyle = {
   letterSpacing: "0.26px;",
   lineHeight: 0,
   color: "#fff;",
-  backgroundColor: "#00b074;",
   borderColor: "#00b074;",
   textAlign: "center;",
   verticalAlign: "middle;",
@@ -14,7 +14,14 @@ const defaultStyle = {
 };
 const ButtonStc = Styled.button`
     ${defaultStyle};
-    background-image: linear-gradient(to right, rgb(101 143 222) , rgb(195 65 95)) ;
     border:0px;
+    background-color:${theme.colors.KingBleu};
+
+
+    &:hover
+    {
+      background-color:#ed3b43 !important;
+      color:#fff !important;
+    }
 `;
 export default ButtonStc;

@@ -40,42 +40,49 @@ const SectionNosLaboratoireEtatlonnage = () => {
         {
             src:"/img/icon/1.png",
             texte:<>Dimensionnel <br/></>,
-            anim:"aLabo1"
+            anim:"aLabo1",
+            lien:"laboratoires/1"
             
         },
         {
             src:"/img/icon/2.png",
             texte:"Electricité & Magnetisme",
-            anim:"aLabo2"
+            anim:"aLabo2",
+            lien:"laboratoires/2"
         },
         {
             src:"/img/icon/3.png",
             texte:"Temperature",
-            anim:"aLabo3"
+            anim:"aLabo3",
+            lien:"laboratoires/3"
         }
         ,
         {
             src:"/img/icon/4.png",
             texte:"Hygrometrie",
-            anim:"aLabo4"
+            anim:"aLabo4",
+            lien:"laboratoires/4"
         }
         ,
         {
             src:"/img/icon/5.png",
             texte:"force-groupe",
-            anim:"aLabo5"
+            anim:"aLabo5",
+            lien:"laboratoires/5"
         }
         ,
         {
             src:"/img/icon/6.png",
             texte:"Masse",
-            anim:"aLabo6"
+            anim:"aLabo6",
+            lien:"laboratoires/6"
         }
         ,
         {
             src:"/img/icon/7.png",
             texte:"pression",
-            anim:"aLabo7"
+            anim:"aLabo7",
+            lien:"laboratoires/7"
         }
         // ,
         // {
@@ -86,43 +93,52 @@ const SectionNosLaboratoireEtatlonnage = () => {
         {
             src:"/img/icon/9.png",
             texte:"Temps et frequences",
-            anim:"aLabo8"
+            anim:"aLabo8",
+            lien:"laboratoires/9"
         }
         ,
         {
             src:"/img/icon/10.png",
             texte:"Physico-chimie",
-            anim:"aLabo9"
+            anim:"aLabo9",
+            lien:""
         }
         ,
         {
             src:"/img/icon/11.png",
             texte:"volume et masse volumique",
-            anim:"aLabo10"
+            anim:"aLabo10",
+            lien:"laboratoires/11"
         }
         ,
         {
             src:"/img/icon/12.png",
             texte:"anemometrie",
-            anim:"aLabo11"
+            anim:"aLabo11",
+            lien:"laboratoires/10"
+
         }
         ,
         {
             src:"/img/icon/18.png",
             texte:"Optique et photométrie",
-            anim:"aLabo12"
+            anim:"aLabo12",
+            lien:"",
         },
         {
             src:"/img/icon/19.png",
             texte:"Radiométrie",
-            anim:"aLabo13"
+            anim:"aLabo13",
+            lien:""
         }
         ,
         {
             src:"/img/icon/13.png",
-            texte:"Macgine et forces",
-            anim:"aLabo14"
-        }
+            texte:"Machine et forces",
+            anim:"aLabo14",
+            lien:"laboratoires/13"
+        },
+        
     ]
   return (
     <SectionNosLaboratoireEtatlonnageStc className="sectionCardLabo py-2 py-md-3">
@@ -131,7 +147,7 @@ const SectionNosLaboratoireEtatlonnage = () => {
             <div className="divcard divcardAnimate">
                 <Row>
                     {
-                        laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} anim={labo.anim} />)
+                        laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} anim={labo.anim} lien={labo.lien} />)
                     }
                 </Row>
             </div>

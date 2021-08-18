@@ -30,7 +30,8 @@ const SectionNosLaboratoireEssaisStc=Styled.div`
     {
         
         @media (max-width: 471px) {
-            overflow-x:scroll
+            overflow-x:scroll;
+            overflow-y:hidden
             
         }
         .row

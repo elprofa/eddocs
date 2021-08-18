@@ -25,7 +25,7 @@ const NoschiffreContent = (props) => {
                 snap: {
                     innerText:1
                   } ,
-                duration:3
+                duration:8
             }
         );
         gsap.to(".ch_laboratoire",{
@@ -39,7 +39,7 @@ const NoschiffreContent = (props) => {
             snap: {
                 innerText:1
               } ,
-            duration:3,
+            duration:8,
         }
         );
         gsap.to(".ch_accredi",{
@@ -53,7 +53,7 @@ const NoschiffreContent = (props) => {
             snap: {
                 innerText:1
                 } ,
-                duration:3,
+                duration:8,
                 delay:"1s"
             }
         );
@@ -68,7 +68,7 @@ const NoschiffreContent = (props) => {
             snap: {
                 innerText:1
                 } ,
-                duration:3,
+                duration:8,
             }
         );
         gsap.to(".ch_client",{
@@ -82,7 +82,7 @@ const NoschiffreContent = (props) => {
             snap: {
                 innerText:10
                 } ,
-                duration:3,
+                duration:8,
             }
         );
       }, []); 

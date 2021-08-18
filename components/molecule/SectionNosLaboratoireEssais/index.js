@@ -28,23 +28,27 @@ const SectionNosLaboratoireEssais = () => {
         {
             src:"/img/icon/14.png",
             texte:<>Enceinte climatique <br/></>,
-            anim:"aLabo17"
+            anim:"aLabo17",
+            lien:"laboratoires/14"
         },
         {
             src:"/img/icon/15.png",
             texte:"Autoclaves",
-            anim:"aLabo18"
+            anim:"aLabo18",
+            lien:"laboratoires/15"
         },
         {
             src:"/img/icon/16.png",
             texte:"Qualification air compagnie",
-            anim:"aLabo19"
+            anim:"aLabo19",
+            lien:"laboratoires/16"
         }
         ,
         {
             src:"/img/icon/17.png",
             texte:"Evironnement",
-            anim:"aLabo20"
+            anim:"aLabo20",
+            lien:"laboratoires/17"
         }
     ]
   return (
@@ -53,7 +57,7 @@ const SectionNosLaboratoireEssais = () => {
         <div className="divcard">
              <Row>
                 {
-                    laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} anim={labo.anim} />)
+                    laboratoires.map((labo,index)=><CardMin key={index+"labo"} letGo={labo} anim={labo.anim} lien={labo.lien} />)
                 }
             </Row>
         </div>

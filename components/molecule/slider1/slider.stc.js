@@ -51,6 +51,12 @@ button:hover {
   .previousButton, .nextButton {
           position: absolute;
           top: 50%;
+          @media screen and (min-width: 768px)
+          {
+              top: 80%;
+              border: 2px solid #fff;
+              border-radius: 100%;
+          }
           transform: translateY(-50%);
           z-index: 10;
           background: url('/img/right.png') no-repeat center center / 16px;
@@ -58,6 +64,8 @@ button:hover {
           height: 50px;
           text-indent: -9999px;
           cursor: pointer;
+         
+          
   }
   
 //   .previousButton:hover, .nextButton:hover {
@@ -66,6 +74,10 @@ button:hover {
   
   .previousButton {
     left: 0;
+    @media screen and (min-width: 768px)
+    {
+        left:100px
+    }
     -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
             transform: rotate(180deg) translateY(calc(50% + 0px));
   }
@@ -76,11 +88,11 @@ button:hover {
   
   .nextButton {
     right: 0;
+    @media screen and (min-width: 768px)
+    {
+        right:100px;
+    }
   }
-  
-//   .nextButton:hover {
-//     right: -10px;
-//   }
   
   .slider-content {
     text-align: center;
