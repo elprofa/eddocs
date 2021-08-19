@@ -46,6 +46,11 @@ const Header = (props) => {
     }
 ]
 
+const [souligner, setSouligner] = useState(null);
+const handleMenu =(index) => {
+  setSouligner(index);
+
+}
 
   return (
     <HeaderStc>
@@ -56,10 +61,10 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto ml-auto" navbar>
               {
-                  MenuHeader.map((menu,index)=><NavItem key={1+index+"menuHeader"}>
+                  MenuHeader.map((menu,index)=><NavItem key={1+index+"menuHeader"}  onClick={() => handleMenu(index)}>
                     <Link href={menu.chemin}>
                       <a className="nav-link" >
-                        <span className="texte">{menu.texte} </span>
+                        <span className= {`${index === souligner ? "souligner texte" : "texte"}`}>{menu.texte} </span>
                         <span className="altT">{menu.altT}</span>
                       </a>
                     </Link>

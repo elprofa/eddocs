@@ -1,6 +1,11 @@
 import Styled from "styled-components";
 import { theme } from "../../../theme";
 const NavbarStc=Styled.div`
+
+.souligner{
+        border-bottom: 2px solid red;
+    }
+    
     .siteLogo
     {
         margin-right: 0% !important;
