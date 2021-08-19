@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SectionContactStc from './SectionContact.stc';
 import Trait from '../../shared/Trait';
 import Title from '../../shared/Title';
@@ -8,26 +8,44 @@ import { theme } from '../../../theme';
 
 import { BsEnvelopeFill} from "react-icons/bs";
 import { AiFillPhone,AiFillFacebook,AiFillTwitterSquare,AiFillLinkedin,AiTwotoneDownCircle } from "react-icons/ai";
-
+import {gsap} from 'gsap';
 
 const SectionContact = (props) => {
+
+    useEffect(() => {
+
+        let lt=gsap.timeline({
+            scrollTrigger:{
+            trigger: ".sectionContactRow",
+            markers:false,
+            start:"top center",
+            toggleActions:'play none none none',
+            },
+            delay:.3});
+            lt.from('.sectionTopContact',{ x:100,duration:.5,opacity:0,})
+            .from ('.sectionContactColLeft',{x:100,duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)"})
+            .from ('.sectionContactColRight',{x:-100,duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)"})
+           
+    }, []);
+
     const letGo=props.letGo;
     const menus=props.letGo.menus;
+
 
     return (
         <SectionContactStc className="container py-0 py-md-5" MonStyle={letGo.style}>
            <div className="row py-2 py-md-5 text-center">
-               <div className="col-lg-12">
-               <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="py-2 py-md-3 text-center mx-auto" />
+               <div className="col-lg-12 sectionTopContact">
+                    <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="py-2 py-md-3 text-center mx-auto" />
             
-            <Texte texte={<>
-                Remplissez le formulaire ou contacter nous directement par Mail ou sur notre <span>numéro client <AiTwotoneDownCircle /></span>
-            </>} MyclassName="paragraphe one text-center py-2 py-md-0 my-md-0 "  />
+                    <Texte texte={<>
+                        Remplissez le formulaire ou contacter nous directement par Mail ou sur notre <span>numéro client <AiTwotoneDownCircle /></span>
+                    </>} MyclassName="paragraphe one text-center py-2 py-md-0 my-md-0 "  />
                </div>
            </div>
-           <div className="row py-2 py-md-5">
-               <div className="col-lg-6">
-                   <div className="mx-0 mx-md-3  metrologie mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
+           <div className="sectionContactRow row py-2 py-md-5">
+               <div className="col-lg-6 ">
+                   <div className="sectionContactColLeft mx-0 mx-md-3  metrologie mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
                         <img src="/img/lo.png" width="150"/>
                     
                         <Texte texte="Adresse du siège" MyclassName="paragraphe title py-2  pb-md-0 mb-md-0" />
@@ -49,9 +67,9 @@ const SectionContact = (props) => {
                     </div>
 
                </div>
-               <div className="col-lg-6">
+               <div className="col-lg-6 ">
 
-                    <div className="ldeumi mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
+                    <div className="sectionContactColRight ldeumi mx-0 mx-md-3 py-2 py-md-5 px-0 px-md-5" >
                         <img src="/img/go.png" width="150" />
                         <Texte texte="Adresse du siège" MyclassName="paragraphe title py-2 pb-md-0 mb-md-0" />
                         <Texte texte={<>Lot Asta Immeuble A 4eme Etage N° 15 & 16 <br/>Bd Chefchaouni,<br/>Aîn Sebâa -Casablanca</>} MyclassName="py-2 pt-md-0 paragraphe" />

@@ -19,9 +19,8 @@ const AccreditationSection = (props) => {
             toggleActions:'play none none none',
             },
             delay:.3});
-        
             lt.from('.titreAccredit',{ y:100,duration:.5,opacity:0,})
-            .from ('.paragrapheAccredit',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.MyparagrapheAccredit1',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.acrreditElement1',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.acrreditElement2',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.acrreditElement3',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
@@ -63,7 +62,7 @@ const AccreditationSection = (props) => {
                         le groupe AIR METROLOGIE - L2MI s'est engagé depuis 2005 dans une demarche qualité et de 
                         conformité des prestations attendus par le client, de renforcer la fiabilité et la et la 
                         rigueur de son fonctionnement et de s'ameliorerde façon continue. Nos prestations sont accréditées par les organismes suivants:" 
-                        className="paragrapheAccredit paragraphe py-2 py-md-3" />
+                        className="MyparagrapheAccredit1 paragraphe py-2 py-md-3" />
                     
                     </div>
                     <div className="col-lg-12">
