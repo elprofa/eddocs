@@ -36,7 +36,7 @@ const Laboratoire1 = (props) => {
             />
             </div>
         </div>
-        <Row className="row py-2 py-md-3">
+        <Row className="row py-2 py-md-3 animation1">
             <Col lg={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -47,7 +47,7 @@ const Laboratoire1 = (props) => {
                         texte:<>Pour vos besoins en métrologie dimensionnelle, AIR METROLOGIE dispose
                         d'un laboratoire de haute performance qui assure l'étalonnage de vos
                         instruments de mesure en dimensionnel sous accréditation:</>}
-                } />
+                } anim="animation1" className="" />
             </Col>
         </Row>
         <Row className="py-2 py-md-3">
@@ -55,7 +55,7 @@ const Laboratoire1 = (props) => {
                 Details.map((detail,index)=>(<PCard url1={detail.url1} url2={detail.url2} key={index} type={1}  />))
             }
         </Row>
-        <Row className="py-2 py-md-3">
+        <Row className="py-2 py-md-3 animation1_1">
             <Col lg={6}>
                 <TitreParagrapheLabo 
                     title={{}}
@@ -67,16 +67,16 @@ const Laboratoire1 = (props) => {
                                 laboratoires accrédités par le COFRAC.
                             </>,
                         }
-                    } />
+                    } anim="animation1_1" />
             </Col>
         </Row>
-        <Row className="py-2 py-md-3">
+        <Row className="py-2 py-md-3 animation1_2">
             <Col lg={6}>
                 <TitreParagrapheLabo 
                     title={
                         {partOne:"Nos ",partTwo:"Prestations"}
                     }
-                    paragraphe={{ } } />
+                    paragraphe={{ } } anim="animation1_2" />
             </Col>
         </Row>
 

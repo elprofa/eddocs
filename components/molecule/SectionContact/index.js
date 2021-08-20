@@ -9,23 +9,38 @@ import { theme } from '../../../theme';
 import { BsEnvelopeFill} from "react-icons/bs";
 import { AiFillPhone,AiFillFacebook,AiFillTwitterSquare,AiFillLinkedin,AiTwotoneDownCircle } from "react-icons/ai";
 import {gsap} from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const SectionContact = (props) => {
+
+gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
 
         let lt=gsap.timeline({
             scrollTrigger:{
-            trigger: ".sectionContactRow",
+            trigger: ".sectionTopContact",
             markers:false,
-            start:"top center",
+            start:"top bottom",
             toggleActions:'play none none none',
             },
             delay:.3});
-            lt.from('.sectionTopContact',{ x:100,duration:.5,opacity:0,})
-            .from ('.sectionContactColLeft',{x:100,duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)"})
-            .from ('.sectionContactColRight',{x:-100,duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)"})
-           
+            lt.from('.titleContact',{ y:100,duration:.5,opacity:0,})
+            .from ('.paragrapheContact',{y:100,duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)"}) ;
+
+            let lt1=gsap.timeline({
+                scrollTrigger:{
+                trigger: ".sectionContactRow",
+                markers:false,
+                start:"top center",
+                toggleActions:'play none none none',
+                },
+                delay:.3});
+                lt1.from('.sectionContactColLeft',{ x:-100,duration:.5,opacity:0,})
+                .from ('.sectionContactColRight',{x:100,duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)"}) ;
+            
+            
+
     }, []);
 
     const letGo=props.letGo;
@@ -36,11 +51,11 @@ const SectionContact = (props) => {
         <SectionContactStc className="container py-0 py-md-5" MonStyle={letGo.style}>
            <div className="row py-2 py-md-5 text-center">
                <div className="col-lg-12 sectionTopContact">
-                    <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="py-2 py-md-3 text-center mx-auto" />
+                    <Title partOne="Comment" PartTwo="nous contacter ?" number={1}  MyclassName="titleContact py-2 py-md-3 text-center mx-auto" />
             
                     <Texte texte={<>
                         Remplissez le formulaire ou contacter nous directement par Mail ou sur notre <span>numéro client <AiTwotoneDownCircle /></span>
-                    </>} MyclassName="paragraphe one text-center py-2 py-md-0 my-md-0 "  />
+                    </>} MyclassName="paragrapheContact paragraphe one text-center py-2 py-md-0 my-md-0 "  />
                </div>
            </div>
            <div className="sectionContactRow row py-2 py-md-5">

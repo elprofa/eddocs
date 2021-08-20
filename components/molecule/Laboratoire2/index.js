@@ -37,7 +37,7 @@ const Laboratoire2 = (props) => {
           />
         </div>
       </div>
-        <Row className="py-2 py-md-3">
+        <Row className="py-2 py-md-3 lab2">
             <Col lg={6}>
                 <TitreParagrapheLabo 
                     title={
@@ -48,7 +48,7 @@ const Laboratoire2 = (props) => {
                         texte:<>Doté des étalons les plus performants et accrédité par le COFRAC, 
                         AIR METROLOGIE dispose d'un laboratoire en Électricité et Magnétisme 
                         couvrant l'étalonnage en laboratoire de plusieurs instruments de mesure à savoir</>}
-                } />
+                } anim="lab2" />
             </Col>
         </Row>
         <Row className="py-2 py-md-3">

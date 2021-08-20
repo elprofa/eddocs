@@ -67,7 +67,10 @@ const FooterStc=Styled.footer`
            margin:auto
         }
     }
-
+    button
+    {
+        background:#e71e23;
+    }
     
 `;
 export default FooterStc;

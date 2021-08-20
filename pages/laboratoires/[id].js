@@ -6,9 +6,10 @@ import { theme } from '../../theme'
 import { useRouter } from 'next/router';
 
 
-export default function IdLabo({query}) {
-
-      const id_page=query?.id?query.id:"";
+export default function IdLabo() {
+      const router=useRouter();
+      console.log(router)
+      const id_page=router.query.id;
 
   return (
     <div className="App">

@@ -8,9 +8,12 @@ import Button from "../../shared/Button";
 import Trait from "../../shared/Trait";
 import SectionNewsLetterStc from "./SectionNewsLetter.stc";
 import {gsap} from 'gsap'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import { useEffect } from "react";
 
 const SectionNewsLetter = () => {
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
 
     let lt=gsap.timeline({
@@ -22,10 +25,11 @@ const SectionNewsLetter = () => {
         },
         delay:.3});
     
-        lt.from('.newsletterTitre',{ y:100,duration:.5,opacity:0,})
+        lt.from('.newsletterSectionPage',{ x:100,duration:.5,opacity:0,})
+        .from ('.newsletterTitre',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
         .from ('.newsletterParagraphe',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-        .from ('.newsletterColLeft',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", x: 100 })
-        .from ('.newsletterColRight',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
+        .from ('.newsletterColLeft',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", x: -100 })
+        .from ('.newsletterColRight',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", x: 100 })
 
        
 }, []);
