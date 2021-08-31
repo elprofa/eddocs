@@ -14,14 +14,10 @@ const defaultStyle = {
 };
 const ButtonStc = Styled.button`
     ${defaultStyle};
-    border:0px;
-    background-color:${theme.colors.KingBleu};
-
-
-    &:hover
-    {
-      background-color:#ed3b43 !important;
-      color:#fff !important;
-    }
+    font-size: 16px;
+    color:#fff !important;
+    border:0;
+    background: rgb(16,72,158);
+    background: linear-gradient(90deg, rgba(16,72,158,1) 0%, rgba(16,72,158,1) 35%, rgba(236,40,45,1) 100%);
 `;
 export default ButtonStc;

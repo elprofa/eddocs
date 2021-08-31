@@ -7,6 +7,7 @@ import Button from '../../shared/Button';
 import {Row,Col} from 'reactstrap';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import PCard from "../PresentationCard";
+import CardPrestation from '../CardPrestation';
 
 const Laboratoire1 = (props) => {
     const Details = [
@@ -17,11 +18,11 @@ const Laboratoire1 = (props) => {
       ];
 
       const Details1 = [
-        { url: "/img/Groupe 210.png", title: "Présentation Mécanique" },
-        { url: "/img/rect-e4.png", title: "Presentation Interferometrique" },
-        { url: "/img/Rectangle 119.png", title: "Presentation Angulaire" },
-        { url: "/img/Rectangle 120.png", title: "Presentation 2D" },
-        { url: "/img/Groupe 211.png", title: "Presentation 3D" },
+        { url: "/img/Groupe 210.png", title: "" },
+        { url: "/img/dimensionel/147.png", title: "" },
+        { url: "/img/Rectangle 119.png", title: "" },
+        { url: "/img/dimensionel/120.png", title: "" },
+        { url: "/img/Groupe 211.png", title: "" },
       ];
 
    
@@ -29,66 +30,70 @@ const Laboratoire1 = (props) => {
     <LaboratoireStc3 >
         <div className="row py-2 py-md-5">
             <div className="col-md-12">
+            <Title
+              partOne="Dimensionel"
+              PartTwo=""
+              number={1}
+              MyclassName=""
+            />
             <img
-                src="/img/Rectangle -39.png"
+                src="/img/dimensionel/F4.png"
                 width="100%"
                 className="my-2 my-md-3"
             />
             </div>
         </div>
-        <Row className="row py-2 py-md-3 animation1">
-            <Col lg={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Dimensionnel",partTwo:""}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Pour vos besoins en métrologie dimensionnelle, AIR METROLOGIE dispose
-                        d'un laboratoire de haute performance qui assure l'étalonnage de vos
-                        instruments de mesure en dimensionnel sous accréditation:</>}
-                } anim="animation1" className="" />
+        <Row>
+            <Col lg={2} md={2}>
+                {
+                    Details.map((detail,index)=>(<PCard url1={detail.url1} url2={detail.url2} key={index} type={1} className="my-4"  />))
+                }
             </Col>
-        </Row>
-        <Row className="py-2 py-md-3">
-            {
-                Details.map((detail,index)=>(<PCard url1={detail.url1} url2={detail.url2} key={index} type={1}  />))
-            }
-        </Row>
-        <Row className="py-2 py-md-3 animation1_1">
-            <Col lg={6}>
+            <Col lg={6} md={6} className="">
                 <TitreParagrapheLabo 
-                    title={{}}
-                    paragraphe={
-                        {
-                            texte:<>
-                                ou sous étalonnage raccordé au système international d'unité SI, ceci au
-                                moyen d'étalons et machines de mesures de références étalonnés par des
-                                laboratoires accrédités par le COFRAC.
-                            </>,
+                        title={
+                            {partOne:"",partTwo:""}
                         }
-                    } anim="animation1_1" />
-            </Col>
-        </Row>
-        <Row className="py-2 py-md-3 animation1_2">
-            <Col lg={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Nos ",partTwo:"Prestations"}
-                    }
-                    paragraphe={{ } } anim="animation1_2" />
-            </Col>
-        </Row>
+                        paragraphe={
+                            {
+                            texte:<>Pour vos besoins en métrologie dimensionnelle, AIR METROLOGIE dispose
+                            d'un laboratoire de haute performance qui assure l'étalonnage de vos
+                            instruments de mesure en dimensionnel sous accréditation:</>}
+                    } anim="animation1" className="" />
 
-        <Row className="py-2 py-md-3">
+                        <Texte texte="> COFRAC (2-1920)" className="fs-18" style={{fontWeight:"bold",color:"#5a5d63"}} />
+                        <Texte texte="> TUNAC-ILAC (2-0124)" className="fs-18" style={{fontWeight:"bold",color:"#5a5d63"}} />
+                        <Texte texte="> SEMAC (MCI/CA AL 29/2008)" className="fs-18" style={{fontWeight:"bold",color:"#5a5d63"}} />
+                        <TitreParagrapheLabo 
+                        title={
+                            {partOne:"",partTwo:""}
+                        }
+                        paragraphe={
+                            {
+                            texte:<> ou sous étalonnage raccordé au système international d'unité SI, ceci au
+                            moyen d'étalons et machines de mesures de références étalonnés par des
+                            laboratoires accrédités par le COFRAC.</>}
+                    } anim="animation1" className="" />
+
+                <Row className="my-2 my-md-3">
+                    <Col>
+                        <Button texte="Demandez un devis" className="demande_devis " />
+                    </Col>
+                </Row>
+            </Col>
+            <Col lg={4} md={4} className="align-self-center">
+                <CardPrestation texte="Prestation Mécanique" />
+                <CardPrestation texte="Prestation Interférométrique" />
+                <CardPrestation texte="Prestation Angulaire" />
+                <CardPrestation texte="Prestation 2D" />
+                <CardPrestation texte="Prestation 3D" />
+            </Col>
+        </Row>
+        
+        <Row className="py-2 py-md-5">
             {
                 Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
             }
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
         </Row>
         
     </LaboratoireStc3>
