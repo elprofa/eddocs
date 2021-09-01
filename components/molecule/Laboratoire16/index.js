@@ -7,60 +7,49 @@ import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import {Row,Col} from 'reactstrap'
 import PCard from "../PresentationCard";
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire16 = (props) => {
   
   return (
     <LaboratoireStc1 >
-        <div className="row py-2 py-md-5">
-            <div className="col-md-12">
-            <img
-                src="/img/Rectangle 99.png"
-                width="100%"
-                className="my-2 my-md-3"
-            />
+        <HeaderLabo img="/img/air/F4.png" title={{
+            partOne:"Qualification De ",
+            partTwo:"l'air comprime"
+        }} />
+        <div className="row my-2 my-md-5">
+            <div className="col-lg-2 col-md-2 align-self-center text-center">
+                <img src="/img/8.png" className="mw-100 rounded-3"  />
+                <img src="/img/7.png" className="mw-100 rounded-3" />
+            </div>
+            <div className="col-lg-10 col-md-10">
+                <Texte texte="Le laboratoire L2MI possède l'expertise et le materiel nécessaire pour la 
+                qualification votre réseau d'air comprimé, votre réseau d'air medecinal, votre réseau d'air 
+                respirable et les gaz à usage pharmaceutique suivant les tests suivants:"/>
+
+                <div className="row my-2 my-md-3">
+                    <div className="col-lg-8 col-md-8">
+                        <ul>
+                            <li>Comptage de particule</li>
+                            <li>Temperature de rosée</li>
+                            <li>Le debit</li>
+                            <li>La pression</li>
+                            <li>Teneur en huile</li>
+                            <li>Teneur d'humidité</li>
+                            <li>Contrôle CO,CO2,NO,...</li>
+
+                        </ul>
+                        <Button texte="Demandez un devis" className="demande_devis " />
+                    </div>
+                    <div className="col-lg-4 col-md-4 align-self-center">
+                        <img src="/img/air/F3.png" />
+                    </div>
+                </div>
             </div>
         </div>
-
-        <Row className="py-2 py-md-3">
-            <Col lg={8} md={10}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Qualification De",partTwo:"L'air Comprime"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Le laboratoire L2MI possède l'expertise et le matériel nécessaire pour la qualification votre réseau d'aire
-                        comprimé, votre réseau d'air médécinal, votre réseau d'air respirable et les gaz à usage pharmaceutique
-                        suivant les tests suivants : 
-                        </>}
-                } />
-            </Col>            
-        </Row>
-        
-        <Row className="my-2 my-md-3">
-            <Col lg={4} md={4} className="align-self-center">
-                <div className="px-4">
-                    <ul> 
-                        <li className="fw-bold"> Comptage de particule</li>
-                        <li className="fw-bold"> Température de rosée;</li>
-                        <li className="fw-bold"> Le débit</li>
-                        <li className="fw-bold"> La pression</li>
-                        <li className="fw-bold"> La teneur en huile</li>
-                        <li className="fw-bold">  Teneur d'humidité</li>
-                        <li className="fw-bold"> Contrôle CO, CO2, NO, ...</li>
-                    </ul>
-                </div>
-            </Col>
-            <Col lg={8} md={8} >
-                <img src="/img/Groupe 232.png" />
-            </Col>
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+       <div className="col-lg-12 my-2 my-md-5">
+           <img src="/img/air/239.png" width="100%"/>
+       </div>
                    
         
 </LaboratoireStc1>

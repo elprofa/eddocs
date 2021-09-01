@@ -7,75 +7,57 @@ import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import {Row,Col} from 'reactstrap'
 import PCard from "../PresentationCard";
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire15 = (props) => {
   
   return (
     <LaboratoireStc1 >
-        <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/Rectangle 89.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
-        </div>
-      </div>
-
-        <Row className="py-2 py-md-3">
-            <Col lg={8} md={10}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Qualification Des",partTwo:"Autoclaves"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Les autoclaves, bien que réglés en usine avant livraison, doivent obligatoirement subir une qualification 
-                        opérationnelle sur site avant utilisation.
-                        La qualification a comme objectif de s'assurer que l'équipement est conforme aux spécifications requises
-                        pour soon utilisation. Elle établit la preuve que l'appareil répond, en condition d'exploitation, à toutes les
-                        exigences normatives.
-                        </>}
-                } />
-            </Col>            
-        </Row>
-        <Row className="py-2 py-md-3">
-            <Col lg={8} md={8}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Expertise",partTwo:"Internationale"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Notre laboratoire L2MI est accrédité par le SEMAC et met à votre disposition une équipe qualifiée
-                        pour vérifier l'aptitude des cycles de stérilisation dans les autoclaves afin de garantir le niveau
-                        d'assurance de la stérilité requis par :
-                        </>}
-                } />
-            </Col> 
-            <PCard url1="/img/7.png" url2="/img/8.png" type={1}  />
-                    
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} className="align-self-center">
-                <div className="px-0 px-md-4">
-                    <ul> 
-                        <li> Distribution de chaleur;</li>
-                        <li> Pénétration de chaleur;</li>
-                        <li> Calcul de la valeur stérilisatrice FO</li>
-                    </ul>
-                </div>
-            </Col>
-            <Col lg={6} md={6} >
-                <img src="/img/Groupe 1527.png" />
-            </Col>
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+        <HeaderLabo img="/img/autoclave/F4.png" title={
+            {
+                partOne:"Qualification Des ",
+                partTwo:"Autoclaves"
+            }
+        } />
+        
+       <div className="row my-2 my-md-5">
+            <div className="col-lg-3 col-md-3 align-self-center text-center">
+                <img src="/img/autoclave/8.png" className="mw-100 rounded-3"  />
+                <img src="/img/autoclave/7.png" className="mw-100 rounded-3" />
+            </div>
+            <div className="col-lg-9 col-md-9">
+                <Texte texte="
+                    Les autoclaves, bien que règlés en usine avant livraison, doivent obligatoirement subir une qualification 
+                    opérationnelle sur site utilisation.
+                " />
+                <Texte texte="
+                    La qualification a comme objectif de s'assurer que l'équipement est conforme aux spécifications requises pour son utilisation. 
+                    Elle établit la preuve que l'appareil répond, en condition d'exploitation, à toutes les exigences normatives. 
+                " />
+                <Texte texte="
+                   Notre laboratoire L2MI est accrédité par le SEMAC et met à votre disposition une équipe qualifiée
+                   pour vérifier l'aptitude des cycles de stérilisation dans les autoclaves afin de garantir le niveau
+                   d'assurance de la stérilité requis par :" />
+                   <div className="row">
+                       <div className="col-lg-8 align-self-center">
+                            <ul>
+                                <li>Distribution de chaleur;</li>
+                                <li>Pénetration de chaleur;</li>
+                                <li>Calcul de la valeur stérilisatrice F0</li>
+                            </ul>
+                            <Button texte="Demandez un devis" className="demande_devis " />
+                       </div>
+                       <div className="col-lg-3">
+                           <img src="/img/autoclave/F3.png" width="100%" />
+                       </div>
+                   </div>
                    
+            </div>
+       </div>
+        <div className="row my-2 my-md-5">
+            <PCard type="5" url1="/img/autoclave/217.png" title=""  />
+            <PCard type="5" url1="/img/autoclave/123.png" title=""  />
+        </div>
         
 </LaboratoireStc1>
   );

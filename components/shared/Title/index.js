@@ -2,19 +2,19 @@ import React from "react";
 import TitleStc from "./Title.stc";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Title = ({ partOne, PartTwo, number, MyclassName, type }) => {
+const Title = ({ partOne, partTwo, number, MyclassName, type }) => {
   return (
     <TitleStc className={MyclassName}>
       {type === 1 ? (
         <h1>
           {number === 1 ? (
             <>
-              <span>{partOne}</span> {PartTwo}
+              <span>{partOne}</span> {partTwo}
             </>
           ) : (
             <>
               {partOne}
-              <span>{PartTwo}</span>{" "}
+              <span>{partTwo}</span>{" "}
             </>
           )}
         </h1>
@@ -22,12 +22,12 @@ const Title = ({ partOne, PartTwo, number, MyclassName, type }) => {
         <h2>
           {number === 1 ? (
             <>
-              <span>{partOne}</span> {PartTwo}
+              <span>{partOne}</span> {partTwo}
             </>
           ) : (
             <>
               {partOne}
-              <span>{PartTwo}</span>{" "}
+              <span>{partTwo}</span>{" "}
             </>
           )}
         </h2>

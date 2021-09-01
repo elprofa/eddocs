@@ -18,12 +18,12 @@ const Details = [
   { url: "/img/rect-e5.png", title: "Générateur de Tension/Courant" },
 ];
 const Details1 = [
-    { url: "/img/g-e2.png", title: "Ponts RLC" },
-    { url: "/img/rect-e4.png", title: "Power meter" },
-    { url: "/img/rect-e3.png", title: "Analyseur de Réseau" },
-    { url: "/img/rect-e2.png", title: "Wattmèttres" },
-    { url: "/img/g-e4.png", title: "Générateur de Fonctions" },
-    { url: "/img/g-e1.png ", title: "Testeur ESD" },
+    { url: "/img/electricite/208.png", title: "" },
+    { url: "/img/electricite/209.png", title: "" },
+    { url: "/img/electricite/115.png", title: "" },
+    { url: "/img/electricite/120.png", title: "" },
+    { url: "/img/electricite/212.png", title: "" },
+    { url: "/img/electricite/119.png", title: "" },
   ];
 
 const Laboratoire2 = (props) => {
@@ -56,7 +56,7 @@ const Laboratoire2 = (props) => {
             <img src="/img/8.png" className="mw-100 rounded-3"  />
             <img src="/img/7.png" className="mw-100 rounded-3" />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-7">
             <Texte texte="Doté des étalons les plus performants et accrédité par le COFRAC, 
                         AIR METROLOGIE dispose d'un laboratoire en Électricité et Magnétisme 
                         couvrant l'étalonnage en laboratoire de plusieurs instruments de mesure à savoir"/>
@@ -89,8 +89,9 @@ const Laboratoire2 = (props) => {
               </div>
           </div>
         </div>
-        <div className="col-lg-4">
-            <PCard url1="/img/g-e2.png" style={{width:"100%"}}  />
+        <div className="col-lg-3">
+            <PCard url1="/img/electricite/207.png" className="my-3" type="3"  />
+            <PCard url1="/img/electricite/205.png" className="my-3" type="3" />
         </div>
       </div>
       

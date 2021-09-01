@@ -8,80 +8,60 @@ import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import {Row,Col} from 'reactstrap'
 import PCard from "../PresentationCard";
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire14 = (props) => {
   
   return (
     <LaboratoireStc1 >
-        <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/Rectangle 79.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
-        </div>
-      </div>
 
-        <Row className="py-2 py-md-3">
-            <Col lg={8} md={10}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Qualification Des",partTwo:"Environnements Propres"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Les salles blanche et les environnements maîtrisés apparents constituent un moyen efficace pour maîtriser
+        <HeaderLabo img="/img/air/F4.png" title={{
+            partOne:"Qualification Des ",
+            partTwo:"Environnements Propres"
+        }} />
+
+        <div className="row my-2 my-md-5">
+            <div className="col-lg-2 col-md-2 align-self-center text-center">
+                <img src="/img/environnement/8.png" className="mw-100 rounded-3"  />
+                <img src="/img/environnement/7.png" width="80px" className="mw-100 rounded-3" />
+            </div>
+            <div className="col-lg-10 col-md-10">
+                <Texte texte="Les salles blanche et les environnements maîtrisés apparents constituent un moyen efficace pour maîtriser
                         la contamination particulaire de l'air. L'exploitation d'une salle propre nécessite la mise en place d'une
                         qualification initiale ainsi que d'un programme d'essai et de surveillance périodique pcermettant de justifier
                         des performances de l'installation.
                         La classification particulaire et/ou microbkologique ainsi que les exigences de surveillance sont définis par la
-                        réglémentation en vigueur : ISO 14644, NFS 90-351, BPFs ou GMPs...
-                        </>}
-                } />
-            </Col>            
-        </Row>
-        <Row className="py-2 py-md-3">
-            <Col lg={8} md={8}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Expertise",partTwo:"Internationale"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Accrédité par le COFRAC, le laboratoire L2MI vous propose les solutions adaptées pour le contrôle et 
+                        réglémentation en vigueur : ISO 14644, NFS 90-351, BPFs ou GMPs..." />
+                <Texte texte="Accrédité par le COFRAC, le laboratoire L2MI vous propose les solutions adaptées pour le contrôle et 
                         la qualification de vos salles propres dans le respect des normes et des réglementations en vigueur
-                        suivant les tests suivants :
-                        </>}
-                } />
-            </Col> 
-            <PCard url1="/img/7.png" url2="/img/8.png" type={1}  />
-                 
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} className="align-self-center">
-                <div className="px-0 px-md-4">
-                    <ul> 
-                        <li>RADWAG de portée 500 g et de résolution 0,01 mg</li>
-                        <li>RADWAG de portée 10,2 kg et de résolution 0,1 mg</li>
-                        <li>Mettler Toledo de portée 24 g et de résolution 1 µg</li>
-                        <li>Mettler Toledo de portée 210 g et de resolution 0,1 mg</li>
-                        <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
-                        <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
-                    </ul>
+                        suivant les tests suivants :" />
+
+                <div className="row my-2 my-md-4">
+                    <div className="col-lg-6 col-md-8">
+                        <ul> 
+                            <li className="fw-bold">Comptage de particule</li>
+                            <li className="fw-bold">Mesure de vitesse d'air</li>
+                            <li className="fw-bold">Mesure de pression differentielle</li>
+                            <li className="fw-bold">Test d'intégrité des filtres</li>
+                            <li className="fw-bold">Mesure de température </li>
+                            <li className="fw-bold">Mésure d'humidité relative</li>
+                            <li className="fw-bold">Mésure de debit d'air</li>
+                            <li className="fw-bold">Essai de fuite de confinement </li>
+                        </ul>
+                        <Button texte="Demandez un devis >" className="demande_devis " />
+                    </div>
+                    <div className="col-md-6">
+                        <img src="/img/environnement/110.png" width="100%"/>
+                    </div>
                 </div>
-            </Col>
-            <Col lg={6} md={6} >
-                <img src="/img/Groupe 1427.png" />
-            </Col>
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
-                   
-        
+            </div>
+        </div>
+            
+        <div className="row my-2 my-md-5">
+            <PCard type="4" url1="/img/environnement/301.png" title=""  />
+            <PCard type="4" url1="/img/environnement/302.png" title=""  />
+            <PCard type="4" url1="/img/environnement/303.png" title=""  />
+        </div>
 </LaboratoireStc1>
   );
 }

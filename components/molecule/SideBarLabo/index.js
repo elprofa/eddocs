@@ -89,7 +89,7 @@ const SideBarLabo = (props) => {
         active:"16"
       },
       {
-        texte:"Caracterisation des Enceintes Climiques",
+        texte:"Caracterisation des Enceintes Climatiques",
         lien:"/laboratoires/17",
         active:"17"
       }
