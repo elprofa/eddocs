@@ -7,6 +7,7 @@ import Button from "../../shared/Button";
 import PCard from "../PresentationCard";
 import TitreParagrapheLabo from "../TitreParagrapheLabo";
 import Texte from "../../shared/Texte";
+import HeaderLabo from "../HeaderLabo";
 
 const Details = [
   { url: "/img/g-e6.png", title: "Multimètre" },
@@ -29,28 +30,11 @@ const Details1 = [
 const Laboratoire2 = (props) => {
   return (
     <LaboratoireStc1>
-      <div className="row py-2 py-md-5">
-        <div className="col-lg-4">
-            <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Laboratoire",partTwo:"Electricité & magnetisme"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<></>}
-                } anim="lab2" />
-        </div>
-        <div className="col-md-12">
+       <HeaderLabo img="/img/electricite/F4.png" title={{
+            partOne:"Electricité & ",
+            partTwo:"magnetisme"
+        }} />
         
-          <img
-            src="/img/electricite/F4.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
-
-         
-        </div>
-      </div>
       <div className="row">
         <div className="col-lg-2 align-self-center">
             <img src="/img/8.png" className="mw-100 rounded-3"  />

@@ -8,105 +8,82 @@ import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import {Row,Col} from 'reactstrap'
 import PCard from "../PresentationCard";
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire6 = (props) => {
   
   return (
     <LaboratoireStc6 >
-        <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/Rectangle 69.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
+     <HeaderLabo img="/img/masse/F4.png" title={{
+            partOne:"Pésage ",
+            partTwo:""
+        }} />
+
+        <div className="row my-2">
+          <div className="col-lg-2 col-md-2 align-self-center">
+              <img src="/img/masse/8.png" className="mw-100 rounded-3"  />
+              <img src="/img/masse/7.png" width="80px" className="mw-100 rounded-3" />
+              <div className="row">
+                <div className="col-lg-12 col-md-12 my-md-5 align-self-center text-center">
+                  <img src="/img/masse/290.png" className="mw-100 rounded-3"  />
+                </div>
+              </div>
+          </div>
+          <div className="col-lg-6 col-md-6">
+              <Texte texte="Pour l'étalonnage et vérification de vos Masses étalon notre laboratoire
+                        dispose des moyens suivants:" />
+
+                <Texte texte="Balances: " className="fw-bold my-md-2" />
+
+                <ul> 
+                    <li>RADWAG de portée 500 g et de résolution 0,01 mg</li>
+                    <li>RADWAG de portée 10,2 kg et de résolution 0,1 mg</li>
+                    <li>Mettler Toledo de portée 24 g et de résolution 1 µg</li>
+                    <li>Mettler Toledo de portée 210 g et de resolution 0,1 mg</li>
+                    <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
+                    <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
+                </ul>
+
+                <Texte texte="Masses: " className="fw-bold my-md-2" />
+                <ul> 
+                    <li> 2 Boîtes des masses classes E1</li>
+                    <li> 2 Boîtes des masses classes E2</li>
+                    <li> 2 Boîtes des masses classes F1</li>
+                </ul>
+                <Texte texte="Notre laboratoire est accrédité COFRAC pour l'etalonnage des masses de : " className="fw-bold my-md-2" />
+                <ul> 
+                    <li> Classe E2 de 1g à 10 Kg</li>
+                    <li> Classe F1 de 1mg à 20 Kg</li>
+                    <li> Classe F2 de 1mg à 20 Kg</li>
+                    <li> Classe M de 1mg à 20 Kg</li>
+                </ul>
+                <Button texte="Demandez un devis " MyclassName="demande_devis my-2 my-md-5" />
+          </div>
+          <div className="col-lg-4 col-md-4">
+            <img
+                src="/img/masse/291.png"
+                width="100%"
+                className="my-2 my-md-3"
+            />
+             <img
+                src="/img/masse/292.png"
+                width="100%"
+                className="my-2 my-md-3"
+            />
+          </div>
         </div>
-      </div>
+        <div className="row my-2 my-md-5">
+            <div className="col-md-6 align-self-center">
+            <   img src="/img/masse/217.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            </div>
+            <div className="col-md-3">
+            <   img src="/img/masse/208.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            </div>
+            <div className="col-md-3">
+            <   img src="/img/masse/213.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            </div>
+        </div>
 
-        <Row className="py-2 py-md-3">
-            <Col lg={6} md={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Masse",partTwo:""}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Pour l'étalonnage et vérification de vos Masses étalon notre laboratoire
-                        dispose des moyens suivants:
-                        </>}
-                } />
-            </Col>            
-        </Row>
-        
-        <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} className="align-self-center">
-                <h4 className="fw-bold">Balance</h4>
-                <div className="px-4">
-                    <ul> 
-                        <li>RADWAG de portée 500 g et de résolution 0,01 mg</li>
-                        <li>RADWAG de portée 10,2 kg et de résolution 0,1 mg</li>
-                        <li>Mettler Toledo de portée 24 g et de résolution 1 µg</li>
-                        <li>Mettler Toledo de portée 210 g et de resolution 0,1 mg</li>
-                        <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
-                        <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
-                    </ul>
-                </div>
-            </Col>
-            <Col lg={6} md={6} >
-                <img src="/img/Groupe 227.png" />
-            </Col>
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col lg={6} md={6} >
-                <img src="/img/Groupe 228.png" />
-            </Col>
-            <Col lg={6} md={6} className="align-self-center">
-                <h4 className="fw-bold">Masse</h4>
-                <div className="px-4">
-                    <ul> 
-                        <li> 2 Boîtes des masses classes E1</li>
-                        <li> 2 Boîtes des masses classes E2</li>
-                        <li> 2 Boîtes des masses classes F1</li>
-                    </ul>
-                </div>
-            </Col>
-        </Row>
-        <Row>
-            <Col lg={6} md={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Expertise",partTwo:" Internationale"}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Pour l'étalonnage et vérification de vos Masses étalon notre laboratoire
-                        dispose des moyens suivants:
-                        </>}
-                }/>
-            </Col>            
-        </Row>
-
-        <Row className="my-2 my-md-3">
-            <PCard url1="/img/7.png" url2="/img/8.png" type={1}  />
-            <Col lg={6} md={6} className="align-self-center">
-                <div className="px-4">
-                    <ul> 
-                        <li> Classe E2 de 1g à 10 Kg</li>
-                        <li> Classe F1 de 1mg à 20 Kg</li>
-                        <li> Classe F2 de 1mg à 20 Kg</li>
-                        <li> Classe M de 1mg à 20 Kg</li>
-                    </ul>
-                </div>
-            </Col>
-        </Row>
-    
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
-                   
-        
 </LaboratoireStc6>
   );
 }

@@ -113,7 +113,7 @@ const SideBarLabo = (props) => {
         <SideBarLaboStc className="d-flex flex-column flex-shrink-0 p-3 py-0 py-md-5">
            <div className="desktop">
            <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <Title partOne="Nos" PartTwo=" Laboratoires" number={1} MyclassName="py-2 py-md-3 title" />
+                <Title partOne="Nos" partTwo=" Laboratoires" number={1} MyclassName="py-2 py-md-3 title" />
             </a>
            
 

@@ -7,6 +7,8 @@ import Button from "../../shared/Button";
 import PCard from "../PresentationCard";
 import TitreParagrapheLabo from "../TitreParagrapheLabo";
 import RowAccreditationSociete from "../RowAccreditationSociete";
+import HeaderLabo from "../HeaderLabo";
+import Texte from "../../shared/Texte";
 
 const Details = [
   { url: "/img/anemometrie/3.png", title: "Anémomètre à helices" },
@@ -17,46 +19,36 @@ const Details = [
 const Laboratoire10 = (props) => {
   return (
     <LaboratoireStc1>
-      <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/anemometrie/1.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
-        </div>
-      </div>
-        <Row className="py-2 py-md-3">
-            <Col lg={6} md={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Anemometrie ",partTwo:""}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>La méthode d'etalonnage des anémomètres à fil chaud /à helice est fondée
-                        sur une methode mesurage par comparaison entre l'indication de l'appareil à étalonner et la vitesse
-                        d'air de référence mesurée par l'étalon du laboratoire </>}
-                } />
-            </Col>
-            <Col lg={6} md={6} className="text-center">
-               
-            </Col>
-        </Row>
-
-        <RowAccreditationSociete texte="Le laboratoire L2MI est accredité SEMAC pour l'étalonnage de deux types d'Anemomètres:" url2="/img/anemometrie/8.png" url1="/img/anemometrie/7.png" type="1" />
-        
-        <Row className="my-2 my-md-2">
-            {
-                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
-            }
-        </Row>
-       
-        <Row className="my-2 my-md-3">
-            <Col>
+      <HeaderLabo img="/img/anemometrie/F4.png" title={{
+            partOne:"Anemometrie ",
+            partTwo:""
+        }} />
+        <div className="row">
+            <div className="col-lg-2 pt-2 pt-md-5 text-center">
+                <img src="/img/8.png" className="mw-100 rounded-3"  />
+                <img src="/img/semac1.png" className="mw-100 rounded-3" width="80px" />
+            </div>
+            <div className="col-lg-7 col-md-7">
+                <Texte texte="La méthode d'etalonnage des anémomètres à fil chaud /à helice est fondée
+                          sur une methode mesurage par comparaison entre l'indication de l'appareil à étalonner et la vitesse
+                          d'air de référence mesurée par l'étalon du laboratoire" />
+                <Texte texte="Le laboratoire L2MI est accredité SEMAC pour l'étalonnage de deux types d'Anemomètres:" />
+                <ul>
+                  <li>Anémometrie à helice</li>
+                  <li>Anémometrie à Fil chaud</li>
+                </ul>
                 <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+            </div>
+            <div className="col-lg-3">
+              <img src="/img/anemometrie/F3.png" width="100%" />
+            </div>
+        </div>
+      <div className="row">
+        <PCard  url1="/img/anemometrie/205.png" title=""  />
+        <PCard  url1="/img/anemometrie/206.png" title=""  />
+        <PCard  url1="/img/anemometrie/297.png" title=""  />
+        <PCard  url1="/img/anemometrie/298.png" title=""  />
+      </div>
     </LaboratoireStc1>
   );
 };

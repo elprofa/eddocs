@@ -8,6 +8,7 @@ import LaboratoireStc1 from '../Laboratoire2/Laboratoire.stc';
 import {Row,Col} from 'reactstrap'
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import PCard from "../PresentationCard";
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire4 = (props) => {
     const Details = [
@@ -20,41 +21,40 @@ const Laboratoire4 = (props) => {
 
   return (
     <LaboratoireStc4 >
-        <div className="row py-2 py-md-5">
-            <div className="col-md-12">
-                <img
-                    src="/img/Rectangle -16.png"
-                    width="100%"
-                    className="my-2 my-md-3"
-                />
-            </div>
+        <HeaderLabo img="/img/hygrometrie/F4.png" title={{
+            partOne:"Hygrometrie ",
+            partTwo:""
+        }} />
+        <div className="row my-2">
+          <div className="col-lg-2 col-md-2 align-self-center">
+              <img src="/img/hygrometrie/8.png" className="mw-100 rounded-3"  />
+              <img src="/img/hygrometrie/7.png" width="80px" className="mw-100 rounded-3" />
+          </div>
+          <div className="col-lg-7 col-md-7">
+            <Texte texte="Notre laboratoire est accrédité COFRAC pour l'étalonnage des :" />
+            <ul>
+                <li>Thermolygromètre</li>
+                <li>Hygrometrie à condensation</li>
+                <li>Afficheur et enregistreur</li>
+                <li>Hygromètre à variation d'impédance</li>
+                <li>Thermo Hygrographe</li>
+            </ul>
+            <Texte texte="Le laboratoire dispose des meilleurs incertitudes à échelle nationale avec
+                        une équipe de 4 métrologues pour ce domaine." />
+            <Button texte="Demandez un devis >"  MyclassName="demande_devis my-md-3" />
+          </div>
+          <div className="col-lg-3 col-md-3">
+            <img src="/img/hygrometrie/286.png" className="mw-100 rounded-3"  />
+          </div>
         </div>
-        <Row className="py-2 py-md-3">
-            <Col lg={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Hygrometrie",partTwo:""}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Le laboratoire dispose des meilleurs incertitudes à échelle nationale avec
-                        une équipe de 4 métrologues pour ce domaine.
-                        De plus notre laboratoire est accrédité COFRAC pour l'étalonnage des:</>}
-                } />
-            </Col>
-            <PCard url1="/img/e-d3.png" url2="/img/e-d2.png" type={1}  />
-        </Row>
-        
-        <Row className="py-2 py-md-3">
-            {
-                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
-            }
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+        <div className="row my-2 my-md-5">
+            <PCard  url1="/img/hygrometrie/205.png" title=""  />
+            <PCard  url1="/img/hygrometrie/206.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/207.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/208.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/285.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/286.png" title=""  />            
+        </div>
         
 </LaboratoireStc4>
   );

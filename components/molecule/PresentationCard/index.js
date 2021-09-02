@@ -12,7 +12,7 @@ const index = ({ url1,url2="", title="",type="0",className="text-left",style={}}
     }
     else if(type==3){
       return(
-        <PresentationStc lg={2} className="text-center" style={{width:"100%"}}>
+        <PresentationStc lg={2} md={2} className="text-center" style={{width:"100%"}}>
           <img src={url1} className="mw-100 rounded-3" />
           <h6 className="text-center fw-bold">{title}</h6>
         </PresentationStc>

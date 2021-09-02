@@ -7,6 +7,8 @@ import Button from "../../shared/Button";
 import PCard from "../PresentationCard";
 import TitreParagrapheLabo from "../TitreParagrapheLabo";
 import RowAccreditationSociete from "../RowAccreditationSociete";
+import HeaderLabo from "../HeaderLabo";
+import Texte from "../../shared/Texte";
 
 
 const Details = [
@@ -22,49 +24,57 @@ const Details1 = [
 const Laboratoire9 = (props) => {
   return (
     <LaboratoireStc1>
-      <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/pesage/1.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
-        </div>
-      </div>
-        <Row className="py-2 py-md-3">
-            <Col lg={6} md={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Pésage",partTwo:""}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Accrédité par le SEMAC et le TUNAC-ILAC pour l'étalonnage 
-                        des instruments et systèmes de pesage, le laboratoire L2MI dispose 
-                        des meilleurs incertitudes dans ce domaine à l'échelle nationale</>}
-                } />
-            </Col>
-            <PCard url1="/img/pesage/7.png" url2="/img/pesage/8.png" type={1}  />
-        </Row>
-        <RowAccreditationSociete texte="Dans le cadre de l'accréditation SEMAC" url2="/img/pesage/11.png" url1="/img/pesage/10.png" type="1" />
-        
-        <Row className="my-2 my-md-2">
-            {
-                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
-            }
-        </Row>
-        <RowAccreditationSociete texte="Dans le cadre de l'accréditation TUNAC-ILAC" url2="/img/pesage/11.png" url1="/img/pesage/9.png" type="1" />
+      <HeaderLabo img="/img/machine/F4.png" title={{
+            partOne:"Pésage ",
+            partTwo:""
+        }} />
 
-        <Row className="my-2 my-md-2">
-            {
-                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index}  />))
-            }
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>
+        <div className="row my-2">
+          <div className="col-lg-2 col-md-2 align-self-center text-center">
+              <img src="/img/pesage/8.png" className="mw-100 rounded-3"  />
+              <img src="/img/pesage/7.png" width="80px" className="mw-100 rounded-3" />
+              <div className="row">
+                <div className="col-lg-6 col-md-6 align-self-center text-center">
+                    <img src="/img/pesage/9.png" className="mw-100 rounded-3"  />
+                </div>
+                <div className="col-lg-6 col-md-6">
+                    <img src="/img/pesage/12.png" className="mw-100 rounded-3"  />
+                    <img src="/img/pesage/8.png" width="50px" className="mw-100 rounded-3" />
+                </div>
+              </div>
+          </div>
+          <div className="col-lg-6 col-md-6">
+            <Texte texte="
+              Accrédité par le SEMAC et le TUNAC-ILAC pour l'étalonnage 
+              des instruments et systèmes de pesage, le laboratoire L2MI dispose 
+              des meilleurs incertitudes dans ce domaine à l'échelle nationale
+            " />
+            <Texte texte="Dans le cadre de l'accréditation SEMAC" />
+            <ul>
+              <li>Etalonnage instrument de pesage à fonctionnement non automatique jusqu'à 6 tonnes</li>
+              <li>Etalonnage des centrales à béton: ciment, agrégat, eau,...etc</li>
+            </ul>
+            <Texte texte="Dans le cadre de l'accréditation TUNAC-ILAC" />
+            <ul>
+              <li>Etalonnage Instruments de pesage à fonctionnement non automatique jusqu'à 1 tonne</li>
+              <li>Système de mesure de force en Compression</li>
+              <li>Pull Testers</li>
+              <li>Presses à béton</li>
+            </ul>
+
+            <Button texte="Demandez un devis " className="demande_devis my-2 my-md-2" />
+          </div>
+          <div className="col-lg-4 col-md-4">
+              <img src="/img/pesage/110.png" className="mw-100 rounded-3"  />
+          </div>
+        </div>
+
+        <div className="row my-2 my-md-5">
+            <PCard type="4" url1="/img/pesage/2.png" title=""  />
+            <PCard type="4" url1="/img/pesage/1.png" title=""  />            
+        </div>
+      
+        
     </LaboratoireStc1>
   );
 };
