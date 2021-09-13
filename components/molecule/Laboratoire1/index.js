@@ -44,12 +44,15 @@ const Laboratoire1 = (props) => {
             </div>
         </div>
         <Row>
-            <Col lg={2} md={2}>
-                {
-                    Details.map((detail,index)=>(<PCard url1={detail.url1} url2={detail.url2} key={index} type={1} className="my-4"  />))
-                }
+        <Col lg={4} md={4} className="align-self-center">
+                <CardPrestation texte="Prestation Mécanique" />
+                <CardPrestation texte="Prestation Interférométrique" />
+                <CardPrestation texte="Prestation Angulaire" />
+                <CardPrestation texte="Prestation 2D" />
+                <CardPrestation texte="Prestation 3D" />
             </Col>
-            <Col lg={6} md={6} className="">
+           
+            <Col lg={5} md={5} className="">
                 <TitreParagrapheLabo 
                         title={
                             {partOne:"",partTwo:""}
@@ -81,16 +84,25 @@ const Laboratoire1 = (props) => {
                     </Col>
                 </Row>
             </Col>
-            <Col lg={4} md={4} className="align-self-center">
-                <CardPrestation texte="Prestation Mécanique" />
-                <CardPrestation texte="Prestation Interférométrique" />
-                <CardPrestation texte="Prestation Angulaire" />
-                <CardPrestation texte="Prestation 2D" />
-                <CardPrestation texte="Prestation 3D" />
+            <Col lg={3} md={3} className="align-self-center">
+                <div className="text-center my-2 ">
+                    <img src="/img/7.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/8.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                </div>
+                <div className="text-center my-2 my-md-4">
+                    <img src="/img/tunac.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/ilac-ment-1.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/8.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                </div>
+                <div className="text-center my-2 my-md-4">
+                    <img src="/img/semac1.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/8.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                </div>
             </Col>
         </Row>
         
         <Row className="py-2 py-md-5">
+            
             {
                 Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
             }
