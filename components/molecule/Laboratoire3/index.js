@@ -6,16 +6,16 @@ import { theme } from "../../../theme";
 import Button from "../../shared/Button";
 import PCard from "../PresentationCard";
 import TitreParagrapheLabo from "../TitreParagrapheLabo";
+import HeaderLabo from "../HeaderLabo";
+import Texte from "../../shared/Texte";
 
-const Details = [
-  { url: "/img/temperature/2.png", title: "Chaine de mésure témperature à résistance de platine" },
-  { url: "/img/temperature/3.png", title: "Chaîne de mesure de temperature à couple thermoélectrique" },
-  { url: "/img/temperature/4.png", title: "Thermomètre en verre à dilatation liquide" },
-  { url: "/img/temperature/5.png", title: "Thermohygromètre" },
-  { url: "/img/temperature/9.png", title: "Therme hydrographe " },
-  { url: "/img/temperature/11.png ", title: "Afficheur de température" },
-  { url: "/img/temperature/10.png", title: "Thermo-bouton" },
-  { url: "/img/temperature/12.png", title: "Enregistreur de temperature" },
+const Details1 = [
+  { url: "/img/temperature/2.png", title: "" },
+  { url: "/img/temperature/4.png", title: "" },
+  { url: "/img/temperature/5.png", title: "" },
+  { url: "/img/temperature/9.png", title: "" },
+  { url: "/img/temperature/11.png ", title: "" },
+  { url: "/img/temperature/12.png", title: "" },
 
 ];
 
@@ -23,41 +23,48 @@ const Details = [
 const Laboratoire3 = (props) => {
   return (
     <LaboratoireStc1>
-      <div className="row py-2 py-md-5">
-        <div className="col-md-12">
-          <img
-            src="/img/temperature/1.png"
-            width="100%"
-            className="my-2 my-md-3"
-          />
+       <HeaderLabo img="/img/temperature/1.png" title={{
+            partOne:"Température ",
+            partTwo:""
+        }} />
+        
+      <div className="row">
+        <div className="col-lg-2 align-self-center">
+            <img src="/img/8.png" className="mw-100 rounded-3"  />
+            <img src="/img/7.png" className="mw-100 rounded-3" />
+        </div>
+        <div className="col-md-7">
+            <Texte texte="Disposant des meilleurs incertitudes à l'échelle national,
+                        le laboratoire de Température d'AIR METROLOGIE est accredité par le COFRAC pour
+                        l'étalonnage de différents instruments de mesure:"/>
+            
+                    <ul>
+                      <li>Chaine de mésure témperature à résistance de platine</li>
+                      <li>Chaîne de mesure de temperature à couple thermoélectrique</li>
+                      <li>Thermomètre en verre à dilatation liquide</li>
+                      <li>Thermohygromètre</li>
+                      <li>Therme hydrographe </li>
+                      <li>Afficheur de température</li>
+                      <li>Thermo-bouton</li>
+                      <li>Enregistreur de temperature</li>
+                    </ul>
+
+           
+            <div className="row my-2 my-md-5">
+              <div className="col-lg-12">
+                  <Button texte="Demandez un devis" className="demande_devis " />
+              </div>
+          </div>
+        </div>
+        <div className="col-lg-3 align-self-center">
+            <PCard url1="/img/temperature/3.png" className="my-3" type="3"  />
         </div>
       </div>
+      
         <Row className="py-2 py-md-3">
-            <Col lg={6} md={6}>
-                <TitreParagrapheLabo 
-                    title={
-                        {partOne:"Temperature",partTwo:""}
-                    }
-                    paragraphe={
-                        {
-                        texte:<>Disposant des meilleurs incertitudes à l'échelle national,
-                        le laboratoire de Température d'AIR METROLOGIE est accredité par le COFRAC pour
-                        l'étalonnage de différents instruments de mesure:
-                        </>}
-                } />
-            </Col>
-            <PCard url1="/img/e-d3.png" url2="/img/e-d2.png" type={1}  />
-            
-        </Row>
-        <Row className="my-2 my-md-5">
             {
-                Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index}  />))
+                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
             }
-        </Row>
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
         </Row>
         
     </LaboratoireStc1>

@@ -15,7 +15,7 @@ const Laboratoire6 = (props) => {
   return (
     <LaboratoireStc6 >
      <HeaderLabo img="/img/masse/F4.png" title={{
-            partOne:"Pésage ",
+            partOne:"Masse ",
             partTwo:""
         }} />
 
