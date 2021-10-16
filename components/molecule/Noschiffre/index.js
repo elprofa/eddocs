@@ -18,8 +18,8 @@ const Noschiffre = (props) => {
                  <NoschiffreContent letGo={{
                      style:{
 
-                         backgroundColor:"#fff",
-                         borderRadius:"25px 25px 0px 0px",
+                         
+                         borderRadius:"25px",
                          textAlign: "center",
                      }
                  }} />

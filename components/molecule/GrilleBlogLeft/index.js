@@ -85,27 +85,7 @@ const GrilleBlogLeft = (props) => {
              <div className="row py-2 py-md-5 my-0 my-5">
                 
                 <div className="col-lg-6 d-sm-none d-none d-md-block d-md-none d-lg-block text-center">
-                    <div className="row">
-                        <div className="col-sm-4">
-                        </div>
-                        <div className="col-sm-4 text-center ">
-                            <img src="/img/iso.png" className="imgGl1 py-2 py-md-3"  />
-                        </div>
-                        <div className="col-sm-4">
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-sm-4 text-center ">
-                            <img src="/img/Groupe -8.png" className="imgGl2 py-2 py-md-3" />
-                        </div>
-                        <div className="col-sm-4 text-center ">
-                            <img src="/img/cofrac.png" className="imgGl3 py-2 py-md-3" />
-                        </div>
-                        <div className="col-sm-4 text-center ">
-                            <img src="/img/tunac.png" className="imgGl4 py-2 py-md-3" />
-                        </div>
-                    </div>
-                    
+                    <img src="/img/g16.png" className="imgGl1 py-2 py-md-3"  />
                 </div>
             <div className="col-lg-6 align-self-center">
                 <Title partOne="Nos " PartTwo="Accréditations ISO/CEI 17 025" MyclassName="gBolgLTitle px-0 px-md-5 py-2 py-md-3 title" number={2} />

@@ -6,7 +6,7 @@ import SliderStc from "./slider.stc";
 const content = [
     {
       title:<Title MyclassName="title" partOne={
-        <>LE GROUPE AIR METROLOGIE - L2MI: POUR UNE MEILLEURE MAITRISE DES PROCESSUS DE MESURE</> } PartTwo="" number={1} type={1} />,
+        <>LE GROUPE AIR METROLOGIE - L2MI: Des laboratoires leaders en Métrologie</> } PartTwo="" number={1} type={1} />,
       description:"",
       button: "",
       image: "/img/slide1.jpg",
@@ -24,8 +24,8 @@ const content = [
       userProfile: ""
     },
     {
-        title:<Title MyclassName="title" partOne={
-          <>RECONNAISSANCE / EXPERTISE /FIABILITE / QUALITE / REACTIVITE / DISPONIBILITE</> } PartTwo="" number={1} type={1} />,
+        title:<Title MyclassName="title title1" partOne={
+          <><img src="/img/g327.png" width="80%" /></> } PartTwo="" number={1} type={1} />,
         description:"",
         button: "",
         image: "/img/slide1.jpg",

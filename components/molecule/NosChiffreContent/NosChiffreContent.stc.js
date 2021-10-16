@@ -6,8 +6,21 @@ const defaultStyle={
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
     position: relative;
-    background: #fff;
+    background-image:url(/img/digitbg.png);
+    background-size:cover;
     z-index:9999;
+    overflow:hidden;
+
+    section
+    {
+        height: 100%;
+        // background: rgb(27 90 133 / 80%) !important;
+        *:not(span)
+        {
+            color:#fff !important;
+        }
+    }
+
     @media screen and (max-width: 767px)
     {
         margin-top: 0px !important;

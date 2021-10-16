@@ -112,7 +112,14 @@ button:hover {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-
+            .title.title1
+            {
+              background:transparent !important;
+              h1:after
+              {
+                border:0px !important;
+              }
+            }
             .title
             {
                 @media screen and (min-width: 768px)

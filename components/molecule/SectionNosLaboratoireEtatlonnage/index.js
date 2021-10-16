@@ -99,7 +99,7 @@ const SectionNosLaboratoireEtatlonnage = () => {
         ,
         {
             src:"/img/icon/10.png",
-            texte:"Physico-chimie",
+            texte:"Physico-chimies",
             anim:"aLabo9",
             lien:""
         }
