@@ -15,6 +15,7 @@ const Noschiffre = (props) => {
             
              </div>
              <div className="col-sm-12 col-md-8">
+               
                  <NoschiffreContent letGo={{
                      style:{
 
@@ -25,7 +26,7 @@ const Noschiffre = (props) => {
                  }} />
              </div>
              <div className="col-sm-2">
-               
+             
              </div>
          </div>
         </NosChiffreStc>

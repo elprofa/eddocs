@@ -8,6 +8,80 @@ button:hover {
     -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
             filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   }
+
+  .myborder
+  {
+    height: 100%;
+    border: 0px !important;
+    border-right: 5px solid #12499f !important;
+    border-radius: 100%;
+    width: 100%;
+    position: relative;
+    right: -60px;
+    @media screen and (max-width: 996px)
+    {
+      display:none;
+    }
+  }
+
+  .h1captionTitle
+  {
+    background: rgb(0,0,0,.7);
+    padding: 12px;
+    text-align:left;
+    
+    @media screen and (min-width: 996px)
+    {
+      float: left;
+      width:622px;
+    }
+
+    @media screen and (max-width: 996px)
+    {
+      background: transparent;
+      text-align:center;
+    }
+
+    hr
+    {
+      height: 2px;
+      color: #ff0000;
+      opacity: 1;
+      width: 50%;
+      margin: auto;
+      margin-top: 10px;
+      @media screen and (min-width: 996px)
+      {
+        display:none;
+      }
+    }
+    .icon.iconcenter
+    {
+      margin-left: -12px;
+    }
+    .icon
+    {
+      background: #fff;
+      min-width: 27px;
+      height: 20px;
+      padding: 7px;
+      border-radius: 100%;
+      margin-right: 15px;
+      margin-left: -40px;
+      border: 4px solid #12499f;
+
+      @media screen and (max-width: 996px)
+      {
+          display:none;
+      }
+      svg
+      {
+        font-size: 60px;
+        color: #000;
+        margin-top: -5px;
+      }
+    }
+  }
   
   .wrapper {
     max-width: 1335px;

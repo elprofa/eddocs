@@ -92,7 +92,7 @@ const GrilleBlogLeft = (props) => {
                 <Texte texte={
                     <>
                     Afin d'apporter à nos clients le meilleur niveau de service dans le domaine de la metrologie 
-                    dans l'optique de contribuer à l'amelioration de son processus de mesure, le groupe AIR metrologie-L2MI s'state =
+                    dans l'optique de contribuer à l'amelioration de son processus de mesure, le groupe AIR metrologie-L2MI s'est
                         engagé depuis 2005 dans une démarche qualité qui s'appuie sur la norme ISO/CEI 17 025 version
                         2017,dans le but de satisfaire le niveau de qualité et conformité des prestations attendus par 
                         le client, de renforcer la fiabilité et la rigueur de son fonctionnement et de s'ameliorer de facon

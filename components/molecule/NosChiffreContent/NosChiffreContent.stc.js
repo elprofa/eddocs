@@ -6,7 +6,7 @@ const defaultStyle={
     ${defaultStyle};
     ${(props) => props.MonStyle || ""};
     position: relative;
-    background-image:url(/img/digitbg.png);
+    background-image:url(/img/video.gif);
     background-size:cover;
     z-index:9999;
     overflow:hidden;
