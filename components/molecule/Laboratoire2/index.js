@@ -19,12 +19,11 @@ const Details = [
   { url: "/img/rect-e5.png", title: "Générateur de Tension/Courant" },
 ];
 const Details1 = [
-    { url: "/img/electricite/208.png", title: "" },
-    { url: "/img/electricite/209.png", title: "" },
-    { url: "/img/electricite/115.png", title: "" },
-    { url: "/img/electricite/120.png", title: "" },
-    { url: "/img/electricite/212.png", title: "" },
-    { url: "/img/electricite/119.png", title: "" },
+    { url: "/img/electricite/1.JPG", title: "" },
+    { url: "/img/electricite/2.JPG", title: "" },
+    { url: "/img/electricite/3.JPG", title: "" },
+    { url: "/img/electricite/4.JPG", title: "" },
+    { url: "/img/electricite/5.JPG", title: "" },
   ];
 
 const Laboratoire2 = (props) => {
