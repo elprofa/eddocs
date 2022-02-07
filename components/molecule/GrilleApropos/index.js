@@ -38,13 +38,13 @@ const GrilleApropos = ({letGo}) => {
                     <div className="col-lg-6 d-sm-none d-none d-md-none d-lg-block">
                         <div className="row" style={{padding:"30px"}}>
                             <div className="col-sm-6">
-                                <Image src="/img/Rectangle-3.png" className="aproposImage1k" width="250" height="350" />
-                                <Image src="/img/Rectangle-2.png" className="aproposImage2" width="250" height="200"/>
+                                <Image src="/img/quisommesnous/BB.jpg" className="aproposImage1k mb-2 mb-md-5"  width="250" height="350" />
+                                <Image src="/img/quisommesnous/DD.jpg" className="aproposImage2" width="250" height="200"/>
                                 
                             </div>
                             <div className="col-sm-6">
-                                <Image src="/img/Rectangle-1.png" className="aproposImage3" width="250" height="200" />
-                                <Image src="/img/Rectangle-60.png" className="aproposImage4" width="250" height="350"/>
+                                <Image src="/img/quisommesnous/CC.jpg" className="aproposImage3 mb-2 mb-md-5" width="250" height="200" />
+                                <Image src="/img/quisommesnous/EE.jpg" className="aproposImage4" style={{borderRadius:"20px"}} width="250" height="350"/>
                             </div>
                         </div>
                     </div>
