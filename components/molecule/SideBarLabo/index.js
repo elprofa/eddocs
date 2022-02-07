@@ -27,7 +27,7 @@ const SideBarLabo = (props) => {
           active:"3"
         },
         {
-          texte:"Hydrogène",
+          texte:"Hygrométrie",
           lien:"/laboratoires/4",
           active:"4"
         },

@@ -12,8 +12,10 @@ import Texte from "../../shared/Texte";
 
 
 const Details = [
+  { url: "/img/pesage/1.jpeg", title: "Etalonnage instrument de pesage à fonctionnement non automatique jusqu'à 6 tonnes " },
   { url: "/img/pesage/2.png", title: "Etalonnage instrument de pesage à fonctionnement non automatique jusqu'à 6 tonnes " },
-  { url: "/img/pesage/3.png", title: "Etalonnage des centrales à beton:ciment, agregat, eaux,etc..." },
+  { url: "/img/pesage/3.jpeg", title: "Etalonnage des centrales à beton:ciment, agregat, eaux,etc..." },
+  { url: "/img/pesage/4.jpeg", title: "Etalonnage des centrales à beton:ciment, agregat, eaux,etc..." },
   
 ];
 const Details1 = [
@@ -70,8 +72,10 @@ const Laboratoire9 = (props) => {
         </div>
 
         <div className="row my-2 my-md-5">
-            <PCard type="4" url1="/img/pesage/2.png" title=""  />
-            <PCard type="4" url1="/img/pesage/1.png" title=""  />            
+            <PCard type="4" url1="/img/pesage/1.jpg" title=""  />
+            <PCard type="4" url1="/img/pesage/2.png" title=""  />            
+            <PCard type="4" url1="/img/pesage/3.jpg" title=""  />            
+            <PCard type="4" url1="/img/pesage/4.jpg" title=""  />            
         </div>
       
         

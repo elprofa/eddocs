@@ -37,7 +37,7 @@ const Laboratoire1 = (props) => {
               MyclassName=""
             />
             <img
-                src="/img/dimensionel/F4.png"
+                src="/img/dimensionel.png"
                 width="100%"
                 className="my-2 my-md-3"
             />

@@ -10,12 +10,11 @@ import HeaderLabo from "../HeaderLabo";
 import Texte from "../../shared/Texte";
 
 const Details1 = [
-  { url: "/img/temperature/2.png", title: "" },
-  { url: "/img/temperature/4.png", title: "" },
-  { url: "/img/temperature/5.png", title: "" },
-  { url: "/img/temperature/9.png", title: "" },
-  { url: "/img/temperature/11.png ", title: "" },
-  { url: "/img/temperature/12.png", title: "" },
+  { url: "/img/temperature/1.JPG", title: "" },
+  { url: "/img/temperature/2.JPG", title: "" },
+  { url: "/img/temperature/3.JPG", title: "" },
+  { url: "/img/temperature/4.JPG", title: "" },
+  
 
 ];
 
@@ -23,7 +22,7 @@ const Details1 = [
 const Laboratoire3 = (props) => {
   return (
     <LaboratoireStc1>
-       <HeaderLabo img="/img/temperature/1.png" title={{
+       <HeaderLabo img="/img/temperature1.png" title={{
             partOne:"Température ",
             partTwo:""
         }} />
@@ -38,18 +37,16 @@ const Laboratoire3 = (props) => {
                         le laboratoire de Température d'AIR METROLOGIE est accredité par le COFRAC pour
                         l'étalonnage de différents instruments de mesure:"/>
             
-                    <ul>
-                      <li>Chaine de mésure témperature à résistance de platine</li>
-                      <li>Chaîne de mesure de temperature à couple thermoélectrique</li>
-                      <li>Thermomètre en verre à dilatation liquide</li>
-                      <li>Thermohygromètre</li>
-                      <li>Therme hydrographe </li>
-                      <li>Afficheur de température</li>
-                      <li>Thermo-bouton</li>
-                      <li>Enregistreur de temperature</li>
-                    </ul>
-
-           
+            <ul>
+              <li>Chaine de mésure témperature à résistance de platine</li>
+              <li>Chaîne de mesure de temperature à couple thermoélectrique</li>
+              <li>Thermomètre en verre à dilatation liquide</li>
+              <li>Thermohygromètre</li>
+              <li>Therme hydrographe </li>
+              <li>Afficheur de température</li>
+              <li>Thermo-bouton</li>
+              <li>Enregistreur de temperature</li>
+            </ul>
             <div className="row my-2 my-md-5">
               <div className="col-lg-12">
                   <Button texte="Demandez un devis" className="demande_devis " />
@@ -61,11 +58,11 @@ const Laboratoire3 = (props) => {
         </div>
       </div>
       
-        <Row className="py-2 py-md-3">
-            {
-                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
-            }
-        </Row>
+      <Row className="py-2 py-md-3">
+          {
+              Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
+          }
+      </Row>
         
     </LaboratoireStc1>
   );

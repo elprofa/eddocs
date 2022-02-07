@@ -12,7 +12,7 @@ import Texte from "../../shared/Texte";
 const Laboratoire7 = (props) => {
   return (
     <LaboratoireStc1>
-      <HeaderLabo img="/img/pression/F4.png" title={{
+      <HeaderLabo img="/img/pression1.png" title={{
             partOne:"Pression ",
             partTwo:""
         }} />

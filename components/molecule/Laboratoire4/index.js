@@ -21,7 +21,7 @@ const Laboratoire4 = (props) => {
 
   return (
     <LaboratoireStc4 >
-        <HeaderLabo img="/img/hygrometrie/F4.png" title={{
+        <HeaderLabo img="/img/hygrometrie1.png" title={{
             partOne:"Hygrometrie ",
             partTwo:""
         }} />
@@ -41,19 +41,18 @@ const Laboratoire4 = (props) => {
             </ul>
             <Texte texte="Le laboratoire dispose des meilleurs incertitudes à échelle nationale avec
                         une équipe de 4 métrologues pour ce domaine." />
-            <Button texte="Demandez un devis >"  MyclassName="demande_devis my-md-3" />
+            <Button texte="Demandez un devis"  MyclassName="demande_devis my-md-3" />
           </div>
           <div className="col-lg-3 col-md-3">
             <img src="/img/hygrometrie/286.png" className="mw-100 rounded-3"  />
           </div>
         </div>
         <div className="row my-2 my-md-5">
-            <PCard  url1="/img/hygrometrie/205.png" title=""  />
-            <PCard  url1="/img/hygrometrie/206.png" title=""  />            
-            <PCard  url1="/img/hygrometrie/207.png" title=""  />            
-            <PCard  url1="/img/hygrometrie/208.png" title=""  />            
-            <PCard  url1="/img/hygrometrie/285.png" title=""  />            
-            <PCard  url1="/img/hygrometrie/286.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/1.JPG" title=""  />
+            <PCard  url1="/img/hygrometrie/2.GIF" title=""  />            
+            <PCard  url1="/img/hygrometrie/3.GIF" title=""  />            
+            <PCard  url1="/img/hygrometrie/4.JPG" title=""  />            
+              
         </div>
         
 </LaboratoireStc4>

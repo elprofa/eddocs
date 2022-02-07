@@ -14,7 +14,7 @@ const Laboratoire6 = (props) => {
   
   return (
     <LaboratoireStc6 >
-     <HeaderLabo img="/img/masse/F4.png" title={{
+     <HeaderLabo img="/img/masse1.png" title={{
             partOne:"Masse ",
             partTwo:""
         }} />
@@ -73,14 +73,17 @@ const Laboratoire6 = (props) => {
           </div>
         </div>
         <div className="row my-2 my-md-5">
-            <div className="col-md-6 align-self-center">
-            <   img src="/img/masse/217.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <div className="col-md-3 align-self-center">
+            <img src="/img/masse/1.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-3">
-            <   img src="/img/masse/208.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/2.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-3">
-            <   img src="/img/masse/213.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/3.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            </div>
+            <div className="col-md-3">
+            <img src="/img/masse/4.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
         </div>
 

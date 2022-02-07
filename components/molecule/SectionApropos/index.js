@@ -5,6 +5,7 @@ import Title from '../../shared/Title';
 import Texte from '../../shared/Texte';
 import { Col, Container, Row } from 'reactstrap';
 import Image from 'next/image';
+import Button from '../../shared/Button';
 import {gsap,Power3} from 'gsap'
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
@@ -74,6 +75,7 @@ const GrilleBlog = () => {
                             </>
                         } />
 
+                        <Button texte={<>En savoir plus</>} MyclassName="mx-0 mx-md-5 py-2 py-md-3" />
                     </Col>
                     <Col lg={6} className="text-center align-self-center right">
                         <img src="/img/blog1.png" className="imgPropps"  />

@@ -37,7 +37,7 @@ const Laboratoire5 = (props) => {
         <div className="row py-2 py-md-5">
             <div className="col-md-12">
                 <img
-                    src="/img/Rectangle -26.png"
+                    src="/img/force1.png"
                     width="100%"
                     className="my-2 my-md-3"
                 />

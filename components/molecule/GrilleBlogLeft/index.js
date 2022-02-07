@@ -100,7 +100,7 @@ const GrilleBlogLeft = (props) => {
                     
                     </>
                 } MyclassName="anim1 px-0 px-md-5 py-2 py-md-3 paragraphe p1" />
-                <Button texte={<>En savoir plus <AiOutlineRight /></>} MyclassName="mx-0 mx-md-5 py-2 py-md-3 bGlButton" />
+                <Button texte={<>En savoir plus </>} MyclassName="mx-0 mx-md-5 py-2 py-md-3 bGlButton" />
             </div>
              </div>
          </div>
