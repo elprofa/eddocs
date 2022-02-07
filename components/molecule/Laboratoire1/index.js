@@ -8,6 +8,7 @@ import {Row,Col} from 'reactstrap';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import PCard from "../PresentationCard";
 import CardPrestation from '../CardPrestation';
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire1 = (props) => {
     const Details = [
@@ -28,21 +29,10 @@ const Laboratoire1 = (props) => {
    
   return (
     <LaboratoireStc3 >
-        <div className="row py-2 py-md-5">
-            <div className="col-md-12">
-            <Title
-              partOne="Dimensionel"
-              PartTwo=""
-              number={1}
-              MyclassName=""
-            />
-            <img
-                src="/img/dimensionel.png"
-                width="100%"
-                className="my-2 my-md-3"
-            />
-            </div>
-        </div>
+        <HeaderLabo img="/img/dimensionel.png" title={{
+            partOne:"Dimensionel ",
+            partTwo:""
+        }} />
         <Row>
         <Col lg={4} md={4} className="align-self-center">
                 <CardPrestation texte="Prestation Mécanique" />
@@ -75,7 +65,7 @@ const Laboratoire1 = (props) => {
                             {
                             texte:<> ou sous étalonnage raccordé au système international d'unité SI, ceci au
                             moyen d'étalons et machines de mesures de références étalonnés par des
-                            laboratoires accrédités par le COFRAC.</>}
+                            laboratoires accrédités reconnus à l’international.</>}
                     } anim="animation1" className="" />
 
                 <Row className="my-2 my-md-3">

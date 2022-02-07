@@ -9,6 +9,7 @@ import { Row,Col } from 'reactstrap';
 import TitreParagrapheLabo from '../TitreParagrapheLabo';
 import PCard from "../PresentationCard";
 import RowAccreditationSociete from '../RowAccreditationSociete';
+import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire5 = (props) => {
     const Details = [
@@ -34,20 +35,17 @@ const Laboratoire5 = (props) => {
       ];
   return (
     <LaboratoireStc5 >
-        <div className="row py-2 py-md-5">
-            <div className="col-md-12">
-                <img
-                    src="/img/force1.png"
-                    width="100%"
-                    className="my-2 my-md-3"
-                />
-            </div>
-        </div>
+
+        <HeaderLabo img="/img/force1.png" title={{
+            partOne:"FORCE &  ",
+            partTwo:"COUPLE"
+        }} />
+       
         <Row className="py-2 py-md-3">
             <Col lg={6} >
                 <TitreParagrapheLabo 
                     title={
-                        {partOne:"Force &",partTwo:" Couple" }
+                        {"":""}
                     }
                     paragraphe={
                         {
