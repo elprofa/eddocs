@@ -48,10 +48,10 @@ const Laboratoire4 = (props) => {
           </div>
         </div>
         <div className="row my-2 my-md-5">
-            <PCard  url1="/img/hygrometrie/1.JPG" title=""  />
+            <PCard  url1="/img/hygrometrie/1.jpg" title=""  />
             <PCard  url1="/img/hygrometrie/2.GIF" title=""  />            
             <PCard  url1="/img/hygrometrie/3.GIF" title=""  />            
-            <PCard  url1="/img/hygrometrie/4.JPG" title=""  />            
+            <PCard  url1="/img/hygrometrie/4.jpg" title=""  />            
               
         </div>
         

@@ -74,16 +74,16 @@ const Laboratoire6 = (props) => {
         </div>
         <div className="row my-2 my-md-5">
             <div className="col-md-3 align-self-center">
-            <img src="/img/masse/1.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/1.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-3">
-            <img src="/img/masse/2.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/2.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-3">
-            <img src="/img/masse/3.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/3.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-3">
-            <img src="/img/masse/4.JPG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/4.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
         </div>
 

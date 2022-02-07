@@ -10,10 +10,10 @@ import HeaderLabo from "../HeaderLabo";
 import Texte from "../../shared/Texte";
 
 const Details1 = [
-  { url: "/img/temperature/1.JPG", title: "" },
-  { url: "/img/temperature/2.JPG", title: "" },
-  { url: "/img/temperature/3.JPG", title: "" },
-  { url: "/img/temperature/4.JPG", title: "" },
+  { url: "/img/temperature/1.jpg", title: "" },
+  { url: "/img/temperature/2.jpg", title: "" },
+  { url: "/img/temperature/3.jpg", title: "" },
+  { url: "/img/temperature/4.jpg", title: "" },
   
 
 ];
