@@ -56,7 +56,7 @@ const handleMenu =(index) => {
     <HeaderStc>
       <Navbar  light expand="md">
         <Container>
-        <NavbarBrand href="/" className="siteLogo"><Image src="/img/lo.png" width="150" height="50" /></NavbarBrand>
+        <NavbarBrand href="/" className="siteLogo"><Image src="/img/logo.png" width="150" height="50" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto ml-auto" navbar>
@@ -72,7 +72,7 @@ const handleMenu =(index) => {
               }
            
           </Nav>
-          <NavbarText><Image src="/img/go.png" width="150" height="50" /></NavbarText>
+          <NavbarText><Image src="/img/logol2mi.png" width="120" height="50" /></NavbarText>
         </Collapse>
         </Container>
       </Navbar>

@@ -52,7 +52,7 @@ const content = [
           <><img src="/img/g327.png" width="80%" /></> } PartTwo="" number={1} type={1} />,
         description:"",
         button: "",
-        image: "/img/slide1.jpg",
+        image: "/img/Accueil/a.png",
         user: "",
         userProfile: ""
       },

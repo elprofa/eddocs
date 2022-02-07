@@ -12,7 +12,7 @@ const NavbarStc=Styled.div`
     }
 
     *{
-        color: ${theme.colors.blackG};
+        color: #000;
     }
 
     .altT
