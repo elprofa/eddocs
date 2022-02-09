@@ -46,7 +46,7 @@ const AccreditationSection = (props) => {
         },
         {
             texte:"Tunac",
-            src:"/img/groupe117.png",
+            src:"/img/accreditation.png",
             lien:"https://www.tunac.tn/",
             link_name:"https://www.tunac.tn/",
             cls:"acrreditElement2"
