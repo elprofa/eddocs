@@ -35,9 +35,17 @@ const SectionAutreDomaine = () => {
                             } />
                             
                         </div>
-                        <img src="/img/organigramme.svg" className="sectionAutreDomaineImage my-2 my-md-5" width="100%" />
-                        <img src="/img/g2.png" className="sectionAutreDomaineImage1 my-2 my-md-5" width="100%" />
-                        <img src="/img/g1.png" className="sectionAutreDomaineImage2 my-2 my-md-5" width="100%" />
+                       
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <img src="/img/accreditation/metro.png" className="sectionAutreDomaineImage my-2 my-md-5" width="100%" />
+                        
+                        {/* <img src="/img/g1.png" className="sectionAutreDomaineImage2 my-2 my-md-5" width="100%" /> */}
+                    </div>
+                    <div className='col-md-6'>
+                        <img src="/img/accreditation/l2mi.png" className="sectionAutreDomaineImage1 my-2 my-md-5" width="100%" />
                     </div>
                 </div>
                 

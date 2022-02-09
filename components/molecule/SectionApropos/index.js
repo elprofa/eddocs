@@ -10,6 +10,7 @@ import {gsap,Power3} from 'gsap'
 import { ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import {CSSRulePlugin} from "gsap/dist/CSSRulePlugin"
 import { useRef } from 'react';
+import SliderApropos from '../SliderApropos';
 
 const GrilleBlog = () => {
    
@@ -78,7 +79,7 @@ const GrilleBlog = () => {
                         <Button texte={<>En savoir plus</>} MyclassName="mx-0 mx-md-5 py-2 py-md-3" />
                     </Col>
                     <Col lg={6} className="text-center align-self-center right">
-                        <img src="/img/blog1.png" className="imgPropps"  />
+                       <SliderApropos />
                     </Col>
                 </Row>
                 <IconGrille position={1}/>

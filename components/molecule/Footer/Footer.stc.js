@@ -10,7 +10,7 @@ const FooterStc=Styled.footer`
     {
         border:0px !important;
     }
-    background-image:url('/img/bgfooter.png');
+    background-image:url('/img/footer.png');
     background-size:cover;
     // background: rgb(106,178,69);
     // background: linear-gradient(90deg, rgba(106,178,69,1) 0%, rgba(106,178,69,1) 28%, rgba(13,119,182,1) 61%);

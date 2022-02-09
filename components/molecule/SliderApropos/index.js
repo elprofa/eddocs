@@ -6,45 +6,30 @@ import SliderStc from "./slider.stc";
 import {BiTargetLock} from 'react-icons/bi'
 
 const content = [
+    
     {
-      title:<Title MyclassName="title" partOne={
-        <>LE GROUPE AIR METROLOGIE - L2MI: Des laboratoires Leaders en Métrologie !</> } PartTwo="" number={1} type={1} />,
-      description:"",
-      button: "",
-      image: "/img/slide1.jpg",
-      user: "",
-      userProfile: ""
-    },
-    {
-      title: <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <img src="/img/banner2.png" width="45%" />
-          </div>
-        </div>
-      </div>,
+      title: "",
       description:
         "",
       button: "Discover",
-      image: "/img/slide2.jpg",
+      image: "/img/quisommesnous/slide1.png",
       user: "",
       userProfile: ""
     },
     {
-        title:<Title MyclassName="title title1" partOne={
-          <><img src="/img/g327.png" width="80%" /></> } PartTwo="" number={1} type={1} />,
+        title:"",
         description:"",
         button: "",
-        image: "/img/Accueil/a.png",
+        image: "/img/quisommesnous/slide2.png",
         user: "",
         userProfile: ""
       },
   ];
 
-  const Slider1=()=>{
+  const SliderApropos=()=>{
       return (
         <SliderStc>
-            <Slider className="slider-wrapper" autoplay="2000" infinite="true">
+            <Slider className="slider-wrapper" autoplay="1000" infinite="true">
             {content.map((item, index) => (
                 <div
                 key={index}
@@ -60,4 +45,4 @@ const content = [
         </SliderStc>
       )
   }
- export default Slider1;
+ export default SliderApropos;
