@@ -5,7 +5,7 @@ const Input = ({letGo}) => {
     return (
         <>
            <InputStc className="input-group mb-3" MonStyle={letGo.style}>
-            <span className="input-group-text" id="basic-addon1">
+            <span className="input-group-text" id="basic-addon1" style={{color:"#000 !important"}}>
                 {letGo.icon}
             </span>
             <input type={letGo.type} 

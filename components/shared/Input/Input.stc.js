@@ -17,7 +17,7 @@ const defaultStyleInput={
     fontSize: "1rem;",
     fontWeight: 400,
     lineHeight: 1.88,
-    color: "#6b6e6f;",
+    color: "#000;",
     backgroundColor:" #fff;",
     backgroundClip:" padding-box;",
     border: "1px solid #e5e5e5;",
@@ -32,7 +32,7 @@ const defaultStyleIcon={
     letterSpacing: "-0.21px;",
     width: "50px",
     justifyContent: "center",
-    color: "#00b074",
+    color: "#000 !important",
     fontWeight: "700 !important;",
     border:"0px",
     borderRadius:"0px"

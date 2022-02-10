@@ -11,7 +11,7 @@ const CardMin = (props) => {
          <Link href={props.lien}>
            <a><img  src={letGo.src} /></a>
          </Link>
-          {/* <Texte texte={letGo.texte} /> */}
+          <Texte texte={letGo.texte} />
         </CardMinStc>
        
     )

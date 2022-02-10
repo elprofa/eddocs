@@ -18,42 +18,42 @@ const SectionNosLaboratoireEssais = () => {
             },
             delay:.3});
         
-            lt.from('.aLabo17',{ y:100,duration:.5,opacity:0,})
-            .from ('.aLabo18',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
-            .from ('.aLabo19',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            lt.from('.aLabo19',{ y:100,duration:.5,opacity:0,})
             .from ('.aLabo20',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.aLabo21',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.aLabo22',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
     }, []);
 
     const laboratoires=[
         {
-            src:"/img/icon/14.png",
-            texte:<>Enceinte climatique <br/></>,
-            anim:"aLabo17",
-            lien:"laboratoires/14"
-        },
-        {
-            src:"/img/icon/15.png",
-            texte:"Autoclaves",
-            anim:"aLabo18",
-            lien:"laboratoires/15"
-        },
-        {
-            src:"/img/icon/16.png",
-            texte:"Qualification air compagnie",
+            src:"/img/icon/Eclimatique.png",
+            texte:<>Caracterisation des enceintes climatiques</>,
             anim:"aLabo19",
+            lien:"laboratoires/17"
+        },
+        {
+            src:"/img/icon/autoclave.png",
+            texte:"Qualification des autoclaves",
+            anim:"aLabo20",
+            lien:""
+        },
+        {
+            src:"/img/icon/airComprime.png",
+            texte:"Qualification d'air comprimée",
+            anim:"aLabo21",
             lien:"laboratoires/16"
         }
         ,
         {
-            src:"/img/icon/17.png",
-            texte:"Evironnement",
-            anim:"aLabo20",
-            lien:"laboratoires/17"
+            src:"/img/icon/Environnement.png",
+            texte:"Environnement",
+            anim:"aLabo22",
+            lien:"laboratoires/14"
         }
     ]
   return (
     <SectionNosLaboratoireEssaisStc className="sectionCardLaboEssaie py-2 py-md-3">
-        <Texte texte="Nos domaine de Essais" MyclassName="paragraphe px-2 px-md-3" />
+        <Texte texte="Nos domaines de compétences en Essais" MyclassName="paragraphe px-2 px-md-3" />
         <div className="divcard">
              <Row>
                 {

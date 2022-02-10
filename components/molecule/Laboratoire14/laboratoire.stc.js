@@ -29,5 +29,22 @@ const LaboratoireStc14 = Styled.div`
            display: block !important;
         }
     } 
+
+    h5{
+        text-align: center;
+        background: rgb(41, 176, 100) none repeat scroll 0% 0%;
+        margin-bottom: 0px;
+        color: rgb(255, 255, 255);
+        font-size:14px;
+        min-height:100px;
+        min-height: 60px;
+        align-self: center;
+        padding: 15px;
+
+    }
+    ul
+    {
+        background: #58f49c !important
+    }
 `;
 export default LaboratoireStc14;

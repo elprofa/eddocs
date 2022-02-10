@@ -10,6 +10,7 @@ import Button from '../../shared/Button';
 import {theme} from '../../../theme'
 import Link from '../../shared/Link';
 import {AiFillFacebook,AiFillLinkedin,AiFillTwitterSquare} from "react-icons/ai";
+import {BsEnvelope} from 'react-icons/bs'
 
 const Footer = (props) => {
 
@@ -124,6 +125,7 @@ const Footer = (props) => {
                    <div className="col-md-4 d-sm-none d-none d-md-block d-md-none d-lg-block">
                         <Title partOne="Abonnez vous à " MyclassName="py-1 py-md-3 title" PartTwo="notre newsletter" number={2} />
                         <Input letGo={{
+                            icon:<BsEnvelope />,
                             style:{
                                 
                                 margin:"0px",
