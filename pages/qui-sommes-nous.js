@@ -13,7 +13,7 @@ export default function QuiSommesNous() {
 
       <main className="main" style={{minHeight:"100vh"}}>
         <TopPageSection letGo={{
-             image:"/img/quisommesnous/AA1.png",
+             image:"/img/quisommesnous/AA1.PNG",
              title:"Qui sommes-nous ?",
              iconGrille:1,
          }} />
