@@ -33,6 +33,10 @@ const SectionNosLaboratoireEtatlonnage = () => {
             .from ('.aLabo12',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.aLabo13',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
             .from ('.aLabo14',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.aLabo15',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.aLabo16',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.aLabo17',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
+            .from ('.aLabo18',{duration:.5,opacity:0,ease: "slow(0.7, 0.7, false)", y: 100 })
 
     }, []);
 
@@ -133,17 +137,40 @@ const SectionNosLaboratoireEtatlonnage = () => {
         }
         ,
         {
-            src:"/img/icon/13.png",
-            texte:"Machine et forces",
+            src:"/img/icon/debimetre.png",
+            texte:"Debimetre",
             anim:"aLabo14",
-            lien:"laboratoires/13"
+            lien:""
         },
-        
+        {
+            src:"/img/icon/pesage.png",
+            texte:"Pesage",
+            anim:"aLabo15",
+            lien:"laboratoires/8"
+        },
+        {
+            src:"/img/icon/acoustique.png",
+            texte:"Acoustique",
+            anim:"aLabo16",
+            lien:""
+        },
+        {
+            src:"/img/icon/BTP.png",
+            texte:"Instrument BTP",
+            anim:"aLabo17",
+            lien:""
+        },
+        {
+            src:"/img/icon/machine3d.png",
+            texte:"Machine 3D",
+            anim:"aLabo18",
+            lien:""
+        },
     ]
   return (
     <SectionNosLaboratoireEtatlonnageStc className="sectionCardLabo py-2 py-md-3">
         <div className="col-lg-12">
-            <Texte texte="Nos domaines de competence en Etalonnage & verification" MyclassName="paragraphe px-2 px-md-3" />
+            <Texte texte="Nos domaines de compétences en Etalonnage & vérification" MyclassName="paragraphe px-2 px-md-3" />
             <div className="divcard divcardAnimate">
                 <Row>
                     {
