@@ -143,5 +143,9 @@ import { theme } from "../../../theme";
         padding:0px !important;
     }
     
+    li.active.nav-item.submenu a {
+        color: #ff0000;
+        font-weight: 600 !important;
+    }
 `;
 export default SideBarLaboStc;

@@ -36,8 +36,7 @@ const Laboratoire2 = (props) => {
         
       <div className="row">
         <div className="col-lg-2 align-self-center">
-            <img src="/img/8.png" className="mw-100 rounded-3"  />
-            <img src="/img/7.png" className="mw-100 rounded-3" />
+            <img src="/img/news/log4.png" className="mw-100 rounded-3"  />
         </div>
         <div className="col-md-7">
             <Texte texte="Doté des étalons les plus performants et accrédité par le COFRAC, 

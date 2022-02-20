@@ -13,7 +13,7 @@ import {AiFillCaretDown,AiFillCaretRight} from 'react-icons/ai'
 
 const SideBarLabo = (props) => {
 
-  const [isOpen,setIsOpen]=useState(false);
+  const [isOpen,setIsOpen]=useState(props.open);
     const menus=[
         {
             texte:"Dimensionnel",
@@ -22,23 +22,29 @@ const SideBarLabo = (props) => {
             subMenus:[
               {
                 texte:"Prestation Mécanique",
-                lien:"/dimensionnel/prestation-mecanique"
+                lien:"/dimensionel/prestation-mecanique",
+                id:1
               },
               {
                 texte:"Prestation Interférométrique",
-                lien:"/dimensionnel/prestation-interférométrique"
+                lien:"/dimensionel/prestation-interferometrique",
+                id:2
               },
               {
                 texte:"Prestation Angulaire",
-                lien:"/dimensionnel/prestation-angulaire"
+                lien:"/dimensionel/prestation-angulaire",
+                id:3
+                
               },
               {
                 texte:"Prestation 2D",
-                lien:"/dimensionnel/prestation-2d"
+                lien:"/dimensionel/prestation-2d",
+                id:4
               },
               {
                 texte:"Prestation 3D",
-                lien:"/dimensionnel/prestation-3d"
+                lien:"/dimensionel/prestation-3d",
+                id:5
               }
           ]
         },
@@ -178,7 +184,7 @@ const SideBarLabo = (props) => {
                                 <ul>
                                   {
                                     menu.subMenus.map((subMenu,index)=>
-                                      <li className="nav-item submenu" key={index+"submenu_dimensionnel"}>
+                                      <li className={props.submenu==subMenu.id?"active nav-item submenu":'nav-item submenu'}  key={index+"submenu_dimensionnel"}>
                                         <Link href={subMenu.lien}>
                                             <a className="nav-link" aria-current="page">
                                                 {

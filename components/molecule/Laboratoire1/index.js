@@ -34,15 +34,15 @@ const Laboratoire1 = (props) => {
             partTwo:""
         }} />
         <Row>
-        <Col lg={4} md={4} className="align-self-center">
+        <Col lg={4} md={4} className="">
                 <CardPrestation texte="Prestation Mécanique" url="/dimensionel/prestation-mecanique" />
-                <CardPrestation texte="Prestation Interférométrique"  url="/dimensionnel/prestation-interférométrique" />
-                <CardPrestation texte="Prestation Angulaire"  url="/dimensionnel/prestation-angulaire" />
-                <CardPrestation texte="Prestation 2D"  url="/dimensionnel/prestation-2d"/>
-                <CardPrestation texte="Prestation 3D"  url="/dimensionnel/prestation-3d" />
+                <CardPrestation texte="Prestation Interférométrique"  url="/dimensionel/prestation-interferometrique" />
+                <CardPrestation texte="Prestation Angulaire"  url="/dimensionel/prestation-angulaire" />
+                <CardPrestation texte="Prestation 2D"  url="/dimensionel/prestation-2d"/>
+                <CardPrestation texte="Prestation 3D"  url="/dimensionel/prestation-3d" />
             </Col>
            
-            <Col lg={5} md={5} className="">
+            <Col lg={4} md={5} className="">
                 <TitreParagrapheLabo 
                         title={
                             {partOne:"",partTwo:""}
@@ -74,19 +74,15 @@ const Laboratoire1 = (props) => {
                     </Col>
                 </Row>
             </Col>
-            <Col lg={3} md={3} className="align-self-center">
+            <Col lg={4} md={3} className="align-self-center">
                 <div className="text-center my-2 ">
-                    <img src="/img/7.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
-                    <img src="/img/8.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/news/log1.png" className="mw-100 rounded-3" style={{width:"80%"}} />
                 </div>
                 <div className="text-center my-2 my-md-4">
-                    <img src="/img/tunac.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
-                    <img src="/img/ilac-ment-1.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
-                    <img src="/img/8.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/news/log2.png" className="mw-100 rounded-3" style={{width:"80%"}} />
                 </div>
                 <div className="text-center my-2 my-md-4">
-                    <img src="/img/semac1.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
-                    <img src="/img/8.png" className="mw-100 rounded-3" style={{maxHeight:"90px"}} />
+                    <img src="/img/news/log3.png" className="mw-100 rounded-3" style={{width:"80%"}} />
                 </div>
             </Col>
         </Row>

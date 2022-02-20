@@ -23,7 +23,7 @@ export default function NosLaboratoires() {
       <section >
         <div className="row">
           <div  className="col-lg-3 col-md-3">
-              <SideBarLabo id_page={1} />
+              <SideBarLabo id_page={1} submenu={1} open={true} />
           </div>
           <div className="col-lg-9 col-md-9 pt-5">
               
