@@ -15,6 +15,14 @@ import { theme } from "../../../theme";
         text-decoration-thickness: 2px !important;
         line-height:2em;
     }
+
+    .nav-item span 
+    {
+        float: right;
+        margin-top: -45px;
+        margin-right: 15px;
+        color: #fff;
+    }
     .nav-pills .nav-link.active, .nav-pills .nav-link:hover
     {
         transition:.6s;
@@ -30,6 +38,14 @@ import { theme } from "../../../theme";
         color:#000;
         font-weight: 600;
     }
+
+    .submenu a.nav-link
+    {
+        padding: 10px;
+        font-weight: 500 !important;
+        
+    }
+
     ${(props) => props.MonStyle || ""};
 
     .desktop

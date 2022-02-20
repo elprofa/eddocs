@@ -38,13 +38,13 @@ const GrilleApropos = ({letGo}) => {
                     <div className="col-lg-6 d-sm-none d-none d-md-none d-lg-block">
                         <div className="row" style={{padding:"30px"}}>
                             <div className="col-sm-6">
-                                <Image src="/img/quisommesnous/BB.jpg" className="aproposImage1k mb-2 mb-md-5"  width="250" height="350" />
-                                <Image src="/img/quisommesnous/DD.jpg" className="aproposImage2" width="250" height="200"/>
+                                <Image src="/img/news/pres.jpeg" className="aproposImage1k mb-2 mb-md-2" width="300" height="300" />
+                                <Image src="/img/news/pres1.jpeg" className="aproposImage2" width="300" height="300"/>
                                 
                             </div>
                             <div className="col-sm-6">
-                                <Image src="/img/quisommesnous/CC.jpg" className="aproposImage3 mb-2 mb-md-5" width="250" height="200" />
-                                <Image src="/img/quisommesnous/EE.jpg" className="aproposImage4" style={{borderRadius:"20px"}} width="250" height="350"/>
+                                <Image src="/img/news/pres2.jpeg" className="aproposImage3 mb-2 mb-md-2" width="300" height="300" />
+                                <Image src="/img/news/pres3.jpeg" className="aproposImage4" style={{borderRadius:"20px"}} width="300" height="300"/>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const GrilleApropos = ({letGo}) => {
                          technique dans le domaine de la métrologie.Anée après année, nous sommes fiers d'être devenu 
                          le partenaire de confiance des leaders dans le secteurs de l'aeronautique, l'automobile,Pharmaceutique,
                          Agroalimentaire, Industrie lourden Pétrolier,... </>} MyclassName="py-2 py-md-3 paragraphe aproposParagraphe" />
-                        <Button texte={<>Contactez-nous <AiOutlineRight /></>} MyclassName="my-0 my-md-1 aproposButton" />
+                        <Button texte={<>Contactez-nous </>} MyclassName="my-0 my-md-1 aproposButton" />
                     </div>
             
                  </div>

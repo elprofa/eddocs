@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SideBarLaboStc from './SideBarLabo.stc';
 import Button from '../../shared/Button';
 import Trait from '../../shared/Trait';
@@ -9,12 +9,38 @@ import { AiOutlineClose } from "react-icons/ai";
 import gsap from 'gsap'
 import { getElementById } from 'domutils';
 
+import {AiFillCaretDown,AiFillCaretRight} from 'react-icons/ai'
+
 const SideBarLabo = (props) => {
+
+  const [isOpen,setIsOpen]=useState(false);
     const menus=[
         {
             texte:"Dimensionnel",
             lien:"/laboratoires/1",
-            active:"1"
+            active:"1",
+            subMenus:[
+              {
+                texte:"Prestation Mécanique",
+                lien:"/dimensionnel/prestation-mecanique"
+              },
+              {
+                texte:"Prestation Interférométrique",
+                lien:"/dimensionnel/prestation-interférométrique"
+              },
+              {
+                texte:"Prestation Angulaire",
+                lien:"/dimensionnel/prestation-angulaire"
+              },
+              {
+                texte:"Prestation 2D",
+                lien:"/dimensionnel/prestation-2d"
+              },
+              {
+                texte:"Prestation 3D",
+                lien:"/dimensionnel/prestation-3d"
+              }
+          ]
         },
         {
           texte:"Electricité & Magnetisme",
@@ -108,6 +134,17 @@ const SideBarLabo = (props) => {
       gsap.to(".menu", { display: "none",duration: 0});
       
     }
+
+    const setOpen=()=>{
+      if(isOpen==true)
+      {
+        setIsOpen(false)
+      }
+      else
+      {
+        setIsOpen(true)
+      }
+    }
     
     return (
         <SideBarLaboStc className="d-flex flex-column flex-shrink-0 p-3 py-0 py-md-5">
@@ -125,8 +162,39 @@ const SideBarLabo = (props) => {
                             <Link href={menu.lien}>
                                 <a className={menu.active==id_page?"active nav-link":'nav-link'} aria-current="page">
                                     {menu.texte}
+
+                                    
+
                                 </a>
                             </Link>
+                            
+                            {
+                              menu.active=="1"?(<>
+                              {
+                                isOpen===true?<span onClick={setOpen}><AiFillCaretDown/></span>:<span onClick={setOpen}><AiFillCaretRight/></span>
+                              }
+                              {
+                                  isOpen===true?
+                                <ul>
+                                  {
+                                    menu.subMenus.map((subMenu,index)=>
+                                      <li className="nav-item submenu" key={index+"submenu_dimensionnel"}>
+                                        <Link href={subMenu.lien}>
+                                            <a className="nav-link" aria-current="page">
+                                                {
+                                                  subMenu.texte
+                                                }
+                                            </a>
+                                        </Link>
+                                      </li>
+                                    )
+                                  }
+                                </ul>
+                               :
+                               ""
+                              }
+                              </>):(<></>)
+                            }
                         </li>
                     )
                 }

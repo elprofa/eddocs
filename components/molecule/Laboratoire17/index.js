@@ -24,7 +24,7 @@ const Laboratoire17 = (props) => {
    
   return (
     <LaboratoireStc3 >
-        <HeaderLabo img="/img/climatique/F4.png" title={
+        <HeaderLabo img="/img/news/enceinte.jpeg" title={
             {
                 partOne:"Caracterisation Des",
                 partTwo:"Enceintes Climatiques"

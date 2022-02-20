@@ -30,7 +30,7 @@ const SectionClient=()=>{
         <SectionClientStc className="sectionClientApropos">
             <div className="container">
                 <div className="row py-2 py-md-5">
-                    <div className="col-md-4 leftPart">
+                    <div className="col-md-3 leftPart">
                         <Title partOne="Des clients" PartTwo="satisfaits" MyclassName="titreClientApropos titrepy-2 py-md-3 title" number={1} />
                         
                         <Texte texte=" Le lorem ipsum est, en imprimerie, une suite de mots sans 
@@ -40,7 +40,7 @@ const SectionClient=()=>{
                             on utilise un texte en faux latin, le Lorem ipsum ou Lipsum." MyclassName="paragrapheClientApropos paragraphe py-2 py-md-3" />
                     
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-9">
                         <SliderClient deviceType={"desktop"}/>
                     </div>
                 </div>

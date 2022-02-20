@@ -2,7 +2,7 @@ import Styled from 'styled-components';
 
 const SliderClientStc=Styled.div`
 
-    width:400px;
+    width:100%;
     /* height:350px; */
     @media (max-width: 476px) {
         width: 100%;

@@ -14,7 +14,7 @@ export default function NosAccreditation() {
       <main className="main" style={{minHeight:"100vh"}}>
 
         <TopPageSection letGo={{
-             image:"/img/slide1.jpg",
+             image:"/img/news/accred.png",
              title:"Nos accréditations",
              iconGrille:1
          }} />

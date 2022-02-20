@@ -20,7 +20,7 @@ const Details = [
 const Laboratoire11 = (props) => {
   return (
     <LaboratoireStc1>
-        <HeaderLabo img="/img/volume/F4.png" title={
+        <HeaderLabo img="/img/news/volume.jpeg" title={
             {
                 partOne:"Volume &  ",
                 partTwo:"Masse volumique"

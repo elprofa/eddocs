@@ -1,5 +1,6 @@
 import React from 'react'
 import {BsSliders} from 'react-icons/bs'
+import Link from 'next/link'
 
 function CardPrestation(props) {
     return (
@@ -8,7 +9,7 @@ function CardPrestation(props) {
                 <span style={{color:"#ff0000",fontSize:"20px"}}><BsSliders /></span>
             </div>
             <div className="col-11 col-sm-11">
-                <span className="p-1 px-2 w-100 "  style={{fontWeight:"bold",color:"blue",width:"100%",border:"0px !important"}}>{props.texte} </span>
+                <Link href={props.url}><a><span className="p-1 px-2 w-100 "  style={{fontWeight:"bold",color:"blue",width:"100%",border:"0px !important"}}>{props.texte} </span></a></Link>
             </div>
         </div>
     )

@@ -12,7 +12,7 @@ const content = [
       description:
         "",
       button: "Discover",
-      image: "/img/quisommesnous/slide1.png",
+      image: "/img/news/accueil.jpeg",
       user: "",
       userProfile: ""
     },
@@ -20,7 +20,15 @@ const content = [
         title:"",
         description:"",
         button: "",
-        image: "/img/quisommesnous/slide2.png",
+        image: "/img/news/accueil1.jpeg",
+        user: "",
+        userProfile: ""
+      },
+      {
+        title:"",
+        description:"",
+        button: "",
+        image: "/img/news/accueil2.jpeg",
         user: "",
         userProfile: ""
       },
@@ -29,7 +37,7 @@ const content = [
   const SliderApropos=()=>{
       return (
         <SliderStc>
-            <Slider className="slider-wrapper" autoplay="1000" infinite="true">
+            <Slider className="slider-wrapper" autoplay={1000} infinite={true}>
             {content.map((item, index) => (
                 <div
                 key={index}

@@ -6,12 +6,7 @@ const CardClient = (props) => {
      const letGo=props.letGo;
     return (
         <CardClientStc MonStyle={letGo.style}>
-          <img src={letGo.image} width="70" height="70" />
-          <Texte texte={letGo.note} />
-          <Texte texte={letGo.texte} />
-           
-           <Texte texte={letGo.site}/>
-          
+          <img src={letGo.image} width="100%" alt="slide" />
         </CardClientStc>
        
     )

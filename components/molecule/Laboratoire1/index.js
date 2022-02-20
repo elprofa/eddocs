@@ -35,11 +35,11 @@ const Laboratoire1 = (props) => {
         }} />
         <Row>
         <Col lg={4} md={4} className="align-self-center">
-                <CardPrestation texte="Prestation Mécanique" />
-                <CardPrestation texte="Prestation Interférométrique" />
-                <CardPrestation texte="Prestation Angulaire" />
-                <CardPrestation texte="Prestation 2D" />
-                <CardPrestation texte="Prestation 3D" />
+                <CardPrestation texte="Prestation Mécanique" url="/dimensionel/prestation-mecanique" />
+                <CardPrestation texte="Prestation Interférométrique"  url="/dimensionnel/prestation-interférométrique" />
+                <CardPrestation texte="Prestation Angulaire"  url="/dimensionnel/prestation-angulaire" />
+                <CardPrestation texte="Prestation 2D"  url="/dimensionnel/prestation-2d"/>
+                <CardPrestation texte="Prestation 3D"  url="/dimensionnel/prestation-3d" />
             </Col>
            
             <Col lg={5} md={5} className="">

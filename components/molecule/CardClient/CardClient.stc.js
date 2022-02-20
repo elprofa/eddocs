@@ -10,7 +10,7 @@ const defaultStyle={
 
     @media screen and (min-width: 767px)
     {
-        width:450px;
+        width:100%;
     }
     
 `;
