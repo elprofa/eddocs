@@ -13,10 +13,14 @@ import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire5 = (props) => {
     const Details = [
-        { url: "/img/Groupe 306.png", title: "Dynamomètres" },
-        { url: "/img/Groupe 305.png", title: "Chaine de mesure de force" },
-        { url: "/img/Groupe 207.png", title: "Anneau dynamométrique" },
-        
+        { url: "/img/force_couple/1.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/2.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/3.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/4.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/5.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/6.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/7.PNG", title: "Dynamomètres" },
+       
       ];
 
       const Details1 = [
@@ -41,8 +45,12 @@ const Laboratoire5 = (props) => {
             partTwo:"COUPLE"
         }} />
        
+        
         <Row className="py-2 py-md-3">
-            <Col lg={6} >
+            <Col lg={3} className="align-self-center">
+                <img src="/img/force_couple/log.PNG" className="mw-100 rounded-3" />
+            </Col>
+            <Col lg={6} className="align-self-center">
                 <TitreParagrapheLabo 
                     title={
                         {"":""}
@@ -53,11 +61,7 @@ const Laboratoire5 = (props) => {
                         METROLOGIE s'est doté de moyens de haute performance pour l'étalonnage
                         et vérification de vos instruments de mesure de Fore / Couple.</>}
                 } />
-            </Col>
-        </Row>
-        
-        <Row className="py-2 py-md-3">
-            <Col lg={6} className="align-self-center">
+
                 <TitreParagrapheLabo 
                     title={
                         {}
@@ -67,38 +71,32 @@ const Laboratoire5 = (props) => {
                         texte:<>Le laboratoire est accrédité par le COFRAC pour l'étalonnage et
                         vérification des instruments suivants:</>}
                 } />
+
+                <ul>
+                    <li>
+                        Instruments de mesure de Force (Dynamomètres, Chaine de mesure de force, Anneau dynamométrique…)
+                    </li>
+                    <li>
+                        Instruments de mesure de Masse transportable (Peson, Chaine de mesure de Masse…)
+                    </li>
+                    <li>
+                        Instruments de mesure de Couple (Couple mètre, Chaine de mesure de couple, Torsiomètre…)
+                    </li>
+                    <li>
+                        Outils dynamométriques à commande manuelle (Clé dynamométriques à lecture directe ou à déclenchement, Tournevis dynamométriques…)
+                    </li>
+                </ul>
             </Col>
-            <PCard url1="/img/e-d3.png" url2="/img/e-d2.png" type={1}  />
+            <Col lg={3} className="align-self-center">
+                <img src="/img/force_couple/log1.PNG" className="mw-100 rounded-3" />
+            </Col>
+           
         </Row>
-        <RowAccreditationSociete texte="Instruments de mesure de Force:" type="0" />
         <Row className="py-2 py-md-3">
             {
                 Details.map((detail,index)=>(<PCard url1={detail.url} title={detail.title} key={index+"force"}  />))
             }
         </Row>
-        <RowAccreditationSociete texte="Instruments de mesure de Masse transportable" type="1" />
-        <Row className="py-2 py-md-3">
-            {
-                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+"masse"}  />))
-            }
-        </Row>
-        <RowAccreditationSociete texte="Instruments de mesure de Couple" type="1" />
-        <Row className="py-2 py-md-3">
-            {
-                Details2.map((detail2,index)=>(<PCard url1={detail2.url} title={detail2.title} key={index+"couple"}  />))
-            }
-        </Row>
-        <RowAccreditationSociete texte="Outils dynamométriques à commande manuelle" type="1" />
-        <Row className="py-2 py-md-3">
-            {
-                Details3.map((detail3,index)=>(<PCard url1={detail3.url} title={detail3.title} key={index+"commande"}  />))
-            }
-        </Row>  
-        <Row className="my-2 my-md-3">
-            <Col>
-                <Button texte="Demandez un devis >" className="demande_devis " />
-            </Col>
-        </Row>      
 </LaboratoireStc5>
   );
 }

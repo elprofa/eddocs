@@ -20,16 +20,10 @@ const Laboratoire6 = (props) => {
         }} />
 
         <div className="row my-2">
-          <div className="col-lg-2 col-md-2 align-self-center">
-              <img src="/img/masse/8.png" className="mw-100 rounded-3"  />
-              <img src="/img/masse/7.png" width="80px" className="mw-100 rounded-3" />
-              <div className="row">
-                <div className="col-lg-12 col-md-12 my-md-5 align-self-center text-center">
-                  <img src="/img/masse/290.png" className="mw-100 rounded-3"  />
-                </div>
-              </div>
+          <div className="col-lg-3 col-md-3 align-self-center">
+            <img src="/img/masse/log.PNG" className="mw-100 rounded-3"  />
           </div>
-          <div className="col-lg-6 col-md-6">
+          <div className="col-lg-9 col-md-9">
               <Texte texte="Pour l'étalonnage et vérification de vos Masses étalon notre laboratoire
                         dispose des moyens suivants:" />
 
@@ -59,31 +53,19 @@ const Laboratoire6 = (props) => {
                 </ul>
                 <Button texte="Demandez un devis " MyclassName="demande_devis my-2 my-md-5" />
           </div>
-          <div className="col-lg-4 col-md-4">
-            <img
-                src="/img/masse/291.png"
-                width="100%"
-                className="my-2 my-md-3"
-            />
-             <img
-                src="/img/masse/292.png"
-                width="100%"
-                className="my-2 my-md-3"
-            />
-          </div>
         </div>
         <div className="row my-2 my-md-5">
-            <div className="col-md-3 align-self-center">
-            <img src="/img/masse/1.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <div className="col-md-2 align-self-center">
+            <img src="/img/masse/292.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
-            <div className="col-md-3">
-            <img src="/img/masse/2.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <div className="col-md-2">
+            <img src="/img/masse/m1.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
-            <div className="col-md-3">
-            <img src="/img/masse/3.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <div className="col-md-6">
+            <img src="/img/masse/217.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
-            <div className="col-md-3">
-            <img src="/img/masse/4.jpg" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <div className="col-md-2">
+            <img src="/img/masse/291.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
         </div>
 

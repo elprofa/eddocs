@@ -32,11 +32,10 @@ const Laboratoire17 = (props) => {
         } />
         
         <div className="row">
-            <div className="col-lg-2 align-self-center text-center">
-                <img src="/img/8.png" className="mw-100 rounded-3"  />
-                <img src="/img/7.png" className="mw-100 rounded-3" />
+            <div className="col-lg-3 align-self-center text-center">
+                <img src="/img/enceinte/log.PNG" className="mw-100 rounded-3"  />
             </div>
-            <div className="col-md-10">
+            <div className="col-md-9">
             <Texte texte="Le laboratoire AIR METROLOGIE assure des Prestationsd'essais telles que cartographie, caractérisation,
                         vérificationou qualification de moyens en températureou hygrométrie selon la norme FD X15-140 ou autres
                         normes ou spécifications clients."/>

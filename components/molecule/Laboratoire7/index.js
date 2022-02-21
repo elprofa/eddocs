@@ -18,15 +18,8 @@ const Laboratoire7 = (props) => {
         }} />
 
         <div className="row my-2">
-          <div className="col-lg-2 col-md-2 pt-md-3">
-              <img src="/img/pression/8.png" className="mw-100 rounded-3"  />
-              <img src="/img/pression/7.png" width="80px" className="mw-100 rounded-3" />
-              <div className="row">
-                <div className="col-lg-12 col-md-12 align-self-center text-center">
-                  <img src="/img/pression/8.png" className="mw-100 rounded-3"  />
-                  <img src="/img/pression/10.png" width="80px" className="mw-100 rounded-3" />
-                </div>
-              </div>
+          <div className="col-lg-3 col-md-3 pt-md-3">
+            <img src="/img/pression/log.PNG" className="mw-100 rounded-3"  />
           </div>
           <div className="col-lg-6 col-md-6">
             <Texte texte="Le laboratoire L2MI vous propose désormais un etalonnage Accredité 
@@ -47,7 +40,9 @@ const Laboratoire7 = (props) => {
         </div>
 
         <div className="row my-2 my-md-5">
-            <PCard  url1="/img/pression/15.png" title=""  />
+            <Col>
+                <img src="/img/pression/15.png" className="mw-100 rounded-3"  />
+            </Col>
             <PCard  url1="/img/pression/16.png" title=""  />            
             <PCard  url1="/img/pression/17.png" title=""  />            
             <PCard  url1="/img/pression/18.png" title=""  />            

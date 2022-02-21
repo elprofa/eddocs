@@ -22,8 +22,7 @@ const Laboratoire15 = (props) => {
         
        <div className="row my-2 my-md-5">
             <div className="col-lg-3 col-md-3 align-self-center text-center">
-                <img src="/img/autoclave/8.png" className="mw-100 rounded-3"  />
-                <img src="/img/autoclave/7.png" className="mw-100 rounded-3" />
+                <img src="/img/autoclave/log.PNG" className="mw-100 rounded-3"  />
             </div>
             <div className="col-lg-9 col-md-9">
                 <Texte texte="

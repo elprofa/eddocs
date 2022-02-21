@@ -10,13 +10,12 @@ import Texte from "../../shared/Texte";
 import HeaderLabo from "../HeaderLabo";
 
 const Details = [
-  { url: "/img/g-e6.png", title: "Multimètre" },
-  { url: "/img/g-e3.png", title: "Générateur de courant" },
-  { url: "/img/g-e7.png", title: "Générateur de tension" },
-  { url: "/img/g-e8.png", title: "Boite de resistance" },
-  { url: "/img/g-e5.png", title: "Mesureur de résistance " },
-  { url: "/img/rect-e1.png ", title: "Calibreur multifonctions" },
-  { url: "/img/rect-e5.png", title: "Générateur de Tension/Courant" },
+  { url: "/img/g-e7.png", title: "Multimètre" },
+  { url: "/img/g-e8.png", title: "Multimètre" },
+  { url: "/img/g-e3.png", title: "Multimètre" },
+  { url: "/img/ge-e.jpg", title: "Multimètre" },
+  { url: "/img/g-e6.png", title: "Générateur de courant" },
+  { url: "/img/ge-e.png", title: "Générateur de tension" },
 ];
 const Details1 = [
     { url: "/img/electricite/1.jpg", title: "" },
@@ -38,7 +37,7 @@ const Laboratoire2 = (props) => {
         <div className="col-lg-2 align-self-center">
             <img src="/img/news/log4.png" className="mw-100 rounded-3"  />
         </div>
-        <div className="col-md-7">
+        <div className="col-md-10">
             <Texte texte="Doté des étalons les plus performants et accrédité par le COFRAC, 
                         AIR METROLOGIE dispose d'un laboratoire en Électricité et Magnétisme 
                         couvrant l'étalonnage en laboratoire de plusieurs instruments de mesure à savoir"/>
@@ -71,16 +70,10 @@ const Laboratoire2 = (props) => {
               </div>
           </div>
         </div>
-        <div className="col-lg-3">
-            <PCard url1="/img/electricite/207.png" className="my-3" type="3"  />
-            <PCard url1="/img/electricite/205.png" className="my-3" type="3" />
-        </div>
       </div>
       
         <Row className="py-2 py-md-3">
-            {
-                Details1.map((detail1,index)=>(<PCard url1={detail1.url} title={detail1.title} key={index+detail1.url}  />))
-            }
+           -
         </Row>
         
     </LaboratoireStc1>

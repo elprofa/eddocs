@@ -76,13 +76,13 @@ const Laboratoire1 = (props) => {
             </Col>
             <Col lg={4} md={3} className="align-self-center">
                 <div className="text-center my-2 ">
-                    <img src="/img/news/log1.png" className="mw-100 rounded-3" style={{width:"80%"}} />
+                    <img src="/img/news/log1.PNG" className="mw-100 rounded-3" style={{width:"80%"}} />
                 </div>
                 <div className="text-center my-2 my-md-4">
-                    <img src="/img/news/log2.png" className="mw-100 rounded-3" style={{width:"80%"}} />
+                    <img src="/img/news/log2.PNG" className="mw-100 rounded-3" style={{width:"80%"}} />
                 </div>
                 <div className="text-center my-2 my-md-4">
-                    <img src="/img/news/log3.png" className="mw-100 rounded-3" style={{width:"80%"}} />
+                    <img src="/img/news/log3.PNG" className="mw-100 rounded-3" style={{width:"80%"}} />
                 </div>
             </Col>
         </Row>

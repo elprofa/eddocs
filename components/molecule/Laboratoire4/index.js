@@ -26,11 +26,10 @@ const Laboratoire4 = (props) => {
             partTwo:""
         }} />
         <div className="row my-2">
-          <div className="col-lg-2 col-md-2 align-self-center">
-              <img src="/img/hygrometrie/8.png" className="mw-100 rounded-3"  />
-              <img src="/img/hygrometrie/7.png" width="80px" className="mw-100 rounded-3" />
+          <div className="col-lg-3 col-md-3 align-self-center">
+              <img src="/img/hygrometrie/7.PNG" width="100%" className="mw-100 rounded-3" />
           </div>
-          <div className="col-lg-7 col-md-7">
+          <div className="col-lg-6 col-md-6">
             <Texte texte="Notre laboratoire est accrédité COFRAC pour l'étalonnage des :" />
             <ul>
                 <li>Thermolygromètre</li>
@@ -44,14 +43,17 @@ const Laboratoire4 = (props) => {
             <Button texte="Demandez un devis"  MyclassName="demande_devis my-md-3" />
           </div>
           <div className="col-lg-3 col-md-3">
-            <img src="/img/hygrometrie/286.png" className="mw-100 rounded-3"  />
+            <img src="/img/hygrometrie/9.PNG" className="mw-100 rounded-3"  />
           </div>
         </div>
         <div className="row my-2 my-md-5">
-            <PCard  url1="/img/hygrometrie/1.jpg" title=""  />
-            <PCard  url1="/img/hygrometrie/2.GIF" title=""  />            
-            <PCard  url1="/img/hygrometrie/3.GIF" title=""  />            
-            <PCard  url1="/img/hygrometrie/4.jpg" title=""  />            
+            <PCard  url1="/img/hygrometrie/206.PNG" title=""  />
+            <PCard  url1="/img/hygrometrie/2061.PNG" title=""  />            
+            <PCard  url1="/img/hygrometrie/208.PNG" title=""  />            
+            <PCard  url1="/img/hygrometrie/207.PNG" title=""  />            
+            <PCard  url1="/img/hygrometrie/205.PNG" title=""  />            
+            <PCard  url1="/img/hygrometrie/286.PNG" title=""  />            
+            <PCard  url1="/img/hygrometrie/287.PNG" title=""  />            
               
         </div>
         

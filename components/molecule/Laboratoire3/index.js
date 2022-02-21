@@ -10,12 +10,9 @@ import HeaderLabo from "../HeaderLabo";
 import Texte from "../../shared/Texte";
 
 const Details1 = [
-  { url: "/img/temperature/1.jpg", title: "" },
-  { url: "/img/temperature/2.jpg", title: "" },
-  { url: "/img/temperature/3.jpg", title: "" },
-  { url: "/img/temperature/4.jpg", title: "" },
-  
-
+  { url: "/img/temperature/i1.png", title: "" },
+  { url: "/img/temperature/i2.png", title: "" },
+  { url: "/img/temperature/i3.png", title: "" },
 ];
 
 
@@ -29,8 +26,7 @@ const Laboratoire3 = (props) => {
         
       <div className="row">
         <div className="col-lg-2 align-self-center">
-            <img src="/img/8.png" className="mw-100 rounded-3"  />
-            <img src="/img/7.png" className="mw-100 rounded-3" />
+            <img src="/img/news/log5.png" className="mw-100 rounded-3"  />
         </div>
         <div className="col-md-7">
             <Texte texte="Disposant des meilleurs incertitudes à l'échelle national,
@@ -41,11 +37,13 @@ const Laboratoire3 = (props) => {
               <li>Chaine de mésure témperature à résistance de platine</li>
               <li>Chaîne de mesure de temperature à couple thermoélectrique</li>
               <li>Thermomètre en verre à dilatation liquide</li>
-              <li>Thermohygromètre</li>
-              <li>Therme hydrographe </li>
               <li>Afficheur de température</li>
-              <li>Thermo-bouton</li>
               <li>Enregistreur de temperature</li>
+              <li>Étuves</li>
+              <li>Enceintes climatiques </li>
+              <li>four à moufle </li>
+              <li>Bains thermostatique </li>
+              <li>Four </li>
             </ul>
             <div className="row my-2 my-md-5">
               <div className="col-lg-12">
@@ -53,8 +51,8 @@ const Laboratoire3 = (props) => {
               </div>
           </div>
         </div>
-        <div className="col-lg-3 align-self-center">
-            <PCard url1="/img/temperature/3.png" className="my-3" type="3"  />
+        <div className="col-lg-3 align-self-center d-none d-md-none d-lg-block">
+            <img src="/img/temperature/i4.PNG" className="my-3" style={{position: "absolute",right: 0, maxWidth: "400px !important"}} />
         </div>
       </div>
       

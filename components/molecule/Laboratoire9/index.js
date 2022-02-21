@@ -29,11 +29,10 @@ const Laboratoire9 = (props) => {
             partTwo:"Fréquences"
         }} />
         <div className="row my-2 mb-md-5">
-            <div className="col-lg-2 pt-2 pt-md-5 text-center">
-                <img src="/img/8.png" className="mw-100 rounded-3"  />
-                <img src="/img/semac1.png" className="mw-100 rounded-3" width="80px" />
+            <div className="col-lg-3 pt-2 pt-md-5 text-center">
+                <img src="/img/temps/log.PNG" className="mw-100 rounded-3"  />
             </div>
-            <div className="col-lg-7 col-md-7">
+            <div className="col-lg-6 col-md-6">
                 <Texte texte="Dans le cadre de son Accréditations SEMAC, le Laboratoire L2MI est
                         accredité pour l'etalonnage et verification des instruments de mesure de Temps
                         & Fréquence, à savoir:" />
