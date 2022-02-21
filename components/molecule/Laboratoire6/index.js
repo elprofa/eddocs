@@ -56,16 +56,16 @@ const Laboratoire6 = (props) => {
         </div>
         <div className="row my-2 my-md-5">
             <div className="col-md-2 align-self-center">
-            <img src="/img/masse/292.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/292.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-2">
-            <img src="/img/masse/m1.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/m1.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-6">
-            <img src="/img/masse/217.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/217.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
             <div className="col-md-2">
-            <img src="/img/masse/291.PNG" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
+            <img src="/img/masse/291.png" className="mw-100 rounded-3" style={{maxHeight:"200px",margin:"auto",display:"block"}} />
             </div>
         </div>
 

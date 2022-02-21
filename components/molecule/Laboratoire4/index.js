@@ -27,7 +27,7 @@ const Laboratoire4 = (props) => {
         }} />
         <div className="row my-2">
           <div className="col-lg-3 col-md-3 align-self-center">
-              <img src="/img/hygrometrie/7.PNG" width="100%" className="mw-100 rounded-3" />
+              <img src="/img/hygrometrie/7.png" width="100%" className="mw-100 rounded-3" />
           </div>
           <div className="col-lg-6 col-md-6">
             <Texte texte="Notre laboratoire est accrédité COFRAC pour l'étalonnage des :" />
@@ -43,17 +43,17 @@ const Laboratoire4 = (props) => {
             <Button texte="Demandez un devis"  MyclassName="demande_devis my-md-3" />
           </div>
           <div className="col-lg-3 col-md-3">
-            <img src="/img/hygrometrie/9.PNG" className="mw-100 rounded-3"  />
+            <img src="/img/hygrometrie/9.png" className="mw-100 rounded-3"  />
           </div>
         </div>
         <div className="row my-2 my-md-5">
-            <PCard  url1="/img/hygrometrie/206.PNG" title=""  />
-            <PCard  url1="/img/hygrometrie/2061.PNG" title=""  />            
-            <PCard  url1="/img/hygrometrie/208.PNG" title=""  />            
-            <PCard  url1="/img/hygrometrie/207.PNG" title=""  />            
-            <PCard  url1="/img/hygrometrie/205.PNG" title=""  />            
-            <PCard  url1="/img/hygrometrie/286.PNG" title=""  />            
-            <PCard  url1="/img/hygrometrie/287.PNG" title=""  />            
+            <PCard  url1="/img/hygrometrie/206.png" title=""  />
+            <PCard  url1="/img/hygrometrie/2061.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/208.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/207.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/205.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/286.png" title=""  />            
+            <PCard  url1="/img/hygrometrie/287.png" title=""  />            
               
         </div>
         

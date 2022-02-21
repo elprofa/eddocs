@@ -13,13 +13,13 @@ import HeaderLabo from '../HeaderLabo';
 
 const Laboratoire5 = (props) => {
     const Details = [
-        { url: "/img/force_couple/1.PNG", title: "Dynamomètres" },
-        { url: "/img/force_couple/2.PNG", title: "Dynamomètres" },
-        { url: "/img/force_couple/3.PNG", title: "Dynamomètres" },
-        { url: "/img/force_couple/4.PNG", title: "Dynamomètres" },
-        { url: "/img/force_couple/5.PNG", title: "Dynamomètres" },
-        { url: "/img/force_couple/6.PNG", title: "Dynamomètres" },
-        { url: "/img/force_couple/7.PNG", title: "Dynamomètres" },
+        { url: "/img/force_couple/1.png", title: "Dynamomètres" },
+        { url: "/img/force_couple/2.png", title: "Dynamomètres" },
+        { url: "/img/force_couple/3.png", title: "Dynamomètres" },
+        { url: "/img/force_couple/4.png", title: "Dynamomètres" },
+        { url: "/img/force_couple/5.png", title: "Dynamomètres" },
+        { url: "/img/force_couple/6.png", title: "Dynamomètres" },
+        { url: "/img/force_couple/7.png", title: "Dynamomètres" },
        
       ];
 

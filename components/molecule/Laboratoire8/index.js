@@ -62,9 +62,9 @@ const Laboratoire9 = (props) => {
         </div>
 
         <div className="row my-2 my-md-5">
-            <PCard type="4" url1="/img/pesage/p1.PNG" title=""  />
-            <PCard type="4" url1="/img/pesage/p2.PNG" title=""  />            
-            <PCard type="4" url1="/img/pesage/p3.PNG" title=""  />            
+            <PCard type="4" url1="/img/pesage/p1.png" title=""  />
+            <PCard type="4" url1="/img/pesage/p2.png" title=""  />            
+            <PCard type="4" url1="/img/pesage/p3.png" title=""  />            
         </div>
       
         

@@ -26,7 +26,7 @@ const Laboratoire3 = (props) => {
         
       <div className="row">
         <div className="col-lg-2 align-self-center">
-            <img src="/img/news/log5.png" className="mw-100 rounded-3"  />
+            <img src="/img/news/log5.PNG" className="mw-100 rounded-3"  />
         </div>
         <div className="col-md-7">
             <Texte texte="Disposant des meilleurs incertitudes à l'échelle national,
@@ -52,7 +52,7 @@ const Laboratoire3 = (props) => {
           </div>
         </div>
         <div className="col-lg-3 align-self-center d-none d-md-none d-lg-block">
-            <img src="/img/temperature/i4.PNG" className="my-3" style={{position: "absolute",right: 0, maxWidth: "400px !important"}} />
+            <img src="/img/temperature/i4.png" className="my-3" style={{position: "absolute",right: 0, maxWidth: "400px !important"}} />
         </div>
       </div>
       
