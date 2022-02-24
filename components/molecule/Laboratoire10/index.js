@@ -22,11 +22,10 @@ const Laboratoire10 = (props) => {
       <HeaderLabo img="/img/ananometrie1.png" title={{
             partOne:"Anemometrie ",
             partTwo:""
-        }} />
+        }} logo="/img/logol2mi.png" />
         <div className="row">
             <div className="col-lg-2 pt-2 pt-md-5 text-center">
-                <img src="/img/8.png" className="mw-100 rounded-3"  />
-                <img src="/img/semac1.png" className="mw-100 rounded-3" width="80px" />
+                
             </div>
             <div className="col-lg-7 col-md-7">
                 <Texte texte="La méthode d'etalonnage des anémomètres à fil chaud /à helice est fondée
@@ -37,7 +36,6 @@ const Laboratoire10 = (props) => {
                   <li>Anémometrie à helice</li>
                   <li>Anémometrie à Fil chaud</li>
                 </ul>
-                <Button texte="Demandez un devis >" className="demande_devis " />
             </div>
             <div className="col-lg-3">
               <img src="/img/anemometrie/F3.png" width="100%" />

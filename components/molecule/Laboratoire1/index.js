@@ -29,7 +29,7 @@ const Laboratoire1 = (props) => {
    
   return (
     <LaboratoireStc3 >
-        <HeaderLabo img="/img/dimensionel.png" title={{
+        <HeaderLabo img="/img/dimensionel.png" logo="/img/logo.png" title={{
             partOne:"Dimensionel ",
             partTwo:""
         }} />

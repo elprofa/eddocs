@@ -10,26 +10,23 @@ import HeaderLabo from "../HeaderLabo";
 import Texte from "../../shared/Texte";
 
 const Details1 = [
-  { url: "/img/temperature/5.png", title: "" },
-  { url: "/img/temperature/t2.png", title: "" },
-  { url: "/img/temperature/t3.png", title: "" },
-  { url: "/img/temperature/12.png", title: "" },
-  { url: "/img/temperature/t5.png", title: "" },
-  { url: "/img/temperature/t6.png", title: "" },
+  { url: "/img/temperature/i1.png", title: "" },
+  { url: "/img/temperature/i2.png", title: "" },
+  { url: "/img/temperature/i3.png", title: "" },
 ];
 
 
-const Laboratoire3 = (props) => {
+const Laboratoire18 = (props) => {
   return (
     <LaboratoireStc1>
        <HeaderLabo img="/img/temperature1.png" title={{
             partOne:"Température ",
             partTwo:""
-        }} logo="/img/logo.png" />
+        }} logo="/img/logol2mi.png" />
         
       <div className="row">
         <div className="col-lg-3 align-self-center">
-            <img src="/img/news/log5.PNG" className="mw-100 rounded-3"  />
+            <img src="/img/temperature/log.PNG" className="mw-100 rounded-3"  />
         </div>
         <div className="col-md-6">
             <Texte texte="Disposant des meilleurs incertitudes à l'échelle national,
@@ -50,7 +47,7 @@ const Laboratoire3 = (props) => {
             
         </div>
         <div className="col-lg-3 align-self-center d-none d-md-none d-lg-block">
-            <img src="/img/temperature/3.png" className="my-3" style={{position: "absolute",right: 0, maxWidth: "400px !important"}} />
+            <img src="/img/temperature/i4.png" className="my-3" style={{position: "absolute",right: 0, maxWidth: "400px !important"}} />
         </div>
       </div>
       
@@ -64,4 +61,4 @@ const Laboratoire3 = (props) => {
   );
 };
 
-export default Laboratoire3;
+export default Laboratoire18;

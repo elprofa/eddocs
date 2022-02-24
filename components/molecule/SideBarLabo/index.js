@@ -64,14 +64,20 @@ const SideBarLabo = (props) => {
           active:"4"
         },
         {
-          texte:"Force & couple",
-          lien:"/laboratoires/5",
-          active:"5"
-        },
-        {
           texte:"Masse",
           lien:"/laboratoires/6",
           active:"6"
+        },
+        {
+          texte:"Force & couple",
+          lien:"/laboratoires/5",
+          active:"5"
+        }
+        ,
+        {
+          texte:"Caracterisation des Enceintes Climatiques",
+          lien:"/laboratoires/17",
+          active:"17"
         },
         {
           texte:"Pression",
@@ -79,9 +85,31 @@ const SideBarLabo = (props) => {
           active:"7"
       },
       {
+        texte:"Volume et Masse Volumique",
+        lien:"/laboratoires/11",
+        active:"11"
+      },
+      {
         texte:"Pesage",
         lien:"/laboratoires/8",
         active:"8"
+      }
+      ,
+      {
+        texte:"Temperature",
+        lien:"/laboratoires/18",
+        active:"18"
+      },
+      {
+        texte:"Hygrométrie",
+        lien:"/laboratoires/19",
+        active:"19"
+      },
+      
+      {
+        texte:"Anemometrie",
+        lien:"/laboratoires/10",
+        active:"10"
       },
       {
         texte:"Temps & Frequence",
@@ -89,41 +117,30 @@ const SideBarLabo = (props) => {
         active:"9"
       },
       {
-        texte:"Anemometrie",
-        lien:"/laboratoires/10",
-        active:"10"
-      },
-      {
-        texte:"Volume et Masse Volumique",
-        lien:"/laboratoires/11",
-        active:"11"
-      },
-      
-     
-      {
-        texte:"Machines de Forces",
-        lien:"/laboratoires/13",
-        active:"13"
-      },
-      {
-        texte:"Qualification des Environnements propres",
-        lien:"/laboratoires/14",
-        active:"14"
-      },
-      {
         texte:"Qualification des Autoclaves",
         lien:"/laboratoires/15",
         active:"15"
       },
       {
+        texte:"Force & Couple",
+        lien:"/laboratoires/20",
+        active:"20"
+      },
+      // {
+      //   texte:"Machines de Forces",
+      //   lien:"/laboratoires/13",
+      //   active:"13"
+      // },
+      {
+        texte:"Qualification des Environnements propres",
+        lien:"/laboratoires/14",
+        active:"14"
+      },
+      
+      {
         texte:"Qualification de l'air comprime",
         lien:"/laboratoires/16",
         active:"16"
-      },
-      {
-        texte:"Caracterisation des Enceintes Climatiques",
-        lien:"/laboratoires/17",
-        active:"17"
       }
         
       ];

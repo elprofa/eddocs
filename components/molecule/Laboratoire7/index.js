@@ -15,7 +15,7 @@ const Laboratoire7 = (props) => {
       <HeaderLabo img="/img/pression1.png" title={{
             partOne:"Pression ",
             partTwo:""
-        }} />
+        }} logo="/img/logol2mi.png" />
 
         <div className="row my-2">
           <div className="col-lg-3 col-md-3 pt-md-3">

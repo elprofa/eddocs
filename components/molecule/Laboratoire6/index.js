@@ -14,7 +14,7 @@ const Laboratoire6 = (props) => {
   
   return (
     <LaboratoireStc6 >
-     <HeaderLabo img="/img/masse1.png" title={{
+     <HeaderLabo img="/img/masse1.png" logo="/img/logo.png" title={{
             partOne:"Masse ",
             partTwo:""
         }} />
@@ -23,11 +23,12 @@ const Laboratoire6 = (props) => {
           <div className="col-lg-3 col-md-3 align-self-center">
             <img src="/img/masse/log.PNG" className="mw-100 rounded-3"  />
           </div>
+          
           <div className="col-lg-9 col-md-9">
-              <Texte texte="Pour l'étalonnage et vérification de vos Masses étalon notre laboratoire
-                        dispose des moyens suivants:" />
+              <Texte texte={<b>Pour l'étalonnage et vérification de vos Masses étalon notre laboratoire
+                        dispose des moyens suivants:</b>} />
 
-                <Texte texte="Balances: " className="fw-bold my-md-2" />
+                <Texte texte={<b>Balances:</b> } className="fw-bold my-md-2" />
 
                 <ul> 
                     <li>RADWAG de portée 500 g et de résolution 0,01 mg</li>
@@ -37,14 +38,18 @@ const Laboratoire6 = (props) => {
                     <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
                     <li>Précisa de portée 6 kg et de résolution 0,01 g</li>
                 </ul>
+                <br />
+                <br />
 
-                <Texte texte="Masses: " className="fw-bold my-md-2" />
+                <Texte texte={<b>masse:</b> } className="fw-bold my-md-2" />
                 <ul> 
-                    <li> 2 Boîtes des masses classes E1</li>
-                    <li> 2 Boîtes des masses classes E2</li>
-                    <li> 2 Boîtes des masses classes F1</li>
+                    <li> Boîtes des masses classes E1</li>
+                    <li> Boîtes des masses classes E2</li>
+                    <li> Boîtes des masses classes F1</li>
                 </ul>
-                <Texte texte="Notre laboratoire est accrédité COFRAC pour l'etalonnage des masses de : " className="fw-bold my-md-2" />
+                <br />
+                <br />
+                <Texte texte={<b>Notre laboratoire est accrédité COFRAC pour l'etalonnage des masses de : </b>} className="fw-bold my-md-2" />
                 <ul> 
                     <li> Classe E2 de 1g à 10 Kg</li>
                     <li> Classe F1 de 1mg à 20 Kg</li>

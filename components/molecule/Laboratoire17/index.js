@@ -29,7 +29,7 @@ const Laboratoire17 = (props) => {
                 partOne:"Caracterisation Des",
                 partTwo:"Enceintes Climatiques"
             }
-        } />
+        } logo="/img/logol2mi.png" />
         
         <div className="row">
             <div className="col-lg-3 align-self-center text-center">
@@ -40,7 +40,7 @@ const Laboratoire17 = (props) => {
                         vérificationou qualification de moyens en températureou hygrométrie selon la norme FD X15-140 ou autres
                         normes ou spécifications clients."/>
             
-            <Texte texte="Sous accréditation de COFRAC, le laboratoire vous propose la caracterisation des moyens suivants: "/>
+            <Texte texte={<b>Sous accréditation de COFRAC, le laboratoire vous propose la caracterisation des moyens suivants:</b> }/>
             <ul>
                 <li>Etuves</li>
                 <li>Enceintes climatiques</li>

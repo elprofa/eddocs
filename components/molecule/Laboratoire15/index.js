@@ -13,7 +13,7 @@ const Laboratoire15 = (props) => {
   
   return (
     <LaboratoireStc1 >
-        <HeaderLabo img="/img/autoclave/F4.png" title={
+        <HeaderLabo img="/img/autoclave/F4.png" logo="/img/logol2mi.png" title={
             {
                 partOne:"Qualification Des ",
                 partTwo:"Autoclaves"
@@ -27,7 +27,7 @@ const Laboratoire15 = (props) => {
             <div className="col-lg-9 col-md-9">
                 <Texte texte="
                     Les autoclaves, bien que règlés en usine avant livraison, doivent obligatoirement subir une qualification 
-                    opérationnelle sur site utilisation.
+                    opérationnelle sur site avant utilisation.
                 " />
                 <Texte texte="
                     La qualification a comme objectif de s'assurer que l'équipement est conforme aux spécifications requises pour son utilisation. 
@@ -44,7 +44,6 @@ const Laboratoire15 = (props) => {
                                 <li>Pénetration de chaleur;</li>
                                 <li>Calcul de la valeur stérilisatrice F0</li>
                             </ul>
-                            <Button texte="Demandez un devis" className="demande_devis " />
                        </div>
                        <div className="col-lg-3">
                            <img src="/img/autoclave/F3.png" width="100%" />

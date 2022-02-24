@@ -27,7 +27,7 @@ const Laboratoire9 = (props) => {
       <HeaderLabo img="/img/temps1.png" title={{
             partOne:"Temps &  ",
             partTwo:"Fréquences"
-        }} />
+        }} logo="/img/logol2mi.png"/>
         <div className="row my-2 mb-md-5">
             <div className="col-lg-3 pt-2 pt-md-5 text-center">
                 <img src="/img/temps/log.PNG" className="mw-100 rounded-3"  />
@@ -36,15 +36,13 @@ const Laboratoire9 = (props) => {
                 <Texte texte="Dans le cadre de son Accréditations SEMAC, le Laboratoire L2MI est
                         accredité pour l'etalonnage et verification des instruments de mesure de Temps
                         & Fréquence, à savoir:" />
-
-                 <Texte texte="Chronomètre (sur labo)" />
-
                 <ul>
-                  <li>Chronomètre à declenchement manuel</li>
-                  <li>Chronomètre à declenchement électrique</li>
+                  <li>Tachymètre optique et Mesureur de vitesse sans contact</li>
+                  <li>Centrifugeuse (Vitesse de rotation & Intervalle de temps)</li>
+                  <li>Instruments de mesure de temps (Temps)</li>
+                  <li>Agitateurs et Générateurs de vitesse de rotation (Vitesse de rotation)</li>
+                  <li>Appareil d’auscultation sonique (Temps)</li>
                 </ul>
-                <Texte texte="Centrifugeuse (Sur site)" />
-                <Button texte="Demandez un devis >" className="demande_devis " className="my-2 my-md-2" />
             </div>
             <div className="col-lg-3">
               <img src="/img/temps/205.png" width="100%" />

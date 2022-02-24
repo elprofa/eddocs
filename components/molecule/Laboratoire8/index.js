@@ -26,7 +26,7 @@ const Details1 = [
 const Laboratoire9 = (props) => {
   return (
     <LaboratoireStc1>
-      <HeaderLabo img="/img/pesage/F4.png" title={{
+      <HeaderLabo img="/img/pesage/F4.png" logo="/img/logol2mi.png" title={{
             partOne:"Pésage ",
             partTwo:""
         }} />
@@ -41,20 +41,19 @@ const Laboratoire9 = (props) => {
               Accrédité par le SEMAC et le TUNAC-ILAC pour l'étalonnage 
               des instruments et systèmes de pesage.
             " />
-            <Texte texte="Dans le cadre de l'accréditation SEMAC" />
+            <Texte texte={<b>Dans le cadre de l'accréditation SEMAC</b>} />
             <ul>
               <li>Etalonnage instrument de pesage à fonctionnement non automatique jusqu'à 6 tonnes</li>
             </ul>
-            <Texte texte="Dans le cadre de l'accréditation TUNAC-ILAC" />
+            <Texte texte={ <b>Dans le cadre de l'accréditation TUNAC-ILAC</b>} />
             <ul>
               <li>Etalonnage Instruments de pesage à fonctionnement non automatique jusqu'à 1 tonne</li>
             </ul>
-            <Texte texte="Le laboratoire propose aussi des prestations Raccordées SI pour :" />
+            <Texte texte={<b>Le laboratoire propose aussi des prestations Raccordées SI pour :</b>} />
             <ul>
               <li>Etalonnage des centrales à béton : ciment, agrégat, eau,…etc</li>
             </ul>
 
-            <Button texte="Demandez un devis " className="demande_devis my-2 my-md-2" />
           </div>
           <div className="col-lg-4 col-md-4">
               <img src="/img/pesage/110.png" className="mw-100 rounded-3" style={{maxWidth:"100%"}}  />

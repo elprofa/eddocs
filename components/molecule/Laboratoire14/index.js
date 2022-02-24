@@ -15,15 +15,14 @@ const Laboratoire14 = (props) => {
   return (
     <LaboratoireStc14 >
 
-        <HeaderLabo img="/img/air/F4.png" title={{
+        <HeaderLabo img="/img/air/F4.png" logo="/img/logol2mi.png" title={{
             partOne:"Qualification Des ",
             partTwo:"Environnements Propres"
         }} />
 
         <div className="row my-2 my-md-5">
             <div className="col-lg-2 col-md-2 align-self-center text-center">
-                <img src="/img/environnement/8.png" className="mw-100 rounded-3"  />
-                <img src="/img/environnement/7.png" width="80px" className="mw-100 rounded-3" />
+                <img src="/img/news/log6.png" className="mw-100 rounded-3"  />
             </div>
             <div className="col-lg-10 col-md-10">
                 <Texte texte="Les salles blanche et les environnements maîtrisés apparents constituent un moyen efficace pour maîtriser
@@ -44,13 +43,14 @@ const Laboratoire14 = (props) => {
                             </h5>
                             <ul > 
                                 <li className="">Comptage de particule</li>
+                                <li className="">Temps de Récupération / D’épuration</li>
                                 <li className="">Mesure de vitesse d'air</li>
                                 <li className="">Mesure de pression differentielle</li>
                                 <li className="">Test d'intégrité des filtres</li>
                                 <li className="">Mesure de température </li>
                                 <li className="">Mésure d'humidité relative</li>
                                 <li className="">Mésure de debit d'air</li>
-                                <li className="">Essai de fuite de confinement </li>
+                                <li className="">Fuite de confinement (Hors accréditation)</li>
                             </ul>
                         </div>
                         
@@ -62,13 +62,14 @@ const Laboratoire14 = (props) => {
                             </h5>
                             <ul > 
                                 <li className="">Comptage de particule</li>
+                                <li className="">Cinétique de décontamination</li>
                                 <li className="">Mesure de vitesse d'air</li>
                                 <li className="">Mesure de pression differentielle</li>
                                 <li className="">Test d'intégrité des filtres</li>
                                 <li className="">Mesure de température </li>
                                 <li className="">Mésure d'humidité relative</li>
                                 <li className="">Mésure de debit d'air</li>
-                                <li className="">Essai de fuite de confinement </li>
+                                <li className="">Fuite de confinement (Hors accréditation) </li>
                             </ul>
                         </div>
                         
@@ -92,7 +93,6 @@ const Laboratoire14 = (props) => {
                     </div>
                     
                 </div>
-                <Button texte="Demandez un devis >" className="demande_devis " />
             </div>
         </div>
             

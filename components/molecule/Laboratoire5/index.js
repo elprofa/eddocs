@@ -40,7 +40,7 @@ const Laboratoire5 = (props) => {
   return (
     <LaboratoireStc5 >
 
-        <HeaderLabo img="/img/force1.png" title={{
+        <HeaderLabo img="/img/force1.png" logo="/img/logo.png" title={{
             partOne:"FORCE &  ",
             partTwo:"COUPLE"
         }} />
@@ -59,7 +59,7 @@ const Laboratoire5 = (props) => {
                         {
                         texte:<>Pour vous offrir des presentations adaptées à vos besoins, le Laboratoire AIR
                         METROLOGIE s'est doté de moyens de haute performance pour l'étalonnage
-                        et vérification de vos instruments de mesure de Fore / Couple.</>}
+                        et vérification de vos instruments de mesure de Force / Couple.</>}
                 } />
 
                 <TitreParagrapheLabo 
@@ -68,8 +68,8 @@ const Laboratoire5 = (props) => {
                     }
                     paragraphe={
                         {
-                        texte:<>Le laboratoire est accrédité par le COFRAC pour l'étalonnage et
-                        vérification des instruments suivants:</>}
+                        texte:<b>Le laboratoire est accrédité par le COFRAC pour l'étalonnage et
+                        vérification des instruments suivants:</b>}
                 } />
 
                 <ul>

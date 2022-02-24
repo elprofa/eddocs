@@ -28,7 +28,7 @@ const Details1 = [
 const Laboratoire2 = (props) => {
   return (
     <LaboratoireStc1>
-       <HeaderLabo img="/img/electricite.png" title={{
+       <HeaderLabo img="/img/electricite.png" logo="/img/logo.png" title={{
             partOne:"Electricité & ",
             partTwo:"magnetisme"
         }} />
@@ -45,7 +45,6 @@ const Laboratoire2 = (props) => {
             <ul>
               <li>Multimètre</li>
               <li>Génerateur de courant</li>
-              <li>Génerateur de tension</li>
               <li>Génerateur de tension</li>
               <li>Boite de resistance</li>
               <li>Mesureur de résistance</li>
