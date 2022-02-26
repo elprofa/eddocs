@@ -4,9 +4,7 @@ import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { theme } from "../../theme";
 import { GlobalCSS } from "../../public/styles/style";
-import Header from '../../components/molecule/Header';
 import {Container} from 'reactstrap';
-import Footer from "../../components/molecule/Footer";
 
 const Layout = ({ children, ...props }) => {
   console.log(props)
@@ -19,9 +17,9 @@ const Layout = ({ children, ...props }) => {
         <link rel="shortcut icon" href="/img/lo.png" />
       </Head>
       <GlobalCSS />
-      <Header />
+      
       {children}
-      <Footer />
+
     </ThemeProvider>
   );
 };
